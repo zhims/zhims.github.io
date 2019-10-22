@@ -1,0 +1,19 @@
+# jemdoc: menu{MENU}{datascience.html}, nofooter
+= Yao Zhang - Data Science
+
+== Low Rank \& Sparse
+
+. \[[./doc/note/datascience/NNorm.pdf  A proposition of nuclear norm]\] 
+. \[[./doc/note/datascience/Tips.pdf  Some basic results of Low-Rank and Sparse]\].
+. \[[./doc/note/datascience/WLRR.pdf  Robust PCA via Weighted Low Rank]\]
+
+== Deep Learning
+
+
+== Digital image processing
+
+
+== Digital singal processing
+
+
+
