@@ -3,10 +3,10 @@
 
 == Low Rank \& Sparse
 
-. \[[./doc/note/datascience/NNorm.pdf  A proposition of nuclear norm]\] 
-. \[[./doc/note/datascience/Tips.pdf  Some basic results of Low-Rank and Sparse]\] 
-. \[[./doc/note/datascience/WLRR.pdf  Robust PCA via Weighted Low Rank]\]
-. \[[./doc/note/datascience/Schattenp.pdf  Schattenp Norm when $0\le p \le 1$]\]
+. [./doc/note/datascience/NNorm.pdf  A proposition of nuclear norm] 
+. [./doc/note/datascience/Tips.pdf  Some basic results of Low-Rank and Sparse] 
+. [./doc/note/datascience/WLRR.pdf  Robust PCA via Weighted Low Rank]
+. [./doc/note/datascience/Schattenp.pdf  Schattenp Norm when $0\le p \le 1$]
 
 
 
