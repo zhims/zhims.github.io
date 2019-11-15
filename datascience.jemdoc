@@ -13,11 +13,15 @@
 == Deep Learning
 - The students seminar is held in A239, NAOC on Tuesdays 2-3pm fall 2019.
 . Nov 12th ~~ [./doc/note/datascience/DL/lec1.pdf  Lecture Note] ~ [./doc/note/datascience/DL/cnn.pdf  Slide ] 
+. Nov 19th ~~ [./doc/note/datascience/DL/readinglist/1st/lecun89.pdf  Paper 1] ~ [./doc/note/datascience/DL/readinglist/1st/lecun98.pdf  Paper 2] ~ [./doc/note/datascience/DL/readinglist/1st/krizhevsky12.pdf  Paper 3] ~ [./doc/note/datascience/DL/readinglist/1st/simonyan15.pdf  Paper 4] ~
+ [./doc/note/datascience/DL/readinglist/1st/arora13.pdf  Paper 5] ~ [./doc/note/datascience/DL/readinglist/1st/szegedy15.pdf  Paper 6] ~ [./doc/note/datascience/DL/readinglist/1st/lin13.pdf  Paper 7] ~ [./doc/note/datascience/DL/readinglist/1st/vasconcelos17.pdf  Paper 8] ~ [./doc/note/datascience/DL/readinglist/1st/he16.pdf  Paper 9]
 
 == Digital Image Processing
 
-- [./doc/note/datascience/DIP/lec1.pdf  Lecture 1]~~~[./doc/note/datascience/DIP/lec2.pdf  Lecture 2] ~~~[./doc/note/datascience/DIP/lec3.pdf  Lecture 3]~~~[./doc/note/datascience/DIP/lec4.pdf  Lecture 4]~~~[./doc/note/datascience/DIP/lec5.pdf  Lecture 5]~~~[./doc/note/datascience/DIP/lec6.pdf  Lecture 6]~~~[./doc/note/datascience/DIP/lec7.pdf  Lecture 7]~~~[./doc/note/datascience/DIP/lec8.pdf  Lecture 8]~~~[./doc/note/datascience/DIP/lec9.pdf  Lecture 9]
+- [./doc/note/datascience/DIP/lec1.pdf  Lecture 1]~~~[./doc/note/datascience/DIP/lec2.pdf  Lecture 2] ~~~[./doc/note/datascience/DIP/lec3.pdf  Lecture 3]~~~[./doc/note/datascience/DIP/lec4.pdf  Lecture 4]~~~[./doc/note/datascience/DIP/lec5.pdf  Lecture 5]~~~[./doc/note/datascience/DIP/lec6.pdf  Lecture 6]~~~[./doc/note/datascience/DIP/lec7.pdf  Lecture 7]~~~[./doc/note/datascience/DIP/lec8.pdf  Lecture 8]~~~[./doc/note/datascience/DIP/lec9.pdf  Lecture 9]~~~[./doc/note/datascience/DIP/lec10.pdf  Lecture 10]~~~[./doc/note/datascience/DIP/lec11.pdf  Lecture 11]~~~[./doc/note/datascience/DIP/lec12.pdf  Lecture 12]~~~[./doc/note/datascience/DIP/lec13.pdf  Lecture 13] \n [./doc/note/datascience/DIP/lec14.pdf  Lecture 14]~~~[./doc/note/datascience/DIP/lec15.pdf  Lecture 15]
+#~~~[./doc/note/datascience/DIP/lec16.pdf  Lecture 16]~~~[./doc/note/datascience/DIP/lec17.pdf  Lecture 17]~~~[./doc/note/datascience/DIP/lec18.pdf  Lecture 19]~~~[./doc/note/datascience/DIP/lec20.pdf  Lecture 20]~~~[./doc/note/datascience/DIP/lec21.pdf  Lecture 21]~~~[./doc/note/datascience/DIP/lec22.pdf  Lecture 22]~~~[./doc/note/datascience/DIP/lec23.pdf  Lecture 23]~~~[./doc/note/datascience/DIP/lec24.pdf  Lecture 24]~~~[./doc/note/datascience/DIP/lec25.pdf  Lecture 25]~~~[./doc/note/datascience/DIP/lec26.pdf  Lecture 26]~~~[./doc/note/datascience/DIP/lec27.pdf  Lecture 27]~~~[./doc/note/datascience/DIP/lec28.pdf  Lecture 28]~~~[./doc/note/datascience/DIP/lec29.pdf  Lecture 29]
 
+==  Microcomputer Principle and Interface Technique (in Chinese)
 
 == Digital Singal Processing
 
