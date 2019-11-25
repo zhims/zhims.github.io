@@ -1,10 +1,14 @@
 # jemdoc: menu{MENU}{codes.html}, nofooter
 = Yao Zhang - Codes
 
-== Matlab
+#== Matlab
 #- [https://github.com/zhims] \n
-\- Reference:\n
+#\- Reference:\n
 
-== Python
+#== Python
 #- [https://github.com/zhims] \n
-\- Reference:\n
+#\- Reference:\n
+
+== Codes for 1st Project in NAOC
+- [https://github.com/zhims/codes_for_1st_project_in_NAOC] \n
+\- Reference: [./code/code_1st_project.pdf  Codes for 1st Project in NAOC]\n
