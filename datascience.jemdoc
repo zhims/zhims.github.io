@@ -7,9 +7,11 @@
 . [./doc/note/datascience/LRS/WLRR.pdf  Robust PCA via Weighted Low Rank]
 . [./doc/note/datascience/LRS/Schattenp.pdf  Schattenp Norm when $0\le p \le 1$]
 == Deep Learning
-. ~~ [./doc/note/datascience/DL/lec1.pdf  Lecture 1] ~ [./doc/note/datascience/DL/cnn.pdf  Slide ] ~~ [./doc/note/datascience/DL/readinglist/1st/lecun89.pdf  Paper 1] ~ [./doc/note/datascience/DL/readinglist/1st/lecun98.pdf  Paper 2] ~ [./doc/note/datascience/DL/readinglist/1st/krizhevsky12.pdf  Paper 3] ~ [./doc/note/datascience/DL/readinglist/1st/simonyan15.pdf  Paper 4] ~
+
+. ~~ [./doc/note/datascience/DL/lossFunOutLayer.pdf  Loss Functions \& Output Layer]
+. ~~ [./doc/note/datascience/DL/lec1.pdf  CNN] ~ [./doc/note/datascience/DL/cnn.pdf  Slide ] ~~ [./doc/note/datascience/DL/readinglist/1st/lecun89.pdf  Paper 1] ~ [./doc/note/datascience/DL/readinglist/1st/lecun98.pdf  Paper 2] ~ [./doc/note/datascience/DL/readinglist/1st/krizhevsky12.pdf  Paper 3] ~ [./doc/note/datascience/DL/readinglist/1st/simonyan15.pdf  Paper 4] ~
  [./doc/note/datascience/DL/readinglist/1st/arora13.pdf  Paper 5] ~ [./doc/note/datascience/DL/readinglist/1st/szegedy15.pdf  Paper 6] ~ [./doc/note/datascience/DL/readinglist/1st/lin13.pdf  Paper 7] ~ [./doc/note/datascience/DL/readinglist/1st/vasconcelos17.pdf  Paper 8] ~ [./doc/note/datascience/DL/readinglist/1st/he16.pdf  Paper 9] ~ [./doc/note/datascience/DL/readinglist/1st/collobert2008.pdf  Paper 10] ~ [./doc/note/datascience/DL/readinglist/1st/kalchbrenner2014.pdf  Paper 11] ~ [./doc/note/datascience/DL/readinglist/1st/pham18.pdf  Paper 12] ~ [./doc/note/datascience/DL/readinglist/1st/severyn15.pdf  Paper 13]
-. ~~ [./doc/note/datascience/DL/lec2.pdf  Lecture 2] ~ [./doc/note/datascience/DL/rnnLstmAttention.pdf  Slide ] ~~ [./doc/note/datascience/DL/readinglist/2nd/pascanu13.pdf  Paper 1] ~ [./doc/note/datascience/DL/readinglist/2nd/cho14.pdf  Paper 2] ~ [./doc/note/datascience/DL/readinglist/2nd/jozefowicz16.pdf  Paper 3] ~ [./doc/note/datascience/DL/readinglist/2nd/sutskever14.pdf  Paper 4] ~
+. ~~ [./doc/note/datascience/DL/lec2.pdf  RNN \& LSTM \& Attention] ~ [./doc/note/datascience/DL/rnnLstmAttention.pdf  Slide ] ~~ [./doc/note/datascience/DL/readinglist/2nd/pascanu13.pdf  Paper 1] ~ [./doc/note/datascience/DL/readinglist/2nd/cho14.pdf  Paper 2] ~ [./doc/note/datascience/DL/readinglist/2nd/jozefowicz16.pdf  Paper 3] ~ [./doc/note/datascience/DL/readinglist/2nd/sutskever14.pdf  Paper 4] ~
  [./doc/note/datascience/DL/readinglist/2nd/bahdanau15.pdf  Paper 5] ~ [./doc/note/datascience/DL/readinglist/2nd/chan16.pdf  Paper 6] ~ [./doc/note/datascience/DL/readinglist/2nd/vaswani17.pdf  Paper 7] ~ [./doc/note/datascience/DL/readinglist/2nd/ba2017.pdf  Paper 8]
 
 == Digital Image Processing
