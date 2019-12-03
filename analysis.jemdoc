@@ -1,6 +1,6 @@
 # jemdoc: menu{MENU}{analysis.html}, nofooter
 = Yao Zhang - Analysis
-123456
+
 == Real analysis
 . [./doc/note/analysis/chapter1.pdf  Chapter 1] ~~ [./doc/note/analysis/chapter2.pdf  Chapter 2]
 . [./doc/note/analysis/infinitynorm.pdf  The infinity norm]
