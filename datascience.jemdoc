@@ -1,6 +1,6 @@
 # jemdoc: menu{MENU}{datascience.html}, nofooter
 = Yao Zhang - Data Science
-
+1234
 == Low Rank \& Sparse
 . [./doc/note/datascience/LRS/NNorm.pdf  A proposition of nuclear norm] 
 . [./doc/note/datascience/LRS/Tips.pdf  Some basic results of Low-Rank and Sparse] 
