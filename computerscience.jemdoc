@@ -1,0 +1,20 @@
+# jemdoc: menu{MENU}{computerscience.html}, nofooter
+= Yao Zhang - Computer Science
+\n
+Computer science is the study of processes that interact with data and that can be represented as data in the form of programs. It enables the use of algorithms to manipulate, store, and communicate digital information. A computer scientist studies the theory of computation and the practice of designing software systems.
+
+== Computer Graphics 
+
+== Computer Architecture
+
+== Microcomputer Principle and Interface Technique (in Chinese)
+
+== Tips
+. [./doc/note/Tips/tips4linux.pdf  Tips for Linux]
+. [./doc/note/Tips/tips4github.pdf  Tips for github]
+
+
+
+
+
+
