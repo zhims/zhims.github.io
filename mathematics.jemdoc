@@ -6,13 +6,10 @@ Mathematics includes the study of such topics as quantity (number theory), struc
 == Set Theory
 == Analysis
 . Calculus 
-. Real Analysis \n 
-
-[./doc/note/analysis/infinitynorm.pdf  The infinity norm]  ~~  [./doc/note/analysis/chapter1.pdf  Chapter 1]  ~~  [./doc/note/analysis/chapter2.pdf  Chapter 2] 
-
+. [./doc/note/analysis/MTnotes.pdf  Measure Theory]
+. [./doc/note/analysis/FAnotes.pdf  Functional Analysis]
 . Ordinary Differential Equation
-. Functional Analysis
-. Partial Differential Equation
+. [./doc/note/analysis/PDE1notes.pdf  Partial Differential Equation I]
 
 == Algebra
 . Linear Algebra
@@ -23,7 +20,7 @@ Mathematics includes the study of such topics as quantity (number theory), struc
 
 
 == Statistics
-. Probability Theory
+. [./doc/note/statistics/PTnotes.pdf  Probability Theory]
 . Mathematical Statistics
 
 
