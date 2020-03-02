@@ -1,23 +1,22 @@
 # jemdoc: menu{MENU}{mathematics.html}, nofooter
 = Yao Zhang - Mathematics
 \n
-Mathematics includes the study of such topics as quantity (number theory), structure (algebra), space (geometry), and change (mathematical analysis). It has no generally accepted definition. --- Wikipedia
+Mathematics includes the study of such topics as number theory, algebra, geometry, and mathematical analysis. It has no generally accepted definition. --- Wikipedia
 
 == Set Theory
 == Analysis
 . Calculus 
 . [./doc/note/analysis/MTnotes.pdf  Measure Theory]
 . [./doc/note/analysis/FAnotes.pdf  Functional Analysis]
-. Ordinary Differential Equation
-. [./doc/note/analysis/PDE1notes.pdf  Partial Differential Equation I]
+. Ordinary Differential Equation I ~~ Ordinary Differential Equation II
+. Partial Differential Equation I ~~ Partial Differential Equation II
 
 == Algebra
 . Linear Algebra
 . Abstract Algebra
 
 == Geometry
-. Differential Geometry 
-
+. Differential Geometry I ~~ Differential Geometry II
 
 == Statistics
 . [./doc/note/statistics/PTnotes.pdf  Probability Theory]
