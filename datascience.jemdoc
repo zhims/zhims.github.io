@@ -7,7 +7,10 @@ Data science is a multi-disciplinary field that uses scientific methods, process
 
 == Computational Intelligence
 
-[./doc/note/datascience/LRS/NNorm.pdf  1. A proposition of nuclear norm]  ~~  [./doc/note/datascience/LRS/Tips.pdf  2. Some basic results of Low-Rank and Sparse]  ~~  [./doc/note/datascience/LRS/WLRR.pdf  3. Robust PCA via Weighted Low Rank]  ~~  [./doc/note/datascience/LRS/Schattenp.pdf  4. Schattenp Norm when $0\le p \le 1$]
+[./doc/note/datascience/LRS/NNorm.pdf  1. A proposition of nuclear norm]  ~~  [./doc/note/datascience/LRS/Tips.pdf  2. Some basic results of Low-Rank and Sparse]  ~~  [./doc/note/datascience/LRS/WLRR.pdf  3. Robust PCA via Weighted Low Rank]  ~~  [./doc/note/datascience/LRS/Schattenp.pdf  4. Schattenp Norm when $0\le p \le 1$]  
+\n
+\n
+[./doc/note/datascience/LRS/KSVD.pdf  5. KSVD]
 
 == Unsupervised Learning
 
@@ -15,18 +18,15 @@ Data science is a multi-disciplinary field that uses scientific methods, process
 
 . ~~ [./doc/note/datascience/DL/1stIntro.pdf  Introduction to Neural Networks] 
 
-. ~~ [./doc/note/datascience/DL/2ndAppro.pdf  Approximation Theory ] ~ [./doc/note/datascience/DL/readinglist/0/wang2005.pdf  Paper 1] ~ [./doc/note/datascience/DL/readinglist/0/goodfellow2013.pdf  Paper 2] ~ [./doc/note/datascience/DL/readinglist/0/montufar2014.pdf  Paper 3] ~ [./doc/note/datascience/DL/readinglist/0/leshno1993.pdf  Paper 4] ~ [./doc/note/datascience/DL/readinglist/0/pinkus1999.pdf  Paper 5]
+. ~~ [./doc/note/datascience/DL/2ndAppro.pdf  Approximation Theory ] 
 
-. ~~ [./doc/note/datascience/DL/3rdLFB.pdf  Loss Functions and Backpropagation]  ~ [./doc/note/datascience/DL/readinglist/0/bergstra2010.pdf  Paper 1] 
+. ~~ [./doc/note/datascience/DL/3rdLFB.pdf  Loss Functions and Backpropagation]  
 
-. ~~ [./doc/note/datascience/DL/lec1.pdf  CNN] ~ [./doc/note/datascience/DL/cnn.pdf  Slide ] ~~ [./doc/note/datascience/DL/readinglist/1st/lecun89.pdf  Paper 1] ~ [./doc/note/datascience/DL/readinglist/1st/lecun98.pdf  Paper 2] ~ [./doc/note/datascience/DL/readinglist/1st/krizhevsky12.pdf  Paper 3] ~ [./doc/note/datascience/DL/readinglist/1st/simonyan15.pdf  Paper 4] ~
- [./doc/note/datascience/DL/readinglist/1st/arora13.pdf  Paper 5] ~ [./doc/note/datascience/DL/readinglist/1st/szegedy15.pdf  Paper 6] ~ [./doc/note/datascience/DL/readinglist/1st/lin13.pdf  Paper 7] ~ [./doc/note/datascience/DL/readinglist/1st/vasconcelos17.pdf  Paper 8] ~ [./doc/note/datascience/DL/readinglist/1st/he16.pdf  Paper 9] ~ [./doc/note/datascience/DL/readinglist/1st/collobert2008.pdf  Paper 10] ~ [./doc/note/datascience/DL/readinglist/1st/kalchbrenner2014.pdf  Paper 11] ~ [./doc/note/datascience/DL/readinglist/1st/pham18.pdf  Paper 12] ~ [./doc/note/datascience/DL/readinglist/1st/severyn15.pdf  Paper 13]
+. ~~ [./doc/note/datascience/DL/lec1.pdf  CNN] ~ [./doc/note/datascience/DL/cnn.pdf  Slide ] 
 
-. ~~ [./doc/note/datascience/DL/lec2.pdf  RNN \& LSTM \& Attention] ~ [./doc/note/datascience/DL/rnnLstmAttention.pdf  Slide ] ~~ [./doc/note/datascience/DL/readinglist/2nd/pascanu13.pdf  Paper 1] ~ [./doc/note/datascience/DL/readinglist/2nd/cho14.pdf  Paper 2] ~ [./doc/note/datascience/DL/readinglist/2nd/jozefowicz16.pdf  Paper 3] ~ [./doc/note/datascience/DL/readinglist/2nd/sutskever14.pdf  Paper 4] ~
- [./doc/note/datascience/DL/readinglist/2nd/bahdanau15.pdf  Paper 5] ~ [./doc/note/datascience/DL/readinglist/2nd/chan16.pdf  Paper 6] ~ [./doc/note/datascience/DL/readinglist/2nd/vaswani17.pdf  Paper 7] ~ [./doc/note/datascience/DL/readinglist/2nd/ba2017.pdf  Paper 8]
+. ~~ [./doc/note/datascience/DL/lec2.pdf  RNN \& LSTM \& Attention] ~ [./doc/note/datascience/DL/rnnLstmAttention.pdf  Slide ] 
 
- . ~~ [./doc/note/datascience/DL/opt.pdf  Optimization ] ~~ [./doc/note/datascience/DL/readinglist/3rd/bottou08.pdf  Paper 1] ~ [./doc/note/datascience/DL/readinglist/3rd/nesterov04.pdf  Paper 2] ~ [./doc/note/datascience/DL/readinglist/3rd/gori92.pdf  Paper 3] ~ [./doc/note/datascience/DL/readinglist/3rd/baldi89.pdf  Paper 4] ~
- [./doc/note/datascience/DL/readinglist/3rd/choromanska15.pdf  Paper 5] ~ [./doc/note/datascience/DL/readinglist/3rd/saxe13.pdf  Paper 6] ~ [./doc/note/datascience/DL/readinglist/3rd/laurent18.pdf  Paper 7] ~ [./doc/note/datascience/DL/readinglist/3rd/arora18.pdf  Paper 8] ~ [./doc/note/datascience/DL/readinglist/3rd/jin2019.pdf  Paper 9]
+ . ~~ [./doc/note/datascience/DL/opt.pdf  Optimization ] 
 
 
 == Tips
