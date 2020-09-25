@@ -3,14 +3,13 @@
 \n
 Data science is a multi-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data. Data science is related to data mining and big data. --- Wikipedia
 
-== Digital Image Processing
+#== Digital Image Processing
 
 == Computational Intelligence
 
 [./doc/note/datascience/LRS/NNorm.pdf  1. A proposition of nuclear norm]  ~~  [./doc/note/datascience/LRS/Tips.pdf  2. Some basic results of Low-Rank and Sparse]  ~~  [./doc/note/datascience/LRS/WLRR.pdf  3. Robust PCA via Weighted Low Rank]  ~~  [./doc/note/datascience/LRS/Schattenp.pdf  4. Schattenp Norm when $0\le p \le 1$]  
 \n
-\n
-[./doc/note/datascience/LRS/KSVD.pdf  5. KSVD]  ~~  [./doc/note/datascience/LRS/GSR.pdf  6. GSR]
+[./doc/note/datascience/LRS/KSVD.pdf  5. KSVD]  ~~  [./doc/note/datascience/LRS/GSR.pdf  6. GSR]  ~~  [./doc/note/datascience/LRS/tensor.pdf  7. Tensor SVD]
 
 == Unsupervised Learning
 
