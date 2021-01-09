@@ -7,9 +7,7 @@ Data science is a multi-disciplinary field that uses scientific methods, process
 
 == Computational Intelligence
 
-[./doc/note/datascience/LRS/NNorm.pdf  1. A proposition of nuclear norm]  ~~  [./doc/note/datascience/LRS/Tips.pdf  2. Some basic results of Low-Rank and Sparse]  ~~  [./doc/note/datascience/LRS/WLRR.pdf  3. Robust PCA via Weighted Low Rank]  ~~  [./doc/note/datascience/LRS/Schattenp.pdf  4. Schattenp Norm when $0\le p \le 1$]  
-\n
-[./doc/note/datascience/LRS/KSVD.pdf  5. KSVD]  ~~  [./doc/note/datascience/LRS/GSR.pdf  6. GSR]  ~~  [./doc/note/datascience/LRS/tensor.pdf  7. Tensor SVD]
+[./doc/note/datascience/LRS/NNorm.pdf  1. A proposition of nuclear norm]  ~~  [./doc/note/datascience/LRS/Tips.pdf  2. Some basic results of Low-Rank and Sparse]  ~~  [./doc/note/datascience/LRS/WLRR.pdf  3. Robust PCA via Weighted Low Rank]  ~~  [./doc/note/datascience/LRS/Schattenp.pdf  4. Schattenp Norm when $0\le p \le 1$]  ~~  [./doc/note/datascience/LRS/kernel.pdf  5. Subspace Clustering via Kernel Method]  ~~  [./doc/note/datascience/LRS/KSVD.pdf  6. KSVD]  ~~  [./doc/note/datascience/LRS/deepksvd.pdf  7. Deep KSVD]  ~~  [./doc/note/datascience/LRS/GSR.pdf  8. GSR]  ~~  [./doc/note/datascience/LRS/tensor_2009.pdf  9. Tensor SIAM 2009]  ~~  [./doc/note/datascience/LRS/tensor.pdf  10. Tensor SVD]  ~~  [./doc/note/datascience/LRS/NeumannNetworks.pdf  11. Neumann Networks]
 
 == Unsupervised Learning
 
