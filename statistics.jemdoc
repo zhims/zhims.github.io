@@ -1,0 +1,19 @@
+# jemdoc: menu{MENU}{statistics.html}, nofooter
+= Yao Zhang - Statistics
+\n
+Statistics is the discipline that concerns the collection, organization, analysis, interpretation and presentation of data. --- Wikipedia
+
+
+
+== Probability Theory
+
+== Advanced Probability Theory
+
+== Statistics
+
+== Advanced Statistics
+
+== High-Dimensional Probability
+
+ [./doc/note/statistics/hd/chapter1.pdf  Chapter 1] ~~  [./doc/note/statistics/hd/chapter2.pdf  Chapter 2]
+
