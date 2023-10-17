@@ -1,0 +1,59 @@
+# jemdoc: menu{MENU}{index.html}, nofooter  
+== Yao Zhang
+
+~~~
+{}{img_left}{pic/yao17.jpg}{alt text}{200}{150}
+Yao Zhang \n 
+ \n
+#PhD Candidate\n
+The guy is a  populace. \n
+Email: /jaafar_zhang/ @ 163.com \n
+<<<<<<< HEAD
+Please feel free to stop by at my office A514, NSSC, CAS.\n
+My office timing is from 08:30 to 16:30 for a workweek.\n
+Here are my  cvs: [doc/cv/cv_Eng.pdf \[English Version\]] and [doc/cv/cv_CN.pdf \[Chinese Version\]]\n 
+=======
+Please feel free to stop by at my office A239, NAOC.\n
+My office timing is from 08:30 to 17:30 for a workweek.\n
+Here is my  cv: [doc/cv.pdf \[cv\]]\n 
+>>>>>>> 50e1d080b2fa76ae042f3f09db740cfcb607c12f
+~~~
+
+==  Biography
+Yao Zhang  received his B.S. in Information and Computing Science and M.S. in Applied Mathematics (supervised by Dr. Min Li) from Shenzhen University in 2014 and 2019, respectively. Then he continued his research work in National Astronomical Observatories, Chinese Academy of Sciences as a Research Assistant. 
+<<<<<<< HEAD
+From September 2020, he is a PhD Candidate (supervised by Dr. Long Xu) in University of Chinese Academy of Sciences.
+=======
+From September 2020, he is a PhD Candidate (supervised by Dr. Long Xu) in University of Chinese Academy of Sciences and National Astronomical Observatories, Chinese Academy of Sciences.
+>>>>>>> 50e1d080b2fa76ae042f3f09db740cfcb607c12f
+
+
+== Research Interests
+
+<<<<<<< HEAD
+- Scientific Computing [doc/RI/SC.pdf \[More details\]].
+
+- Magnetohydrodynamics in solar physics [doc/RI/MHD.pdf \[More details\]].
+
+- Cerebral hemodynamics in cerebrovascular [doc/RI/CBF.pdf \[More details\]]\n
+=======
+- Mathematical Problems in  Heliophysics.
+
+- Numerical Linear Algebra Theory and Applications.
+
+- Optimization Theory, Algorithms and Applications.
+
+- Mathematical Problems in Astronomical Data Processing.
+
+- Numerical Methods for Computational Science and Engineering.\n
+>>>>>>> 50e1d080b2fa76ae042f3f09db740cfcb607c12f
+
+== News
+
+#.  Lecture 10 for Measure Theory updated  [https://zhims.github.io/mathematics.html  Here]
+#.  Recently we have submitted a new paper to IEEE TNNLS.
+#.  [https://zhims.github.io/yaozhang.html Zhang, Yao],  [https://zhims.github.io/astronomy.html Astronomy] are updated, respectively.
+
+ It's on the cards.
+
+ 

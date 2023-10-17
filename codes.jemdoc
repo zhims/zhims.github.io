@@ -1,0 +1,9 @@
+# jemdoc: menu{MENU}{codes.html}, nofooter
+= Yao Zhang - Codes
+\n
+In information theory and computer science, a code is usually considered as an algorithm that uniquely represents symbols from some source alphabet, by encoded strings, which may be in some other target alphabet.  --- Wikipedia
+
+== Codes for 1st Project in NAOC
+- [https://github.com/zhims/codes_for_1st_project_in_NAOC] 
+\n
+Reference: [./code/code_1st_project.pdf  Codes for 1st Project in NAOC]\n

@@ -1,0 +1,24 @@
+# jemdoc: menu{MENU}{publications.html}, nofooter
+= Yao Zhang - Publications
+
+#- [https://www.researchgate.net/profile/Yao_Zhang137 My ResearchGate Profile]
+
+#
+
+== Journal Papers
+. M. Li, Y. Zhang\*, M. Xiao, C. Xu  and  W. Zhang.  On schatten-q quasi-norm induced matrix decomposition model for salient object detection,  Pattern Recognition, Vol 96, 2019. \[[./doc/jour/19PR.pdf paper], [./doc/jour/19PR_supp.pdf Appendix]\]
+
+. M. Li, Y. Zhang\*, M. Xiao, W. Zhang and X. Sun.  Unsupervised Learning for Salient Object Detection via Minimization of Bilinear Factor Matrix Norm,  IEEE Transactions On Neural Networks and Learning Systems, 2021. \[[./doc/jour/21TNNLS.pdf paper]\]
+
+== Conference Papers
+. Y. Zhang\* and M. Li.  Motion segmentation using collaborative low-rank and sparse subspace clustering,  The 13th International Conference on Computational Intelligence and Security, Hong Kong, 2017. \[[./doc/conf/17cis.pdf paper]\]
+. Y. Yang, M. Li  and  Y. Zhang\*.  Saliency detection based on non-convex weighted surrogates,  The 3rd International Symposium on Image Computing and Digital Medicine, China, 2019. \[[./doc/conf/19isicdm.pdf paper]\] 
+
+#== Submitted Papers
+
+#. M. Li, Y. Zhang\*, M. Xiao, W. Zhang and X. Sun.  Unsupervised Learning for Salient Object Detection via Minimization of Bilinear Factor Matrix Norm, submitted to IEEE Transactions On Neural
+#Networks and Learning Systems, 2020
+
+== Preprints
+
+

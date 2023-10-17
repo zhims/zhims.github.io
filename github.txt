@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ please git config --gloobal   befor push 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+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
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+git remote set-url origin https://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@github.com/zhims/Life.git
+
+git config --global http.sslVerify "false"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+git remote set-url origin https://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@github.com/zhims/zhims.github.io.git
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+push -u  origin master
+
+
+ git remote -v
+
+
+<<<<<<< HEAD
+git config --global http.sslVerify "false"
+=======
+git remote set-url origin https://github.com/zhims/zhims.github.io
+>>>>>>> 50e1d080b2fa76ae042f3f09db740cfcb607c12f

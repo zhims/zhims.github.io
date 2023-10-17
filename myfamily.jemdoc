@@ -1,0 +1,30 @@
+# jemdoc: menu{MENU}{myfamily.html}, nofooter
+= Yao Zhang - Family
+
+== My Family  
+
+- There are five people in my family, my grandmother, my father, my mother, my brother and me. I am the youngest child in my family. \n
+
+- If you are happily married and you can foresee a future. \n
+
+<<<<<<< HEAD
+=======
+- Here are my wife's photos: [pic/hl1.jpg \[Huanli01\]]  ~~ [pic/hl2.jpg \[Huanli02\]] ~~ [pic/hl3.jpg \[Huanli03\]]
+
+>>>>>>> 50e1d080b2fa76ae042f3f09db740cfcb607c12f
+== Academic Family  
+
+- Dr. Juan Deng is my thesis advisor before I received my bachelor's degree of science from SZU.\n
+
+- Dr. Min Li is my master supervisor, she was also our headteacher before I received my B.S. from SZU. \n
+
+- Dr. Long Xu is currently my supervisor. \n
+
+==  My Homework 
+.  Here are my bachelor's dissertation proposal: [doc/bachelor/dissertationProposal.pdf \[Dissertation Proposal\]] and the bachelor's thesis: [doc/bachelor/thesis.pdf \[Bachelor's Thesis\]], respectively.\n
+
+.  Here are my master's thesis: [doc/master/masterthesis.pdf \[Master's Thesis\]] and the slides for the oral defense: [doc/master/masterslide_zh.pdf \[Slides\]], respectively.\n
+
+.  Here are the slides for the oral defense of PhD Qualifying Examination: [doc/phd/phd_qe_slide.pdf \[Slides\]], and  the verbatim text: [doc/phd/phd_qe_verbatim.pdf \[Verbatim Text\]], respectively. \n
+
+.  Here are the slides for my of PhD proposal: [doc/phd/phd_proposal.pdf \[Slides\]]. \n
