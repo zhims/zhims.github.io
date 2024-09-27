@@ -25,4 +25,12 @@ push -u  origin master
  git remote -v
 
 
+<<<<<<< HEAD
 git remote set-url origin https://github.com/zhims/zhims.github.io
+=======
+<<<<<<< HEAD
+git config --global http.sslVerify "false"
+=======
+git remote set-url origin https://github.com/zhims/zhims.github.io
+>>>>>>> 50e1d080b2fa76ae042f3f09db740cfcb607c12f
+>>>>>>> 8bcff0d1e3d3dcbfe15b310713ac5f8982b46205
