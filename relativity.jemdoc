@@ -1,18 +1,18 @@
 # jemdoc: menu{MENU}{relativity.html}, nofooter
 = Yao Zhang - Relativity
 \n 
-The theory of relativity usually encompasses two interrelated physics theories by Albert Einstein: special relativity and general relativity, proposed and published in 1905 and 1915, respectively. Special relativity applies to all physical phenomena in the absence of gravity. General relativity explains the law of gravitation and its relation to the forces of nature. It applies to the cosmological and astrophysical realm, including astronomy. --- [https://en.wikipedia.org/wiki/Theory_of_relativity Wikipedia]
+The theory of relativity consists of two closely connected theories developed by Albert Einstein: special relativity and general relativity, introduced in 1905 and 1915, respectively. Special relativity applies to all physical phenomena when gravity is absent, while general relativity addresses the law of gravitation and its relationship to the forces of nature, with applications in cosmology and astrophysics.
 \n
 \n
-The theory transformed theoretical physics and astronomy during the 20th century, superseding a 200-year-old theory of mechanics created primarily by Isaac Newton. It introduced concepts including 4-dimensional spacetime as a unified entity of space and time, relativity of simultaneity, kinematic and gravitational time dilation, and length contraction. In the field of physics, relativity improved the science of elementary particles and their fundamental interactions, along with ushering in the nuclear age. With relativity, cosmology and astrophysics predicted extraordinary astronomical phenomena such as neutron stars, black holes, and gravitational waves. --- [https://en.wikipedia.org/wiki/Theory_of_relativity Wikipedia]
+This theory revolutionized 20th-century physics and astronomy, replacing the 200-year-old mechanics established by Isaac Newton. It introduced key concepts such as 4-dimensional spacetime (merging space and time into one continuum), relativity of simultaneity, time dilation (both kinematic and gravitational), and length contraction. Relativity advanced the understanding of elementary particles and fundamental interactions, paving the way for the nuclear age. It also enabled cosmology and astrophysics to predict extraordinary astronomical phenomena like neutron stars, black holes, and gravitational waves.
 \n
 \n
-There lies an outstanding tome, [https://link.springer.com/book/10.1007/978-3-031-54823-9 A Mathematical Journey to Relativity], that provides a captivating and profound dive into the depths of this fascinating theory.  \[[./doc/book/Boskoff2024b.pdf  PDF Version]\] 
+A particularly remarkable resource on this subject is the book [https://link.springer.com/book/10.1007/978-3-031-54823-9 A Mathematical Journey to Relativity], which offers a captivating and insightful exploration of Einstein's theory. You can access an e-copy of the book [./doc/book/Boskoff2024b.pdf  here] .
 
 == Special Relativity
 
 == General Relativity
-
+\n
 - [https://mp.weixin.qq.com/s/0JHFczR2JuMXTOWqnSpmUQ General Relativity 1] ~~ [https://mp.weixin.qq.com/s/siSir5fSxgKXtTKlYJ97hA General Relativity 2] ~~ [https://mp.weixin.qq.com/s/DBPuT7f3ctTQNHUbt9Aclg General Relativity 3] ~~ [https://mp.weixin.qq.com/s/cJIy2jyXQwYEjJGlZRw7UQ General Relativity 4]
 
 == Gravitational Wave Astrophysics
