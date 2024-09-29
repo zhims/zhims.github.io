@@ -1,15 +1,36 @@
 # jemdoc: menu{MENU}{computing.html}, nofooter
 = Yao Zhang - Computing
 \n
-Computing is any activity that uses computers to manage, process, and communicate information. It includes development of both hardware and software. Computing is a critical, integral component of modern industrial technology. Major computing disciplines include computer engineering, software engineering, computer science, information systems, and information technology. --- Wikipedia
+
+Scientific computing is an interdisciplinary field that leverages numerical methods and computational technologies to solve complex scientific problems. It primarily consists of three core components: numerical linear algebra, numerical optimization, and numerical solutions of differential equations.
+\n
+\n
+Numerical Linear Algebra focuses on solving problems involving matrices and vectors, such as systems of linear equations, eigenvalue problems, and handling large, sparse matrices. This area provides the fundamental tools required for a wide range of applications in science and engineering.
+\n
+\n
+Building on these concepts, numerical optimization deals with finding the optimal solution for a given function, either with or without constraints. This component is particularly important in fields like machine learning, engineering, and data analysis, where optimization techniques play a central role in model training and decision-making processes.
+\n
+\n
+Complementing these methods is the study of numerical solutions of differential equations, which involves solving ordinary and partial differential equations using techniques such as finite difference, finite element, and finite volume methods. These approaches are essential for modeling physical phenomena, especially in areas like fluid dynamics and heat transfer.
+\n
+\n
+Together, these components form the backbone of scientific computing, enabling the simulation and solution of complex real-world problems across various disciplines.
 
 == Matrix Computation
 
 == Numerical Optimization
 
-== Convex Optimization
+== Numerical Ordinary Differential Equations
 
-== Non-Convex Optimization
+== Numerical Partial Differential Equations
+
+=== Finite Difference Method
+=== Finite Volume Method
+=== Finite Element Method
+=== Boundary Element Method 
+=== Spectral Method
+=== Machine learning-based Methods
+==== PINN
 
 
 

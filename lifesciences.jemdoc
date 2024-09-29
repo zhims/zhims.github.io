@@ -1,30 +1,16 @@
 # jemdoc: menu{MENU}{lifesciences.html}, nofooter
 = Yao Zhang - Life Sciences
 \n
-Data science is a multi-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data. Data science is related to data mining and big data. --- Wikipedia
+In the life sciences, neuroscience and cardiology are two distinct yet complementary fields focused on improving human health. Neuroscience delves into the brain and nervous system, exploring cognition, behavior, and conditions such as Alzheimer's, epilepsy, and cerebrovascular diseases. Using advanced technologies like brain imaging and neural interfaces, it seeks to unravel the complexities of these systems. Meanwhile, cardiology addresses the heart and circulatory system, focusing on diseases like coronary artery disease and heart failure. Recent breakthroughs in cardiac imaging and minimally invasive procedures have transformed patient care. While the two fields differ in focus, they share a common objective of enhancing patient outcomes. Moreover, they frequently intersect with disciplines such as genetics, biotechnology, and computational biology, illustrating the growing interconnectedness of medical research and the pursuit of better healthcare solutions.
+\n
 
-#== Digital Image Processing
+== Brain Disorders
 
-== Computational Intelligence
+ A highly recommended book that delves into the use of machine learning for studying brain disorders is [./doc/book/Colliot2023.pdf Machine Learning for Brain Disorders]. This work provides an in-depth look at how machine learning techniques are applied to improve the understanding, diagnosis, and treatment of various neurological conditions. 
 
-[./doc/note/datascience/LRS/NNorm.pdf  1. A proposition of nuclear norm]  ~~  [./doc/note/datascience/LRS/Tips.pdf  2. Some basic results of Low-Rank and Sparse]  ~~  [./doc/note/datascience/LRS/WLRR.pdf  3. Robust PCA via Weighted Low Rank]  ~~  [./doc/note/datascience/LRS/Schattenp.pdf  4. Schattenp Norm when $0\le p \le 1$]  ~~  [./doc/note/datascience/LRS/kernel.pdf  5. Subspace Clustering via Kernel Method]  ~~  [./doc/note/datascience/LRS/KSVD.pdf  6. KSVD]  ~~  [./doc/note/datascience/LRS/deepksvd.pdf  7. Deep KSVD]  ~~  [./doc/note/datascience/LRS/GSR.pdf  8. GSR]  ~~  [./doc/note/datascience/LRS/tensor_2009.pdf  9. Tensor SIAM 2009]  ~~  [./doc/note/datascience/LRS/tensor.pdf  10. Tensor SVD]  ~~  [./doc/note/datascience/LRS/NeumannNetworks.pdf  11. Neumann Networks]
+=== Epilepsy
 
-== Unsupervised Learning
+=== Cerebrovascular Diseases
+\n
 
-== Deep Learning
-
-. ~~ [./doc/note/datascience/DL/1stIntro.pdf  Introduction to Neural Networks] 
-
-. ~~ [./doc/note/datascience/DL/2ndAppro.pdf  Approximation Theory ] 
-
-. ~~ [./doc/note/datascience/DL/3rdLFB.pdf  Loss Functions and Backpropagation]  
-
-. ~~ [./doc/note/datascience/DL/lec1.pdf  CNN] ~ [./doc/note/datascience/DL/cnn.pdf  Slide ] 
-
-. ~~ [./doc/note/datascience/DL/lec2.pdf  RNN \& LSTM \& Attention] ~ [./doc/note/datascience/DL/rnnLstmAttention.pdf  Slide ] 
-
- . ~~ [./doc/note/datascience/DL/opt.pdf  Optimization ] 
-
-
-== Tips
- [./doc/note/Tips/tips4linux.pdf  Tips for Linux]  ~  [./doc/note/Tips/tips4github.pdf  Tips for github]  ~  [./doc/note/Tips/tips4vimtex.pdf  Tips for Vimtex]  ~  [./doc/note/Tips/Tips4installapp.pdf  Tips for Ubuntu]
+== Cardiology
