@@ -1,17 +1,17 @@
 Homepage
-    Home                     [index.html]
-    My Family                [myfamily.html]
-    Zhang, Yao               [yaozhang.html]
+	Home 	[index.html]
+	My Family	[myfamily.html]
+	Zhang, Yao	[yaozhang.html]
 
 Research
-    Codes                    [codes.html]
-    Publications             [publications.html]
+	Codes	[codes.html]
+	Publications	[publications.html]
 
 Materials
-    English                  [english.html]
-    Statistics               [statistics.html]
-    Relativity		   [relativity.html]
-    Astronomy                [astronomy.html]
-    Computing                [computing.html]
-    Data Science             [datascience.html]
-    Mathematics              [mathematics.html]
+	MHD	[mhd.html]
+	SciML	[sciml.html]
+	Relativity	[relativity.html]
+        Computing	[computing.html]
+	Life Sciences	[lifesciences.html]
+	Mathematics	[mathematics.html]
+	

@@ -1,0 +1,30 @@
+# jemdoc: menu{MENU}{sciml.html}, nofooter
+= Yao Zhang - Scientific Machine Learning, SciML
+\n
+Data science is a multi-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data. Data science is related to data mining and big data. --- Wikipedia
+
+#== Digital Image Processing
+
+== Computational Intelligence
+
+[./doc/note/datascience/LRS/NNorm.pdf  1. A proposition of nuclear norm]  ~~  [./doc/note/datascience/LRS/Tips.pdf  2. Some basic results of Low-Rank and Sparse]  ~~  [./doc/note/datascience/LRS/WLRR.pdf  3. Robust PCA via Weighted Low Rank]  ~~  [./doc/note/datascience/LRS/Schattenp.pdf  4. Schattenp Norm when $0\le p \le 1$]  ~~  [./doc/note/datascience/LRS/kernel.pdf  5. Subspace Clustering via Kernel Method]  ~~  [./doc/note/datascience/LRS/KSVD.pdf  6. KSVD]  ~~  [./doc/note/datascience/LRS/deepksvd.pdf  7. Deep KSVD]  ~~  [./doc/note/datascience/LRS/GSR.pdf  8. GSR]  ~~  [./doc/note/datascience/LRS/tensor_2009.pdf  9. Tensor SIAM 2009]  ~~  [./doc/note/datascience/LRS/tensor.pdf  10. Tensor SVD]  ~~  [./doc/note/datascience/LRS/NeumannNetworks.pdf  11. Neumann Networks]
+
+== Unsupervised Learning
+
+== Deep Learning
+
+. ~~ [./doc/note/datascience/DL/1stIntro.pdf  Introduction to Neural Networks] 
+
+. ~~ [./doc/note/datascience/DL/2ndAppro.pdf  Approximation Theory ] 
+
+. ~~ [./doc/note/datascience/DL/3rdLFB.pdf  Loss Functions and Backpropagation]  
+
+. ~~ [./doc/note/datascience/DL/lec1.pdf  CNN] ~ [./doc/note/datascience/DL/cnn.pdf  Slide ] 
+
+. ~~ [./doc/note/datascience/DL/lec2.pdf  RNN \& LSTM \& Attention] ~ [./doc/note/datascience/DL/rnnLstmAttention.pdf  Slide ] 
+
+ . ~~ [./doc/note/datascience/DL/opt.pdf  Optimization ] 
+
+
+== Tips
+ [./doc/note/Tips/tips4linux.pdf  Tips for Linux]  ~  [./doc/note/Tips/tips4github.pdf  Tips for github]  ~  [./doc/note/Tips/tips4vimtex.pdf  Tips for Vimtex]  ~  [./doc/note/Tips/Tips4installapp.pdf  Tips for Ubuntu]
