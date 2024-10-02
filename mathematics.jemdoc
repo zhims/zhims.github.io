@@ -1,7 +1,10 @@
 # jemdoc: menu{MENU}{mathematics.html}, nofooter
 = Yao Zhang - Mathematics
 \n
- Mathematics encompasses the study of topics such as number theory, algebra, geometry, and mathematical analysis. Despite its vast scope and importance, mathematics does not have a universally agreed-upon definition. It is a discipline focused on abstract structures, logical reasoning, and the relationships between quantities, spaces, and patterns. The subject's flexibility allows for various interpretations, depending on the specific branch or approach used to explore mathematical concepts.
+ Mathematics encompasses the study of topics such as number theory, algebra, geometry, and mathematical analysis. Despite its vast scope and importance, mathematics lacks a universally agreed-upon definition. As a discipline, it focuses on abstract structures, logical reasoning, and the relationships between quantities, spaces, and patterns. Its flexibility allows for various interpretations based on the specific branch or approach used to explore mathematical concepts.
+\n
+\n
+In the realm of science, mathematics holds a foundational role. It serves as the language of science, providing the tools and frameworks necessary for understanding and describing natural phenomena. From physics and chemistry to biology and economics, mathematics enables scientists to model systems, make predictions, and solve complex problems with precision. Without mathematics, much of the progress in scientific discovery and technological innovation would not be possible, underscoring its crucial importance in advancing human knowledge and solving real-world challenges.
 
 == Analysis
 === Calculus 
