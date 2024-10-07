@@ -17,6 +17,7 @@ Complementing these methods is the study of numerical solutions of differential 
 Together, these components form the backbone of scientific computing, enabling the simulation and solution of complex real-world problems across various disciplines.
 
 == Matrix Computation
+[https://mp.weixin.qq.com/s/HoypzSAq-5odXJWE3o79nA Matrix Comput. 01] ~~ [https://mp.weixin.qq.com/s/gorfJ5CIRegl7VpH2crmLw Matrix Comput. 02] ~~ [https://mp.weixin.qq.com/s/zU3Z_H0lc-PiERj8qHdmMA Matrix Comput. 03] ~~ [https://mp.weixin.qq.com/s/_H8-sBe4VIZyhBTh3-0wAg Matrix Comput. 04] ~~ [https://mp.weixin.qq.com/s/15GDHM_C6NDzdDmihcCX8Q Matrix Comput. 05] ~~ [https://mp.weixin.qq.com/s/FhISpeaMwFl413007bOkPg Matrix Comput. 06] ~~ [https://mp.weixin.qq.com/s/KdgDwiWWy-w-_TBjPKDbDA Matrix Comput. 07] ~~ [https://mp.weixin.qq.com/s/BF3UmupZ1oVrdD1lVJhA8Q Matrix Comput. 08] ~~ [https://mp.weixin.qq.com/s/PFVkSYV8wP5G7NeSLvHwWQ Matrix Comput. 09]
 
 == Numerical Optimization
 
@@ -24,13 +25,12 @@ Together, these components form the backbone of scientific computing, enabling t
 
 == Numerical Partial Differential Equations
 
-=== Finite Difference Method
-=== Finite Volume Method
-=== Finite Element Method
-=== Boundary Element Method 
-=== Spectral Method
-=== Machine learning-based Methods
-==== PINN
+#=== Finite Volume Method
+#=== Finite Element Method
+#=== Boundary Element Method 
+#=== Spectral Method
+#=== Machine learning-based Methods
+#==== PINN
 
 
 
