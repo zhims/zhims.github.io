@@ -6,17 +6,17 @@
 #
 
 == Journal Papers
-. M. Li, Y. Zhang\*, M. Xiao, C. Xu  and  W. Zhang.  On schatten-q quasi-norm induced matrix decomposition model for salient object detection,  Pattern Recognition, Vol 96, 2019. \[[./doc/jour/19PR.pdf paper], [./doc/jour/19PR_supp.pdf Appendix]\]
+. M. Li, Y. Zhang\*, M. Xiao, C. Xu and W. Zhang. On schatten-q quasi-norm induced matrix decomposition model for salient object detection, Pattern Recognition, Vol 96, 2019, [./doc/jour/19PR.pdf paper], [./doc/jour/19PR_supp.pdf Appendix]. #\[[./doc/jour/19PR.pdf paper], [./doc/jour/19PR_supp.pdf Appendix]\]
 
-. M. Li, Y. Zhang\*, M. Xiao, W. Zhang and X. Sun.  Unsupervised Learning for Salient Object Detection via Minimization of Bilinear Factor Matrix Norm,  IEEE Transactions On Neural Networks and Learning Systems, 2023. \[[./doc/jour/23TNNLS.pdf paper]\]
+. M. Li, Y. Zhang\*, M. Xiao, W. Zhang and X. Sun. Unsupervised Learning for Salient Object Detection via Minimization of Bilinear Factor Matrix Norm, IEEE Transactions On Neural Networks and Learning Systems, 2023, [./doc/jour/23TNNLS.pdf paper].
 
-. Y. Zhang\*, L. Xu and Y. Yan.  Machine-Learning-Based Numerical Solution for Low and Lou's Nonlinear Force-Free Field Equilibria,  Solar Physics, 2024. \[[./doc/jour/24SoPh.pdf paper]\]
+. Y. Zhang\*, L. Xu and Y. Yan. Machine-Learning-Based Numerical Solution for Low and Lou's Nonlinear Force-Free Field Equilibria,  Solar Physics, 2024, [./doc/jour/24SoPh.pdf paper].
 
-. Y. Zhang\*, L. Xu and Y. Yan.  Physics-informed Neural Network for Force-free Magnetic Field Extrapolation,  Research in Astronomy and Astrophysics, 2024.
+. Y. Zhang\*, L. Xu and Y. Yan.  Physics-informed Neural Network for Force-free Magnetic Field Extrapolation, Research in Astronomy and Astrophysics, 2024.
 
 == Conference Papers
-. Y. Zhang\* and M. Li.  Motion segmentation using collaborative low-rank and sparse subspace clustering,  The 13th International Conference on Computational Intelligence and Security, Hong Kong, 2017. \[[./doc/conf/17cis.pdf paper]\]
-. Y. Yang, M. Li  and  Y. Zhang\*.  Saliency detection based on non-convex weighted surrogates,  The 3rd International Symposium on Image Computing and Digital Medicine, China, 2019. \[[./doc/conf/19isicdm.pdf paper]\] 
+. Y. Zhang\* and M. Li. Motion segmentation using collaborative low-rank and sparse subspace clustering,  The 13th International Conference on Computational Intelligence and Security, Hong Kong, 2017, [./doc/conf/17cis.pdf paper].
+. Y. Yang, M. Li  and  Y. Zhang\*. Saliency detection based on non-convex weighted surrogates, The 3rd International Symposium on Image Computing and Digital Medicine, China, 2019, [./doc/conf/19isicdm.pdf paper].
 
 #== Submitted Papers
 
