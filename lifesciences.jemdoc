@@ -6,7 +6,7 @@ In the life sciences, neuroscience and cardiology are two distinct yet complemen
 
 == Machine Learning for Brain Disorders
 
- A highly recommended book that delves into the use of machine learning for studying brain disorders is [./doc/book/Colliot2023.pdf Machine Learning for Brain Disorders]. This work provides an in-depth look at how machine learning techniques are applied to improve the understanding, diagnosis, and treatment of various neurological conditions. 
+ A highly recommended book that delves into the use of machine learning for studying brain disorders is Machine Learning for Brain Disorders. This work provides an in-depth look at how machine learning techniques are applied to improve the understanding, diagnosis, and treatment of various neurological conditions. 
 The main content is as follows:
 \n
 . Machine Learning Fundamentals: ~ [./doc/book/ML4BD/MLF/1.pdf 1] ~~ [./doc/book/ML4BD/MLF/2.pdf 2] ~~ [./doc/book/ML4BD/MLF/3.pdf 3] ~~ [./doc/book/ML4BD/MLF/4.pdf 4] ~~ [./doc/book/ML4BD/MLF/5.pdf 5] ~~ [./doc/book/ML4BD/MLF/6.pdf 6]
