@@ -29,6 +29,8 @@ Scientific Machine Learning (SciML) is a rapidly emerging discipline within the 
 
 
 == Numerical Analyis Meets Maching Learning
+A highly recommended reading is the Handbook of Numerical Analysis, Volume 25: [https://www.sciencedirect.com/handbook/handbook-of-numerical-analysis/vol/25/suppl/C Numerical Analysis Meets Machine Learning]. The content covered is as follows:
+\n 
 - [./doc/book/NAM2L/Chapt01.pdf 01] ~~ [./doc/book/NAM2L/Chapt02.pdf 02] ~~ [./doc/book/NAM2L/Chapt03.pdf 03] ~~ [./doc/book/NAM2L/Chapt04.pdf 04] ~~ [./doc/book/NAM2L/Chapt05.pdf 05] ~~ [./doc/book/NAM2L/Chapt06.pdf 06] ~~ [./doc/book/NAM2L/Chapt07.pdf 07] ~~ [./doc/book/NAM2L/Chapt08.pdf 08] ~~ [./doc/book/NAM2L/Chapt09.pdf 09] ~~ [./doc/book/NAM2L/Chapt10.pdf 10] ~~ [./doc/book/NAM2L/Chapt11.pdf 11] 
 
 == Tips
