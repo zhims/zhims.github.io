@@ -27,5 +27,9 @@ Scientific Machine Learning (SciML) is a rapidly emerging discipline within the 
 == Optimization Methods for Machine Learning
 - [https://mp.weixin.qq.com/s/Rhtcgr0aLlKjXgilQkmYtQ 01] ~~ [https://mp.weixin.qq.com/s/EAy6SK4z8l1hl4NFxeBMRA 02] ~~ [https://mp.weixin.qq.com/s/A7cKGoDCCjOw2mf3Wl5LSA 03] ~~ [https://mp.weixin.qq.com/s/2rZOlfLajdDjLAEWwcsBug 04] ~~ [https://mp.weixin.qq.com/s/xiAgh3ZXO8Aebfkqv68O2Q 05] ~~ [https://mp.weixin.qq.com/s/tl1q1UKoq6BXWMzihlWpBg 06] ~~ [https://mp.weixin.qq.com/s/ta8twwi6XF9U_-de0YyEDQ 07] ~~ [https://mp.weixin.qq.com/s/NYhZRmIEEkkYw7r1-XxhmA 08] ~~ [https://mp.weixin.qq.com/s/pwaNw8NyuXUYOFVjYsEDKw 09] ~~ [https://mp.weixin.qq.com/s/rlNGhpPs-3AO01PXvL-6Lg 10] ~~ [https://mp.weixin.qq.com/s/3YkRg5H93ID4syf53_cD_w 11] ~~ [https://mp.weixin.qq.com/s/wBPE93qAMpv3Nl0KrjcFSQ 12] ~~ [https://mp.weixin.qq.com/s/K7e8SDKgWuiUCRuiqqqwkA 13] ~~ [https://mp.weixin.qq.com/s/JFR2xTcd6Fu4C1oMV_BWEg 14] ~~ [https://mp.weixin.qq.com/s/wbpyVEklON4S6tJqjrXJPQ 15] ~~ [https://mp.weixin.qq.com/s/MsDqAS0PKjmHi8Nu_b0dMA 16]
 
+
+== Numerical Analyis Meets Maching Learning
+- [./doc/book/NAM2L/Chapt01.pdf 01] ~~ [./doc/book/NAM2L/Chapt02.pdf 02] ~~ [./doc/book/NAM2L/Chapt03.pdf 03] ~~ [./doc/book/NAM2L/Chapt04.pdf 04] ~~ [./doc/book/NAM2L/Chapt05.pdf 05] ~~ [./doc/book/NAM2L/Chapt06.pdf 06] ~~ [./doc/book/NAM2L/Chapt07.pdf 07] ~~ [./doc/book/NAM2L/Chapt08.pdf 08] ~~ [./doc/book/NAM2L/Chapt09.pdf 09] ~~ [./doc/book/NAM2L/Chapt10.pdf 10] ~~ [./doc/book/NAM2L/Chapt11.pdf 11] 
+
 == Tips
 - [./doc/note/Tips/tips4linux.pdf  Tips for Linux]  ~  [./doc/note/Tips/tips4github.pdf  Tips for github]  ~  [./doc/note/Tips/tips4vimtex.pdf  Tips for Vimtex]  ~  [./doc/note/Tips/Tips4installapp.pdf  Tips for Ubuntu]

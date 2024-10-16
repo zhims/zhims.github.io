@@ -4,13 +4,50 @@
 In the life sciences, neuroscience and cardiology are two distinct yet complementary fields focused on improving human health. Neuroscience delves into the brain and nervous system, exploring cognition, behavior, and conditions such as Alzheimer's, epilepsy, and cerebrovascular diseases. Using advanced technologies like brain imaging and neural interfaces, it seeks to unravel the complexities of these systems. Meanwhile, cardiology addresses the heart and circulatory system, focusing on diseases like coronary artery disease and heart failure. Recent breakthroughs in cardiac imaging and minimally invasive procedures have transformed patient care. While the two fields differ in focus, they share a common objective of enhancing patient outcomes. Moreover, they frequently intersect with disciplines such as genetics, biotechnology, and computational biology, illustrating the growing interconnectedness of medical research and the pursuit of better healthcare solutions.
 \n
 
-== Brain Disorders
+== Machine Learning for Brain Disorders
 
- A highly recommended book that delves into the use of machine learning for studying brain disorders is [./doc/book/Colliot2023.pdf Machine Learning for Brain Disorders]. This work provides an in-depth look at how machine learning techniques are applied to improve the understanding, diagnosis, and treatment of various neurological conditions. 
+ A highly recommended book that delves into the use of machine learning for studying brain disorders is [./doc/book/Colliot2023.pdf Machine Learning for Brain Disorders]. This work provides an in-depth look at how machine learning techniques are applied to improve the understanding, diagnosis, and treatment of various neurological conditions. The main content of this book is as follows:
 
-=== Epilepsy
+=== Machine Learning Fundamentals
+. [./doc/book/ML4BD/MLF/1.pdf A Non-technical Introduction to Machine Learning]
+. [./doc/book/ML4BD/MLF/2.pdf Classic Machine Learning Methods]
+. [./doc/book/ML4BD/MLF/3.pdf Deep Learning: Basics and Convolutional Neural Networks]
+. [./doc/book/ML4BD/MLF/4.pdf Recurrent Neural Networks: Architectures, Training Tricks, and Introduction to Influential Research]
+. [./doc/book/ML4BD/MLF/5.pdf Generative Adversarial Networks and Other Generative Models]
+. [./doc/book/ML4BD/MLF/6.pdf Transformers and Visual Transformers]
 
-=== Cerebrovascular Diseases
-\n
+=== Data
+. [./doc/book/ML4BD/Data/7.pdf Clinical Assessment of Brain Disorders]
+. [./doc/book/ML4BD/Data/8.pdf Neuroimaging in Machine Learning for Brain Disorders]
+. [./doc/book/ML4BD/Data/9.pdf Electroencephalography and Magnetoencephalography]
+. [./doc/book/ML4BD/Data/10.pdf Working with Omics Data: An Interdisciplinary Challenge at the Crossroads of Biology and Computer Science]
+. [./doc/book/ML4BD/Data/11.pdf Electronic Health Records as Source of Research Data]
+. [./doc/book/ML4BD/Data/12.pdf Mobile Devices, Connected Objects, and Sensors]
+
+=== Methodologies
+. [./doc/book/ML4BD/Methodologies/13.pdf Medical Image Segmentation Using Deep Learning]
+. [./doc/book/ML4BD/Methodologies/14.pdf Image Registration: Fundamentals and Recent Advances Based on Deep Learning]
+. [./doc/book/ML4BD/Methodologies/15.pdf Computer-Aided Diagnosis and Prediction in Brain Disorders]
+. [./doc/book/ML4BD/Methodologies/16.pdf Subtyping Brain Diseases from Imaging Data]
+. [./doc/book/ML4BD/Methodologies/17.pdf Data-Driven Disease Progression Modeling] 
+. [./doc/book/ML4BD/Methodologies/18.pdf Computational Pathology for Brain Disorders]
+. [./doc/book/ML4BD/Methodologies/19.pdf Integration of Multimodal Data]
+
+=== Validation and Datasets
+. [./doc/book/ML4BD/VD/20.pdf Evaluating Machine Learning Models and Their Diagnostic Value]
+. [./doc/book/ML4BD/VD/21.pdf Reproducibility in Machine Learning for Medical Imaging]
+. [./doc/book/ML4BD/VD/22.pdf Interpretability of Machine Learning Methods Applied to Neuroimaging]
+. [./doc/book/ML4BD/VD/23.pdf A Regulatory Science Perspective on Performance Assessment of Machine Learning Algorithms in Imaging]
+. [./doc/book/ML4BD/VD/24.pdf Main Existing Datasets for Open Brain Research on Humans]
+
+=== Disorders
+. [./doc/book/ML4BD/Disorders/25.pdf Machine Learning for Alzheimer's Disease and Related Dementias]
+. [./doc/book/ML4BD/Disorders/26.pdf Machine Learning for Parkinson's Disease and Related Disorders]
+. [./doc/book/ML4BD/Disorders/27.pdf Machine Learning in Neuroimaging of Epilepsy]
+. [./doc/book/ML4BD/Disorders/28.pdf Machine Learning in Multiple Sclerosis]
+. [./doc/book/ML4BD/Disorders/29.pdf Machine Learning for Cerebrovascular Disorders] 
+. [./doc/book/ML4BD/Disorders/30.pdf The Role of Artificial Intelligence in Neuro-oncology Imaging]
+. [./doc/book/ML4BD/Disorders/31.pdf Machine Learning for Neurodevelopmental Disorders]
+. [./doc/book/ML4BD/Disorders/32.pdf Machine Learning and Brain Imaging for Psychiatric Disorders: New Perspectives]
 
 == Cardiology
