@@ -1,0 +1,16 @@
+# jemdoc: menu{MENU}{statistics.html}, nofooter
+= Yao Zhang - Statistics
+\n
+ Statistics is a branch of mathematics focused on collecting, analyzing, interpreting, and presenting data. It encompasses key areas like probability theory and mathematical statistics. Probability theory provides a framework for understanding randomness and uncertainty, enabling the calculation of event likelihoods, which is crucial for informed predictions.
+\n
+\n
+Mathematical statistics builds on this foundation by using statistical models to analyze data and draw conclusions. Techniques such as hypothesis testing, confidence intervals, and regression analysis are essential for making inferences about populations based on sample data.
+\n
+\n
+In recent years, statistics has become essential to the development of artificial intelligence (AI). Techniques such as statistical learning and Bayesian methods play a crucial role in creating algorithms that allow machines to learn from data and make predictions. As AI continues to evolve, the application of statistical principles will further strengthen the theoretical foundations of AI, improving model accuracy and decision-making capabilities across diverse domains.
+
+== Probability
+
+
+
+
