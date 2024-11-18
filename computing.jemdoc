@@ -30,9 +30,16 @@ Numerical solutions of differential equations involve solving ordinary and parti
 - [https://mp.weixin.qq.com/s/L9JkpAoyyGjvCf_c9F2izg 71]
 
 == Numerical Partial Differential Equations
-- Finite Difference Method: ~ [https://mp.weixin.qq.com/s/2vWukkAhRTsWpNG0k39qcA 01] ~~ [https://mp.weixin.qq.com/s/8L9gSpBt2Ct3WJlLBWzXAA 02] ~~ [https://mp.weixin.qq.com/s/__DWloos1aaSCIQXolCTXQ 03] ~~ [https://mp.weixin.qq.com/s/zxeRfab6dt9q6E8T7__nAQ 04] ~~ [https://mp.weixin.qq.com/s/t9OloF8uFHeISuhHfiHBNQ 05] ~~ [https://mp.weixin.qq.com/s/o6c0tiYqGIdqL6orvmjzHA 06] ~~ [https://mp.weixin.qq.com/s/u9qustoE9BFc4XjIK_IFPg 07] ~~ [https://mp.weixin.qq.com/s/ap3vP8WPhpiM9YVHWULXcQ 08] ~~ [https://mp.weixin.qq.com/s/-slrlYFG2jlfayY5Qe8wWw 09] ~~ [https://mp.weixin.qq.com/s/30V-6x92PJneoZ9uolm4Mw 10]
-- Finite Volume Method
-- Finite Element Method
-- Boundary Element Method 
-- Spectral Method
-- Machine Learning-based Method: 
+
+. Finite Difference Method ~~
+
+. Finite Volume Method ~~ 
+
+. Finite Element Method ~~ 
+
+. Boundary Element Method ~~
+
+. Spectral Method ~~ 
+
+. Machine Learning-based Method ~~ 
+ 
