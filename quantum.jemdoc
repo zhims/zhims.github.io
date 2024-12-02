@@ -1,14 +1,7 @@
 # jemdoc: menu{MENU}{quantum.html}, nofooter
 = Yao Zhang - Quantum
 \n 
-Quantum refers to the smallest discrete unit of any physical property, often associated with energy or matter. In physics, quantum mechanics is the theory that explains the behavior of matter and energy at microscopic scales, such as atoms and subatomic particles.
-\n
-\n
-Unlike classical physics, which operates on deterministic principles, quantum mechanics introduces key concepts like superposition, allowing particles to exist in multiple states simultaneously, and entanglement, which describes how particles can become interconnected regardless of distance. The implications of quantum theory are profound, leading to groundbreaking advancements in various fields, including information technology, chemistry, and materials science. For instance, quantum computing utilizes these principles to process information at unprecedented speeds, potentially revolutionizing computational power.
-\n
-\n
-The study of quantum phenomena not only deepens our understanding of the universe but also opens new avenues for technological innovation, making it a pivotal area of research in modern science.
-
+Quantum science explores the fundamental nature of matter, energy, and information at the smallest scales. Quantum mechanics describes the behavior of particles like electrons and photons, introducing principles such as superposition, entanglement, and uncertainty. Quantum field theory (QFT) extends these ideas, combining quantum mechanics with special relativity to model particles as excitations of underlying fields, forming the foundation of the Standard Model. Quantum computing applies quantum principles to process information, utilizing qubits to perform complex calculations exponentially faster than classical computers in certain tasks. These fields together shape cutting-edge research in physics, technology, and computation, driving innovation across disciplines.
 
 == Quantum Theory
 . [https://mp.weixin.qq.com/s/ZE7-HYojRQnALVoX8j46PA PSL-01]

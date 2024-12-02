@@ -1,10 +1,7 @@
 # jemdoc: menu{MENU}{relativity.html}, nofooter
 = Yao Zhang - Relativity
 \n 
-The theory of relativity consists of two closely connected theories developed by Albert Einstein: special relativity and general relativity, introduced in 1905 and 1915, respectively. Special relativity applies to all physical phenomena when gravity is absent, while general relativity addresses the law of gravitation and its relationship to the forces of nature, with applications in cosmology and astrophysics.
-\n
-\n
-This theory revolutionized 20th-century physics and astronomy, replacing the 200-year-old mechanics established by Isaac Newton. It introduced key concepts such as 4-dimensional spacetime (merging space and time into one continuum), relativity of simultaneity, time dilation (both kinematic and gravitational), and length contraction. Relativity advanced the understanding of elementary particles and fundamental interactions, paving the way for the nuclear age. It also enabled cosmology and astrophysics to predict extraordinary astronomical phenomena like neutron stars, black holes, and gravitational waves.
+Relativity, formulated by Albert Einstein, transformed our understanding of space, time, and gravity. The special theory of relativity (1905) unified space and time into four-dimensional spacetime, introducing concepts like time dilation and length contraction for objects moving near the speed of light. The general theory of relativity (1915) expanded this framework, describing gravity as the curvature of spacetime caused by mass and energy, modeled using Riemannian geometry. Relativity has since become a cornerstone of modern physics, explaining phenomena such as black holes and the expansion of the universe. It bridges classical mechanics and quantum physics, shaping the study of cosmology and fundamental forces.
 \n
 \n
 A particularly remarkable resource on this subject is the book [./doc/book/Boskoff2024b.pdf A Mathematical Journey to Relativity], which offers a captivating and insightful exploration of Einstein's theory.
