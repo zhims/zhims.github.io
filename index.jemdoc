@@ -18,7 +18,7 @@ Yao Zhang was born in a rural village near Weishan Lake in northwestern Jiangsu,
 
 == Research Interests
 
-. Maxwell's Equations: ~ $\nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0}, \quad \nabla \cdot \mathbf{B} = 0, \quad \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}, \quad \nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}$. ~ They describe the interaction between the electric field $\mathbf{E}$, magnetic field $\mathbf{B}$, and charge distribution.
+. Maxwell's Equations: ~ $\nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0}, ~ \nabla \cdot \mathbf{B} = 0, ~ \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}, ~ \nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}$. ~ They describe the interaction between the electric field $\mathbf{E}$, magnetic field $\mathbf{B}$, and charge distribution.
 \n
 . Schr$ \mathop{\rm o}\limits^{\text{..}} $dinger Equation: ~ $i\hbar \frac{\partial \psi}{\partial t} = \hat{H} \psi$, ~ where $\psi$ is the wave function, and $\hat{H}$ is the Hamiltonian operator, describing the energy state of the system.
 \n
