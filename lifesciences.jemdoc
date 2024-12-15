@@ -3,23 +3,28 @@
 \n
 Life sciences encompass the study of living organisms and their systems, integrating biology, neuroscience, cardiology, and more. Neuroscience delves into brain structure and function, unraveling mechanisms of cognition, behavior, and neural disorders like Alzheimer's. Cardiology explores heart physiology and diseases, advancing treatments for conditions such as arrhythmias and heart failure. Molecular biology and genetics reveal the molecular basis of life, while biochemistry examines biochemical pathways. Advances in life sciences drive medical innovations, from regenerative medicine to personalized therapies, and offer insights into evolution, human health, and ecological sustainability, fostering interdisciplinary research for understanding and improving life.
 
+== Mathematics for Life Sciences
+
+
+== Statistical Methods for Life History Analysis
+
+. [https://mp.weixin.qq.com/s/iMZ3wePyZhXtGoZcfItAlQ 01] ~~ [https://mp.weixin.qq.com/s/cuOKB7I9Ip7A06fosLfqdg 02] ~~ [https://mp.weixin.qq.com/s/8UPWSCJB6q9ObsM3HdodAw 03] ~~ [https://mp.weixin.qq.com/s/Fea7gm-ISrg6PkaLEtQdiw 04] ~~ [https://mp.weixin.qq.com/s/cQyhXQZhZjTv1Qk_HKq79w 05] ~~ [https://mp.weixin.qq.com/s/M6vdU-gQrWMvG-xU7FUSYw 06] ~~ [https://mp.weixin.qq.com/s/PfQzHnZoLtmn5DKXdZJjig 07] ~~ [https://mp.weixin.qq.com/s/wfvFsHoMua72anWWiqF55g 08] ~~ [https://mp.weixin.qq.com/s/nMriZv4pfeWPU7YrgUV-5g 09] ~~ [https://mp.weixin.qq.com/s/gJbF1C8UkBz74nG8seii5A 10] ~~ [https://mp.weixin.qq.com/s/kX_lP5108ODUePYFuJ970Q 11] ~~ [https://mp.weixin.qq.com/s/yOEaMu4_qVp3n51otGtUSQ 12] ~~ [https://mp.weixin.qq.com/s/tsxZZzfB5P5-BXMeXEigdw 13] ~~ [https://mp.weixin.qq.com/s/XhWSFJXTE3bKELm3wWY6zQ 14] ~~ [https://mp.weixin.qq.com/s/WXod8BnUsLI0yzFvJn3CDw 15] ~~ [https://mp.weixin.qq.com/s/LC8XeoyjJf6n_8qIyu8wHQ 16] ~~ [https://mp.weixin.qq.com/s/0L4AZFjsChLpCj7G_iaEwQ 17] ~~ [https://mp.weixin.qq.com/s/hFsEPcXTXL7Ingrfmh2CXA 18] ~~ [https://mp.weixin.qq.com/s/6IcIUJw8orVTUT6SmiUIaQ 19] ~~ [https://mp.weixin.qq.com/s/jDREpf3NymHn1F2BZo64Ow 20] ~~ [https://mp.weixin.qq.com/s/R1KJ0bEd7v4ddBoTdJG0dw 21] ~~ [https://mp.weixin.qq.com/s/0xPG8C7imwozwUyXG-JplA 22] ~~ [https://mp.weixin.qq.com/s/aWqHFCTTqX8_G_3Bxt0STw 23] ~~ [https://mp.weixin.qq.com/s/UE0AoiJ2fHqOyaW9FZ4ufQ 24] ~~ [https://mp.weixin.qq.com/s/gpNvUf1im0lxPi7DVEukGg 25] ~~ [https://mp.weixin.qq.com/s/pnS4f0NAiMA9cEZrbRHQ4Q 26] ~~ [https://mp.weixin.qq.com/s/6t6edhgQ9iJ6d5F3QnFhBw 27] ~~ [https://mp.weixin.qq.com/s/RUzEvroAq8KqQ9qlShi1fg 28] ~~ [https://mp.weixin.qq.com/s/onKUGRqd1g1nz3TwnhaSMA 29] ~~ [https://mp.weixin.qq.com/s/SluWRv7RTe0v0dBuc1m6GQ 30] ~~ [https://mp.weixin.qq.com/s/WwSVaMyFUp3yCURMkUyUYQ 31] ~~ [https://mp.weixin.qq.com/s/T0DfzQfHy0cV6ZaqkeCiYg 32] ~~ [https://mp.weixin.qq.com/s/MIldTb7ytWgrh7m1cGEfrw 33] ~~ [https://mp.weixin.qq.com/s/Fu66YYSh3Pd_ymR7Qw-XrQ 34] ~~ [https://mp.weixin.qq.com/s/MAM15M7t54Kw2nuwePfxew 35]
+. [https://mp.weixin.qq.com/s/18GkGIw-AeYwPJCM6Br3Ig 36] ~~ [https://mp.weixin.qq.com/s/CFdAw5LsuKozTdYqLh1s_g 37] ~~ [https://mp.weixin.qq.com/s/UOIG3Gw4Dg6KRGqDaLdeDQ 38] ~~ [https://mp.weixin.qq.com/s/QNu6vdlsLQkB87yhCBhjuQ 39] ~~ [https://mp.weixin.qq.com/s/E2qTxFzH30slK2gp704zaw 40] ~~ [https://mp.weixin.qq.com/s/IF0sDl8P1X3VPJo1i6VqvA 41] ~~ [https://mp.weixin.qq.com/s/XnDsQmQbZVGW0QYVmYNPqg 42] ~~ [https://mp.weixin.qq.com/s/faT7-n_jK1CI_Rsf8hX8dg 43] ~~ [https://mp.weixin.qq.com/s/wW7CfMq3rfCbXy6Jvh7xbg 44] ~~ [https://mp.weixin.qq.com/s/21xm06_Ih1I6m4an2mojwA 45]
+
+
 == Machine Learning for Brain Disorders
 
- A highly reco hat delves into the use of machine learning for studying brain disorders is [https://link.springer.com/book/10.1007/978-1-0716-3195-9 Machine Learning for Brain Disorders]. This work provides an in-depth look at how machine learning techniques are applied to improve the understanding, diagnosis, and treatment of various neurological conditions. 
-The main content is as follows:
-\n
 . Machine Learning Fundamentals: ~ [./doc/book/ML4BD/MLF/1.pdf 1] ~~ [./doc/book/ML4BD/MLF/2.pdf 2] ~~ [./doc/book/ML4BD/MLF/3.pdf 3] ~~ [./doc/book/ML4BD/MLF/4.pdf 4] ~~ [./doc/book/ML4BD/MLF/5.pdf 5] ~~ [./doc/book/ML4BD/MLF/6.pdf 6]
+
 . Data: ~ [./doc/book/ML4BD/Data/7.pdf 1] ~~ [./doc/book/ML4BD/Data/8.pdf 2] ~~ [./doc/book/ML4BD/Data/9.pdf 3] ~~ [./doc/book/ML4BD/Data/10.pdf 4] ~~ [./doc/book/ML4BD/Data/11.pdf 5] ~~ [./doc/book/ML4BD/Data/12.pdf 6]
+
 . Methodologies: ~ [./doc/book/ML4BD/Methodologies/13.pdf 1] ~~ [./doc/book/ML4BD/Methodologies/14.pdf 2] ~~ [./doc/book/ML4BD/Methodologies/15.pdf 3] ~~ [./doc/book/ML4BD/Methodologies/16.pdf 4] ~~ [./doc/book/ML4BD/Methodologies/17.pdf 5] ~~ [./doc/book/ML4BD/Methodologies/18.pdf 6] ~~ [./doc/book/ML4BD/Methodologies/19.pdf 7]
 . Validation and Datasets: ~ [./doc/book/ML4BD/VD/20.pdf 1] ~~ [./doc/book/ML4BD/VD/21.pdf 2] ~~ [./doc/book/ML4BD/VD/22.pdf 3] ~~ [./doc/book/ML4BD/VD/23.pdf 4] ~~ [./doc/book/ML4BD/VD/24.pdf 5]
+
 . Disorders: ~ [./doc/book/ML4BD/Disorders/25.pdf 1] ~~ [./doc/book/ML4BD/Disorders/26.pdf 2] ~~ [./doc/book/ML4BD/Disorders/27.pdf 3] ~~ [./doc/book/ML4BD/Disorders/28.pdf 4] ~~ [./doc/book/ML4BD/Disorders/29.pdf 5] ~~ [./doc/book/ML4BD/Disorders/30.pdf 6] ~~ [./doc/book/ML4BD/Disorders/31.pdf 7] ~~ [./doc/book/ML4BD/Disorders/32.pdf 8]
 
 == Cardiology
 
-The book [https://link.springer.com/book/10.1007/978-3-319-05230-4 Modeling the Heart and the Circulatory System] comes highly recommended. [./doc/book/MHCS.pdf It] gathers contributions from leading experts in the mathematical modeling and numerical simulation of the human cardiocirculatory system, offering valuable insights into the field.
+. Taking Mathematics to Heart: ~ [https://mp.weixin.qq.com/s/iu5rLsqgBkV_nYUu9XKZTQ AQ20191030] ~~ [https://mp.weixin.qq.com/s/w8RyNeljrXGo3MWwGO-j6g AQ20230526] ~~ [https://mp.weixin.qq.com/s/7tzdiRVOHUj7fCDWMccl3Q AQ20230706] ~ [./doc/note/lifesciences/AQ20230706.pdf Slides] ~~ [./doc/book/MHCS.pdf A highly reco book]
 
-=== Taking Mathematics to Heart
-. [https://mp.weixin.qq.com/s/iu5rLsqgBkV_nYUu9XKZTQ AQ20191030] 
-. [https://mp.weixin.qq.com/s/w8RyNeljrXGo3MWwGO-j6g AQ20230526]
-. [https://mp.weixin.qq.com/s/7tzdiRVOHUj7fCDWMccl3Q AQ20230706] ~ [./doc/note/lifesciences/AQ20230706.pdf Slides]
 
