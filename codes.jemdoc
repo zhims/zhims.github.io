@@ -1,7 +1,7 @@
 # jemdoc: menu{MENU}{codes.html}, nofooter
 = Yao Zhang - Codes
 \n
-In information theory and computer science, a code is usually considered as an algorithm that uniquely represents symbols from some source alphabet, by encoded strings, which may be in some other target alphabet.  --- Wikipedia
+Codes are the fundamental building blocks of computer programming, serving as a set of instructions that tell a computer what to do. They are written in various programming languages such as Python, Java, or C++, each with its own syntax and rules. Codes can range from simple commands to complex algorithms, enabling software applications, websites, and systems to function. Writing efficient, clear, and well-documented code is crucial for ensuring the performance, maintainability, and scalability of programs. With the advancement of technology, mastering coding has become an essential skill in today's digital world.
 
 == Codes for 1st Project in NAOC
 - [https://github.com/zhims/codes_for_1st_project_in_NAOC] 
