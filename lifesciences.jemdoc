@@ -30,19 +30,29 @@ Life sciences encompass the study of living organisms and their systems, integra
 
 == Machine Learning for Brain Disorders
 
-. Machine Learning Fundamentals: [./doc/book/ML4BD/MLF/1.pdf 1. Introduction to ML] ~~ [./doc/book/ML4BD/MLF/2.pdf 2. Classic ML Methods] ~~ [./doc/book/ML4BD/MLF/3.pdf 3. CNNs] ~~ [./doc/book/ML4BD/MLF/4.pdf 4. RNNs] ~~ [./doc/book/ML4BD/MLF/5.pdf GANs] ~~ [./doc/book/ML4BD/MLF/6.pdf 6. Transformers and Visual Transformers]
-
-. Data: [./doc/book/ML4BD/Data/7.pdf 1. Clinical Assessment] ~~ [./doc/book/ML4BD/Data/8.pdf 2. Neuroimaging ] ~~ [./doc/book/ML4BD/Data/9.pdf 3. Electroencephalography and Magnetoencephalography] ~~ [./doc/book/ML4BD/Data/10.pdf 4. Omics Data] ~~ [./doc/book/ML4BD/Data/11.pdf 5. Electronic Health Records]
+. Machine Learning Fundamentals:
 \n
-$\qquad $ [./doc/book/ML4BD/Data/12.pdf 6. Mobile Devices, Connected Objects, and Sensors]
+$\quad$ [./doc/book/ML4BD/MLF/1.pdf 1. Introduction to ML] ~~ [./doc/book/ML4BD/MLF/2.pdf 2. Classic ML Methods] ~~ [./doc/book/ML4BD/MLF/3.pdf 3. CNNs] ~~ [./doc/book/ML4BD/MLF/4.pdf 4. RNNs] ~~ [./doc/book/ML4BD/MLF/5.pdf GANs] ~~ [./doc/book/ML4BD/MLF/6.pdf 6. Transformers and Visual Transformers]
 
-. Methodologies: [./doc/book/ML4BD/Methodologies/13.pdf 1] ~~ [./doc/book/ML4BD/Methodologies/14.pdf 2] ~~ [./doc/book/ML4BD/Methodologies/15.pdf 3] ~~ [./doc/book/ML4BD/Methodologies/16.pdf 4] ~~ [./doc/book/ML4BD/Methodologies/17.pdf 5] ~~ [./doc/book/ML4BD/Methodologies/18.pdf 6] ~~ [./doc/book/ML4BD/Methodologies/19.pdf 7]
-
-. Validation and Datasets: [./doc/book/ML4BD/VD/20.pdf 1] ~~ [./doc/book/ML4BD/VD/21.pdf 2] ~~ [./doc/book/ML4BD/VD/22.pdf 3] ~~ [./doc/book/ML4BD/VD/23.pdf 4] ~~ [./doc/book/ML4BD/VD/24.pdf 5. Datasets for Open Brain Research on Humans]
-
-. Disorders: [./doc/book/ML4BD/Disorders/25.pdf 1. Alzheimer's Disease] ~~ [./doc/book/ML4BD/Disorders/26.pdf 2. Parkinson's Disease] ~~ [./doc/book/ML4BD/Disorders/27.pdf 3. Neuroimaging of Epilepsy] ~~ [./doc/book/ML4BD/Disorders/28.pdf 4. Multiple Sclerosis] ~~ [./doc/book/ML4BD/Disorders/29.pdf 5. Cerebrovascular Disorders] 
+. Data:
 \n
-$\qquad \qquad$ [./doc/book/ML4BD/Disorders/30.pdf 6. Neuro-oncology Imaging] ~~ [./doc/book/ML4BD/Disorders/31.pdf 7. Neurodevelopmental Disorders] ~~ [./doc/book/ML4BD/Disorders/32.pdf 8. Psychiatric Disorders] 
+$\quad$ [./doc/book/ML4BD/Data/7.pdf 1. Clinical Assessment] ~~ [./doc/book/ML4BD/Data/8.pdf 2. Neuroimaging ] ~~ [./doc/book/ML4BD/Data/9.pdf 3. Electroencephalography and Magnetoencephalography] ~~ [./doc/book/ML4BD/Data/10.pdf 4. Omics Data] ~~ [./doc/book/ML4BD/Data/11.pdf 5. Electronic Health Records]
+\n
+$\quad$ [./doc/book/ML4BD/Data/12.pdf 6. Mobile Devices, Connected Objects, and Sensors]
+
+. Methodologies:
+\n
+$\quad$ [./doc/book/ML4BD/Methodologies/13.pdf 1] ~~ [./doc/book/ML4BD/Methodologies/14.pdf 2] ~~ [./doc/book/ML4BD/Methodologies/15.pdf 3] ~~ [./doc/book/ML4BD/Methodologies/16.pdf 4] ~~ [./doc/book/ML4BD/Methodologies/17.pdf 5] ~~ [./doc/book/ML4BD/Methodologies/18.pdf 6] ~~ [./doc/book/ML4BD/Methodologies/19.pdf 7]
+
+. Validation and Datasets:
+\n
+$\quad$ [./doc/book/ML4BD/VD/20.pdf 1] ~~ [./doc/book/ML4BD/VD/21.pdf 2] ~~ [./doc/book/ML4BD/VD/22.pdf 3] ~~ [./doc/book/ML4BD/VD/23.pdf 4] ~~ [./doc/book/ML4BD/VD/24.pdf 5. Datasets for Open Brain Research on Humans]
+
+. Disorders:
+\n
+$\quad$ [./doc/book/ML4BD/Disorders/25.pdf 1. Alzheimer's Disease] ~~ [./doc/book/ML4BD/Disorders/26.pdf 2. Parkinson's Disease] ~~ [./doc/book/ML4BD/Disorders/27.pdf 3. Neuroimaging of Epilepsy] ~~ [./doc/book/ML4BD/Disorders/28.pdf 4. Multiple Sclerosis] ~~ [./doc/book/ML4BD/Disorders/29.pdf 5. Cerebrovascular Disorders] 
+\n
+$\quad$ [./doc/book/ML4BD/Disorders/30.pdf 6. Neuro-oncology Imaging] ~~ [./doc/book/ML4BD/Disorders/31.pdf 7. Neurodevelopmental Disorders] ~~ [./doc/book/ML4BD/Disorders/32.pdf 8. Psychiatric Disorders] 
 
  
 
