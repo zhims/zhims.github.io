@@ -4,15 +4,25 @@
 Codes are the fundamental building blocks of computer programming, serving as a set of instructions that tell a computer what to do. They are written in various programming languages such as Python, Java, or C++, each with its own syntax and rules. Codes can range from simple commands to complex algorithms, enabling software applications, websites, and systems to function. Writing efficient, clear, and well-documented code is crucial for ensuring the performance, maintainability, and scalability of programs. With the advancement of technology, mastering coding has become an essential skill in today's digital world.
 
 == LaTex
-. [https://pan.baidu.com/s/18at07NTkReuCgEaa0rEP_w LaTeX for Personal Academic Documents] 
+
+$\quad$ LaTeX is a powerful typesetting system widely used for creating high-quality documents, particularly in academia, for producing complex mathematical equations, 
+\n
+$\quad$ scientific papers, and technical documents. Below are five short videos offering a brief introduction to LaTeX. Additionally, we have provided a custom LaTeX
+\n
+$\quad$ template for your convenience. Specifically: [https://mp.weixin.qq.com/s/Du3aTm41SaH1VmhxPWm7lQ 01] ~~ [https://mp.weixin.qq.com/s/S8ODze0heW5mh85Qesm_sA 02] ~~ [https://mp.weixin.qq.com/s/YJgcMbO35tTEyAihvbF8AA 03] ~~ [https://mp.weixin.qq.com/s/8rWiTHyvFJG50opvVSimJg 04] ~~ [https://mp.weixin.qq.com/s/UkHOA_cUamd4maBjbD-4GA 05] ~~ [https://pan.baidu.com/s/18at07NTkReuCgEaa0rEP_w Template]. 
 
 == Linux
 
 == Mathematica
 
 == Matlab
+=== MATLAB for Image Processing
+. [https://mp.weixin.qq.com/s/vCyvznSm3BtyjrdRZBXKlw 01] ~~ [https://mp.weixin.qq.com/s/qHbvUEVj_7_LDAp3FeF5eg 02] ~~ [https://mp.weixin.qq.com/s/uNc5v4fChh_J1v7xNw6nsw 03] ~~ [https://mp.weixin.qq.com/s/yiggPPmEo1elWtfovlFQFw 04] ~~ [https://mp.weixin.qq.com/s/joXHRCSVZTrZjcuq6wSGXg 05] ~~ [https://mp.weixin.qq.com/s/IyMyZhyyQJoIoaDQDmjWWA 06]
+
+=== MATLAB for Machine Learning & Deep Learning
 
 == Python
+. [https://mp.weixin.qq.com/s/1WkP61idl4uPepmfVsT06A 01] ~~ [https://mp.weixin.qq.com/s/gxyWk3W7PhGVpeNyHGaryQ 02] ~~ [https://mp.weixin.qq.com/s/93OxEbUo7BHH_vhhpwVzXA 03] ~~ [https://mp.weixin.qq.com/s/zVXEXoO-vtXHGEuQuQqkRg 04] ~~ [https://mp.weixin.qq.com/s/2ufHxEKXjRe2omj8jiI18w 05] ~~ [https://mp.weixin.qq.com/s/w5csua7-Qhf19KBVwubUKQ 06] ~~ [https://mp.weixin.qq.com/s/UZPS8RPTd8i_GDlvTR7oSA 07] ~~ [https://mp.weixin.qq.com/s/-mxPHUvrp0xSnt3Cu65Z5w 08] ~~ [https://mp.weixin.qq.com/s/mZ-o0YZFj8o6RqUJ1MBTsg 09] ~~ [https://mp.weixin.qq.com/s/BmQOZu7JtFOf5qMpHj9uIg 10] ~~ [https://mp.weixin.qq.com/s/k8d8Hasx-Yk1aZyckJIKpg 11] ~~ [https://mp.weixin.qq.com/s/goykb0jye3NTB1K1Wrkv-g 12] ~~ [https://mp.weixin.qq.com/s/2OLJ3osHRCtSS_2H6SwdeA 13]
 
 == Tips
 . [./doc/note/Tips/tips4linux.pdf  Tips for Linux]  ~  [./doc/note/Tips/tips4github.pdf  Tips for github]  ~  [./doc/note/Tips/tips4vimtex.pdf  Tips for Vimtex]  ~  [./doc/note/Tips/Tips4installapp.pdf  Tips for Ubuntu]
