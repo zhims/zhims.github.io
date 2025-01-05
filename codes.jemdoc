@@ -3,7 +3,9 @@
 \n
 Codes are the fundamental building blocks of computer programming, serving as a set of instructions that tell a computer what to do. They are written in various programming languages such as Python, Java, or C++, each with its own syntax and rules. Codes can range from simple commands to complex algorithms, enabling software applications, websites, and systems to function. Writing efficient, clear, and well-documented code is crucial for ensuring the performance, maintainability, and scalability of programs. With the advancement of technology, mastering coding has become an essential skill in today's digital world.
 
+
 == LaTex
+
 . [https://mp.weixin.qq.com/s/Du3aTm41SaH1VmhxPWm7lQ 01] ~~ [https://mp.weixin.qq.com/s/S8ODze0heW5mh85Qesm_sA 02] ~~ [https://mp.weixin.qq.com/s/YJgcMbO35tTEyAihvbF8AA 03] ~~ [https://mp.weixin.qq.com/s/8rWiTHyvFJG50opvVSimJg 04] ~~ [https://mp.weixin.qq.com/s/UkHOA_cUamd4maBjbD-4GA 05] ~~ [./doc/note/Codes/LaTex/Tipa.pdf Tipa] ~~ [https://pan.baidu.com/s/1J46drp_5s1yveEoXIH-54A Template]  
 
 == Linux
@@ -11,13 +13,21 @@ Codes are the fundamental building blocks of computer programming, serving as a 
 == Mathematica
 
 == Matlab
-=== MATLAB in Image Processing
-. [https://mp.weixin.qq.com/s/vCyvznSm3BtyjrdRZBXKlw 01] ~~ [https://mp.weixin.qq.com/s/qHbvUEVj_7_LDAp3FeF5eg 02] ~~ [https://mp.weixin.qq.com/s/uNc5v4fChh_J1v7xNw6nsw 03] ~~ [https://mp.weixin.qq.com/s/yiggPPmEo1elWtfovlFQFw 04] ~~ [https://mp.weixin.qq.com/s/joXHRCSVZTrZjcuq6wSGXg 05] ~~ [https://mp.weixin.qq.com/s/IyMyZhyyQJoIoaDQDmjWWA 06] ~~ [https://mp.weixin.qq.com/s/pfgAl-MFJ97QFuc365Yjrg 07] ~~ [https://mp.weixin.qq.com/s/DJZL3V8LQu0Tj2DBMCUm-Q 08] ~~ [https://mp.weixin.qq.com/s/r7t-hcriZJ-RyDw7_NK03A 11] ~~ [https://mp.weixin.qq.com/s/rOmkd03N-ybGSK-xD-nDcA 12] ~~ [https://mp.weixin.qq.com/s/vG-9de5wwLO_etjmOp3_iQ 13] ~~ [https://mp.weixin.qq.com/s/0z2xG6jCYq6TR8ua28VD1w 14]
 
-=== MATLAB in Machine Learning & Deep Learning
+. MATLAB in Image Processing: [https://mp.weixin.qq.com/s/vCyvznSm3BtyjrdRZBXKlw 01] ~~ [https://mp.weixin.qq.com/s/qHbvUEVj_7_LDAp3FeF5eg 02] ~~ [https://mp.weixin.qq.com/s/uNc5v4fChh_J1v7xNw6nsw 03] ~~ [https://mp.weixin.qq.com/s/yiggPPmEo1elWtfovlFQFw 04] ~~ [https://mp.weixin.qq.com/s/joXHRCSVZTrZjcuq6wSGXg 05] ~~ [https://mp.weixin.qq.com/s/IyMyZhyyQJoIoaDQDmjWWA 06] ~~ [https://mp.weixin.qq.com/s/pfgAl-MFJ97QFuc365Yjrg 07] ~~ [https://mp.weixin.qq.com/s/DJZL3V8LQu0Tj2DBMCUm-Q 08] ~~ [https://mp.weixin.qq.com/s/r7t-hcriZJ-RyDw7_NK03A 11] ~~ [https://mp.weixin.qq.com/s/rOmkd03N-ybGSK-xD-nDcA 12] ~~ [https://mp.weixin.qq.com/s/vG-9de5wwLO_etjmOp3_iQ 13] ~~ [https://mp.weixin.qq.com/s/0z2xG6jCYq6TR8ua28VD1w 14]
+
+. MATLAB in Machine Learning & Deep Learning: [https://mp.weixin.qq.com/s/vBtpx0cNTyKSjPXRXxm7XA 01] ~~ [https://mp.weixin.qq.com/s/1rImxWDxjNcTOf9pV0V8yg 02] ~~ [https://mp.weixin.qq.com/s/vocEDQI1mnsg2Y4AVle3rQ 03] ~~ [https://mp.weixin.qq.com/s/0vOwbuAzDy0iNHP7STsgtQ 04] ~~ [https://mp.weixin.qq.com/s/Ki7OVHu2UFTP5o_Fyu3c4A 05] ~~ [https://mp.weixin.qq.com/s/gnF_cKTyVs7ZvFIhO-bGNg 06] ~~ [https://mp.weixin.qq.com/s/PgwImm7KwfUtn9eqrLDoww 07] ~~ [https://mp.weixin.qq.com/s/2DH8a3Y2-OVmo2PKmz0nBQ 08] ~~ [https://mp.weixin.qq.com/s/bCR1x8kGspzW56RGnmCK5g 09] ~~ [https://mp.weixin.qq.com/s/39uPD1cpnbHJH9scV1G9lA 10] ~~ [https://mp.weixin.qq.com/s/duLQC8R8aoZYKksqTF3txg 11] ~~ [https://mp.weixin.qq.com/s/8QY-J0wr6ld8YWkrzoFDhA 12] ~~ [https://mp.weixin.qq.com/s/fHO9AbEobciexIPGEUkngg 13] ~~ [https://mp.weixin.qq.com/s/Suvxuy36h9STXk2D1PLeKQ 14] ~~ [https://mp.weixin.qq.com/s/74nrrVgMsbqbyMa8rK4qVw 15] ~~ [https://mp.weixin.qq.com/s/08NRXuZX4SJMJLNpLV6sRw 16] ~~ [https://mp.weixin.qq.com/s/dVV99Ah-OLW6jlzF4fxETw 17] ~~ [https://mp.weixin.qq.com/s/dGS1HIXbi2lK99L9xVT0iw 18] ~~ [https://mp.weixin.qq.com/s/WbBtaygd9mkETo7gn6B2Ow 19] ~~ [https://mp.weixin.qq.com/s/L5A3kHuDmmDczh-FArikWw 20] ~~ [https://mp.weixin.qq.com/s/O2AgOFLVrqLfnbDGstW_6Q 21] ~~ [https://mp.weixin.qq.com/s/-E8aurExEwN26f-2CWVwTA 22] ~~ [https://mp.weixin.qq.com/s/1e1agSPHE1SKeshPXWZjhQ 23] ~~ [https://mp.weixin.qq.com/s/8tJY3f2qMF-jzfP7PJt0sQ 24]
+
 
 == Python
-. [https://mp.weixin.qq.com/s/1WkP61idl4uPepmfVsT06A 01] ~~ [https://mp.weixin.qq.com/s/gxyWk3W7PhGVpeNyHGaryQ 02] ~~ [https://mp.weixin.qq.com/s/93OxEbUo7BHH_vhhpwVzXA 03] ~~ [https://mp.weixin.qq.com/s/zVXEXoO-vtXHGEuQuQqkRg 04] ~~ [https://mp.weixin.qq.com/s/2ufHxEKXjRe2omj8jiI18w 05] ~~ [https://mp.weixin.qq.com/s/w5csua7-Qhf19KBVwubUKQ 06] ~~ [https://mp.weixin.qq.com/s/UZPS8RPTd8i_GDlvTR7oSA 07] ~~ [https://mp.weixin.qq.com/s/-mxPHUvrp0xSnt3Cu65Z5w 08] ~~ [https://mp.weixin.qq.com/s/mZ-o0YZFj8o6RqUJ1MBTsg 09] ~~ [https://mp.weixin.qq.com/s/BmQOZu7JtFOf5qMpHj9uIg 10] ~~ [https://mp.weixin.qq.com/s/k8d8Hasx-Yk1aZyckJIKpg 11] ~~ [https://mp.weixin.qq.com/s/goykb0jye3NTB1K1Wrkv-g 12] ~~ [https://mp.weixin.qq.com/s/2OLJ3osHRCtSS_2H6SwdeA 13]
+
+. Fundamentals of Python: [https://mp.weixin.qq.com/s/1WkP61idl4uPepmfVsT06A 01] ~~ [https://mp.weixin.qq.com/s/gxyWk3W7PhGVpeNyHGaryQ 02] ~~ [https://mp.weixin.qq.com/s/93OxEbUo7BHH_vhhpwVzXA 03] ~~ [https://mp.weixin.qq.com/s/zVXEXoO-vtXHGEuQuQqkRg 04] ~~ [https://mp.weixin.qq.com/s/2ufHxEKXjRe2omj8jiI18w 05] ~~ [https://mp.weixin.qq.com/s/w5csua7-Qhf19KBVwubUKQ 06] ~~ [https://mp.weixin.qq.com/s/UZPS8RPTd8i_GDlvTR7oSA 07] ~~ [https://mp.weixin.qq.com/s/-mxPHUvrp0xSnt3Cu65Z5w 08] ~~ [https://mp.weixin.qq.com/s/mZ-o0YZFj8o6RqUJ1MBTsg 09] ~~ [https://mp.weixin.qq.com/s/BmQOZu7JtFOf5qMpHj9uIg 10] ~~ [https://mp.weixin.qq.com/s/k8d8Hasx-Yk1aZyckJIKpg 11] ~~ [https://mp.weixin.qq.com/s/goykb0jye3NTB1K1Wrkv-g 12] ~~ [https://mp.weixin.qq.com/s/2OLJ3osHRCtSS_2H6SwdeA 13]
+
+. Python for Data Analysis
+
+. Python Machine Learning
+
+. Deep Learning with Python
 
 == Tips
 . [./doc/note/Tips/tips4linux.pdf  Tips for Linux]  ~  [./doc/note/Tips/tips4github.pdf  Tips for github]  ~  [./doc/note/Tips/tips4vimtex.pdf  Tips for Vimtex]  ~  [./doc/note/Tips/Tips4installapp.pdf  Tips for Ubuntu]
