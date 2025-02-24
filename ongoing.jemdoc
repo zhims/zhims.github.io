@@ -6,12 +6,17 @@ Work is just a part of life, and life should be rich and fulfilling. Though ther
 
 == Tolman-Oppenheimer-Volkoff Equation
 
-. [doc/ongoing/TOV/NeutronStars.pdf Neutron Stars] ~~ [doc/ongoing/TOV/NeutronStarsPS.pdf Problem Set] ~~ [doc/ongoing/TOV/Abbott2018.pdf Paper A] ~~ [doc/ongoing/TOV/Tiwari2024B Paper B]
+. [doc/ongoing/TOV/NeutronStars.pdf Neutron Stars] ~~ [doc/ongoing/TOV/NeutronStarsPS.pdf Problem Set]
+. [doc/ongoing/TOV/Abbott2018.pdf GW170817: Measurements of Neutron Star Radii and Equation of State] ~~~ [doc/ongoing/TOV/Tiwari2024B.pdf Deep TOV to Characterize Neutron Stars]
 
 == Holographic Quantum Chromodynamics
 
-. [doc/ongoing/HQCD/EMD.pdf EMD Models] ~~ [doc/ongoing/HQCD/MHQCDPhase.pdf Magnetic QCD Phase Diagram via Holography] ~~  [doc/ongoing/HQCD/MHQCDPhaseSupp.pdf Supplementary Material] ~~ [doc/ongoing/HQCD/NODEHQCD.pdf NODE and QCD] ~~ [doc/ongoing/HQCD/YuanXuWang.pdf Master's Thesis by Wang] ~~ [doc/ongoing/HQCD/QingXuanFu.pdf Master's Thesis by Fu]
-. [doc/ongoing/HQCD/GBDG.pdf Gauss Bonnet Dilaton Gravity]
+. [doc/ongoing/HQCD/EMD.pdf Hot QCD Phase Diagram from Holographic Einstein–Maxwell–Dilaton Models]
+. [doc/ongoing/HQCD/MHQCDPhase.pdf Neural ODE Approach to the Magnetic QCD Phase Diagram via Holography] ~~  [doc/ongoing/HQCD/MHQCDPhaseSupp.pdf Supplementary Material]
+. [doc/ongoing/HQCD/NODEHQCD.pdf Neural Ordinary Differential Equation and
+Holographic Quantum Chromodynamics] 
+. [doc/ongoing/HQCD/YuanXuWang.pdf Master's Thesis by Wang] ~~ [doc/ongoing/HQCD/QingXuanFu.pdf Master's Thesis by Fu] ~~ [doc/ongoing/HQCD/GBDG.pdf Gauss Bonnet Dilaton Gravity]
+. [doc/ongoing/HQCD/HQCDP.pdf  QCD Phase Structure from Holographic Models]
 
 == Survival Analysis
 
@@ -20,5 +25,6 @@ Work is just a part of life, and life should be rich and fulfilling. Though ther
 
 == Artificial Intelligence for Brain Disorders
 
-. [doc/ongoing/AIBD/Gauriau2023.pdf Paper A] ~~ [doc/ongoing/AIBD/Brugnara2023.pdf Paper B]
+. [doc/ongoing/AIBD/Gauriau2023.pdf Head CT Deep Learning Model is Highly Accurate for Early Infarct Estimation]
+. [doc/ongoing/AIBD/Brugnara2023.pdf Deep-Learning Based Detection of Vessel Occlusions on CT-Angiography in Patients with Suspected Acute Ischemic Stroke]
 
