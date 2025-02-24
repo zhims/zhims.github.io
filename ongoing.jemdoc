@@ -1,0 +1,25 @@
+# jemdoc: menu{MENU}{ongoing.html}, nofooter
+= Yao Zhang - Ongoing
+\n
+
+Work is just a part of life, and life should be rich and fulfilling. Though there are many things I want to achieve in my career, I sometimes feel limited by my lack of natural talent. Nevertheless, I have a strong passion for mathematics and am committed to putting in the hard work, even if it means focusing on small tasks. Recently, I have been mainly working on projects related to the materials provided below. Despite the challenges, I continue to dedicate myself to learning and improving my skills, knowing that persistence and effort will lead to progress.
+
+== Tolman-Oppenheimer-Volkoff Equation
+
+. [doc/ongoing/TOV/NeutronStars.pdf Neutron Stars] & [doc/ongoing/TOV/NeutronStarsPS.pdf Its Problem Set] ~~ [doc/ongoing/TOV/Abbott2018.pdf Paper A] ~~ [doc/ongoing/TOV/Tiwari2024B Paper B]
+
+== Holographic Quantum Chromodynamics
+
+. [doc/ongoing/HQCD/EMD.pdf EMD Models] ~~ [doc/ongoing/HQCD/MHQCDPhase.pdf Magnetic QCD Phase Diagram via Holography] & [doc/ongoing/HQCD/MHQCDPhaseSupp.pdf Its Supplementary Material] ~~ [doc/ongoing/HQCD/NODEHQCD.pdf NODE and QCD] 
+
+. [doc/ongoing/HQCD/YuanXuWang.pdf Master's Thesis by Wang] ~~ [doc/ongoing/HQCD/QingXuanFu.pdf Master's Thesis by Fu] ~~ [doc/ongoing/HQCD/GBDG.pdf Gauss Bonnet Dilaton Gravity]
+
+== Survival Analysis
+
+. [doc/ongoing/SA/Ch01.pdf Chapter 1] ~~ [doc/ongoing/SA/CSA.pdf Conditional Survival Analysis] ~~ [doc/ongoing/SA/DSAM.pdf Deep Survival Analysis Models] 
+
+
+== Artificial Intelligence for Brain Disorders
+
+. [doc/ongoing/AIBD/Gauriau2023.pdf Paper A] ~~ [doc/ongoing/AIBD/Brugnara2023.pdf Paper B]
+
