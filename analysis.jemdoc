@@ -21,16 +21,9 @@
 
 == [./doc/Mathematics/Analysis/MT.pdf  Measure Theory]
 
-
 == [./doc/Mathematics/Analysis/FA.pdf  Functional Analysis]
 
-
-== Tensor Calculus
-
-- [https://mp.weixin.qq.com/s/fw6yHuftJ8cWYz_8QuyNdA 01] ~~ [https://mp.weixin.qq.com/s/c9mMd-jN_qURZbnURffP8Q 02] ~~ [https://mp.weixin.qq.com/s/gbsTr7UGKHsm8PhjWyUqRA 03] ~~ [https://mp.weixin.qq.com/s/_-5NcD6yo6O7CfPM3RKGNQ 04] ~~ [https://mp.weixin.qq.com/s/8wMTSKXJiR7obbH9sA7uAQ 05]
-
-- [https://mp.weixin.qq.com/s/FTBgfbouPQ3-QCd3dhhanA 01] ~~ [https://mp.weixin.qq.com/s/-8qXTuXdM6kaSWKsKzx4zA 02] ~~ [https://mp.weixin.qq.com/s/rK0gv-G-Vo7gq5icJ4Ya0A 03] ~~ [https://mp.weixin.qq.com/s/UKBdanhgFlYNa2LZKddlvw 04] ~~ [https://mp.weixin.qq.com/s/E_TP-VB703h_dJUOO-7yfw 05] ~~ [https://mp.weixin.qq.com/s/cTrfxCCf1y23PU_H-544mQ 06] ~~ [https://mp.weixin.qq.com/s/V4fTUHWhsNGPuQDkiM-zIg 07] ~~ [https://mp.weixin.qq.com/s/tvNmvmbQjM5B3_GlZdADjw 08] ~~ [https://mp.weixin.qq.com/s/2JVKVUWYHnjJX5oSlPy13g 09] ~~ [https://mp.weixin.qq.com/s/WEgv2gkuWy_wARZqVr466g 10] ~~ [https://mp.weixin.qq.com/s/hfCoXhuwMO2rcN7Sdx8UBA 11] ~~ [https://mp.weixin.qq.com/s/GJ3aCl7Ib5erXIZSnUrkFw 12] ~~ [https://mp.weixin.qq.com/s/cEQAAz4Q37zOxaIZJQHdTg 13] ~~ [https://mp.weixin.qq.com/s/LRpZm6o8S0_SFU05mb2Yrg 14] ~~ [https://mp.weixin.qq.com/s/67Nyj1O4rnrwp3SCd1usqw 15] ~~ [https://mp.weixin.qq.com/s/Vl1eWeGU-FSNqfTO5tAung 16] ~~ [https://mp.weixin.qq.com/s/BznJ7pK1-GW0TMCEebDTMg 17] ~~ [https://mp.weixin.qq.com/s/0KZmRKpLwNsDWNsM4zIl3g 18] ~~ [https://mp.weixin.qq.com/s/ffNibjpqMEndE5oTwIO1eQ 19] ~~ [https://mp.weixin.qq.com/s/RJ7IS_n9SACIhiek7le8Ww 20] ~~ [https://mp.weixin.qq.com/s/hJjgdlmaVWoJCIs3c_9fFQ 21] ~~ [https://mp.weixin.qq.com/s/K0xbOtY-dUOBSecCuse6xA 22] ~~ [https://mp.weixin.qq.com/s/ym9mq_4kYgVitwr4nPwwZw 23] ~~ [https://mp.weixin.qq.com/s/aD9sdKieqZa7z9xnuEkXNQ 24] ~~ [https://mp.weixin.qq.com/s/CFaD6MT2r-AjxPq-QNTPVw 25] ~~ [https://mp.weixin.qq.com/s/9E77JdcMwFmzHU8xv2s-jw 26] ~~ [https://mp.weixin.qq.com/s/CW5q6Qfbl6kxOHjyx0Oahg 27] ~~ [https://mp.weixin.qq.com/s/mZ2axdNOaayrT7zIVQBv8w 28] ~~ [https://mp.weixin.qq.com/s/x-2m-AZ4ONfyn7SiC7DwTA 29] ~~ [https://mp.weixin.qq.com/s/eR88HeVl9d84DIjwEOBX-A 30] ~~ [https://mp.weixin.qq.com/s/pm-eGK68MJbLObaR9ms_mw 31] ~~ [https://mp.weixin.qq.com/s/F1b75WxUEiHNVrvN3Q4gNw 32] ~~ [https://mp.weixin.qq.com/s/hF1ZGLLm2VlH2U1lXzudGw 33] ~~ [https://mp.weixin.qq.com/s/x2w6ScRzfxuAWQEULXJtig 34] ~~ [https://mp.weixin.qq.com/s/Owb1XsIjU-7EuQU6tkhEbw 35]
-- [https://mp.weixin.qq.com/s/oW5EqTUEC4LQt_Yh6pgTYQ 36] ~~ [https://mp.weixin.qq.com/s/Y8gz7TFHLPqTVygif2bZcA 37] ~~ [https://mp.weixin.qq.com/s/00r0hhTSr0W0hZuSqZVNww 38] ~~ [https://mp.weixin.qq.com/s/llwqFjzsKhthkPkNgIAlPw 39] ~~ [https://mp.weixin.qq.com/s/bLP-LWVyZg8Q09a77m37PQ 40] ~~ [https://mp.weixin.qq.com/s/4P96nybPGv-NitFfC2zaYA 41] ~~ [https://mp.weixin.qq.com/s/jszAZEw30NYx0Y2O8eWw8g 42] ~~ [https://mp.weixin.qq.com/s/U5KQUIIp4QHXtyyc9mBu4w 43] ~~ [https://mp.weixin.qq.com/s/ltkbSIm9gvMT71Gtun5z6w 44] ~~ [https://mp.weixin.qq.com/s/SPUxCy0Trup3CXR86iN7Og 45] ~~ [https://mp.weixin.qq.com/s/BjmztqoQNEGyc4-vKBFDoQ 46] ~~ [https://mp.weixin.qq.com/s/-ucuorzTUCWz5iKiM2ozcA 47] ~~ [https://pan.baidu.com/s/102DIfrTJ7TW35xmMwtbjiA?pwd=1121 Materials]
+== [./doc/Mathematics/Analysis/TC.pdf  Tensor Calculus]
 
 == [./doc/Mathematics/Analysis/CoV.pdf  Calculus of Variation]
 
