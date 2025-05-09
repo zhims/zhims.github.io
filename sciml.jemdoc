@@ -4,9 +4,9 @@
 Scientific Machine Learning (SciML) is a rapidly emerging discipline within the data science community, aimed at addressing domain-specific data challenges and deriving insights from scientific datasets through innovative methodologies. By integrating tools from both machine learning and scientific computing, SciML develops scalable, domain-aware, robust, reliable, and interpretable approaches for data analysis and learning. These advancements are poised to fuel the next wave of data-driven scientific breakthroughs, particularly in the physical and engineering sciences. Like scientific computing, SciML is inherently multidisciplinary, drawing upon expertise in applied and computational mathematics, computer science, and the physical sciences to tackle complex problems.
 \n
 
-
-
 == [./doc/DataScience/DL.pdf  Deep Learning]
+
+== [./doc/DataScience/NNs.pdf  Neural Networks]
 
 == [./doc/DataScience/ML.pdf  Machine Learning]
 
@@ -15,6 +15,8 @@ Scientific Machine Learning (SciML) is a rapidly emerging discipline within the 
 == [./doc/DataScience/AdvancedML.pdf  Advanced Machine Learning]
 
 == [./doc/DataScience/PIML.pdf  Physics Informed Machine Learning]
+
+== [./doc/DataScience/ADPR.pdf  Automatic Differentiation Primitive Rules]
 
 == [./doc/DataScience/ADAS.pdf  Automatic Differentiation, Adjoints, and Sensitivities]
 
