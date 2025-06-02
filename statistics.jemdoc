@@ -6,9 +6,7 @@
 
 == Biostatistics
 
-== Baby Probability
-
-#$\quad$ [https://mp.weixin.qq.com/s/Fun_K27xwnc5e6p3YsMiYQ 01] ~~ [https://mp.weixin.qq.com/s/yAozVsh0XZu8cEiBXgFtfQ 02] ~~ [https://mp.weixin.qq.com/s/zUy8hlvYJLeaCX2Q8oDSzQ 03] ~~ [https://mp.weixin.qq.com/s/n1V6dgJvr9pCrglEjxHsqA 04] ~~ [https://mp.weixin.qq.com/s/xOZR-evZ_gMSciCJa4fbcQ 05] ~~ [https://mp.weixin.qq.com/s/l_MkHIiZ32me9VxvCV1ATg 06] ~~ [https://mp.weixin.qq.com/s/jleHfdIrgdlO2uIDgeZPJg 07] ~~ [https://mp.weixin.qq.com/s/j4Kytp1dTPXxXUyJV1gi4g 08] ~~ [https://mp.weixin.qq.com/s/vxyfyB3zLVuKmNy1VLZp-Q 09] ~~ [https://mp.weixin.qq.com/s/_ovwv5eO9WoL09VH6ZN-2w 10] ~~ [https://mp.weixin.qq.com/s/oplRmZjHfIAJ8EAAw6voyQ 11] ~~ [https://mp.weixin.qq.com/s/QoHGcvgE_DmdvBORwKpDVQ 12] ~~ [https://mp.weixin.qq.com/s/ksdvZhIULwaiMrmKOh0IYg 13] ~~ [https://mp.weixin.qq.com/s/z3gXbDwmFI-rCEDeZoib2g 14] ~~ [https://mp.weixin.qq.com/s/1ANjLLJv1DRUg7f4wOzDPg 15] ~~ [https://mp.weixin.qq.com/s/EhmIwe7waTRemY3FilN1KQ 16] ~~ [https://mp.weixin.qq.com/s/nKkbbbMEW5pAoPYxt2KOeg 17] ~~ [https://mp.weixin.qq.com/s/Q_eHDn6C5MMvL6dUB6knOg 18] ~~ [https://mp.weixin.qq.com/s/lP6WmQxTuOAwIVWX2l-R7w 19] ~~ [https://mp.weixin.qq.com/s/w0xw15BrqY0AKYgW2ufKmw 20] ~~ [https://mp.weixin.qq.com/s/Du8kpT0ZJNqTmF19jB77Tw 21] ~~ [https://mp.weixin.qq.com/s/xD0om1IdLj2fYWv1Va8x_g 22] ~~ [https://mp.weixin.qq.com/s/WeCfY_6vsuOCYoa5fzg6pA 23] ~~ [https://mp.weixin.qq.com/s/puiGaF7O1M4J7Uo1hb97Nw 24] ~~ [https://mp.weixin.qq.com/s/fEFx-A-fnqv8xho8BOdB5w 25] ~~ [https://mp.weixin.qq.com/s/ikPEHT3tXY-da3wx5OJwFA 26] ~~ [https://mp.weixin.qq.com/s/YKNfrUm2wMZBPx_1pOuOUQ 27] ~~ [https://mp.weixin.qq.com/s/aHcqkczkwNbvHpGR82rQJA 28] ~~ [https://mp.weixin.qq.com/s/1GWPJNgaj-SzId50GX7h8Q 29]
+== [./doc/Mathematics/Statistics/Probability.pdf  Baby Probability]
 
 == Survival Analysis
 
@@ -27,11 +25,6 @@
 == Monte Carlo Methods
 
 == [./doc/Mathematics/Statistics/MS.pdf  Mathematical Statistics]
-
-
-#$\quad$ [https://mp.weixin.qq.com/s/WAlIYvp8hZ1NN1I9kbRLPA 01] ~~ [https://mp.weixin.qq.com/s/3aCEMb2ccvTc6FqfFLQupA 02] ~~ [https://mp.weixin.qq.com/s/t2JR3xHp1JjbUyv6O6vL3w 03] ~~ [https://www.youtube.com/watch?v=_6JW5qdOZG8 04] ~~ [https://mp.weixin.qq.com/s/Bnwdzn82c9FarCrEAnOcSQ 05] ~~ [https://mp.weixin.qq.com/s/_PDcUuJnzPbsxkXyydwJaA 06] ~~ [https://mp.weixin.qq.com/s/29jfi4_ko8T4k5SHZWt_cA 07] ~~ [https://mp.weixin.qq.com/s/E7ibo0xlsduayzTEsfbBjQ 08] ~~ [https://mp.weixin.qq.com/s/DX6XBVxMpEYYbSLdkX3OhA 09] ~~ [https://mp.weixin.qq.com/s/ZgoRDPlnrUYx7wkuz9-B0w 10] ~~ [https://mp.weixin.qq.com/s/mlIfFntw0Ob_IkHgjdDnAg 11] ~~ [https://mp.weixin.qq.com/s/ANTyTu-Q0xjNNLVMBUg55A 12] ~~ [https://mp.weixin.qq.com/s/ipiPqZSUoitOvKkQjDsp_g 13] ~~ [https://mp.weixin.qq.com/s/XHIB0bVDKXt2z4QXVexSJw 14] ~~ [https://mp.weixin.qq.com/s/Z59Ku23j8rVLlFATkIRUDQ 15] ~~ [https://mp.weixin.qq.com/s/tBi3zoJSnh30_dzmFlor9w 16] ~~ [https://mp.weixin.qq.com/s/s-QVu6dwdMsrPJZMr8jwYQ 17] ~~ [https://mp.weixin.qq.com/s/IybUV5Txg3zkB86Pdp6jlQ 18] ~~ [https://mp.weixin.qq.com/s/F155SYm8ObEiTJSsY4nPBg 19] ~~ [https://mp.weixin.qq.com/s/JSP_SiTwIbKsdZx8eJVo9A 20] ~~ [https://mp.weixin.qq.com/s/CubnjQ0DNHnFq-xYXWSHHA 21] ~~ [https://mp.weixin.qq.com/s/TXG0dUlHQ18Im8QUibPR4g 22] ~~ [https://mp.weixin.qq.com/s/lF-9cFda_tVRqcBoCdcqyQ 23] ~~ [https://mp.weixin.qq.com/s/iGxDc2rsVaEyIBxt03YNDw 24] ~~ [https://mp.weixin.qq.com/s/wDR5IbHgIwgAHwwKG6lHkw 25] ~~ [https://mp.weixin.qq.com/s/Jvr-vPWGq6183zAKCGq4bA 26] ~~ [https://mp.weixin.qq.com/s/qiqF-ovY51FOCp71YRu_LA 27] ~~ [https://mp.weixin.qq.com/s/Xim_24fZYPky9UbUDKh2lQ 28] ~~ [https://mp.weixin.qq.com/s/0xcTrlS8psbArsYe-1mzJw 29] ~~ [https://mp.weixin.qq.com/s/DVoKc8_jtER5K3-XfmDJiA 30] ~~ [https://mp.weixin.qq.com/s/dnFFDkdtBCCxHmkXs_5G8A 31] ~~ [https://mp.weixin.qq.com/s/jYHUvNua8_FYa49ygE_SGA 32] ~~ [https://mp.weixin.qq.com/s/jpEjees5Hn2taXYymenYxw 33] ~~ [https://mp.weixin.qq.com/s/5jm6s7slohHgt5E6yWU9fg 34] ~~ [https://mp.weixin.qq.com/s/5mzFYMXg4pjCIHtVPrd6qg 35]
-#\n
-#$\quad$ [https://mp.weixin.qq.com/s/2A6oZteyExnEpbYhYNFxlg 36] ~~ [https://mp.weixin.qq.com/s/5FHygtO5-vnm8G_PEANqWw 37]
 
 == Time Series Forecasting
 
