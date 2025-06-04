@@ -1,5 +1,5 @@
 Homepage
-	Home 				[index.html]
+	Profile 				[index.html]
 	My Family			[myfamily.html]
 	Self-Cultivation		[selfcultivation.html]
 
@@ -9,13 +9,13 @@ Research
 	Publications			[publications.html]
 
 Materials
+	SciML				[sciml.html]
+	Physics	                        [physics.html]
 	Algebra				[algebra.html]
 	Analysis				[analysis.html]
-	Computing			[computing.html]
-	Geometry			[geometry.html]
-	Life Sciences			[lifesciences.html]
-	Physics	                        [theoreticalphysics.html]
-	Recreation			[recreation.html]
-	SciML				[sciml.html]
 	Statistics				[statistics.html]
+	Geometry			[geometry.html]
+	Recreation			[recreation.html]
+	Computing			[computing.html]
+	Life Sciences			[lifesciences.html]
 	
