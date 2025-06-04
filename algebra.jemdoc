@@ -3,13 +3,13 @@
 \n
  Algebra, a core branch of mathematics, studies symbols and the rules for manipulating them to solve equations and understand mathematical structures. It ranges from elementary concepts like variables, equations, and polynomials to advanced topics such as abstract algebra. Abstract algebra explores structures like groups, rings, and fields, which are foundational in many areas of mathematics and physics. Linear algebra, another key area, focuses on vector spaces and linear transformations, with applications in machine learning, quantum mechanics, and computer graphics. Modern algebra also extends to algebraic geometry and number theory, driving progress in cryptography, coding theory, and mathematical modeling.
 
-== [./doc/Mathematics/Algebra/Algebra.pdf  Algebra]
-
 == Set Theory
 
 == [./doc/Mathematics/Algebra/LinearAlgebra.pdf  Linear Algebra]
 
 == Number Theory
+
+== [./doc/Mathematics/Algebra/Algebra.pdf  Abstract Algebra]
 
 
 == Commutative Algebra
