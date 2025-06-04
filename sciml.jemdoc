@@ -22,7 +22,7 @@ Scientific Machine Learning (SciML) is a rapidly emerging discipline within the 
 
 == Nonconvex Optimization for Deep Learning
 
-== Data Science from a Signal Processing Perspective
+#== Data Science from a Signal Processing Perspective
 
 == [./doc/DataScience/ADAS.pdf  Automatic Differentiation, Adjoints, and Sensitivities]
 
