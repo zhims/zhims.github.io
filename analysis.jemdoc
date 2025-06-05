@@ -3,11 +3,8 @@
 \n
  Analysis, a foundational branch of mathematics, delves into the concepts of limits, continuity, differentiation, integration, and infinite series. Emerging from calculus, it provides a rigorous framework for understanding change and accumulation, as well as the properties of real and complex numbers, functions, and spaces. Real analysis explores the behavior of real-valued functions and sequences, while complex analysis extends these principles to the complex plane. Functional analysis investigates infinite-dimensional spaces and linear operators, with critical applications in quantum mechanics, optimization, and beyond. Modern analysis, incorporating measure theory and topology, underpins advanced research in probability, differential equations, and mathematical physics, making it indispensable across science and engineering disciplines.
 
-== [./doc/Materials/Analysis/Analysis.pdf  Analysis]
 
-== Calculus
-
-== [./doc/Materials/Analysis/TC.pdf  Tensor Calculus]
+#== [./doc/Materials/Analysis/TC.pdf  Tensor Calculus]
 
 == [./doc/Materials/Analysis/MT.pdf  Measure Theory]
 
@@ -16,6 +13,8 @@
 == [./doc/Materials/Analysis/FA.pdf  Functional Analysis]
 
 == [./doc/Materials/Analysis/CoV.pdf  Calculus of Variation]
+
+== [./doc/Materials/Analysis/Analysis.pdf  Calculus and Analysis]
 
 
 
