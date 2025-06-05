@@ -6,25 +6,25 @@ Work is just a part of life, and life should be rich and fulfilling. Though ther
 
 == Tolman-Oppenheimer-Volkoff Equation
 
-. [doc/ongoing/TOV/NeutronStars.pdf Neutron Stars] ~~ [doc/ongoing/TOV/NeutronStarsPS.pdf Problem Set]
-. [doc/ongoing/TOV/Abbott2018.pdf GW170817: Measurements of Neutron Star Radii and Equation of State] ~~~ [doc/ongoing/TOV/Tiwari2024B.pdf Deep TOV to Characterize Neutron Stars]
+. [doc/Research/ongoing/TOV/NeutronStars.pdf Neutron Stars] ~~ [doc/Research/ongoing/TOV/NeutronStarsPS.pdf Problem Set]
+. [doc/Research/ongoing/TOV/Abbott2018.pdf GW170817: Measurements of Neutron Star Radii and Equation of State] ~~~ [doc/Research/ongoing/TOV/Tiwari2024B.pdf Deep TOV to Characterize Neutron Stars]
 
 == Holographic Quantum Chromodynamics
 
-. [doc/ongoing/HQCD/EMD.pdf Hot QCD Phase Diagram from Holographic Einstein-Maxwell-Dilaton Models]
-. [doc/ongoing/HQCD/MHQCDPhase.pdf Neural ODE Approach to the Magnetic QCD Phase Diagram via Holography] ~~  [doc/ongoing/HQCD/MHQCDPhaseSupp.pdf Material A] ~~ [doc/ongoing/HQCD/HQCDB.pdf Material B] ~~ [doc/ongoing/HQCD/Bali2014E.pdf Material C] ~~ [doc/ongoing/HQCD/Cai2022PRD.pdf Material D] ~~ [doc/ongoing/HQCD/Bazavov2014PRD.pdf Material E] ~~ [doc/ongoing/HQCD/NODEChen2018.pdf NODE]
-. [doc/ongoing/HQCD/NODEHQCD.pdf Neural Ordinary Differential Equation and
+. [doc/Research/ongoing/HQCD/EMD.pdf Hot QCD Phase Diagram from Holographic Einstein-Maxwell-Dilaton Models]
+. [doc/Research/ongoing/HQCD/MHQCDPhase.pdf Neural ODE Approach to the Magnetic QCD Phase Diagram via Holography] ~~  [doc/Research/ongoing/HQCD/MHQCDPhaseSupp.pdf Material A] ~~ [doc/Research/ongoing/HQCD/HQCDB.pdf Material B] ~~ [doc/Research/ongoing/HQCD/Bali2014E.pdf Material C] ~~ [doc/Research/ongoing/HQCD/Cai2022PRD.pdf Material D] ~~ [doc/Research/ongoing/HQCD/Bazavov2014PRD.pdf Material E] ~~ [doc/Research/ongoing/HQCD/NODEChen2018.pdf NODE]
+. [doc/Research/ongoing/HQCD/NODEHQCD.pdf Neural Ordinary Differential Equation and
 Holographic Quantum Chromodynamics]
-. [doc/ongoing/HQCD/YuanXuWang.pdf Master's Thesis by Wang] ~~ [doc/ongoing/HQCD/QingXuanFu.pdf Master's Thesis by Fu] ~~ [doc/ongoing/HQCD/GBDG.pdf Gauss Bonnet Dilaton Gravity]
-. [doc/ongoing/HQCD/HQCDP.pdf  QCD Phase Structure from Holographic Models]
+. [doc/Research/ongoing/HQCD/YuanXuWang.pdf Master's Thesis by Wang] ~~ [doc/Research/ongoing/HQCD/QingXuanFu.pdf Master's Thesis by Fu] ~~ [doc/Research/ongoing/HQCD/GBDG.pdf Gauss Bonnet Dilaton Gravity]
+. [doc/Research/ongoing/HQCD/HQCDP.pdf  QCD Phase Structure from Holographic Models]
 
 == Survival Analysis
 
-. [doc/ongoing/SA/Ch01.pdf Chapter 1] ~~ [doc/ongoing/SA/CSA.pdf Conditional Survival Analysis] ~~ [doc/ongoing/SA/DSAM.pdf Deep Survival Analysis Models] 
+. [doc/Research/ongoing/SA/Ch01.pdf Chapter 1] ~~ [doc/Research/ongoing/SA/CSA.pdf Conditional Survival Analysis] ~~ [doc/Research/ongoing/SA/DSAM.pdf Deep Survival Analysis Models] 
 
 
 == Artificial Intelligence for Brain Disorders
 
-. [doc/ongoing/AIBD/Gauriau2023.pdf Head CT Deep Learning Model is Highly Accurate for Early Infarct Estimation]
-. [doc/ongoing/AIBD/Brugnara2023.pdf Deep Learning Based Detection of Vessel Occlusions on CT Angiography in Patients with Suspected Acute Ischemic Stroke]
+. [doc/Research/ongoing/AIBD/Gauriau2023.pdf Head CT Deep Learning Model is Highly Accurate for Early Infarct Estimation]
+. [doc/Research/ongoing/AIBD/Brugnara2023.pdf Deep Learning Based Detection of Vessel Occlusions on CT Angiography in Patients with Suspected Acute Ischemic Stroke]
 

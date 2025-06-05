@@ -4,29 +4,29 @@
 Scientific Machine Learning (SciML) is a rapidly emerging discipline within the data science community, aimed at addressing domain-specific data challenges and deriving insights from scientific datasets through innovative methodologies. By integrating tools from both machine learning and scientific computing, SciML develops scalable, domain-aware, robust, reliable, and interpretable approaches for data analysis and learning. These advancements are poised to fuel the next wave of data-driven scientific breakthroughs, particularly in the physical and engineering sciences. Like scientific computing, SciML is inherently multidisciplinary, drawing upon expertise in applied and computational mathematics, computer science, and the physical sciences to tackle complex problems.
 \n
 
-== [./doc/DataScience/DL.pdf  Deep Learning]
+== [./doc/Materials/SciML/DL.pdf  Deep Learning]
 
-== [./doc/DataScience/ML.pdf  Machine Learning]
+== [./doc/Materials/SciML/ML.pdf  Machine Learning]
 
 #== Applied Deep Learning
 
-== [./doc/DataScience/RL.pdf  Reinforcement Learning]
+== [./doc/Materials/SciML/RL.pdf  Reinforcement Learning]
 
-== [./doc/DataScience/AdvancedML.pdf  Advanced Machine Learning]
+== [./doc/Materials/SciML/AdvancedML.pdf  Advanced Machine Learning]
 
-== [./doc/DataScience/PIML.pdf  Physics Informed Machine Learning]
+== [./doc/Materials/SciML/PIML.pdf  Physics Informed Machine Learning]
 
 == Graphical Models and Causal Inference
 
-== [./doc/DataScience/ADPR.pdf  Automatic Differentiation Primitive Rules]
+== [./doc/Materials/SciML/ADPR.pdf  Automatic Differentiation Primitive Rules]
 
 == Nonconvex Optimization for Deep Learning
 
 #== Data Science from a Signal Processing Perspective
 
-== [./doc/DataScience/ADAS.pdf  Automatic Differentiation, Adjoints, and Sensitivities]
+== [./doc/Materials/SciML/ADAS.pdf  Automatic Differentiation, Adjoints, and Sensitivities]
 
-== [./doc/DataScience/AISE.pdf  Artificial Intelligence in the Sciences and Engineering]
+== [./doc/Materials/SciML/AISE.pdf  Artificial Intelligence in the Sciences and Engineering]
 
 
 
