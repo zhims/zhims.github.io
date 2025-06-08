@@ -1,0 +1,226 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://en.wikipedia.org/wiki/Quantum_field_theory}{Quantum Field Theory}}
+		
+		\vspace{-0.25cm}
+		
+		{\large \href{https://mcgreevy.physics.ucsd.edu/}{John McGreevy}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-1cm}
+
+\begin{center}
+	{\large  \href{https://mcgreevy.physics.ucsd.edu/f21/index.html}{Part \Romannum{1}}}
+\end{center}
+	
+\vspace{-1cm}
+
+\begin{enumerate}
+	\item	\href{https://mp.weixin.qq.com/s/CeocxWNTHxJFWucT8s_EGg}{Introductory words; using a model of a crystalline solid to discover QFT}	%1
+	\item	\href{https://mp.weixin.qq.com/s/5Q-YEqzFVVFdDjiYyTFRBQ}{Discovery of Fock space}	%2 
+	\item	\href{https://mp.weixin.qq.com/s/CwAvO9NbTlkCIKWdHQycZw}{Scalar field theory with some extra adjectives} 	%3
+	\item 	\href{https://mp.weixin.qq.com/s/1-eae_NEuDAfiTuWkF5GTg}{Quantization of the radiation field by analogy; Noether's theorem and its converse}	%4
+	\item 	\href{https://mp.weixin.qq.com/s/bKftVzY-3vibwbKtvRnRWA}{Casimir effect; fields mediate forces}	%5
+	\item 	\href{https://mp.weixin.qq.com/s/Y8JFkVdT64ftLWVw_no9NA}{Fields mediate forces; Wick rotation and time-ordering}	%6
+	\item 	\href{https://mp.weixin.qq.com/s/JxheE9xN5TcjtkFzaQ869g}{Big picture recap; Feynman diagrams in 0+0-dimensional QFT}	%7
+	\item 	\href{https://mp.weixin.qq.com/s/E6pjeqkApjnHlk5AzCOWdg}{Lorentz invariance and causality}	%8
+	\item 	\href{https://mp.weixin.qq.com/s/_u3OqrandFURDnXkYkahXA}{Path integral subtlety; propagators; where is single-particle QM in QFT?}	%9
+	\item 	\href{https://mp.weixin.qq.com/s/-W1X810Wa50UxETzEuJmWg}{The S-matrix and Dyson expansion}	%10
+	\item	\href{https://mp.weixin.qq.com/s/dFlOhlNjuaryhUd-IUxeFw}{Wick's theorem; time-ordered Green's functions and diagrams}	%11
+	\item	\href{https://mp.weixin.qq.com/s/pRjwCTMvjLgaK-PRihDNXQ}{The exponentiation of the disconnected diagrams}	%12 
+	\item	\href{https://mp.weixin.qq.com/s/OucIs79RO5HQMKGykI68_Q}{The LSZ reduction formula} 	%13
+	\item 	\href{https://mp.weixin.qq.com/s/dAcufQEYjvwnJ2LVxhelVA}{Observable physics from the S-matrix}	%14
+	\item 	\href{https://mp.weixin.qq.com/s/IJsZVpYEE_-B9sz0n6Emlg}{Observable physics from the retarded Green's function; Group theory}	%15
+	\item 	\href{https://mp.weixin.qq.com/s/9qrn5apMZqE7Mc1ZF6z2Uw}{Representations of the Lorentz group on fields}	%16
+	\item 	\href{https://mp.weixin.qq.com/s/EA5TPmFekZMOwIQeoFdApg}{Spinor Lagrangians}	%17
+	\item 	\href{https://mp.weixin.qq.com/s/Gh_nBIWyc7MnWbeAQO1lRA}{The quanta of a spinor field are fermions}	%18
+	\item 	\href{https://mp.weixin.qq.com/s/I4cK6Ynh-2SQdhpj8WfKvg}{Scattering of fermions}	%19
+	\item 	\href{https://mp.weixin.qq.com/s/gTEv-17cXNYpIzWVFJfjFw}{Vector fields and gauge invariance}	%20
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+\newpage 
+
+\begin{center}
+	{\large  \href{https://mcgreevy.physics.ucsd.edu/w22/index.html}{Part \Romannum{2}}}
+\end{center}
+
+\vspace{-1cm}
+
+\begin{enumerate}
+	\item	\href{https://mp.weixin.qq.com/s/ru78J-IZJXysQjJwDxhlFw}{Goals, parable on violation of scale invariance by QM}	%1
+	\item	\href{https://mp.weixin.qq.com/s/bhjuN0b_kVqnEr30LZvUkQ}{Beta function; a simple example of perturbative renormalization}	%2 
+	\item	\href{https://mp.weixin.qq.com/s/KhR06IsBpauLIerSNJc9rQ}{First steps towards quantum corrections to the Coulomb force law} 	%3
+	\item 	\href{https://mp.weixin.qq.com/s/ud2lzP8oh2rVSIzDwNTEBA}{Electron self energy; self-energy in $phi^4$ theory}	%4
+	\item 	\href{https://mp.weixin.qq.com/s/m4P7zEdt3mQNU9ZB_k2e3g}{Where is the cutoff dependence?}	%5
+	\item 	\href{https://mp.weixin.qq.com/s/KFOaX7ZTojfZZeQ1387RTQ}{QED vertex correction}	%6
+	\item 	\href{https://mp.weixin.qq.com/s/FnbXey2UBKU7yxsvNa7-_Q}{Soft photons}	%7
+	\item 	\href{https://mp.weixin.qq.com/s/2UmLcxSj9m7BzmwSHBl-5w}{Vacuum polarization}	%8
+	\item 	\href{https://mp.weixin.qq.com/s/d9mSq8lE13-R-efzX4GIYQ}{Spectral density}	%9
+	\item 	\href{https://mp.weixin.qq.com/s/C4UnSW0L4R_RVRK-fc_0Tg}{Optical theorem and cutting rules}	%10
+	\item	\href{https://mp.weixin.qq.com/s/RtFYMPZXyLQdyrMtvgUbxg}{Hadrons with perturbative QCD; Parable on integrating out heavy modes}	%11
+	\item	\href{https://mp.weixin.qq.com/s/LaWw7_pdUsP8xHBUhyXsFw}{Anderson-Higgs mechanism}	%12 
+	\item	\href{https://mp.weixin.qq.com/s/OJB-cv0DnUyggDogCwL9DA}{Interlude on differential forms} 	%13
+	\item 	\href{https://mp.weixin.qq.com/s/hXthDRDDJ-QlMVdpBjaoNA}{Gauge fields as connections; fermion path integrals}	%14
+	\item 	\href{https://mp.weixin.qq.com/s/0l0YH6mKz2LnhBVuqfMY6g}{Lattice gauge theory}	%15
+	\item 	\href{https://mp.weixin.qq.com/s/lWyGjY32rrsCGSIjXJgfqg}{Gauge fixing}	%16
+	\item 	\href{https://mp.weixin.qq.com/s/z2i_K17ZmsKJi0xNIWAF2Q}{The QCD beta function}	%17
+	\item 	\href{https://mp.weixin.qq.com/s/w6kl-LYCqSQwfV74ygXyRQ}{Wilsonian RG, briefly}	%18
+	\item 	\href{https://mp.weixin.qq.com/s/IKtkrHaXQW_TXlx7QSRiHw}{Renormalization of composite operators; Callan-Symanzik equation; Introductory words about Effective Field Theory}	%19
+	\item 	\href{https://mp.weixin.qq.com/s/DrhuAefaVrNwbnmK-0CQMQ}{The color of the sky; loops in effective field theory; the Standard Model as an effective field theory}	%20
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+\newpage 
+
+\begin{center}
+	{\large  \href{https://mcgreevy.physics.ucsd.edu/s22/index.html}{Part \Romannum{3}}}
+\end{center}
+	
+\vspace{-1cm}
+
+\begin{enumerate}
+	\item	\href{https://mp.weixin.qq.com/s/9pGBAgufSJFKHddnnkZ8Rg}{Goals; Anomalies}	%1
+	\item	\href{https://mp.weixin.qq.com/s/TWOvLxJ9WBlpQ56LTpYgTw}{Anomalies; emergence of the Dirac equation in 1+1d}	%2 
+	\item	\href{https://mp.weixin.qq.com/s/o_tjN_U-c1NX8Lkg6KZZAw}{More anomalies} 	%3
+	\item 	\href{https://mp.weixin.qq.com/s/2bvXFOoNZS5NaYtpddX3ng}{Effective field theory of gravity and of particle physics}	%4
+	\item 	\href{https://mp.weixin.qq.com/s/IiBz_ZcGdpLTYHjWyiPL0w}{Effective field theory of superconductors and superfluids}	%5
+	\item 	\href{https://mp.weixin.qq.com/s/skEFxf0AvvITVAH02UBf7w}{Effective field theory of metal}	%6
+	\item 	\href{https://mp.weixin.qq.com/s/OoN9caMfoJfPiksiV8CCuw}{Effective field theory of metal, continued}	%7
+	\item 	\href{https://mp.weixin.qq.com/s/JrAUAy803ATJAygQF3Uglw}{Coherent state path integrals for bosons and fermions}	%8
+	\item 	\href{https://mp.weixin.qq.com/s/txhoLuW49DcXpZkx5Ut2MQ}{Path integrals and sums for spins; geometric quantization}	%9
+	\item 	\href{https://mp.weixin.qq.com/s/VB2_yuIEppMiRRzlku9jRg}{Coherent state parth integrals for spins}	%10
+	\item	\href{https://mp.weixin.qq.com/s/0yAazOkMRBB0dBlCIzkW-Q}{Topological terms from integrating out fermions; pions}	%11
+	\item	\href{https://mp.weixin.qq.com/s/hriKmo9wNvhc-05uLNAKug}{More on pions}	%12 
+	\item	\href{https://mp.weixin.qq.com/s/57jsXOQ1Npc02JkjizTTvw}{Nucleons as solitons; Field theory of spin systems} 	%13
+	\item 	\href{https://mp.weixin.qq.com/s/rZT7WRdc7-zVPgGUoltvjQ}{Field theory of the Neel phase}	%14
+	\item 	\href{https://mp.weixin.qq.com/s/rHZlgN12ChHGbBctEVEzDw}{Large N}	%15
+	\item 	\href{https://mp.weixin.qq.com/s/WFS6vyYJJng5AtBsdiqXBw}{Transverse-field Ising model}	%16
+	\item 	\href{https://mp.weixin.qq.com/s/XfUimgxNf-cK9nR_hVnk7Q}{Field theory of the transverse-field Ising model}	%17
+	\item 	\href{https://mp.weixin.qq.com/s/iR1hS78ekjeZGniy8StQ1w}{Superfluid-insulator transition and T-duality}	%18
+	\item 	\href{https://mp.weixin.qq.com/s/lCC-fhigtUneJt-SdEuTIw}{Bosonization}	%19
+	\item 	\href{https://mp.weixin.qq.com/s/nAaDrNqynAeGSlw6F9Rncw}{Holographic duality}	%20
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
