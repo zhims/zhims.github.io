@@ -1,5 +1,5 @@
 # jemdoc: menu{MENU}{sciml.html}, nofooter
-= Yao Zhang - Scientific Machine Learning, SciML
+= Scientific Machine Learning, SciML
 \n
 Scientific Machine Learning (SciML) is a rapidly emerging discipline within the data science community, aimed at addressing domain-specific data challenges and deriving insights from scientific datasets through innovative methodologies. By integrating tools from both machine learning and scientific computing, SciML develops scalable, domain-aware, robust, reliable, and interpretable approaches for data analysis and learning. These advancements are poised to fuel the next wave of data-driven scientific breakthroughs, particularly in the physical and engineering sciences. Like scientific computing, SciML is inherently multidisciplinary, drawing upon expertise in applied and computational mathematics, computer science, and the physical sciences to tackle complex problems.
 \n
