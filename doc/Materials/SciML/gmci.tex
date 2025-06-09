@@ -1,0 +1,152 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://sites.google.com/view/ubc-math-605d-causality/class-overview}{Graphical Models and Causal Inference}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://personal.math.ubc.ca/~erobeva/index.html}{Elina Robeva}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-1cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/5iQ3uhnDR9QftKlPvxRZXA}{Overview}	%1
+	\item \href{https://mp.weixin.qq.com/s/qgy3DL0UQhDu8pzOWQ6Flg}{Undirected  graphical models - definitions}	%2
+	\item \href{https://mp.weixin.qq.com/s/ItVy0-fagZ4JRCftNziHbA}{Conditional independence axioms}	%3
+	\item \href{https://mp.weixin.qq.com/s/leZTPUh9iLrExCov0nIO7Q}{Equivalence of definitions, Gaussian distributions}	%4
+	\item \href{https://mp.weixin.qq.com/s/jdwikjZug7JxeTsQdCZd_QL}{Properties of Gaussians, Maximum likelihood estimation}	%5
+	\item \href{https://mp.weixin.qq.com/s/ftYULq-m_-c97a9lI1LsVQ}{Maximum Likelihood Estimation for Gaussian graphical models}	%6
+	\item \href{https://mp.weixin.qq.com/s/PEvf_utRW4bQ74-Fx4PNqw}{MLE for Gaussian graphical models; Chordal graphs}	%7
+	\item \href{https://mp.weixin.qq.com/s/ZjsU_or-nT61znCeaKYEKg}{Learning the graph for Gaussian graphical models, Discrete graphical models}	%8
+	\item \href{https://mp.weixin.qq.com/s/S1MeH0zFxD8yNz9bvtk1sw}{Maximum Likelihood Estimation for Log-linear models}	%9
+	\item \href{https://mp.weixin.qq.com/s/2iqheQlQRTL1_nWRQ5h0sA}{Learning Undirected Graphs}	%10
+	\item \href{https://mp.weixin.qq.com/s/4FoiOqfZ1cSuL9-Yd0sGig}{Learning Undirected Graphs; Introduction to causality}	%11
+	\item \href{https://mp.weixin.qq.com/s/4BLgHEC5JiUVpRfHtMm8LA}{Directed graphical models}	%12
+	\item \href{https://mp.weixin.qq.com/s/ki4Ekny3bQ-guBFAe8GPrg}{Markov equivalence. Directed Gaussian graphical models}	%13
+	\item \href{https://mp.weixin.qq.com/s/Kl9G9VgNFoTA-yDUyN9oTw}{Directed Gaussian graphical models}	%14
+	\item \href{https://mp.weixin.qq.com/s/UzWR9RTlIGxMUM-hjIj3iw}{Learning directed acyclic graphs from observations}	%15
+	\item \href{https://mp.weixin.qq.com/s/yz4KqX1c1dmxZ6SYxGHDGg}{Structural equation models and interventions}	%16
+	\item \href{https://mp.weixin.qq.com/s/2sGNtFsgCa4Gjd6a_gYqrQ}{Identification of causal effects from observations}	%17
+	\item \href{https://mp.weixin.qq.com/s/XwNMIs1kBna8qDFazSgYxA}{Counterfactuals, Instrumental variables, and Linear Causal Models}	%18
+	\item \href{https://pan.baidu.com/s/1XHMpncVrOutBQJzpr7fr1A}{Materials}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
