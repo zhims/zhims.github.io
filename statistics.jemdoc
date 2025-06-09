@@ -4,21 +4,13 @@
  Statistics is a mathematical field focused on the study of data collection, analysis, interpretation, and presentation, with broad applications across numerous disciplines. Probability theory, the cornerstone of statistics, models uncertainty and randomness, enabling precise predictions and risk evaluation. Mathematical statistics delves into the theoretical foundations, advancing techniques for estimation, hypothesis testing, and statistical inference. Key areas such as regression analysis, Bayesian methods, and experimental design equip researchers with tools to uncover meaningful patterns and relationships within data. In the era of big data and machine learning, statistics plays an indispensable role in data-driven decision-making, revolutionizing fields like medicine, finance, and social sciences by transforming raw data into actionable insights.
 
 
-== Biostatistics
-
 == [./doc/Materials/Statistics/Probability.pdf  Baby Probability]
 
 == [./doc/Materials/Statistics/SA.pdf  Survival Analysis]
 
-
-
 == Markov Processes
 
-== Statistical Methods
-
 == Regression Analysis
-
-== Statistical Genomics
 
 == Multivariate Analysis
 
