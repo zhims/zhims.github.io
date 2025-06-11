@@ -1,0 +1,208 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.youtube.com/playlist?list=PLHZhjPByiV3Ix0McE7iz8e_kQgxJwaB07}{Numerical Ordinary Differential Equations}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://mathweb.ucsd.edu/~mleok/}{Melvin Leok}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-1cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/3T37SbenNK6vJipvdvt-OA}{Introductory Lecture}	%1
+	\item \href{https://mp.weixin.qq.com/s/9mXDu6whW9fGa-3VXplvVA}{Review of Polynomial Interpolation}	%2
+	\item \href{https://mp.weixin.qq.com/s/4mo8nBsbThIphINt-biNXw}{Numerical Differentiation}	%3
+	\item \href{https://mp.weixin.qq.com/s/KLh_s5HQgc3PjknOUQxI1w}{Complex Function Method of Approximating Derivatives}	%4
+	\item \href{https://mp.weixin.qq.com/s/usPRilnlQSX3wUBGuBljyg}{Richardson Extrapolation}	%5
+	\item \href{https://mp.weixin.qq.com/s/3ymNOdhfSvG_PZbz1elYXQ}{Roundoff Error and Higher-Order Methods}	%6
+	\item \href{https://mp.weixin.qq.com/s/7HzS5A_JIsXTh9P3wFISGQ}{Numerical Quadrature based on Interpolation}	%7
+	\item \href{https://mp.weixin.qq.com/s/qyXHZxEj65nRw2uMLM3NcQ}{Newton-Cotes Formula $n = 2$}	%8
+	\item \href{https://mp.weixin.qq.com/s/uzvolIMfliESvGMBUCTlVQ}{Method of undetermined coefficients and Simpson's rule}	%9
+	\item \href{https://mp.weixin.qq.com/s/xKb8ZHDHU297zh-7yNJ0BQ}{Composite Quadrature Rules}	%10
+	\item \href{https://mp.weixin.qq.com/s/xJm1aCzODppTRMc0a3PxaQ}{Romberg Integration}	%11
+	\item \href{https://mp.weixin.qq.com/s/gkOUKmUe-cJKnXDz7PO7bg}{Pseudocode for Romberg Algorithm}	%12
+	\item \href{https://mp.weixin.qq.com/s/BJ7FC6awtfApAPXgz8ap2A}{Gaussian Quadrature - Motivation and Example}	%13
+	\item \href{https://mp.weixin.qq.com/s/U95SBj3Rne2p5LyAd1STDA}{Gaussian Quadrature - Analysis}	%14
+	\item \href{https://mp.weixin.qq.com/s/SdYkYYak0XtIhPUZt7VVYw}{Adaptive Quadrature}	%15
+	\item \href{https://mp.weixin.qq.com/s/8SS-7tL0G3V7vDBvFX22BA}{Adaptive Quadrature - Pseudocode}	%16
+	\item \href{https://mp.weixin.qq.com/s/ZE4JLmpbw9zFB7-Dgz8FSw}{Existence and Uniqueness of Solutions of Differential Equations}	%17
+	\item \href{https://mp.weixin.qq.com/s/_80EIQ9y3uccz57nmteL6g}{Well-posedness of initial value problem}	%18
+	\item \href{https://mp.weixin.qq.com/s/kYF-Ceohfhhii9OZVoskRQ}{Euler's method}	%19
+	\item \href{https://mp.weixin.qq.com/s/NOlZQwAl7e28JQ4aR_zigg}{Error Analysis - Local vs. Global Error}	%20
+	\item \href{https://mp.weixin.qq.com/s/ldqy32nC6bWUUHdd9i_ykA}{Discrete Gronwall Lemma}	%21
+	\item \href{https://mp.weixin.qq.com/s/iCCQx7UkC992DXQa-XiBig}{Convergence of Euler's method}	%22
+	\item \href{https://mp.weixin.qq.com/s/E7tK_shf3mFskTIXi7Zg2w}{Taylor series method}	%23
+	\item \href{https://mp.weixin.qq.com/s/g-EztkOwAAf5kmZgO2INfw}{Runge-Kutta Method of Order 2}	%24
+	\item \href{https://mp.weixin.qq.com/s/1s8sd0VurrrkHNtOFeu2wA}{Implicit Runge-Kutta methods - Introduction}	%25
+	\item \href{https://mp.weixin.qq.com/s/51UG3JpMITQzV94fJ4AFJg}{Butcher Tableaus and Examples of Runge-Kutta Methods}	%26
+	\item \href{https://mp.weixin.qq.com/s/FhHv6yyWZLPv2joYe6CUFQ}{Stepsize Control}	%27
+	\item \href{https://mp.weixin.qq.com/s/fpSfs0N2BFNOJwawb7AK0g}{4th/5th order Runge-Kutta-Fehlberg Method}	%28
+	\item \href{https://mp.weixin.qq.com/s/xSNMBn_vFWct-2rO4FJmbw}{Multistep Methods}	%29
+	\item \href{https://mp.weixin.qq.com/s/IXb1LbYIDzlEGEY0xV21rg}{Examples of Adams-Bashforth Methods}	%30
+	\item \href{https://mp.weixin.qq.com/s/yOUnANDNga_jZC6JGKykng}{Adams-Moulton Methods}	%31
+	\item \href{https://mp.weixin.qq.com/s/6T_aX__VVZUFdfnjt7kqMg}{Order of multistep methods}	%32
+	\item \href{https://mp.weixin.qq.com/s/YZxBNqKoqBlLVmgUB3jlew}{Order of Adams-Bashforth methods}	%33
+	\item \href{https://mp.weixin.qq.com/s/o21ZhkSsx8NhNEi7ZaWngw}{Solution theory for linear difference equations}	%34
+	\item \href{https://mp.weixin.qq.com/s/G2RqZI2e1gKdzroMh-rF4A}{Root condition and Dahlquist equivalence theorem}	%35
+	\item \href{https://mp.weixin.qq.com/s/w_8_pekvhyKbU_naKLz9vg}{Local truncation error and order of accuracy}	%36
+	\item \href{https://mp.weixin.qq.com/s/lKRhIpREiAb5YE8lyje3aw}{Global truncation error}	%37
+	\item \href{https://mp.weixin.qq.com/s/pnFk-33Wf8l39MWaJVnQ5A}{Systems of higher-order ODEs}	%38
+	\item \href{https://mp.weixin.qq.com/s/j00BLLv81C7_ZVnpDghpfw}{Autonomous differential equations}	%39
+	\item \href{https://mp.weixin.qq.com/s/Db0eENKvVroT8DwjiQifwg}{Taylor method applied to a system of ODEs}	%40
+	\item \href{https://mp.weixin.qq.com/s/1cl-1xZsxqRaT1uxpRfEzQ}{Introduction to boundary-value problems}	%41
+	\item \href{https://mp.weixin.qq.com/s/UF2ds4vHhcvtduZqSqkc7A}{Existence and uniqueness of boundary-value problems}	%42
+	\item \href{https://mp.weixin.qq.com/s/LxP6jvzCYlGUSBlfQ7lqmg}{Shooting method for boundary-value problems}	%43
+	\item \href{https://mp.weixin.qq.com/s/ySE91L1kyNx25kFfYrH3AA}{Linear two-point boundary-value problems}	%44
+	\item \href{https://mp.weixin.qq.com/s/rRIMqJdL158jn9laAzCfAQ}{Newton's Method Applied to Shooting Method for BVPs}	%45
+	\item \href{https://mp.weixin.qq.com/s/vUiDZNDJLyE96-LRq_PBqg}{Multiple shooting for BVPs}	%46
+	\item \href{https://mp.weixin.qq.com/s/gA7qCyBGOxOK1WVXMh9_yQ}{Discretizing Boundary-Value Problems using Finite-Differences}	%47
+	\item \href{https://mp.weixin.qq.com/s/2qg09rNlqcUGUwJNbUnwvg}{Convergence of finite-difference discretization of boundary-value problem}	%48
+	\item \href{https://mp.weixin.qq.com/s/CKN36ozJNQ4modr8SOiQxg}{Systems of linear differential equations}	%49
+	\item \href{https://mp.weixin.qq.com/s/dnWxJxjr1Ox-depgfL8ZPg}{Solutions of systems of linear differential equations in terms of matrix exponentials}	%50
+	\item \href{https://mp.weixin.qq.com/s/fJtLxrK2uJ_uLI4H842M3A}{How to compute the matrix exponential in special cases}	%51
+	\item \href{https://mp.weixin.qq.com/s/MAOdAm_2rcqhR9HjP3Iy-g}{Using the matrix exponential to solve an IVP, and the general case with the Jordan canonical form}	%52
+	\item \href{https://mp.weixin.qq.com/s/qaUqWfBvLRoMJ7xMXFghJQ}{Stiff equations}	%53
+	\item \href{https://mp.weixin.qq.com/s/3lJH0lIsi2tBNsp9fL9zSA}{Modified Euler's method}	%54
+	\item \href{https://mp.weixin.qq.com/s/Xu8PFG19wgOVUeJvb6GUMw}{General linear multistep methods and A-stability}	%55
+	\item \href{https://mp.weixin.qq.com/s/x_Q63zezD9Idly3rqU3O4A}{Region of absolute stability and nonlinear systems}	%56
+	\item \href{https://mp.weixin.qq.com/s/hQwLSIUxOQRqCAEDzQWGiw}{Classification of linear partial differential equations}	%57
+	\item \href{https://mp.weixin.qq.com/s/6Jt0I-7cW339sH1v0oyqOQ}{Parabolic equations: Explicit methods}	%58
+	\item \href{https://mp.weixin.qq.com/s/jhksCPMaXOu-9Y_eLyW7fA}{Parabolic equations: Explicit methods (Stability Analysis)}	%59
+	\item \href{https://mp.weixin.qq.com/s/nS8FEpAsGxcsuu7hAsRSEg}{Parabolic equations: Explicit methods (Fourier stability analysis)}	%60
+	\item \href{https://mp.weixin.qq.com/s/n-fPLB8Njg2L0btFBCn7dA}{Parabolic equations: Implicit methods}	%61
+	\item \href{https://mp.weixin.qq.com/s/fYdvq50W_Diw039Y-z7edA}{Parabolic equations: Crank-Nicolson method}	%62
+	\item \href{https://mp.weixin.qq.com/s/EtnsYTlfSP5DghytGGcWTw}{Parabolic equations: Error analysis of explicit method}	%63
+	\item \href{https://mp.weixin.qq.com/s/gMZmGNhHuwFk8HuR9bAHSA}{Problems without Time Dependence: Finite-Differences}	%64
+	\item \href{https://mp.weixin.qq.com/s/YKzkJg3_shBJeKD24UVEfg}{Problems without Time Dependence: Finite-Differences (Algorithm)}	%65
+	\item \href{https://mp.weixin.qq.com/s/VFTq8TpZoqnIZEi-NHFEpw}{Problems without Time Dependence: Galerkin Methods}	%66
+	\item \href{https://mp.weixin.qq.com/s/Bj8yA-qnGVRNjC7Jf6r7WA}{Galerkin method applied to the Dirichlet problem}	%67
+	\item \href{https://mp.weixin.qq.com/s/jZx_Cdt-M01n8DMY8KMooA}{Poisson equation}	%68
+	\item \href{https://mp.weixin.qq.com/s/29LiSPPCv6ZlHgJqqalYRg}{Rayleigh-Ritz method}	%69
+	\item \href{https://mp.weixin.qq.com/s/TTnK1I3yoRxjqn2bIzCGig}{Characteristic curves}	%70
+	\item \href{https://mp.weixin.qq.com/s/mE6DI923pZIApgfytRNe5A}{Quasilinear second-order equations: Characteristics}	%71
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              

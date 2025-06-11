@@ -1,0 +1,233 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://en.wikipedia.org/wiki/Numerical_methods_for_partial_differential_equations}{Numerical Partial Differential Equations}}
+		
+		%\vspace{-0.25cm}
+		
+		%{\large \href{https://jonshiach.github.io/}{Jon Shiach}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+\begin{center}
+	{\large   \href{https://www.youtube.com/playlist?list=PLgPpaTsP_3Dq5KsWd6-8wmjNs3ipnvCU3}{Finite Difference Methods}} by {\large \href{https://jonshiach.github.io/}{Jon Shiach}}
+\end{center}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/ix6b3RuE8jfu7ShyWCF8UQ}{Introduction to PDEs unitv\Romannum{1}}	%1
+		\item \href{https://mp.weixin.qq.com/s/tCxpaNM1BmIVMZfVclu--w}{Introduction to PDEs unit \Romannum{2}}	%2
+		\item \href{https://mp.weixin.qq.com/s/-NY0BtVqtIGHExZL5yoY7g}{Finite-Difference Approximations}	%3
+		\item \href{https://mp.weixin.qq.com/s/rcs5SKRaIDUtpv9Gs0VjIw}{Finite Difference Schemes}	%4
+		\item \href{https://mp.weixin.qq.com/s/Dk-uyz5RfBniCce6bdrkLQ}{Elliptic PDEs \Romannum{1}}	%5
+		\item \href{https://mp.weixin.qq.com/s/qsTc1B8vZX5VrRKnajF62g}{Elliptic PDEs \Romannum{2}}	%6
+		\item \href{https://mp.weixin.qq.com/s/8xukMKjB8bLrdiIgkI_2dQ}{Hyperbolic PDEs \Romannum{1}}	%7
+		\item \href{https://mp.weixin.qq.com/s/8tAzbTxm8gJBmnu21fccPw}{Hyperbolic PDEs \Romannum{2}}	%8
+		\item \href{https://mp.weixin.qq.com/s/t76wz9gXa_oMhqj2vQ9a4g}{Extension to Multidimensions}	%9
+		\item \href{https://mp.weixin.qq.com/s/46EyRd-LDzZG4R90S4IesA}{Systems of PDEs}	%10
+		%\item \href{url}{Materials}
+	\end{enumerate}
+	
+\end{multicols}
+
+
+\begin{center}
+	{\large   \href{https://faculty.washington.edu/rjl/classes/am574w2023/}{Finite Volume Methods}} by {\large \href{https://amath.washington.edu/people/randy-leveque}{Randy LeVeque}}
+\end{center}
+
+\vspace{-0.75cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/4GLJvMPV8FCq_jUI0WE4bw}{Derivation of Conservation Laws}	%1
+	\item \href{https://mp.weixin.qq.com/s/XEijXbgnhP0FBhnhE1KJIQ}{Variable Coefficient Advection default}	%2
+	\item \href{https://mp.weixin.qq.com/s/sm4sgWfx0kGUD05r1Ot1MA}{Linearization of Nonlinear Systems}	%3
+	\item \href{https://mp.weixin.qq.com/s/lNjwuU41J_DagQSlHohVcw}{Linear Hyperbolic Systems}	%4
+	\item \href{https://mp.weixin.qq.com/s/bthCrLbGabbSXZLWYsInLQ}{Linear Systems - Riemann Problems}	%5
+	\item \href{https://mp.weixin.qq.com/s/x_nEO6Kq_A1ymAQAgCr2AQ}{Linear Systems Nonhyperbolic Cases}	%6
+	\item \href{https://mp.weixin.qq.com/s/0j1fEMZu-9a8ATWkpvYI1A}{Introduction to Finite Volume Methods}	%7
+	\item \href{https://mp.weixin.qq.com/s/T4EC8Ad4mi5sLZkEpz-IhA}{Accuracy, Consistency, Stability, CFL Condition}	%8
+	\item \href{https://mp.weixin.qq.com/s/bnZTFxqizNQyrG6xFTouvw}{Dissipation, Dispersion, Modified Equations}	%9
+	\item \href{https://mp.weixin.qq.com/s/CyZzcLhrfiLadluHfomccQ}{High resolution TVD methods}	%10
+	\item \href{https://mp.weixin.qq.com/s/V13b46YKR6T3sA-TSZ4wUw}{TVD Methods and Limiters}	%11
+	\item \href{https://mp.weixin.qq.com/s/vtnG4_av60ZuSM_EKMzvcg}{Nonlinear Scalar PDEs, Traffic flow}	%12
+	\item \href{https://mp.weixin.qq.com/s/WfZd_-7G9UF7-BY1w9Vi1Q}{Nonlinear scalar and rarefaction waves}	%13
+	\item \href{https://mp.weixin.qq.com/s/BpLLVds39fX4wIb8EExwgg}{Finite Volume Methods for Scalar Conservation Laws}	%14
+	\item \href{https://mp.weixin.qq.com/s/MMyTTCNwX3j5VaY1weNJ9Q}{Admissible Solutions and Entropy Functions}	%15
+	\item \href{https://mp.weixin.qq.com/s/q_4G35hsGqc-Lc7AL8dSqw}{Convergence to Weak Solutions and Nonlinear Stability}	%16
+	\item \href{https://mp.weixin.qq.com/s/s1VXAORVgAqX46NljJkutQ}{Nonlinear systems - Shock Waves and Hugoniot Loci}	%17
+	\item \href{https://mp.weixin.qq.com/s/t29iY8mWrpmYoqqzy4ihaQ}{Rarefaction waves and integral curves}	%18
+	\item \href{https://mp.weixin.qq.com/s/YplLOv8ap0Hd0QRfNL2rGw}{Gas dynamics and Euler equations}	%19
+	\item \href{https://mp.weixin.qq.com/s/-47qZ8945-OBiTqMZHuztQ}{Finite volume methods for nonlinear systems}	%20
+	\item \href{https://mp.weixin.qq.com/s/x9bgq7QhyurGpwi2hIs3wQ}{Approximate Riemann solvers}	%21
+	\item \href{https://mp.weixin.qq.com/s/FDZ8-vNbHevhXyT1Osor_g}{Multidimensional hyperbolic problems}	%22
+	\item \href{https://mp.weixin.qq.com/s/0XN06E5tjGMBbkMIZFBb9A}{Fractional step methods}	%23
+	\item \href{https://mp.weixin.qq.com/s/GMDjgzyoD1YxtU1_9Bvk-Q}{Multidimensional finite volume methods}	%24
+	\item \href{https://mp.weixin.qq.com/s/RLKxb3c59yKpl16LpPDSYQ}{Acoustics in Heterogeneous Media}	%25
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+
+\begin{center}
+	{\large   \href{https://people.maths.ox.ac.uk/farrellp/femvideos/}{Finite Element Methods}} by {\large \href{https://pefarrell.org/}{Patrick E. Farrell}}
+\end{center}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/iY1xBAUhZzXtdcaYxQsaRQ}{1A}	%1
+		\item \href{https://mp.weixin.qq.com/s/ZIjsrKJ7dv6DkV0NJ9Dukg}{1B}	%2
+		\item \href{https://mp.weixin.qq.com/s/u0MLN-OgZXHz22nGTu35wg}{1C}	%3
+		\item \href{https://mp.weixin.qq.com/s/gjIscp99E67FrttAHFFWyA}{2A}	%4
+		\item \href{https://mp.weixin.qq.com/s/5Gph14QcXu2mDtPJh3IXig}{2B}	%5
+		\item \href{https://mp.weixin.qq.com/s/FvKIrBN0f_ZPfBeMVlgPVQ}{2C}	%6
+		\item \href{https://mp.weixin.qq.com/s/9yzZ6Vw92WB4BzRsoO5YsA}{3A}	%7
+		\item \href{https://mp.weixin.qq.com/s/5yDAQ6Df_G5GbauWJ4gDAQ}{3B}	%8
+		\item \href{https://mp.weixin.qq.com/s/4J8EuuTwZAqmc3PlmEH2Xg}{4A}	%9
+		\item \href{https://mp.weixin.qq.com/s/XK_90R2GAtWFZ4zARXviaw}{4B}	%10
+		\item \href{https://mp.weixin.qq.com/s/-2KK6WDRSXLZMY1O-sDyXQ}{5A}	%11
+		\item \href{https://mp.weixin.qq.com/s/lElg-9PMDrjg3GJkO6xXLQ}{5B}	%12
+		\item \href{https://mp.weixin.qq.com/s/rxfVAcGGKpWKrngKpFZNOw}{6A}	%13
+		\item \href{https://mp.weixin.qq.com/s/6YvPeNp8hPSh3IwSKwqHbg}{6B}	%14
+		\item \href{https://mp.weixin.qq.com/s/_63XnnGLkHtEewQs--WJRw}{7A}	%15
+		\item \href{https://mp.weixin.qq.com/s/2ImTrM0p793iGKAOg3j-lg}{7B}	%16
+		\item \href{https://mp.weixin.qq.com/s/IJFxegiYZztZ544vpHO0yA}{8A}	%17
+		\item \href{https://mp.weixin.qq.com/s/6Btxk4Rtw-FzwMgIs_QJSw}{8B}	%18
+		\item \href{https://mp.weixin.qq.com/s/o4gvY1RJO-NZPGs6zSY46A}{9A}	%19
+		\item \href{https://mp.weixin.qq.com/s/z1qqgjA-TmKvNV3AM50FLQ}{9B}	%20
+		\item \href{https://mp.weixin.qq.com/s/9nGJv1bVoCzbSW48H68lvQ}{10A}	%21
+		\item \href{https://mp.weixin.qq.com/s/p26MRpsINQojYz1BO-Inkw}{10B}	%22
+		\item \href{https://mp.weixin.qq.com/s/jmqrOS8Xns0gab-Getzicw}{10C}	%23
+		\item \href{https://mp.weixin.qq.com/s/5jvXDp0PxDfeZAAwNK6EKA}{11A}	%24
+		\item \href{https://mp.weixin.qq.com/s/IKD0guKtmc2SajzQ8EI1tg}{11B}	%25
+		\item \href{https://mp.weixin.qq.com/s/3iQ-HNWL84XOTg2d-mmOHw}{12A}	%26
+		\item \href{https://mp.weixin.qq.com/s/SWlbKO7Y8UI9o7l62McGNw}{12B}	%27
+		\item \href{https://mp.weixin.qq.com/s/RNAWT0JSGUlVfnwL3qeuJA}{12C}	%28
+		\item \href{https://mp.weixin.qq.com/s/-vadY6SgibpujPGp6Llz5A}{13A}	%29
+		\item \href{https://mp.weixin.qq.com/s/83DnXmivY5W9iDtkXvs3-A}{13B}	%30
+		\item \href{https://mp.weixin.qq.com/s/qT7SJItQat0q10MI12KXnA}{13C}	%31
+		\item \href{https://mp.weixin.qq.com/s/QCZFzmty0WLXGJq54nGOKQ}{13D}	%32
+		\item \href{https://mp.weixin.qq.com/s/KG-Vu06ZrHWH2rKeIlWYhw}{14A}	%33
+		\item \href{https://mp.weixin.qq.com/s/5kh2n3YG2tt7APc4qb57nw}{14B}	%34
+		\item \href{https://mp.weixin.qq.com/s/PIy8EnSu3LrbtD8IfNvp4w}{14C}	%35
+		\item \href{https://mp.weixin.qq.com/s/tzbOtkaEakK_qmbAOzXosg}{15A}	%36
+		\item \href{https://mp.weixin.qq.com/s/YEgvTHIX5PpIwrL7APjCmA}{15B}	%37
+		\item \href{https://mp.weixin.qq.com/s/ZQzCIjSH_nveK6zNEQ-QkQ}{15C}	%38
+		%\item \href{url}{Materials}
+	\end{enumerate}
+\end{multicols}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
