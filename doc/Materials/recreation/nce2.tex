@@ -1,0 +1,235 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.youtube.com/playlist?list=PL7QPSCAroBog_u72arS00YtJDBX0bFnXa}{New Concept English \Romannum{2}}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://m.weibo.cn/u/1561335350?luicode=10000011&lfid=100808c47bf1b14af55d62f91fef87e2db3a5f_-_feed}{Jing Tian}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{1cm}
+%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\setcounter{enumi}{-1}
+		\item \href{https://mp.weixin.qq.com/s/NPIaPpjjzJNXyYPf623xag}{Introduction}	%0
+		\item \href{https://mp.weixin.qq.com/s/B8mT3rjtlzJsJsTDIDkgRg}{A private conversation}	%1
+		\item \href{https://mp.weixin.qq.com/s/2_UKnq7CTIShtpyxn3Aj5A}{Breakfast or lunch?}	%2
+		\item \href{https://mp.weixin.qq.com/s/7IWBmvVuL_AVnfYpE1x3WA}{Please send me a card}	%3
+		\item \href{https://mp.weixin.qq.com/s/HKLw-bUPzLX0HHL-gln58w}{An exciting trip}	%4
+		\item \href{https://mp.weixin.qq.com/s/VSvo1-8ezwWxcEBahOxgGQ}{No wrong numbers}	%5
+		\item \href{https://mp.weixin.qq.com/s/Pa2C7xnccwNq1V0Tgt0_bQ}{Percy Buttons}	%6
+		\item \href{https://mp.weixin.qq.com/s/3VYqwLXvfzjgKSTlR-agbw}{Too late}	%7
+		\item \href{https://mp.weixin.qq.com/s/lUI0yXq-63gDEOp6qJ8UCA}{The best and the worst}	%8
+		\item \href{https://mp.weixin.qq.com/s/Z1AinTHKM98GuaJ_hK0odA}{A cold welcome}	%9
+		\item \href{https://mp.weixin.qq.com/s/DgluateiJsy4mJcNsTUXaQ}{Not for jazz}	%10
+		\item \href{https://mp.weixin.qq.com/s/Jb33ejgBO9dOSnbmRVVjag}{One good turn deserves another}	%11
+		\item \href{https://mp.weixin.qq.com/s/VIBQQRJnYFPA8E86U-j9yA}{Goodbye and good luck}	%12
+		\item \href{https://mp.weixin.qq.com/s/Z7jCKq2pK22H-XRzy2ywUw}{The Greenwood Boys}	%13
+		\item \href{https://mp.weixin.qq.com/s/rKKghKCvSBcENNvzRfuhgA}{Do you speak English?}	%14
+		\item \href{https://mp.weixin.qq.com/s/kE9qX26eYJlnyY28BfNK4w}{Good news}	%15
+		\item \href{https://mp.weixin.qq.com/s/L-ZBNxJvwkIpepWQOAvtaw}{A polite request}	%16
+		\item \href{https://mp.weixin.qq.com/s/PGWWM3tYLX6X3UP12ebYRg}{Always young}	%17
+		\item \href{https://mp.weixin.qq.com/s/WC4vxA6SL6Pd6VU9vJbkXg}{He often does this!}	%18
+		\item \href{https://mp.weixin.qq.com/s/JrrvbZ2Oi6TYCjyDc4LttQ}{Sold out}	%19
+		\item \href{https://mp.weixin.qq.com/s/vuTDWgUdTEaE7o49DXYvnw}{One man in a boat}	%20
+		\item \href{https://mp.weixin.qq.com/s/5Wxa77RXBRR73EP5BrZCIQ}{Mad or not?}	%21
+		\item \href{https://mp.weixin.qq.com/s/50FDrx6UF7m50jEE9CEr8A}{A glass envelope}	%22
+		\item \href{https://mp.weixin.qq.com/s/_XZUZaarSGuAnlddW74nbg}{A new house}	%23
+		\item \href{https://mp.weixin.qq.com/s/mAIWR25K6kfkHJfqDpqqCA}{It could be worse}	%24
+		\item \href{https://mp.weixin.qq.com/s/wTmq50NgL_wV_eMabtmszw}{Do the English speak English?}	%25
+		\item \href{https://mp.weixin.qq.com/s/PfCVozEw7r6fhbaQsTXnzw}{The best art critics}	%26
+		\item \href{https://mp.weixin.qq.com/s/Nv0ZxZvi70PBz_Yh8V0Few}{A wet night}	%27
+		\item \href{https://mp.weixin.qq.com/s/cGR9q--qyjosjTrmWamoig}{No parking}	%28
+		\item \href{https://mp.weixin.qq.com/s/cO0TPWL5XylZ--mpOrOABg}{Taxi}	%29
+		\item \href{https://mp.weixin.qq.com/s/koqh-H-KMA5QDr_EdwgQSg}{Football or polo?}	%30
+		\item \href{https://mp.weixin.qq.com/s/o33v42P3ioXgkP5UPFKGOg}{Success story}	%31
+		\item \href{https://mp.weixin.qq.com/s/Q5WIdlBK8mIhAGivE785mQ}{Shopping made easy}	%32
+		\item \href{https://mp.weixin.qq.com/s/zta4OSWqMFNRXdxiHRRPZQ}{Out of the darkness}	%33
+		\item \href{https://mp.weixin.qq.com/s/jbPSz_DF9T1kI_ByignLEQ}{Quick work}	%34
+		\item \href{https://mp.weixin.qq.com/s/Q6m6AateAor64sBNT8Pe9Q}{Stop thie!}	%35
+		\item \href{https://mp.weixin.qq.com/s/Up76WjioOGb9FYz1mqpCqw}{Across the Channel}	%36
+		\item \href{https://mp.weixin.qq.com/s/X5fTd8_L4xZMpB6fSOMmHQ}{The Olympic Games}	%37
+		\item \href{https://mp.weixin.qq.com/s/0ZmPgJBpPe3gYuUuW5FMBg}{Everything except the weather}	%38
+		\item \href{https://mp.weixin.qq.com/s/_s9aZ_5S4Pm-VStnAE4O8Q}{Am I all right?}	%39
+		\item \href{https://mp.weixin.qq.com/s/mRHdO4tj0y9cbuk2yugYsw}{Food and talk}	%40
+		\item \href{https://mp.weixin.qq.com/s/Bf73tYBmJOMDvCLOGfQleg}{Do you call that a hat?}	%41
+		\item \href{https://mp.weixin.qq.com/s/KR80K-7yL0yhWQ4yq5qDTA}{Not very musical}	%42
+		\item \href{https://mp.weixin.qq.com/s/lCVAPItpm_x_5U22hC93Iw}{Over the South Pole}	%43
+		\item \href{https://mp.weixin.qq.com/s/XO0M_5fYLtlxtlo2b_tnnQ}{Through the forest}	%44
+		\item \href{https://mp.weixin.qq.com/s/1kHNfAzlTuBRsg9cdRx94w}{A clear conscience}	%45
+		\item \href{https://mp.weixin.qq.com/s/yYGFKS0zaUv3Vx_r1opFjw}{Expensive and uncomfortable}	%46
+		\item \href{https://mp.weixin.qq.com/s/yxtOr19rQZ7DXpqRiqUj_w}{A thirsty ghost}	%47
+		\item \href{https://mp.weixin.qq.com/s/2R-HwdjjyCZFkhpZdcYg0A}{Did you want to tell me something?}	%48
+		\item \href{https://mp.weixin.qq.com/s/inS2KeXVwhcKOn5GIRnqGA}{The end of a dream}	%49
+		\item \href{https://mp.weixin.qq.com/s/x3fFa18Dv6zFKOTORE2yRQ}{Taken for a ride}	%50
+		\item \href{https://mp.weixin.qq.com/s/yY0rruW3uJ_zDHNhPuw91w}{Reward for virtue}	%51
+		\item \href{https://mp.weixin.qq.com/s/eYxSdN5Zat5RpWYLwH3NCA}{A pretty carpet}	%52
+		\item \href{https://mp.weixin.qq.com/s/2bky2EUAufsh_lHf9POQwg}{Hot snake}	%53
+		\item \href{https://mp.weixin.qq.com/s/7X2HIE8jwxx-NBuhnCkOJg}{Sticky fingers}	%54
+		\item \href{https://mp.weixin.qq.com/s/CFlzeik5KzUT9Tb-mQaGBg}{Not a gold mine}	%55
+		\item \href{https://mp.weixin.qq.com/s/G7dWQ0-Y7aPWoEBX94fccg}{Faster than sound}	%56
+		\item \href{https://mp.weixin.qq.com/s/nbBidDniUoj6jTD_1UURGg}{Can I help you, madam?}	%57
+		\item \href{https://mp.weixin.qq.com/s/FaMyahkX78rLjJq6Z0Dgvg}{A blessing in disguise?}	%58
+		\item \href{https://mp.weixin.qq.com/s/5Phe68AqUmwfPYIMbc0rWA}{In or out?}	%59
+		\item \href{https://mp.weixin.qq.com/s/EQkm9xw1fbdlMdK86pO9kA}{The future}	%60
+		\item \href{https://mp.weixin.qq.com/s/vWAHNcbUJOp5R8CxMPEq2w}{Trouble with the Hubble}	%61
+		\item \href{https://mp.weixin.qq.com/s/ldWXEtWEbPLHAgblKuERCg}{After the fire}	%62
+		\item \href{https://mp.weixin.qq.com/s/xyl3Kl3Uu8Kqh7W6dqt6Xw}{She was not amused}	%63
+		\item \href{https://mp.weixin.qq.com/s/JA9Q4WDgxTPed-xcU23Itw}{The Channel Tunnel}	%64
+		\item \href{https://mp.weixin.qq.com/s/NZFExzTS5Kp2F91TXrc9Fw}{Jumbo versus the police}	%65
+		\item \href{https://mp.weixin.qq.com/s/gzScY1qNxQc3_kZ0mphLyQ}{Sweet as honey!}	%66
+		\item \href{https://mp.weixin.qq.com/s/xo4hZuglEu5_-2jMceVTxg}{Volcanoes}	%67
+		\item \href{https://mp.weixin.qq.com/s/RrEmkWWnERgllMOU7ZPWtA}{Persistent}	%68
+		\item \href{https://mp.weixin.qq.com/s/o-EWEqKe4HV2yi8cM_QGpA}{ But not murder!}	%69
+		\item \href{https://mp.weixin.qq.com/s/DTrY8-AfJwZ-uc7D-d2NIw}{Red for danger}	%70
+		\item \href{https://mp.weixin.qq.com/s/kr4YnE2Yg48T1io1Xg1jgA}{A famous clock}	%71
+		\item \href{https://mp.weixin.qq.com/s/rE4WaBp1lxTRRbi6yY8_Zw}{A car called Bluebird}	%72
+		\item \href{https://mp.weixin.qq.com/s/VLAZLpyV0GWUUOzp8WCo1A}{The record-holder}	%73
+		\item \href{https://mp.weixin.qq.com/s/wkH_5kMyCevIbiMNz8CYVg}{Out of the limelight}	%74
+		\item \href{https://mp.weixin.qq.com/s/NGifbTaGFQqRDktweMN8Pg}{SOS}	%75
+		\item \href{https://mp.weixin.qq.com/s/zUT_GdBJdFX1xC8IplASwg}{April Fools' Day}	%76
+		\item \href{https://mp.weixin.qq.com/s/Bad0dS9l6VrsRUxCt_XB5w}{A successful operation}	%77
+		\item \href{https://mp.weixin.qq.com/s/3QX3ERTV31Ncn3pqmaVItw}{The last one?}	%78
+		\item \href{https://mp.weixin.qq.com/s/Lk0D0xOQl1zCksnE3zagCQ}{By air}	%79
+		\item \href{https://mp.weixin.qq.com/s/tTbfmYHnB7w-pmxIgdf2Wg}{The Crystal Palace}	%80
+		\item \href{https://mp.weixin.qq.com/s/bO2KedAuzrlgxpnyQRBZ_w}{Escape}	%81
+		\item \href{https://mp.weixin.qq.com/s/qe3g1AQIJMpbldKdZTAQLw}{Monster or fish?}	%82
+		\item \href{https://mp.weixin.qq.com/s/mtZnCo-vtLriAhP9uvOqmw}{After the elections }	%83
+		\item \href{https://mp.weixin.qq.com/s/gO1F1vFNzyZpBMzpNvf4_Q}{On strike}	%84
+		\item \href{https://mp.weixin.qq.com/s/dBF14SQCYm6oX181mh9OXA}{Never too old to learn}	%85
+		\item \href{https://mp.weixin.qq.com/s/fcGTmXoei0482jg3u5ZtKA}{Out of control}	%86
+		\item \href{https://mp.weixin.qq.com/s/BNIgNZEkZrebnm0b4CBLbg}{A perfect alibi}	%87
+		\item \href{https://mp.weixin.qq.com/s/qH5DjyI8X2xoUQEnsQ0Lug}{Trapped in a mine}	%88
+		\item \href{https://mp.weixin.qq.com/s/9YtZFrgKKC2nej24VdQVnw}{A slip of the tongue}	%89
+		\item \href{https://mp.weixin.qq.com/s/KdRLmNADSRStB-7eIVbGNA}{What's for supper?}	%90
+		\item \href{https://mp.weixin.qq.com/s/0UtfhJdaZk9PJ9LFqjFZlQ}{Three men in a basket}	%91
+		\item \href{https://mp.weixin.qq.com/s/8YKO3pJEVsreMVZ83XnmkA}{Asking for trouble}	%92
+		\item \href{https://mp.weixin.qq.com/s/LfJGuLHbOaqUKHRZzHiYWA}{A noble gift }	%93
+		\item \href{https://mp.weixin.qq.com/s/JcWAf-dE_yfRzIVX4B1PSg}{Future champions}	%94
+		\item \href{https://mp.weixin.qq.com/s/cOru0kWrAUdDFJ9o4FyikQ}{A fantasy}	%95
+		\item \href{https://mp.weixin.qq.com/s/L6QjfqOjb96nyu8ZpZpU1A}{The dead return}	%96
+		\item \href{https://mp.weixin.qq.com/s/ampMYXE-n1BGAQoUDUR0Bg}{Summary}	%97
+		%\item \href{url}{Materials}
+	\end{enumerate}
+\end{multicols}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
