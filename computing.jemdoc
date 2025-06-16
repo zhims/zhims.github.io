@@ -5,12 +5,12 @@ Computational science is dedicated to developing and applying numerical methods 
 
 == Tensor Computation
 
-== [./doc/Materials/computing/numopt.pdf  Numerical Optimization]
+== [./doc/materials/computing/numopt.pdf  Numerical Optimization]
 
-== [./doc/Materials/computing/lsmc.pdf  Large Sparse Matrix Computations]
+== [./doc/materials/computing/lsmc.pdf  Large Sparse Matrix Computations]
 
 
-== [./doc/Materials/computing/npde.pdf  Numerical Partial Differential Equations] 
+== [./doc/materials/computing/npde.pdf  Numerical Partial Differential Equations] 
 
 
 #. Boundary Element Method: [https://mp.weixin.qq.com/s/aZB5u9s8NX14hOYiKyoMrA 01] ~~ [https://mp.weixin.qq.com/s/F2kv8fQLT5PrC2EqJIwCxQ 02] ~~ [https://mp.weixin.qq.com/s/EupcrHQHWLgbv1d-bp_Mug 03] ~~ [https://mp.weixin.qq.com/s/vobB75Lt9yB6dUUOTyhAHg 04] ~~ [https://mp.weixin.qq.com/s/G2zotWw_6vqRpONOlGi6lA 05] ~~ [https://mp.weixin.qq.com/s/lsrYnedCLAlVpctjo3wrzQ 06] ~~ [https://mp.weixin.qq.com/s/sq1mjoMmMg9w56Ws9xzz0w 07] ~~ [https://mp.weixin.qq.com/s/hiLSb1CdVENvSovecHc9NQ 08] ~~ [https://mp.weixin.qq.com/s/LBothkzZ4MM8XplY0G0nhA 09] ~~ [https://mp.weixin.qq.com/s/T22KD56q-UV6_kF2IRiyCQ 10] ~~ [https://mp.weixin.qq.com/s/EePCd0pfZGOA2JNa426rug 11] ~~ [https://mp.weixin.qq.com/s/ACP5c-D23-OiuzaUbY0OSw 12]
@@ -19,5 +19,5 @@ Computational science is dedicated to developing and applying numerical methods 
 #. Machine Learning-based Method: [https://mp.weixin.qq.com/s/ZLDQCOid2lpSfYkLg3VUvQ 01] ~~ [https://mp.weixin.qq.com/s/PQJF88VU90mGzLzCiDSXEw 02] ~~ [https://mp.weixin.qq.com/s/LlulyQKOt9rvvPYQ9yAIMA 03] ~~ [https://mp.weixin.qq.com/s/j6d8TiKtlB4398HZF-P7Ug 04] ~~ [https://mp.weixin.qq.com/s/-v6GYTUHOlvy5UMLplp5Tw 05] ~~ [https://mp.weixin.qq.com/s/wUEXtPMWpek0DXfeFUwU7w 06]
 
 
-== [./doc/Materials/computing/node.pdf  Numerical Ordinary Differential Equations] 
+== [./doc/materials/computing/node.pdf  Numerical Ordinary Differential Equations] 
 
