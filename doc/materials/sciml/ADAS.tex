@@ -1,0 +1,188 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.youtube.com/playlist?list=PLISXH-iEM4Jk27AmSvISooRRKH4WtlWKP}{Automatic Differentiation, Adjoints, and Sensitivities}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://fkoehler.site/}{Felix Matteo K\"{o}hler}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+%\vspace{-1cm}
+
+\begin{enumerate}
+	\item  \href{https://mp.weixin.qq.com/s/zFCMeqcESJfZCJjfu92sjg}{Adjoint Equation of a Linear System of Equations - by implicit derivative} %1
+	\item  \href{https://mp.weixin.qq.com/s/b9yHy1WEKca1qda24E3aRw}{Adjoint Sensitivities of a Linear System of Equations - derived using the Lagrangian} %2
+	\item  \href{https://mp.weixin.qq.com/s/L1wNHylcA3h7Qm9Hx0lcxw}{Python Example for the Adjoint Sensitivities of a Linear System  Full Details \& Timings} %3
+	\item  \href{https://mp.weixin.qq.com/s/4OILR7Xf64M-rDkLNH4s5g}{Adjoint Sensitivities of a Non-Linear system of equations  Full Derivation} %4
+	\item  \href{https://mp.weixin.qq.com/s/HNPeePbm_ctDeGclViHi6g}{Lagrangian Perspective on the Derivation of Adjoint Sensitivities of Nonlinear Systems} %5
+	\item  \href{https://mp.weixin.qq.com/s/WtHAOIb27wdFaRImCLWUYw}{Python Example for Adjoint Sensitivities of Nonlinear Equation} %6
+	\item  \href{https://mp.weixin.qq.com/s/3okjGSJq5GDRC6cQscSDxw}{Adjoint State Method for an ODE  Adjoint Sensitivity Analysis} %7
+	\item  \href{https://mp.weixin.qq.com/s/b1QZQSVmr07hIXjNewDyYA}{Adjoint Sensitivities over nonlinear equation with JAX Automatic Differentiation} %8
+	\item  \href{https://mp.weixin.qq.com/s/CZBsfhYkLenCRGnMju0KRA}{Adjoint Sensitivities in Julia with Zygote \& ChainRules} %9
+	\item  \href{https://mp.weixin.qq.com/s/i_4D0CPukDh7f4x33VNgng}{Python Example Adjoint Sensitivities over nonlinear SYSTEMS of equations} %10
+	\item  \href{https://mp.weixin.qq.com/s/e5H0Z6RkdjjAk_Dq6Laqbw}{Using JAX Jacobians for Adjoint Sensitivities over Nonlinear Systems of Equations} %11
+	\item  \href{https://mp.weixin.qq.com/s/GTiBXck7mhtdXxv7k1XNQA}{What is a Jacobian-Vector product (jvp) in JAX} %12
+	\item  \href{https://mp.weixin.qq.com/s/K8HVYGsHW9sgkNcJDL0d8g}{Naive Jacobian-vector product vs. JAX.jvp  Benchmark comparison} %13
+	\item  \href{https://mp.weixin.qq.com/s/DOz5Uc9RsfcyfNwROYKHpg}{What is a vector-Jacobian product (vjp) in JAX} %14
+	\item  \href{https://mp.weixin.qq.com/s/dWnLDP7_iWhxnsEEfm0bZA}{Naive vector-Jacobian product vs JAX.vjp  Benchmark comparison} %15
+	\item  \href{https://mp.weixin.qq.com/s/jMFEBU2sJe-k_USHUsRqbQ}{Jacobian-vector product (Jvp) with ForwardDiff.jl in Julia} %16
+	\item  \href{https://mp.weixin.qq.com/s/Bgd7OYQdDVkOGf4Syf_veQ}{What is a Pullback in Zygote.jl  vector-Jacobian products in Julia} %17
+	\item  \href{https://mp.weixin.qq.com/s/ZJTDVi14YLw-HiE4zRoLvg}{Full Jacobian Matrix using forward-mode AD in JAX} %18
+	\item  \href{https://mp.weixin.qq.com/s/BGN4wbaS9bEIS0H-7eJ-pQ}{Full Jacobian using reverse-mode AD in JAX} %19
+	\item \href{url}{Materials}
+\end{enumerate}
+
+
+\newpage 
+
+\begin{center}
+	\href{https://www.youtube.com/playlist?list=PLISXH-iEM4Jn3SEi07q8MJmDD6BaMWlJE}{Automatic Differentiation Primitive Rules}
+\end{center}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/zAXUXuUPENr9AATsQGmXxA}{Scalar Addition Pushforward/Jvp rule}  %1
+	\item \href{https://mp.weixin.qq.com/s/95G-WZAO4Au1-tIogQsscg}{Scalar Addition Pullback/vJp rule}	%2
+	\item \href{https://mp.weixin.qq.com/s/EE6QrhBW3xfDi-C9gd9dIw}{Scalar Multiplication Pushforward/Jvp rule}	%3
+	\item \href{https://mp.weixin.qq.com/s/5J2X2P_dxtd-KMNhDNnBrw}{Scalar Multiplication Pullback/vJp rule}	%4
+	\item \href{https://mp.weixin.qq.com/s/sB7nyHkkRjWZcToZvw269Q}{Scalar Sine Pushforward/Jvp rule}	%5
+	\item \href{https://mp.weixin.qq.com/s/ndSUaAxx-MVTtQwGNT41Ng}{Scalar Sine Pullback/vJp rule}	%6
+	\item \href{https://mp.weixin.qq.com/s/yVEbDhwzoMJD0yZXUMfE8A}{Broadcasted Function Pushforward/Jvp rule}	%7
+	\item \href{https://mp.weixin.qq.com/s/vXBt5TpDnWg-B8CNxo45Ug}{Broadcasted Function Pullback/vJp rule}	%8
+	\item \href{https://mp.weixin.qq.com/s/GarjBBLsQZv7OAteDaDMcA}{Matrix-Vector product Pushforward/Jvp rule}	%9
+	\item \href{https://mp.weixin.qq.com/s/F9r5kLT4tP1x0CeMIraCPA}{Matrix-Vector product Pullback/vJp rule}	%10
+	\item \href{https://mp.weixin.qq.com/s/Sg-7lksCJkDcLVFr7b_cfw}{Scalar Root-Finding Pushforward/Jvp rule}	%11
+	\item \href{https://mp.weixin.qq.com/s/GKhK5LcLc-g6GuyeEw_HhQ}{Scalar Root-Finding Pullback/vJp rule}	%12
+	\item \href{https://mp.weixin.qq.com/s/LPwu-jiIveb2uu6Hi8ANFw}{Matrix-Matrix Product Pushforward/Jvp rule}	%13
+	\item \href{https://mp.weixin.qq.com/s/9l4fVmT3ktAhW-nmLCiVSg}{Matrix-Matrix Product Pullback/vJp rule}	%14
+	\item \href{https://mp.weixin.qq.com/s/sGDY9K1mVxvlxyQz0hHtvA}{L2 Loss (Least Squares) Pushforward/Jvp rule}	%15
+	\item \href{https://mp.weixin.qq.com/s/XSHdAPAzzzhjrWFoYYwQew}{L2 Loss (Least Squares) Pullback/vJp rule}	%16
+	\item \href{https://mp.weixin.qq.com/s/jRzc_842J8ok7Ds1SYb0jA}{Nonlinear System Solve Pushforward/Jvp rule}	%17
+	\item \href{https://mp.weixin.qq.com/s/A9tB6x0DAMyP1ikC7ti4Ew}{Nonlinear System Solve Pullback/vJp rule}	%18
+	\item \href{https://mp.weixin.qq.com/s/f1gMdPYSvnYaELFOBT_DZg}{Linear System Solve Pushforward/Jvp rule}	%19
+	\item \href{https://mp.weixin.qq.com/s/CxJSw4VGs_DfzGHdMnup6w}{Linear System Solve Pullback/vJp rule}	%20
+	\item \href{https://mp.weixin.qq.com/s/A2tRP9eoNR2KOUql23pxbA}{Neural ODEs Pushforward/Jvp rule}	%21
+	\item \href{https://mp.weixin.qq.com/s/YfNgLM-V3p-k7BwDa8O0ow}{Neural ODE Pullback/vJp/adjoint rule}	%22
+	\item \href{https://mp.weixin.qq.com/s/0s_Qxcbx4sDbpXq-mNvkcQ}{Softmax Pushforward/Jvp rule}	%23
+	\item \href{https://mp.weixin.qq.com/s/YKV0lFC3gROaCXCcz-NZWQ}{Softmax Pullback/vJp rule}	%24
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              

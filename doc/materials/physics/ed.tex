@@ -1,0 +1,221 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://spectrum.troy.edu/gmenon/E&M.html}{Electrodynamics}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://spectrum.troy.edu/gmenon/}{Govind Menon}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+%\vspace{0.25cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/NZdMcoM8xSPUkEAylvMd4Q}{Introduction to Vectors}	%1
+		\item \href{https://mp.weixin.qq.com/s/9AasyCimVvHMo3f4EZTXoA}{Cross Product}	%2
+		\item \href{https://mp.weixin.qq.com/s/oUAaULSHxkwkQL1t5nzgpA}{The Gradient}	%3
+		\item \href{https://mp.weixin.qq.com/s/rcalc1KBCR_5g6St2wT_4Q}{The Line Integral}	%4
+		\item \href{https://mp.weixin.qq.com/s/mYVvDVtl5ms2DsatDkcrFw}{Divergence and Curl}	%5
+		\item %6
+		\begin{enumerate}
+			\item \href{https://mp.weixin.qq.com/s/saWPBK3KAEqy-ZWuBxz3jA}{Cylindrical and Spherical CS}	%6a
+			\item \href{https://mp.weixin.qq.com/s/gPcf2XwTk7j9hsznrJaYOQ}{Cylindrical CS Divergence}	%6b
+			\item \href{https://mp.weixin.qq.com/s/Y0SsbiKw_6Hn-WuR4PdYBw}{Stokes Thm Example}	%6c
+		\end{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/CfyhD8MIyn6xeI7g_LJueA}{The Delta Function}	%7
+		\item \href{https://mp.weixin.qq.com/s/6TlfLo6FWlnCUDRNEM1bZQ}{Delta Function continued}	%8
+		\item \href{https://mp.weixin.qq.com/s/YFhwukTdK4uV7Q8TfE6sTw}{Sample Problems}	%9
+		\item \href{https://mp.weixin.qq.com/s/vFFcfEjcP4lJnJ-o_a7CaQ}{Helmholtz Theorem}	%10
+		\item \href{https://mp.weixin.qq.com/s/RQFeT64LoPrQ7OQkamoyBw}{The Electric Field}	%11
+		\item \href{https://mp.weixin.qq.com/s/5QvIjUMGtRBeh1YStNQSvA}{Electric field outside a charged shell}	%12
+		\item \href{https://mp.weixin.qq.com/s/V7Nbw-FhxEVt1y5gS1cHZQ}{Gauss's Law}	%13
+		\item \href{https://mp.weixin.qq.com/s/-USF1znpoufzpcZxWRGq_Q}{Curl of E}	%14
+		\item \href{https://mp.weixin.qq.com/s/90J7bGePz4TwAWzAtWcAbw}{The Electric Potential}	%15
+		\item \href{https://mp.weixin.qq.com/s/juF1hPujjOV7Hm5z5XJitg}{Boundary Conditions}	%16
+		\item \href{https://mp.weixin.qq.com/s/PPA4xbxGSF-Cb0n4frDaYA}{Energy in Electrostatics}	%17
+		\item 	%18
+		\begin{enumerate}
+			\item \href{https://mp.weixin.qq.com/s/URUFyE97c6ps-v1sGKIP0A}{Conductors}  %18a
+			\item \href{https://mp.weixin.qq.com/s/sQ3qb6BQaSi0YSVkQLT_CQ}{Electrostatic Energy Example}	%18b
+		\end{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/A358a4NWxSzl-A4wDW5rgQ}{Capacitance}	%19
+		\item \href{https://mp.weixin.qq.com/s/LixTxuB72-dPOqJQKWdrBw}{Energy Stored in a Capacitor}	%20
+		\item \href{https://mp.weixin.qq.com/s/orRXD8-JycixLzCcTgygxg}{Maxima and Minima of Potentials}	%21
+		\item \href{https://mp.weixin.qq.com/s/6M9MzMudlKlkih-aO4Hv0Q}{Uniqueness Theorems}	%22
+		\item \href{https://mp.weixin.qq.com/s/AkRfmkRAyy_fm-c7c2Nbfw}{Image Charges}	%23
+		\item \href{https://mp.weixin.qq.com/s/mrW6TaTPRahTMprRyeG0ZA}{Laplace's Equation \Romannum{1}}	%24
+		\item \href{https://mp.weixin.qq.com/s/X_YsCY1QbPXgx5_og1ZLDg}{Laplace's Equation \Romannum{2}}	%25
+		\item \href{https://mp.weixin.qq.com/s/c8U0_SeiJbqyszCvALnl-g}{Laplace's Equation \Romannum{3}}	%26
+		\item \href{https://mp.weixin.qq.com/s/EzCDJDqpn2P8FHQBMipxgw}{Laplace's Equation \Romannum{4}}	%27
+		\item \href{https://mp.weixin.qq.com/s/NOqnV4E4daft0EYD8jUxdA}{The Electric Dipole}	%28
+		\item \href{https://mp.weixin.qq.com/s/5KImbZpTgNP6qrTXdqDLuQ}{Multipole Expansion}	%29
+		\item \href{https://mp.weixin.qq.com/s/93654RyiDqpNc2zV0hem8g}{Force and Torque on a Dipole}	%30
+		\item \href{https://mp.weixin.qq.com/s/JY5Avd-cQwrLmOp2aYTwrg}{Problems 4.5 and 4.29}	%31
+		\item \href{https://mp.weixin.qq.com/s/CDIfNObup4UAKSjTyKT8Xg}{Dielectric Materials}	%32
+		\item \href{https://mp.weixin.qq.com/s/YDmiKhaZp2Xh949AuonZ_A}{Linear Dielectric Materials}	%33
+		\item \href{https://mp.weixin.qq.com/s/HawDYMNTAzoQEpVFGIjWYQ}{Example 4.7}	%34
+		\item \href{https://mp.weixin.qq.com/s/wSdVXavhOpC6igUPJ6lz-g}{Example 4.8}	%35
+		\item \href{https://mp.weixin.qq.com/s/TnWUE_CtX35mGtTCHq4wNg}{Energy Stored in a Dielectric}	%36
+		\item \href{https://mp.weixin.qq.com/s/MIAaq2y8cYh2GhArQhnImg}{Capacitors with a Dielectric}	%37
+		\item \href{https://mp.weixin.qq.com/s/o0XwIwVcUIypTJrVUC-daA}{The Magnetic Field}	%38
+		\item \href{https://mp.weixin.qq.com/s/gRBm-XXYQywdm3MWnP2cqA}{Work and Magnetism}	%39
+		\item \href{https://mp.weixin.qq.com/s/IN5n2jRDTn3oWZK38Fteeg}{Biot Savart's Law}	%40
+		\item \href{https://mp.weixin.qq.com/s/Wahi-QDDHN7_c4ehBQgGqQ}{Ampere's Law}	%41
+		\item \href{https://mp.weixin.qq.com/s/v17cEHZ26zchrRyBeakK0g}{Ampere's Law Contd}	%42
+		\item \href{https://mp.weixin.qq.com/s/srfFATSjsFghDBW4ezv9xQ}{Vector Potential}	%43
+		\item \href{https://mp.weixin.qq.com/s/kWHNAoG7vjjjb2R5nEQY2g}{Vector Potential Contd.}	%44
+		\item \href{https://mp.weixin.qq.com/s/gtwOe-Ajy9yU6L5m1JyhxQ}{Boundary Conditions}	%45
+		\item \href{https://mp.weixin.qq.com/s/qit4df8vgEP9HRFc9WZjXw}{Multipole Expansion}	%46
+		\item \href{https://mp.weixin.qq.com/s/H9HBpwtVKXTCZTkurWBaYw}{Force and Torque on a Magnetic Dopole}	%47
+		\item \href{https://mp.weixin.qq.com/s/YVwkVUrKr7KnZ7-SskMi7g}{Bound Currents}	%48
+		\item \href{https://mp.weixin.qq.com/s/d6FgMKvJBuB8fBc40mGcMQ}{Magnetism}	%49
+		\item \href{https://mp.weixin.qq.com/s/YVlIf2robqeL1i-2FYpRHg}{Linear Media}	%50
+		\item \href{https://mp.weixin.qq.com/s/WgwRuKMZDht3xve1Movi-g}{Magnetostatic Boundary Conditions}	%51
+		\item \href{https://mp.weixin.qq.com/s/THgEKxtfc1UZZvvfM9wKzg}{Ohmic Materials}	%52
+		\item \href{https://mp.weixin.qq.com/s/XzQ7ZVXA_ZEqYiJW6yE5uw}{Motional EMF}	%53
+		\item \href{https://mp.weixin.qq.com/s/KTbE7U9mvVpFYAhcYPbQhA}{Faraday's Law of Induction}	%54
+		\item \href{https://mp.weixin.qq.com/s/3IzmjB91aI5KEt4cTvvZCg}{Induction Examples}	%55
+		\item \href{https://mp.weixin.qq.com/s/7NlhPuX4mqzjFEjL2jLuoA}{Inductance}	%56
+		\item \href{https://mp.weixin.qq.com/s/MCj-rkPOVb1FQ1rPnCwUIg}{Maxwell's Equations}	%57
+		\item \href{https://mp.weixin.qq.com/s/w36zIpdF_HlIRKFP4ZH6LQ}{Electromagnetism in Matter}	%58
+		\item \href{https://mp.weixin.qq.com/s/3tavQ6Mi8oLSagBCeu8LxA}{Superconductivity}	%59
+		\item \href{https://mp.weixin.qq.com/s/tUFV8QgrLxNIcs22JdX7cg}{Work Energy Theorem in Electrodynamics}	%60
+		\item \href{https://mp.weixin.qq.com/s/NV6QOga1q72n9Epd-xZ-cA}{Maxwell Stress Tensor}	%61
+		\item \href{https://mp.weixin.qq.com/s/R27Ux_4npt-qyQaRca4WZA}{Electromagnetic Momentum}	%62
+		\item \href{https://mp.weixin.qq.com/s/VNwak0jo4xu8ynmQwmtCyw}{Angular Momentum}	%63
+		\item \href{https://mp.weixin.qq.com/s/fnxkmnGC7cLhN_bR-16n4g}{Magnetic Forces do no Work}	%64
+		\item \href{https://mp.weixin.qq.com/s/QSK5wHQmgt83Cl_C99m43g}{The Wave Equation}	%65
+		\item \href{https://mp.weixin.qq.com/s/_MQp3eAwYTH6obnqvAFTXg}{Waves on a String}	%66
+		\item \href{https://mp.weixin.qq.com/s/4g_PgzDn4AgfCAClpmIZLg}{Electromagnetic Waves}	%67
+		\item \href{https://mp.weixin.qq.com/s/Ve9QD7x-EYOSCR4v9u2AkA}{Plane Waves}	%68
+		\item \href{https://mp.weixin.qq.com/s/zARyei1kynUq4gHhHKMWVg}{Reflection \& Refraction Normal Incidence}	%69
+		\item \href{https://mp.weixin.qq.com/s/XgrUZ6QV5GT3yzkcr4oiIw}{Reflection \& Refraction Oblique Incidence}	%70
+		\item \href{https://mp.weixin.qq.com/s/JpwvCDwkuaOexxXgeVgkHw}{Reflection \& Refraction Oblique Incidence}	%71
+		\item \href{https://mp.weixin.qq.com/s/noIChIzPUp002PxwoE83XA}{EM Waves in Conductors}	%72
+		%\item \href{url}{Materials}
+	\end{enumerate}
+\end{multicols}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              

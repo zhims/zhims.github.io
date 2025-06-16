@@ -1,0 +1,171 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \kaishu 新手开车}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://www.youtube.com/@HeiBaoDongChe}{豹弟}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-0.5cm}
+
+座椅调节顺序: 前后$\rightarrow$高低$\rightarrow$靠背.\ 后视镜调节顺序: 上下 $\rightarrow$ 左右.\ 方向盘调节顺序: 前后 $\rightarrow$ 上下.
+
+\vspace{0.25cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/M1gv_OHwXQVY-Lo9RXHAUw}{坐姿后视镜调节}	%1
+		\item \href{https://mp.weixin.qq.com/s/tsXP96y4JLIFLXqDzfQiGQ}{自动挡正确起步和停车}	%2
+		\item \href{https://mp.weixin.qq.com/s/nEFnjTbIn92aM6oaNuG0AQ}{方向盘正确打法}	%3
+		\item \href{https://mp.weixin.qq.com/s/5che0YABaGdOg7I0cFerKw}{踩刹车技巧}	%4
+		\item \href{https://mp.weixin.qq.com/s/ySmvpP7RnVKUV2sR1prrBg}{新手开车注意事项}	%5
+		\item \href{https://mp.weixin.qq.com/s/4AWKS5ZgQUNVO5qprrsa_A}{开车安全口诀}	%6
+		\item \href{https://mp.weixin.qq.com/s/f75qgB55OT6ka18fmqVPfA}{提升车感}	%7
+		\item \href{https://mp.weixin.qq.com/s/lcTjMcLicM-YJFEVAUoIiQ}{灯光正确操作}	%8
+		\item \href{https://mp.weixin.qq.com/s/JC241N_ukI8NtaH-qYzFKw}{新手开车错误习惯}	%9
+		\item \href{https://mp.weixin.qq.com/s/DZNxXg5X-k7iGbGuMBDbnA}{停车技巧}	%10
+		\item \href{https://mp.weixin.qq.com/s/ygR9HUKE1PueVRHL1JDZ_w}{车头车尾距障碍物距离}	%11
+		\item \href{https://mp.weixin.qq.com/s/jsi8DzDM-58FZfguyIVyoQ}{倒车入库}	%12
+		\item \href{https://mp.weixin.qq.com/s/9EOElhgmbYPHCxMualSCcw}{开车出库}	%13
+		\item \href{https://mp.weixin.qq.com/s/7JcrdyAvjhzkCI0uzI6UGw}{侧方位停车}	%14
+		\item \href{https://mp.weixin.qq.com/s/vVRLQZlzC9dwnELh4GgNBA}{窄路侧方位停车}	%15
+		\item \href{https://mp.weixin.qq.com/s/sjFpNS-yuiSmIwuOtmtbQw}{靠边停车}	%16
+		\item \href{https://mp.weixin.qq.com/s/nrqBbK95X0FxWKKc0d2BWQ}{掉头}	%17
+		\item \href{https://mp.weixin.qq.com/s/68hakM2updKZ9ELjw6SXdA}{窄路判断车距}	%18
+		\item \href{https://mp.weixin.qq.com/s/aX0sBsn1K5L4CRZmkRMusw}{农村开车技巧}	%19
+		\item \href{https://mp.weixin.qq.com/s/-38CJYOhjLiXj0sBr96fmw}{市区开车技巧}	%20
+		\item \href{https://mp.weixin.qq.com/s/LSTh1Xl6SvVnWpgx6CCETA}{雨天开车}	%21
+		\item \href{https://mp.weixin.qq.com/s/BSEpj6dAaIMfw_evsXlbKw}{雾天开车}	%22
+		\item \href{https://mp.weixin.qq.com/s/z8SZZQyR-DYvIaMQuNxoeg}{跑高速流程}	%23
+		\item \href{https://mp.weixin.qq.com/s/HRof8fM8vFj1LG-ulRFzmw}{跑高速注意事项}	%24
+		\item \href{https://mp.weixin.qq.com/s/SieAktOHRF3ujOfjrH8VeA}{雨天跑高速}	%25
+		\item \href{https://mp.weixin.qq.com/s/Lg4M-WljOHs4HYJrjSBKsA}{雾天跑高速}	%26
+		\item \href{https://mp.weixin.qq.com/s/czt-tIgL1s43f8Y3iq3F5Q}{雪后跑高速}	%27
+		\item \href{https://mp.weixin.qq.com/s/6IPiIBFaEodCqfWkOLXsuA}{夏天开车注意事项}	%28
+		\item \href{https://mp.weixin.qq.com/s/X40swwr9dmNxBHAlXybgsA}{冬天开车正确使用空调}	%29
+		\item \href{https://mp.weixin.qq.com/s/69Y_0ik19toQjuYXnQIvJg}{手机导航}	%30
+		%\item \href{url}{Materials}
+	\end{enumerate}
+\end{multicols}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              

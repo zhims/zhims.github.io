@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://institute-tue.ellis.eu/en/lecture-deep-optimization}{Nonconvex Optimization for Deep Learning}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{http://orvi.altervista.org/}{Antonio Orvieto}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item  %1
+	\begin{enumerate}
+		\item  \href{https://mp.weixin.qq.com/s/Nm15Bvq1UFck9pu6PBze9Q}{Linear Regression GD on quadratic models: \Romannum{1}},\quad  \href{https://mp.weixin.qq.com/s/ng2rwFauVWaiUZcm_quyZQ}{\Romannum{2}} %1a
+	\end{enumerate}
+	\item  %2
+	\begin{enumerate}
+		\item  \href{https://mp.weixin.qq.com/s/e2lu0_CoJSobPFBC1Eqw-w}{Neural Network Basics Local Minima and Saddle Points Noisy Gradients: \Romannum{1}},\quad  \href{https://mp.weixin.qq.com/s/beHsqBW6m8wqj-Q-tqsBHw}{\Romannum{2}}	%2a
+		\item \href{https://mp.weixin.qq.com/s/4qu2jWGpM9OstznYOvtHTw}{Linear Algebra Recap}	%2b
+	\end{enumerate}
+	\item  %3
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/zKrfhVvSeiDHNNF8FOHuVw}{Initialization of Deep MLPs: \Romannum{1}},\quad \href{https://mp.weixin.qq.com/s/2ITNH-wwlAx-zAr9-WrU_A}{\Romannum{2}}	%3a
+		%\item \href{URL}{Batch size scaling laws} %3b
+	\end{enumerate}
+	\item  %4
+	\begin{enumerate}
+		\item  \href{https://mp.weixin.qq.com/s/KBLW1P0WhqSnTMSY6as_zw}{Nonconvex Gradient Descent Descent Lemma and Rates: \Romannum{1}},\quad \href{https://mp.weixin.qq.com/s/lWmRvUNaSC0SSadPl9KpeA}{\Romannum{2}}  %4a
+		\item \href{https://mp.weixin.qq.com/s/VsFcJATlqDcg52XI9fkeNg}{Noisy Linear Models Deep Chains} %4b
+	\end{enumerate}
+	\item  %5
+	\begin{enumerate}
+		\item  \href{https://mp.weixin.qq.com/s/lrsJ7UtepSBTTjsjtVGbkg}{Nonconvex SGD Upper and Lower Bounds: \Romannum{1}},\quad \href{https://mp.weixin.qq.com/s/3Xt0ZckiRZcayyBtoZQzBA}{\Romannum{2}} %5a
+		\item \href{https://mp.weixin.qq.com/s/dzXiLWImnEndnOZpuA3xsQ}{Gradient Flow PL Condition} %5b
+	\end{enumerate}
+	\item  %6
+	\begin{enumerate}
+		\item  \href{https://mp.weixin.qq.com/s/B5CseyR8oEAxleu1VbgpSg}{Overparametrization Implicit Bias of SGD: \Romannum{1}},\quad \href{https://mp.weixin.qq.com/s/HpHSQo0RcyXXmrOWhIhTAw}{\Romannum{2}} %6a
+		\item \href{https://mp.weixin.qq.com/s/9aNCck1Q_Hb9axjQHbHnqg}{Robbins–Monro Conditions} %6b
+	\end{enumerate}
+	\item  %7
+	\begin{enumerate}
+		\item  \href{https://mp.weixin.qq.com/s/3i5GP_CLLsgs7l5nRm_MmA}{Neural Tangent Kernel Lazy Training: \Romannum{1}},\quad \href{https://mp.weixin.qq.com/s/OIA87U8jvMjWpD8Byy9aQw}{\Romannum{2}} %7a
+		\item \href{https://mp.weixin.qq.com/s/fMA5g-zcjDWDdPDX2PjBOg}{Matrix Sensing} %7b
+	\end{enumerate}
+	\item  %8
+	\begin{enumerate}
+		\item  \href{https://mp.weixin.qq.com/s/6VHAETbBoHOacsdXOwjZlQ}{Maximal Update Parametrization: \Romannum{1}},\quad \href{https://mp.weixin.qq.com/s/oyiTWLnI62kU0KIxqDYfiA}{\Romannum{2}} %8a
+		\item \href{https://mp.weixin.qq.com/s/1KE6_h7KE_soYOxqMd7jJA}{Stochastic Matrices Exam-like questions} %8b
+	\end{enumerate}
+	\item  %9
+	\begin{enumerate}
+		\item  \href{https://mp.weixin.qq.com/s/_VPrZPIBw3VHopQkxdAA4w}{Optimization Challenges in CNNs Batch Normalization and Skip Connections: \Romannum{1}},\quad \href{https://mp.weixin.qq.com/s/4vA8Cah6hbxu-dbdj5nI1g}{\Romannum{2}} %9a
+		\item \href{https://mp.weixin.qq.com/s/aSQ7-GfrtoUT5ME3BCjq6Q}{Interpolated SGD Rates} %9b
+	\end{enumerate}
+	\item  %10
+	\begin{enumerate}
+		\item  \href{https://mp.weixin.qq.com/s/cMvvBYbTHX0X3E23sASbnw}{Optimization Challenges in Attention Layer Normalization and Rank Collapse: \Romannum{1}},\quad \href{https://mp.weixin.qq.com/s/-Gkk1DshUyTJ96cx9vevoA}{\Romannum{2}} %10a
+		\item \href{https://mp.weixin.qq.com/s/GTd-kA86muXfernJfDtYAA}{Residual Connection Mechanics} %10b
+	\end{enumerate}
+	\item  %11
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/p0gSUME4UIfh5bFxL1-G0A}{Adaptive Methods Theory 1:  \Romannum{1}},\quad \href{https://mp.weixin.qq.com/s/DiiHjfSKJEvultKFKHiycQ}{\Romannum{2}}  %11a
+		\item  \href{https://mp.weixin.qq.com/s/KHP98i56Z5VQcvJdgM2PjA}{Layer Normalization Mechanics} %11b
+	\end{enumerate}
+	\item  %12
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/Zij7eMYXTGRoKcHpLv1wjQ}{Adaptive Methods Theory 2} %12a
+		\item  \href{https://mp.weixin.qq.com/s/P0vPBZLS3sCyE1fsJOhz-g}{Polyak Stepsize} %12b
+	\end{enumerate}
+	\item  %13
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/KW2hehq8AOZQntKslhIjqw}{Exam tips} %13a
+		%\item \href{URL}{Adam non-convergence} %13b
+	\end{enumerate}
+	%\item \href{https://pan.baidu.com/s/1McGRPrhCM0LqWqxCfEgiHQ?pwd=7vvq}{Materials}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              

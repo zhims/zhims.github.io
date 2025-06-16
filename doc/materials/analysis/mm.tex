@@ -1,0 +1,172 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\kaishu 
+%\thispagestyle{empty}
+\pagenumbering{arabic} 
+\setcounter{section}{0}
+\begin{center}
+	{\LARGE  \href{http://www.math.ncu.edu.tw/~cchsiao/Course/Math_Modeling_111/index.html}{Mathematical Modeling}}
+		
+		{\large \href{http://www.math.ncu.edu.tw/~cchsiao/}{Ching-hsiao Cheng}}
+\end{center}
+
+\setcounter{page}{1}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/3W4bEC8yV1epd9AYmX7q8A}{量纲的介绍、取不同基础量纲表现同一组物理量的 dimension matrices 的 rank 相同之解释（未完）}	%1
+	\item \href{https://mp.weixin.qq.com/s/DPIQg4YrQBv-gBO6Dw1HFw}{取不同基础量纲表现同一组物理量的 dimension matrices 的 rank 相同之解释、一组物理量的无量纲组合，以及一组物理量的 maximal 无量纲组合之个数}	%2
+	\item \href{https://mp.weixin.qq.com/s/-b4DRopoIeGrAXnTGZJ4Hg}{与单位无关的物理定律，以及 Pi 定理的证明}	%3
+	\item \href{https://mp.weixin.qq.com/s/3YoxFHUWZ6hJmGLu1DlZJQ}{Pi 定理的应用例：骑脚踏车的风阻、原子弹爆炸的震波半径、热与温度的关系，以及行船速度与船的长度以及马力的关系}	%4
+	\item \href{https://mp.weixin.qq.com/s/5eYyUggrFrEPX4P7n0YRLQ}{Pi 定理的另一个应用例，以及特征尺度}	%5
+	\item \href{https://mp.weixin.qq.com/s/5-gPsS6QtXFEoxPtI16HKw}{特征尺度的意义，以及选取好的特征尺度可能可以帮助简化模型的两个例子}	%6
+	\item \href{https://mp.weixin.qq.com/s/IIsnJPV9QgHhZh7HLlzcVw}{微分方程与其阶数、线性非线性的定义、将 n 阶常微分方程转换成 1 阶常微分方程的方法，以及初始值问题}	%7
+	\item \href{https://mp.weixin.qq.com/s/ickSHe2vlUpYkZMzM8iooA}{放射性物质衰变模型、弹簧系统模型，以及 RLC 电路模型}	%8
+	\item \href{https://mp.weixin.qq.com/s/9DpCUD7vxpJ5MsV6mrrKUQ}{单摆模型、掠食者猎物模型，以及 SIR 模型的介绍}	%9
+	\item \href{https://mp.weixin.qq.com/s/J-ponUncShp8fRO9EcUkYg}{三弹簧两物体系统的建模，以及行星运动的轨迹所需满足的微分方程}	%10
+	\item \href{https://mp.weixin.qq.com/s/4q018oPog0fv6AsA8tEXpA}{开普勒行星运动第二定律的推导，以及角动量守恒的意义}	%11
+	\item \href{https://mp.weixin.qq.com/s/g_u60GMr_Uc4C9xN_0_8lg}{求函数（相对）极小值发生处之动态模型，以及初始值问题解的存在唯一性定理（与其推论）}	%12
+	\item \href{https://mp.weixin.qq.com/s/UySnEJVxvKr-gQcrF4H-hQ}{以分离变量法、积分因子法解（特殊的）一阶常微分方程，以及二阶线性齐次常微分方程的解空间是二维的说明}	%13
+	\item \href{https://mp.weixin.qq.com/s/jMQUWPXcW5k2eFpg8lGLiA}{二阶线性常系数齐次方程式的（线性独立）解之推导}	%14
+	\item \href{https://mp.weixin.qq.com/s/gfjQBtXyNHocDwkzhSlFzQ}{假设已知某二阶线性非常系数齐次方程式的一个非零解时如何找出另一个线性独立的解，以及二阶线性非齐次方程式找出特解的方法}	%15
+	\item \href{https://mp.weixin.qq.com/s/9xPsXKFF365GO-1Xc-v_kA}{二阶线性非齐次方程的一般解公式推导与实例，以及 Kepler 第一、三行星运动定律推导前期作业的说明}	%16
+	\item \href{https://mp.weixin.qq.com/s/DOwEL62ZdOXF36VMXZFIhA}{Kepler 行星第一运动定律的证明（包含圆锥曲线的极坐标方程的推导）}	%17
+	\item \href{https://mp.weixin.qq.com/s/YQZ0TJPxKbTdcdtu71hmHA}{Kepler 行星第三运动定律的证明，以及解线性系统的过程（未完待续）}	%18
+	\item \href{https://mp.weixin.qq.com/s/SLHqcnTgmTwkBNwxjbTgfA}{当 A 是常数矩阵时，线性系统 $x^{\prime}=Ax+f$ 的解公式推导}	%19
+	\item \href{https://mp.weixin.qq.com/s/9Yxy3rB_dg0HeLG2KXtmUA}{计算给定方阵 B 的 exp(tB)，以及计算的实例}	%20
+	\item \href{https://mp.weixin.qq.com/s/ebOGDJLcwwHs9GYFs48iNQ}{使用 MATLAB 指令 ode45 求初始值问题的数值解}	%21
+	\item \href{https://mp.weixin.qq.com/s/qU26pNWshic2gwsIjuvSwA}{边界值问题初探}	%22
+	\item \href{https://mp.weixin.qq.com/s/jxfUBOgatoZhEDViMG6-bA}{一维守恒律的推导与交通流}	%23
+	\item \href{https://mp.weixin.qq.com/s/O6FMMARN8yjDVbPVrG_mGA}{一维守恒律的初始条件、边界条件，以及一维热方程的推导}	%24
+	\item \href{https://mp.weixin.qq.com/s/EB2PYkq3OVQ8BTBnzAraBA}{一维热方程的推导与一维波方程的背景说明}	%25
+	\item \href{https://mp.weixin.qq.com/s/kon_u8xBIj-nERMris5rvA}{一维波方程的推导}	%26
+	\item \href{https://mp.weixin.qq.com/s/pVgUfgMS2fbW30ZOXqaZWw}{一维波方程的初始、边界条件，和（平滑）曲面的定义}	%27
+	\item \href{https://mp.weixin.qq.com/s/3nlAQPGKlkz6c0yGn1LR5g}{单位球面的几种参数式与曲面参数式的度量（Metric）和第一基本形式}	%28
+	\item \href{https://mp.weixin.qq.com/s/XZDmqEdId-iJA3TgBL-63w}{Permutation Symbol 的定义与应用：与叉积相关的计算例}	%29
+	\item \href{https://mp.weixin.qq.com/s/cE2Pfgp9qUYYwdypTH96Lg}{第一基本形式与曲面面积的计算推导}	%30
+	\item \href{https://mp.weixin.qq.com/s/K4rIHfZbbOlSgWI2b3EEpQ}{曲面面积的计算推导与面积分}	%31
+	\item \href{https://mp.weixin.qq.com/s/l9nzi06O_qCEVoef10zruw}{面积分与曲面参数化方式无关的证明}	%32
+	\item \href{https://mp.weixin.qq.com/s/-B0gHiXF7RnESR2-uq5hLA}{通量积分的定义与物理意义}	%33
+	\item \href{https://mp.weixin.qq.com/s/BeFLoDnLU4Yc_GO0WgmsbQ}{通量的度量方法与向量场之散度 (divergence)}	%34
+	\item \href{https://mp.weixin.qq.com/s/vCm1Gcp9OktxKqW_yboyOg}{散度定理 (Divergence Theorem) 和连续性方程 (Equation of Continuity)}	%35
+	\item \href{https://mp.weixin.qq.com/s/AjH4zivzHXw4cYxPH8FQcw}{热传导方程的推导}	%36
+	\item \href{https://mp.weixin.qq.com/s/13U-EDZc0AQt-1-gYgv48w}{热传导方程的初始与边界条件，以及波方程的推导（未完）}	%37
+	\item \href{https://mp.weixin.qq.com/s/muwb2_GG_7MQyXK5_nrigA}{波方程的推导（续）}	%38
+	\item \href{https://mp.weixin.qq.com/s/w7g6TUYYLEb6sJQ4j-PQ6A}{波方程的复习与 Navier-Stokes 方程的推导（初步）}	%39
+	\item \href{https://mp.weixin.qq.com/s/QdgFru1DRYB4ntc9u3VHHw}{Stress（应力）的定义与性质}	%40
+	\item \href{https://mp.weixin.qq.com/s/bhrKmRlhGOd0fv11S2TbGQ}{流体中应力（Stress）的形式推导}	%41
+	\item \href{https://mp.weixin.qq.com/s/lwIHkZGMHh-MLe2ZdjgI0Q}{Navier-Stokes 方程的推导（最终形式）}	%42
+	\item \href{https://mp.weixin.qq.com/s/2H4iKfqeXKGS8eP7gaIVmA}{Navier-Stokes 方程的初始条件、边界条件，以及使用中央差分法逼近微分}	%43
+	\item \href{https://mp.weixin.qq.com/s/le_qztF7sYUfHOcJE6Tbzw}{使用中央差分格式模拟热方程的直观数值方法}	%44
+	\item \href{https://mp.weixin.qq.com/s/qVVRf48fAX_bW0O6Qh6kOA}{一些优化问题的介绍：海龙原理、Steiner's Tree 问题以及等周长问题}	%45
+	\item \href{https://mp.weixin.qq.com/s/3QkG6f-wmX_GUvY1A0463A}{一些优化问题的介绍：等周长问题的另一形式、最小旋转曲面问题，以及牛顿问题}	%46
+	\item \href{https://mp.weixin.qq.com/s/BlK3ufBBY0PhU4a5icBFqQ}{变分问题的介绍以及第一变分量（First Variation）的推导}	%47
+	\item \href{https://mp.weixin.qq.com/s/wMiMcppEsfWWEO-l55bqiA}{变分学中最基本的四个 Lemma 的直观看法与证明}	%48
+	\item \href{https://mp.weixin.qq.com/s/Vt0tiuqlMAN7HiSfNL0OuA}{Euler-Lagrange 方程以及三种优化问题（极小旋转曲面、牛顿问题和最速下降曲线问题）对应的 Euler-Lagrange 方程}	%49
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              

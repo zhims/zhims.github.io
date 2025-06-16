@@ -1,0 +1,383 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://en.wikipedia.org/wiki/Analysis}{Calculus and Analysis}}
+		
+		%\vspace{-0.25cm}
+		
+		%{\large \href{https://www.math.ntu.edu.tw/entity_people/entity_people/21719}{Siao-Hao Guo}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+\vspace{-0.75cm}
+
+
+\begin{center}
+	\large \href{https://www.youtube.com/playlist?list=PLVJXJebpO4PiisQHBKDG9hV5J0oSU6UI6}{Calculus \Romannum{1}} by \href{https://www.math.ntu.edu.tw/entity_people/entity_people/21719}{Siao-Hao Guo}
+\end{center}
+
+%\vspace{0.25cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item	\href{https://mp.weixin.qq.com/s/cLWj9VuC7bUGU-B3-wYWrA}{01}	%1
+		\item	\href{https://mp.weixin.qq.com/s/yOcG4AUVi01GXxWcew1KYQ}{02}	%2 
+		\item	\href{https://mp.weixin.qq.com/s/kEIwdcZ14Zug-KaUAo88iw}{03} 	%3
+		\item 	\href{https://mp.weixin.qq.com/s/1KIXRxsLNxRUErX1DoPY_g}{04}	%4
+		\item 	\href{https://mp.weixin.qq.com/s/XqmlWMbLjV7LhBVS8qlJtA}{05}	%5
+		\item 	\href{https://mp.weixin.qq.com/s/_uK0YpTiVmS13SXxWLFf2w}{06}	%6
+		\item 	\href{https://mp.weixin.qq.com/s/rPM7KtaagOHNIwA-6hg4MA}{07}	%7
+		\item 	\href{https://mp.weixin.qq.com/s/eDhu5Xo8of4I6z_6oAU9Pg}{08}	%8
+		\item 	\href{https://mp.weixin.qq.com/s/gg8tvDnBxh-Vq8hGMoLbeA}{09}	%9
+		\item 	\href{https://mp.weixin.qq.com/s/5awFmDnC_RnyENJE_CrWYA}{10}	%10
+		\item	\href{https://mp.weixin.qq.com/s/EY6PANlm--e7V4dEKHsS8A}{11}	%11
+		\item	\href{https://mp.weixin.qq.com/s/oXdGLhOSbm6_yn80Et7Qvg}{12}	%12 
+		\item	\href{https://mp.weixin.qq.com/s/ZS3dNn8r3fT_QNQncKAUfQ}{13} 	%13
+		\item 	\href{https://mp.weixin.qq.com/s/5N7X60Pzu5D4716G_Mr8eg}{14}	%14
+		\item 	\href{https://mp.weixin.qq.com/s/sBmcydDYPPnq7-YaAo5M4w}{15}	%15
+		\item 	\href{https://mp.weixin.qq.com/s/TxuFdwe_GDe9jkohVIL57Q}{16}	%16
+		\item 	\href{https://mp.weixin.qq.com/s/o1E2cmMZpl-S0nm9hYHsrQ}{17}	%17
+		\item 	\href{https://mp.weixin.qq.com/s/oyEGY31TPP4PWZ_k6Pta9A}{18}	%18
+		\item 	\href{https://mp.weixin.qq.com/s/S7Ie8e7qCdFMm314IbJpqw}{19}	%19
+		\item 	\href{https://mp.weixin.qq.com/s/_PSb2SpXZj0PYPdVEOioIg}{20}	%20
+		\item	\href{https://mp.weixin.qq.com/s/3nF2wbKijzwS-nupyB5jRA}{21}	%21
+		\item	\href{https://mp.weixin.qq.com/s/o93g8QYM_q-z_D-BDpCT8Q}{22}	%22 
+		\item	\href{https://mp.weixin.qq.com/s/GIdqGSdonY805pQA68qEwA}{23} 	%23
+		\item 	\href{https://mp.weixin.qq.com/s/rj4zhzFlvKhgGrBmg7MFEQ}{24}	%24
+		\item 	\href{https://mp.weixin.qq.com/s/hwf77firsdsZk_N-mYyEIA}{25}	%25
+		\item 	\href{https://mp.weixin.qq.com/s/t1UoiykkNwPEqpQ1LlpyOQ}{26}	%26
+		\item 	\href{https://mp.weixin.qq.com/s/bitT6CqCBN_DK_3hnSr5qQ}{27}	%27
+		\item 	\href{https://mp.weixin.qq.com/s/pmEd-Hchb0J1pHoBhC8HtA}{28}	%28
+		\item 	\href{https://mp.weixin.qq.com/s/rSxBkguNtqJsXn_ew0eqCA}{29}	%29
+		\item 	\href{https://mp.weixin.qq.com/s/EwMnuAerofyoQYJDatbjZQ}{30}	%30
+		\item	\href{https://mp.weixin.qq.com/s/pr7mvQpaA38Xy5JSgj_u6Q}{31}	%31
+		\item	\href{https://mp.weixin.qq.com/s/-XwvwWLnGtTc4rwaOzxsDg}{32}	%32 
+		\item	\href{https://mp.weixin.qq.com/s/Es-mWPMR3BRF4iHFpcZNOg}{33} 	%33
+		\item 	\href{https://mp.weixin.qq.com/s/sVkcCw2R7NumI7_sW4hL2Q}{34}	%34
+		\item 	\href{https://mp.weixin.qq.com/s/iSutcqOed7OVjmEMNN8yiw}{35}	%35
+		\item 	\href{https://mp.weixin.qq.com/s/9ez_LAWQcalSd6TB4y8tXw}{36}	%36
+		\item 	\href{https://mp.weixin.qq.com/s/s98cDlYDkIVRJG3o3x6U7Q}{37}	%37
+		\item 	\href{https://mp.weixin.qq.com/s/yz9mpLfyQXAyOxGvheTyMg}{38}	%38
+		\item 	\href{https://mp.weixin.qq.com/s/XUGHQhSJi2p2Ax7NQFckHw}{39}	%39
+		\item 	\href{https://mp.weixin.qq.com/s/N86LTpacSHde2UidbDtG6Q}{40}	%40
+		\item	\href{https://mp.weixin.qq.com/s/Zf8Z84ZBzGZ26YoYSdxWeQ}{41}	%41
+		\item	\href{https://mp.weixin.qq.com/s/VPiYe55HtCkk_PP6vjnYFw}{42}	%42 
+		\item	\href{https://mp.weixin.qq.com/s/r1ZFxXa8_flVxxnMJGUiXQ}{43} 	%43
+		\item 	\href{https://mp.weixin.qq.com/s/7LMJPrZSe_ID782wKsPXSw}{44}	%44
+		\item 	\href{https://mp.weixin.qq.com/s/1KcYCcq_w9Opo4RQUrOBsw}{45}	%45
+		\item 	\href{https://mp.weixin.qq.com/s/86aZRRVwR0C_uuVSxCMsHw}{46}	%46
+		\item 	\href{https://mp.weixin.qq.com/s/1W_WmCllb0_nITT9LUN4OA}{47}	%47
+		\item 	\href{https://mp.weixin.qq.com/s/DxbNhI3yA7PQ4p0yzn6xkw}{48}	%48
+		\item 	\href{https://mp.weixin.qq.com/s/xZFldLwI4vOiGMiCtvODjA}{49}	%49
+		\item 	\href{https://mp.weixin.qq.com/s/xdGPGoOgEzkvokycqYcRmw}{50}	%50
+		\item 	\href{https://mp.weixin.qq.com/s/Tq-QTbeGY_VW4m2HBQUdSA}{51}	%51
+		\item 	\href{https://mp.weixin.qq.com/s/S_dEabQfxm66_iMD0RRB9Q}{52}	%52
+		\item 	\href{https://mp.weixin.qq.com/s/s1w9Q2Q9xbr6Nuuqa8hfYw}{53}	%53
+		\item 	\href{https://mp.weixin.qq.com/s/MbnYDteT2qecKIWCjasypw}{54}	%54
+		\item 	\href{https://mp.weixin.qq.com/s/uJzmOgvmJdQSWgcocvSg9g}{55}	%55
+		\item 	\href{https://mp.weixin.qq.com/s/spdM1KPiRo23KYp4uAS-EA}{56}	%56
+	\end{enumerate}
+\end{multicols}
+
+\begin{center}
+	\large \href{https://www.youtube.com/playlist?list=PLVJXJebpO4PiisQHBKDG9hV5J0oSU6UI6}{Calculus \Romannum{2}} by \href{https://www.math.ntu.edu.tw/entity_people/entity_people/21719}{Siao-Hao Guo}
+\end{center}
+
+\vspace{-0.75cm}
+
+
+\begin{enumerate}
+	\item	\href{https://mp.weixin.qq.com/s/2TNACvOuH_46R7gX4Mn6dg}{01}	%1
+	\item	\href{https://mp.weixin.qq.com/s/Sgj44XDOf9zAom5I6ozs-w}{02}	%2 
+	\item	\href{https://mp.weixin.qq.com/s/TUkTY7x59gQKqt40DkA8Rg}{03} 	%3
+	\item 	\href{https://mp.weixin.qq.com/s/XDGUmbUnEe4WPVC_Rakw-Q}{04}	%4
+	\item 	\href{https://mp.weixin.qq.com/s/84SfjeawsTMy_nSVxemoRg}{05}	%5
+	\item 	\href{https://mp.weixin.qq.com/s/G4kogKqvUyk6VvYjDRW0lw}{06}	%6
+	\item 	\href{https://mp.weixin.qq.com/s/ILkCxucfpeReCLNyBZvC9A}{07}	%7
+	\item 	\href{https://mp.weixin.qq.com/s/inMf-nVR_21IfQ9t9-2eEw}{08}	%8
+	\item 	\href{https://mp.weixin.qq.com/s/DkyLOwbOfLLx9rntYScD2w}{09}	%9
+	\item 	\href{https://mp.weixin.qq.com/s/OG7fMCKFW9JxmyC4mjHzMQ}{10}	%10
+	\item	\href{https://mp.weixin.qq.com/s/pPjxEi3TWfZxE3BTNSCANg}{Topology in $\mathbb{R}^n$}	%11
+	\item	\href{https://mp.weixin.qq.com/s/xIzyZJnENWNc7vTPcVPj-A}{Topology in $\mathbb{R}^n$}	%12 
+	\item	\href{https://mp.weixin.qq.com/s/ZLFegl9dvrsHq5mlQMb5MQ}{Topology in $\mathbb{R}^n$} 	%13
+	\item 	\href{https://mp.weixin.qq.com/s/987pIfPOZv2epHJxQJOqOw}{Topology in $\mathbb{R}^n$}	%14
+	\item 	\href{https://mp.weixin.qq.com/s/Q5ZAqX_fJtI9b6H_SoLbwQ}{Topology in $\mathbb{R}^n$}	%15
+	\item 	\href{https://mp.weixin.qq.com/s/U3vdkjRLU0gkvpzC2a3VIQ}{Partial, Directional Derivatives}	%16
+	\item 	\href{https://mp.weixin.qq.com/s/C2RmZ909e2eVHgplv8kYww}{Continuity, Differentiability}	%17
+	\item 	\href{https://mp.weixin.qq.com/s/CO24auIOHVvy8POC1rWWgA}{Continuity, Differentiability}	%18
+	\item 	\href{https://mp.weixin.qq.com/s/ZnHupbOzhmIATIDaVO8HqA}{Differentiability and Its Application}	%19
+	\item 	\href{https://mp.weixin.qq.com/s/BKmnghcPRlym3ejwB5YR7Q}{Twice Differentiation, Clairaut's Theorem, Chain Rule}	%20
+	\item	\href{https://mp.weixin.qq.com/s/vG3s02qdRAn-OSw0vQjwIw}{Chain Rule}	%21
+	\item	\href{https://mp.weixin.qq.com/s/_yQXR3ewk8r0SfDcvZ_oag}{Applications of the Chain Rule, Maximum, Minimum}	%22 
+	\item	\href{https://mp.weixin.qq.com/s/e0q08eI_AmtTZlJB9_yOlQ}{23} 	%23
+	\item 	\href{https://mp.weixin.qq.com/s/X6c4pvB3JhAraijoy_U31g}{24}	%24
+	\item 	\href{https://mp.weixin.qq.com/s/5DRW-i27Fp3zsvTF1TZK8A}{25}	%25
+	\item 	\href{https://mp.weixin.qq.com/s/RWMIXA9CPXn8dx8EBPaYMQ}{26}	%26
+	\item 	\href{https://mp.weixin.qq.com/s/s7m6oUhy_3gEPSY4BLU12A}{27}	%27
+	\item 	\href{https://mp.weixin.qq.com/s/R5bLjn9AtZ0agIUFuH0pWg}{28}	%28
+	\item 	\href{https://mp.weixin.qq.com/s/J2Aqtv1NE7dqTYA69wVJHw}{29}	%29
+	\item 	\href{https://mp.weixin.qq.com/s/Tadft866-b0iZ1FMb2ZaRA}{30}	%30
+	\item	\href{https://mp.weixin.qq.com/s/00SDM47abQnGz4lWEBxbiA}{31}	%31
+	\item	\href{https://mp.weixin.qq.com/s/aCl9XPL5rfJx93xp9DWHJQ}{32}	%32 
+	\item	\href{https://mp.weixin.qq.com/s/Zrv9FBs2rZw6wv3DzTY8sg}{33} 	%33
+	\item 	\href{https://mp.weixin.qq.com/s/mpg5Jo1i6GZG8IDC1Og6Yg}{34}	%34
+	\item 	\href{https://mp.weixin.qq.com/s/rybfa_9u6uHjt3PR8x8-Jg}{35}	%35
+	\item 	\href{https://mp.weixin.qq.com/s/fcsK6ftVQr0IylGwlfX98A}{36}	%36
+	\item 	\href{https://mp.weixin.qq.com/s/dzZgsBCsbRN7gmTjGQowyw}{37}	%37
+	\item 	\href{https://mp.weixin.qq.com/s/pBUcvOnsZ-MiX38zzaLwCQ}{38}	%38
+	\item 	\href{https://mp.weixin.qq.com/s/ozLfy6ProUuSIiDx2Vgebg}{39}	%39
+	\item 	\href{https://mp.weixin.qq.com/s/lbHHRPE-PX9QOgPe0fT4ww}{40}	%40
+	\item	\href{https://mp.weixin.qq.com/s/jGD0bD3EQ2RemFlpWaWxGw}{41}	%41
+	\item	\href{https://mp.weixin.qq.com/s/DVufcK_YoIHRl73bJW6S1Q}{42}	%42 
+	\item	\href{https://mp.weixin.qq.com/s/ZnfKqj_OkNLQ4m4_QScO3Q}{43} 	%43
+	\item 	\href{https://mp.weixin.qq.com/s/9RF0Nx8axI_ywiBDrMq5cw}{44}	%44
+	\item 	\href{https://mp.weixin.qq.com/s/QOTx9qEUxOEGUVDbOG-U1Q}{Line Integral}	%45
+	\item 	\href{https://mp.weixin.qq.com/s/nWmqV57OC7MIwzB8OnreCA}{Line Integral}	%46
+	\item 	\href{https://mp.weixin.qq.com/s/cHQsbGze9gfyGpPs48whmg}{Green's Theorem}	%47
+	\item 	\href{https://mp.weixin.qq.com/s/6hzqhATS0vjqwkNme_gwXQ}{Green's Theorem}	%48
+	\item 	\href{https://mp.weixin.qq.com/s/6X3aD1bdlE8y-bmXVEDgKw}{Surface Integral}	%49
+	\item 	\href{https://mp.weixin.qq.com/s/0E9-FQeg7RRImXCiReTy-Q}{Surface Integral}	%50
+	\item 	\href{https://mp.weixin.qq.com/s/wU_2UCYMqpWJQpCT1suzFw}{Stokes's Theorem}	%51
+	\item 	\href{https://mp.weixin.qq.com/s/Vqo_FkIkNZzCrJ9KHieJbg}{Stokes's Theorem}	%52
+	\item 	\href{https://mp.weixin.qq.com/s/Vpfi4VSlUhd2lwPcw7ub7A}{Divergence Theorem}	%54
+	\item 	\href{https://mp.weixin.qq.com/s/oqfH6Q-Ksq98lWrX6oDhWA}{Divergence Theorem}	%54
+\end{enumerate}
+
+
+
+\begin{center}
+	\large {\href{https://www.youtube.com/playlist?list=PLVJXJebpO4PhhPaG5r3Sxp0w89hqCfi0a}{Analysis \Romannum{1}}} by \href{https://sites.google.com/site/shencmath/}{Chun-Yen Shen}
+\end{center}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item	\href{https://mp.weixin.qq.com/s/bRlM1D6w81x8vi86ZuEzWg}{Real Numbers and the completeness}	%1
+	\item	\href{https://mp.weixin.qq.com/s/hL4R9oVPgLutPdHZ7OLPqA}{Limits and continuity in metric space}	%2 
+	\item	\href{https://mp.weixin.qq.com/s/Vn2QaB4YH0syKCEP9RDU-w}{Open and closed sets in metric space} 	%3
+	\item 	\href{https://mp.weixin.qq.com/s/cGzpf5SMo_rp7r-NoGdTLA}{Topological space \& The closure of the set}	%4
+	\item 	\href{https://mp.weixin.qq.com/s/BeW60DhwiObcZZojUMW1SA}{Equivalence of continuous functions \& Inheritance Principle \& Homeomorphism}	%5
+	\item 	\href{https://mp.weixin.qq.com/s/RHyS3GBYo60sRzWqn8EJAA}{Product metric spaces \& Completeness \& Compactness (sequentially compact)}	%6
+	\item 	\href{https://mp.weixin.qq.com/s/CDRp8y0ENUFoTiSQxqJVCA}{Compactness (2) \& Bolzano-Weierstrass Thm \& Nested seq of nonempty compact sets}	%7
+	\item 	\href{https://mp.weixin.qq.com/s/msGuGyEvq2NrE7SuZJw6Qw}{ontinuous functions and Homeomorphisms on compact sets \& Connectedness}	%8
+	\item 	\href{https://mp.weixin.qq.com/s/buCGMGHcmv3BNfHYAV4Yog}{Some properties in topological spaces}	%9
+	\item 	\href{https://mp.weixin.qq.com/s/OMz4s3muR30OcT0tgPF0Fg}{Accumulation points and isolated points \& Dense \& Hausdorff space}	%10
+	\item	\href{https://mp.weixin.qq.com/s/1M72FTwknBXv7-kJ2robdQ}{Properties of Connectedness}	%11
+	\item	\href{https://mp.weixin.qq.com/s/6eiS57UPiaBmysPVT5azRA}{Path connected \& Compactness in metric space, Hausdorff space, Topological space(1)}	%12 
+	\item	\href{https://mp.weixin.qq.com/s/XJZS0LKhSQ1LKiBe_QpulA}{Compactness (2) \& Sequentially compact implies compact(open cover) (1)} 	%13
+	\item 	\href{https://mp.weixin.qq.com/s/lCXe3Ra_E7_WUYN7m_E-cw}{Sequentially compact implies compact(open cover) (2) \& Totally bounded (1)}	%14
+	\item 	\href{https://mp.weixin.qq.com/s/-KG6ZBaSu08D9_zx9K02dQ}{Totally bounded (2) \& Perfect \& Cantor set}	%15
+	\item 	\href{https://mp.weixin.qq.com/s/PUb16hKtrIQWF25eElY7kA}{Cantor surjection Theorem}	%16
+	\item 	\href{https://mp.weixin.qq.com/s/tmhCsB-kJ4BPKmPREeIaBw}{Peano Curves \& Riemann integrable \& Darboux integrable(1)}	%17
+	\item 	\href{https://mp.weixin.qq.com/s/147QppZMOXzIhNVcEtfTIg}{Darboux integrable(2) \& Riemann integrable iff Darboux integrable(1)}	%18
+	\item 	\href{https://mp.weixin.qq.com/s/M_-st-WoKh4soOjIXX5g0Q}{Riemann integrable iff Darboux integrable(2) \& Some integrable functions (1)}	%19
+	\item 	\href{https://mp.weixin.qq.com/s/Jt7X7XkeQ4SZmLt3Xz-cSQ}{Some integrable functions (2) \& Lebesgue number \& Zero set}	%20
+	\item	\href{https://mp.weixin.qq.com/s/px5q4TwGmqg4dugKperRUg}{Oscillation \& Riemann-Lebesgue Theorem}	%21
+	\item	\href{https://mp.weixin.qq.com/s/L09Z6ol8pDlXTU3nhWA9xg}{Some applications of R-L theorem}	%22 
+	\item	\href{https://mp.weixin.qq.com/s/7FH61HZZ4lOGuwhQW4YKCw}{Fundamental Theorem of Calculus \& Convergence in functional space} 	%23
+	\item 	\href{https://mp.weixin.qq.com/s/-S4cIef_jiF4aM3LX7VcJQ}{Complete functional space \& Convergence function series \& Integrals wst unif conv.}	%24
+	\item 	\href{https://mp.weixin.qq.com/s/qyGJIhlP9Aqwf6GvGjSN8g}{Derivatives w.s.t uniform convergence \& Equicontinuity and Arzela-Ascoli Theorem}	%25
+	\item 	\href{https://mp.weixin.qq.com/s/iOiftePQi0OuShi7f8pDDA}{Heine-Borel Theorem in a function space \& Stone-Weierstrass Theorem}	%26
+	\item 	\href{https://mp.weixin.qq.com/s/wrnH0EfvWdpe147qNfj3Kw}{Fixed point, contraction and ODE}	%27
+	\item 	\href{https://mp.weixin.qq.com/s/Qn99qwTaHMuQuVMiYyf0CQ}{Nowhere differentiable continuous function \& Baire’s Theorem}	%28
+	\item 	\href{https://mp.weixin.qq.com/s/iwcOC0OTkTHJwLHr6brCrQ}{Corollary of Baire’s Theorem}	%29
+	\item 	\href{https://mp.weixin.qq.com/s/5Lrq2GqOxJuu2B268AuxlQ}{Multiple integral and Fubini’s Theorem}	%30
+	\item	\href{https://mp.weixin.qq.com/s/vG0ybcY3tLWhcAUNPtfFmw}{Change of variables formula (1)}	%31
+	\item	\href{https://mp.weixin.qq.com/s/aFb8lovr6X4caO3NNkWc4Q}{Change of variables formula (2)}	%32 
+	\item	\href{https://mp.weixin.qq.com/s/TkN4d9Hla9-C_1o2VpvLXg}{Banach spaces} 	%33
+	\item 	\href{https://mp.weixin.qq.com/s/GF_PalPTEH7uFpzTMvFzXw}{Banach algebra}	%34
+	\item 	\href{https://mp.weixin.qq.com/s/bSUyP1ZBOypLaOCTX3abCA}{Differentiation in Banach Spaces}	%35
+	\item 	\href{https://mp.weixin.qq.com/s/4mhJzCdRBN11zi2Dy0SvuA}{Some examples \& Integration in Banach spaces (1)}	%36
+	\item 	\href{https://mp.weixin.qq.com/s/Lhk-fSknKiRoxcfiHYq86w}{Integration in Banach spaces (2)}	%37
+	\item 	\href{https://mp.weixin.qq.com/s/Z1-miHbarybT2ZR0NitX9A}{Inverse function theorem}	%38
+	\item 	\href{https://mp.weixin.qq.com/s/DoGy5Ua4i2c-z_vObYHO-Q}{Lebesgue Outer measure}	%39
+	\item 	\href{https://mp.weixin.qq.com/s/b8MljlQaD5a3mo872VB7-w}{Lebesgue measurable set \& Abstract outer measure}	%40
+	\item	\href{https://mp.weixin.qq.com/s/Dm26WpkdsaS4-kf88-pAqQ}{Measurable Sets form Sigma-Algebra \& Measure continuity}	%41
+	\item	\href{https://mp.weixin.qq.com/s/-v4McKbHcJa2a7K-7kjHPw}{Regularity (1)}	%42 
+	\item	\href{https://mp.weixin.qq.com/s/sKGz15q_ODPhUum1d-5-ew}{Regularity (2)} 	%43
+	\item 	\href{https://mp.weixin.qq.com/s/QfF9wslg56szUqV5S9Ag4Q}{Every open set is a countable disjoint union of balls plus a zero set}	%44
+	\item 	\href{https://mp.weixin.qq.com/s/p7CfscjUPsxh4OCgwKjGiA}{Measure Product \& Inner measure (1)}	%45
+	\item 	\href{https://mp.weixin.qq.com/s/UdoUtutFqQ-akVsdmAttDg}{Inner measure (2) \& Slice Measure (1)}	%46
+	\item 	\href{https://mp.weixin.qq.com/s/2fK9z8rTUTzREvXB9ZUiVQ}{Slice Measure (2) \& Lebesgue integrable functions \& Monotone Convergence Theorem}	%47
+	\item 	\href{https://mp.weixin.qq.com/s/ZBjjosmm-aI13SFK3FD4dw}{Completed undergraph \& Dominated Convergence Thm and Fatou’s Lem \& Basic properties}	%48
+	\item 	\href{https://mp.weixin.qq.com/s/Bt4O4E_81nVkne1RfZ3FAA}{Some basic properties of measurable functions (2)}	%49
+	\item 	\href{https://mp.weixin.qq.com/s/OdtftvtTqB4Ix0UIsViFng}{Cavalieri's principle \& Equivalence measurable function definition \& Tonelli Thm}	%50
+	\item 	\href{https://mp.weixin.qq.com/s/hHAyKkd_I6ffiJXtQfVqGA}{Vitali covering Lemma}	%51
+	\item 	\href{https://mp.weixin.qq.com/s/RBM3zLLEe9C4Jrct7W5sOg}{Density Theorem}	%52
+\end{enumerate}
+
+\begin{center}
+	\large {\href{https://www.youtube.com/playlist?list=PLVJXJebpO4PhfoJl9LEuiI30P1JxvLEga}{Analysis \Romannum{2}}} by \href{https://sites.google.com/site/shencmath/}{Chun-Yen Shen}
+\end{center}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item	\href{https://mp.weixin.qq.com/s/OIaI3hbwGIUX3Y4e_EROOQ}{Lebesgue Differentiation Theorem (1)}	%1
+	\item	\href{https://mp.weixin.qq.com/s/drRat8Slew_KFj4Yq6x4JQ}{Lebesgue Differentiation Theorem (2) \& Absolutely continuous functions}	%2 
+	\item	\href{https://mp.weixin.qq.com/s/9YEo-duMYyul3cUzaR-lrA}{Indefinite integral is abs conti. \& A monotone function has a derivative a.e. (1)} 	%3
+	\item 	\href{https://mp.weixin.qq.com/s/EjT8UKkCGNCbfiaZ1q8Y-w}{A monotone function has a derivative almost everywhere (2)}	%4
+	\item 	\href{https://mp.weixin.qq.com/s/9lX2gYoJxq8EKLONRnA4yA}{Riemann integrals vs Lebesgue integrals}	%5
+	\item 	\href{https://mp.weixin.qq.com/s/CMcL5vHqYH6aCJAXlEXDTg}{Bounded variation}	%6
+	\item 	\href{https://mp.weixin.qq.com/s/41Wz5ruEkfFlmV0KKtpamQ}{Equi relation of B-V functions and abs conti functions \& R-S integrals (1)}	%7
+	\item 	\href{https://mp.weixin.qq.com/s/Yf_pbXgA5ECfUt3Dr5QTcQ}{Riemann-Stieltjes integral (2)}	%8
+	\item 	\href{https://mp.weixin.qq.com/s/rqe5FeAjRmbjgZco_anx9g}{Riemann-Stieltjes integral (3)}	%9
+	\item 	\href{https://mp.weixin.qq.com/s/Qs7EPDpJZEbDnO5Urt_yig}{Riemann-Stieltjes integral (4)}	%10
+	\item	\href{https://mp.weixin.qq.com/s/loTF6azJc-z9owY5Bl_8RQ}{$L^2 \ [a,b]$ space}	%11
+	\item	\href{https://mp.weixin.qq.com/s/cs-zNCfw5_Y1NbCyS7wcMw}{Properties of $L^2 \ [a,b]$ space}	%12 
+	\item	\href{https://mp.weixin.qq.com/s/GMPk8UOz4I_GiYxk8TAe7A}{Orthogonal basis in $L^2$} 	%13
+	\item 	\href{https://mp.weixin.qq.com/s/Zah3Ki2Psq0qEMq2QVGBmw}{Fourier coefficients and Parseval's formula}	%14
+	\item 	\href{https://mp.weixin.qq.com/s/5GYYVkDfA4MtwhyK_0kDxg}{A necessary condition of Fourier series converges in $L^1$ \& Riemann-Lebesgue lemma}	%15
+	\item 	\href{https://mp.weixin.qq.com/s/tGHTKUqhFm75t9k3CcjLJA}{Dirichlet kernel}	%16
+	\item 	\href{https://mp.weixin.qq.com/s/ZD8yJLLhrL6oyO4NBuNL3g}{Dini Theorem \& There is a continuous function whose Fourier series diverges (1)}	%17
+	\item 	\href{https://mp.weixin.qq.com/s/oKttb__jq2pKibQdCnYIaQ}{There is a continuous function whose Fourier series diverges (2) \& U-B Principle}	%18
+	\item 	\href{https://mp.weixin.qq.com/s/rU_2kcw87mMTQuXjp9fUsg}{There is a continuous function whose Fourier series diverges (3)}	%19
+	\item 	\href{https://mp.weixin.qq.com/s/87XlLeL26f3vOXPBRmddpw}{Some properties of Fourier coefficients \& Ces{\`a}ro summability}	%20
+	\item	\href{https://mp.weixin.qq.com/s/kgk7MZTcNpfu08XCIQ6t-g}{Fej{\'e}r's Theorem \& Approximate integrable functions by tri-polynomial in $L^1$ norm}	%21
+	\item	\href{https://mp.weixin.qq.com/s/WM8zcUumRN9p9GYxwXrwcA}{The average of Fourier series converges in $L^p$ norm}	%22 
+	\item	\href{https://mp.weixin.qq.com/s/7SOCAwFJl6shN7zZYzxawA}{Equi. of the average of Fourier series converges unif \& Weakly convergence(1)} 	%23
+	\item 	\href{https://mp.weixin.qq.com/s/l9FCzc3oqCubRO9Lahw-1A}{Weakly convergent(2) \& Equi condition for tri-series to be the Fourier series}	%24
+	\item 	\href{https://mp.weixin.qq.com/s/AwlsQ6712yUi8sZOBSKsoQ}{Convergence of Ces{\`a}ro mean of Fourier series (1)}	%25
+	\item 	\href{https://mp.weixin.qq.com/s/UAJ-SlyftrjAhJLYvweyLA}{Part2 Conv of Ces{\`a}ro mean of Fourier series(2), Conjugate Fourier series \& Dini theorem}	%26
+	\item 	\href{https://mp.weixin.qq.com/s/mA4UFcgAXrz3RDs4U-ObXg}{Singular integrals and conjugate function}	%27
+	\item 	\href{https://mp.weixin.qq.com/s/oWeNCTB67MkHA9K_RBhAnQ}{Bound of the $L^2$ norm of conjugate function \& Hardy-Littlewood Maximal function}	%28
+	\item 	\href{https://mp.weixin.qq.com/s/A6kNkEUNTW_L4yA_VXEzOg}{Bound of the norm of the supremum of conjugate functions}	%29
+	\item 	\href{https://mp.weixin.qq.com/s/Zx1xLGXJ1we4dVDY_Zt0tg}{A counterexample \& C-Z Decomposition \& The conjugate function exists a.e. in $L^1$}	%30
+	\item	\href{https://mp.weixin.qq.com/s/Yo5DnLRpAZ0Yz2J-riK8Nw}{The conjugate function exists a.e. in $L^1$ (2)}	%31
+	\item	\href{https://mp.weixin.qq.com/s/8zYuUi7SjpPN64m08FL9PA}{The conjugate function exists a.e. in $L^1$ (3) \& Weakly estimate}	%32 
+	\item	\href{https://mp.weixin.qq.com/s/iIWy0J2VjjtLPdH1Xtpw2A}{Applications of Fourier series – isoperimetric inequality} 	%33
+	\item 	\href{https://mp.weixin.qq.com/s/zFWDaC4RMTNcZMaEoUb7Iw}{Applications of Fourier series – continuous but nowhere differentiable function}	%34
+	\item 	\href{https://mp.weixin.qq.com/s/vafsXLbIouwEudCbt6gzhA}{Fourier transform and some properties}	%35
+	\item 	\href{https://mp.weixin.qq.com/s/hBs4ElZa2V95lLbnyi3qNg}{Fourier inversion formula and Minkowski's inequality}	%36
+	\item 	\href{https://mp.weixin.qq.com/s/JZXYVWcqn5tfjxecIPsyEA}{Poisson summation formula \& Roth's theorem on 3-term AP}	%37
+	\item 	\href{https://mp.weixin.qq.com/s/HKBxFlChuJpQPru7-EUPMA}{Discrete Fourier series, Fourier transform and some properties (1)}	%38
+	\item 	\href{https://mp.weixin.qq.com/s/dbqjLczJmPPk2UCY1gu5uA}{Discrete Fourier series, Fourier transform and some properties (2)}	%39
+	\item 	\href{https://mp.weixin.qq.com/s/-CJqt4TfShm67tdGhtJIQA}{Bourgain's theorem}	%40
+	\item	\href{https://mp.weixin.qq.com/s/m7KBS-pxKYPkdu2C5qcaYA}{Proof of Roth's theorem on 3-terms AP (step 1)}	%41
+	\item	\href{https://mp.weixin.qq.com/s/YQKnyXQFBdJaGGZW8PIYyA}{Proof of Roth's theorem on 3-terms AP (step 2 to step 7)}	%42 
+	\item	\href{https://mp.weixin.qq.com/s/uNtqocYMHuEJGnJACyzCCA}{Proof of Roth's theorem on 3-terms AP (step 9 , step 8)} 	%43
+	\item 	\href{https://mp.weixin.qq.com/s/F09dwuDWQZo2icfUVU5n8g}{Proof of Roth's theorem on 3-terms AP (step 8)}	%44
+	\item 	\href{https://mp.weixin.qq.com/s/ZxVYVBl_wdy62OSQnh5djg}{There is f in $L^1$ such that for a.e. x, the Fourier series diverges (1)}	%45
+	\item 	\href{https://mp.weixin.qq.com/s/5yJ6R74prvfVDOLL7xMUUw}{There is f in $L^1$ such that for a.e. x, the Fourier series diverges (2)}	%46
+	\item 	\href{https://mp.weixin.qq.com/s/dvcfJ95Gof7rCDUlMr_YDw}{There is f in $L^1$ such that for a.e. x, the Fourier series diverges (3)}	%47
+	\item 	\href{https://mp.weixin.qq.com/s/6lLfQ3tq_BGrOEXlW60uUA}{There is f in $L^1$ such that for a.e. x, the Fourier series diverges (4)}	%48
+\end{enumerate}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              

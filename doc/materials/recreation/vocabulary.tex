@@ -1,0 +1,236 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	\pagenumbering{arabic}  
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.youtube.com/@jing-xin/playlists}{Vocabulary}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+\vspace{-0.5cm}
+
+\section*{\normalfont \large \href{https://www.youtube.com/watch?v=_8q3VWJB84o&list=PL7aIrlqqP5K_VeAi4oEExgri0o7VVBIXM}{\kaishu 1. 初级词汇} }
+
+\vspace{-0.5cm}
+
+\begin{multicols}{5}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/VJDrAYnC1z_zjawdCWxBJw}{A1}	%1
+		\item \href{https://mp.weixin.qq.com/s/nEGXPZIPoAp7c7dmOlzv0Q}{A2}	%2
+		\item \href{https://mp.weixin.qq.com/s/LNZC3VfPbCxJoiCEsV7WGA}{A3}	%3
+		\item \href{https://mp.weixin.qq.com/s/c7K1SJ0XBU-S_kpv-oPOkg}{A4}	%4
+		\item \href{https://mp.weixin.qq.com/s/ZLcx_XDMZNpSHZaMe9fG8g}{A5}	%5
+		\item \href{https://mp.weixin.qq.com/s/Kg8-Zu7u7OE91_91tDnMOw}{A6}	%6 
+		\item \href{https://mp.weixin.qq.com/s/oEraeqA4-M6uR_A2E4cWyQ}{A7}	%7 
+		\item \href{https://mp.weixin.qq.com/s/Quzt3tL0ywpbUpaQ0Fk4KA}{A8}	%8 
+		\item \href{https://mp.weixin.qq.com/s/PU5NbgotAIe_MS7_kXYXjg}{A9}	%9 
+		\item \href{https://mp.weixin.qq.com/s/4915DVCYg0MldsLo4dsGXw}{A10}	%10 
+		\item \href{https://mp.weixin.qq.com/s/1IVKqLjZh-bVL0BOqTAn3w}{A11}	%11 
+		\item \href{https://mp.weixin.qq.com/s/uE8u2GDddiU-bbmODC1uvQ}{A12}	%12 
+		\item \href{https://mp.weixin.qq.com/s/gJ90af6ZGS7-EWn7HcVnbg}{A13}	%13 
+		\item \href{https://mp.weixin.qq.com/s/i0VCVzeYklqW1_C_XupwyQ}{A14}	%14 
+		\item \href{https://mp.weixin.qq.com/s/7aV6UuaNoU1ZchqhK_NIZQ}{A15}	%15  
+	\end{enumerate}
+\end{multicols}
+
+
+
+\vspace{-0.5cm}
+
+\section*{\normalfont \large \href{https://www.youtube.com/watch?v=BdnMkCb9nOM&list=PL7aIrlqqP5K8_BmGCk4IFKeKP4ORS28a8}{\kaishu 2. 中级词汇} }
+
+\vspace{-0.5cm}
+
+\begin{multicols}{5}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/W4k0zFiy96QevrpepntSdA}{B1}	%1
+		\item \href{https://mp.weixin.qq.com/s/ZQD2C48hWjmlON61IBxasg}{B2}	%2
+		\item \href{https://mp.weixin.qq.com/s/Wj62Z_jOt7MS0NFNWg9oPQ}{B3}	%3
+		\item \href{https://mp.weixin.qq.com/s/lR_X4mRjBctAkMq-EMsYug}{B4}	%4
+		\item \href{https://mp.weixin.qq.com/s/lMj3GuEJvzNnQL-p_eUzqQ}{B5}	%5
+		\item \href{https://mp.weixin.qq.com/s/8n8glcJgbNzMw57Y-Ajt7Q}{B6}	%6 
+		\item \href{https://mp.weixin.qq.com/s/vnbgL7-CH6by9wIUO0Fffw}{B7}	%7 
+		\item \href{https://mp.weixin.qq.com/s/PGmWUqtg-GRWRDiyb1P0-g}{B8}	%8 
+		\item \href{https://mp.weixin.qq.com/s/eUmYfh0NqUHHS4hbW5-UUA}{B9}	%9 
+		\item \href{https://mp.weixin.qq.com/s/u0lK7-EGM1FeDyrOAtuCWw}{B10}	%10 
+		\item \href{https://mp.weixin.qq.com/s/0HylKPoWVNfUb6BZOj1Mvw}{B11}	%11 
+		\item \href{https://mp.weixin.qq.com/s/chuUIqH0dWJo51x_ypSYqg}{B12}	%12 
+		\item \href{https://mp.weixin.qq.com/s/Xy0Lyfkz8DVE0GUOjEx1Xw}{B13}	%13 
+		\item \href{https://mp.weixin.qq.com/s/yrufPG8ojW3Prmc_GpO-1A}{B14}	%14 
+		\item \href{https://mp.weixin.qq.com/s/HPb3-4ljuXKyVS9P3F72cw}{B15}	%15  
+	\end{enumerate}
+	
+\end{multicols}
+
+
+\vspace{-0.5cm}
+
+\section*{\normalfont \large \href{https://www.youtube.com/watch?v=hC8Sr9_WYqo&list=PL7aIrlqqP5K-zxRef5HsWBdBQrMXy4bNp}{\kaishu 3. 高级词汇} }
+
+\vspace{-0.5cm}
+
+\begin{multicols}{5}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/Doz4bJHWTaih1G1-lTrcsA}{C1}	%1
+		\item \href{https://mp.weixin.qq.com/s/C62PImjjTqiCjOAj-iPf8A}{C2}	%2
+		\item \href{https://mp.weixin.qq.com/s/VbifyZMwn0d4cBRQ-Ny2aw}{C3}	%3
+		\item \href{https://mp.weixin.qq.com/s/WUHqrjggyOfu1OJOWVbpJw}{C4}	%4
+		\item \href{https://mp.weixin.qq.com/s/BNs0qWXNHS_2jPhVL-ND0Q}{C5}	%5
+		\item \href{https://mp.weixin.qq.com/s/1HNybLGpDflSixYS1o7xdQ}{C6}	%6 
+		\item \href{https://mp.weixin.qq.com/s/BSX9ZVcntWh-h0zHRQtHxw}{C7}	%7 
+		\item \href{https://mp.weixin.qq.com/s/52mk0CN9E4C9hkJDbZcOxA}{C8}	%8 
+		\item \href{https://mp.weixin.qq.com/s/-A6H3K09FgfwrRNq2Qb7Jw}{C9}	%9 
+		\item \href{https://mp.weixin.qq.com/s/_7nH1fyVvx3uasAo6w5ibQ}{C10}	%10 
+		\item \href{https://mp.weixin.qq.com/s/lmti4hfImFIEKaCIm4SkYA}{C11}	%11 
+		\item \href{https://mp.weixin.qq.com/s/jCYoHKaDgCN-_jPRERRgMQ}{C12}	%12 
+		\item \href{https://mp.weixin.qq.com/s/qL7h9YYokdKKYEjTabuQCg}{C13}	%13 
+		\item \href{https://mp.weixin.qq.com/s/il5aKnCwGG6lOspxHLFc0w}{C14}	%14 
+		\item \href{https://mp.weixin.qq.com/s/iCGXDnPx5skbH9vcvya_6A}{C15}	%15  
+	\end{enumerate}
+\end{multicols}
+
+
+
+\vspace{-0.5cm}
+
+\section*{\normalfont \large \href{https://www.youtube.com/watch?v=kvj2Pkj12xs&list=PL7aIrlqqP5K-M8Ip7vGkKVK8FhkkliDYz}{\kaishu 4. 挑战级词汇} }
+
+\vspace{-0.5cm}
+
+\begin{multicols}{5}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/rcL_F7hsfLRacq5RVProdg}{D1}	%1
+		\item \href{https://mp.weixin.qq.com/s/hjN50MmaA-6xDviTywdkxA}{D2}	%2
+		\item \href{https://mp.weixin.qq.com/s/Y__yMSaAeTT2ns7QvlOoQw}{D3}	%3
+		\item \href{https://mp.weixin.qq.com/s/Ll4WH4ostkM7fxHeIGXBYQ}{D4}	%4
+		\item \href{https://mp.weixin.qq.com/s/TAMxjDkGNwvURyn2LvTKLg}{D5}	%5
+		\item \href{https://mp.weixin.qq.com/s/rrZF7nwnDnIGN6pCs-v3YQ}{D6}	%6 
+		\item \href{https://mp.weixin.qq.com/s/MMbrSSd9vzotTMTCcIVilA}{D7}	%7 
+		\item \href{https://mp.weixin.qq.com/s/-mfpvHlC3UW13X1mgkjDaQ}{D8}	%8 
+		\item \href{https://mp.weixin.qq.com/s/KiSnPcN7VJG13qAkZ-y0Zw}{D9}	%9 
+		\item \href{https://mp.weixin.qq.com/s/gMbgh_ozIQO9c3sMQyegnQ}{D10}	%10 
+		\item \href{https://mp.weixin.qq.com/s/ZPc6D3R1l6JzeDL3C-f-qQ}{D11}	%11 
+		\item \href{https://mp.weixin.qq.com/s/Pc64kRxC3gXPDEHvCo80Gw}{D12}	%12 
+		\item \href{https://mp.weixin.qq.com/s/ik2e6u-rOTPy1wfI1C-Ohw}{D13}	%13 
+		\item \href{https://mp.weixin.qq.com/s/LL9hODZBmgeHJDVgXFD68w}{D14}	%14 
+		\item \href{https://mp.weixin.qq.com/s/NlSTlIGxqMxd68slq2l-nw}{D15}	%15  
+		\item \href{https://mp.weixin.qq.com/s/uvNHnsB4bTPg5HeHrJZP4A}{D16}	%16 
+		\item \href{https://mp.weixin.qq.com/s/lrRDn11ewL_4eLMhTH_6Og}{D17}	%17 
+		\item \href{https://mp.weixin.qq.com/s/dkcCsb1vl5TYZtPZJclThQ}{D18}	%18  
+	\end{enumerate}
+\end{multicols}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              

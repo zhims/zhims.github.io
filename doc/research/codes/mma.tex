@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.wolfram.com/mathematica/}{MMA}}
+		
+		%\vspace{0.25cm}
+		
+		%{\large \href{https://www.mpg.de/10655393/science-of-light-marquardt}{Florian Marquardt}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+\vspace{-1cm}
+
+\begin{center}
+	{\large  \href{https://space.bilibili.com/175344592/lists/176573?type=season}{\kaishu 符号与科学计算}}
+\end{center}
+
+\vspace{-0.75cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item  \href{https://mp.weixin.qq.com/s/vYx6pka6K9ikLSgcRfzJtQ}{绪论} %1
+		\item  \href{https://mp.weixin.qq.com/s/MwU5AKH8KVgBctNnYlnkXw}{基本数学运算} %2
+		\item  \href{https://mp.weixin.qq.com/s/L95HcEuH4HCHBhKwBd6azg}{代数运算} %3
+		\item  \href{https://mp.weixin.qq.com/s/Z_VAuRKu2GN7hmFvptoFSg}{代数运算习题课} %4
+		\item  \href{https://mp.weixin.qq.com/s/BZ6Z5tSLeoT52d69By80Ow}{微积分} %5
+		\item  \href{https://mp.weixin.qq.com/s/ngAuravDc4KWF22gXzYegQ}{矢量分析} %6
+		\item  \href{https://mp.weixin.qq.com/s/w7A7OhPfpGvNMaLfajgYYQ}{优化} %7
+		\item  \href{https://mp.weixin.qq.com/s/e9Y7wM3-M40HoJc4hZMpvA}{拟合} %8
+		\item  \href{https://mp.weixin.qq.com/s/djpFqzcafvxSH7nXtyuF2w}{插值} %9
+		\item  \href{https://mp.weixin.qq.com/s/L7z4vrNeOKWhXAUEFLDTSw}{线性代数} %10
+		\item  \href{https://mp.weixin.qq.com/s/rL9oXhfXBXeXwoLLEmHuuA}{微分方程 A 绪论 \ \& \ 语法} %11
+		\item  \href{https://mp.weixin.qq.com/s/ixqqvCjuPC-EIJzgpS4h5w}{微分方程 B 符号解 \ DSolve \ 文档导读} %12
+		\item  \href{https://mp.weixin.qq.com/s/ruo4Sbxuj_YQYXSB_20J-A}{微分方程 C 数值解 \ NDSolve \ 文档导读 \ \& \ 微分特征值问题} %13
+		%\item \href{url}{Materials}
+	\end{enumerate}
+\end{multicols}
+
+
+
+\begin{center}
+	{\large  \href{https://www.bilibili.com/video/BV1av411N7Xi/?spm_id_from=333.337.search-card.all.click}{\kaishu Mathematica及其应用}}
+\end{center}
+
+\vspace{-1cm}
+
+\begin{enumerate}
+	\item  简介 \quad %1
+	\href{https://mp.weixin.qq.com/s/JvIs76xytRI6XDyDE98d3A}{A} \quad  \href{https://mp.weixin.qq.com/s/bbSGXaabTCY3_nk10Pddfw}{B} \quad \href{https://mp.weixin.qq.com/s/ho5AVGIpseuvj5T_mUt88g}{C} \quad \href{https://mp.weixin.qq.com/s/G__cxyArhrN_1_MBzg9GDw}{D} \quad \href{https://mp.weixin.qq.com/s/glbD89qVk___Svow_hz1Fg}{E}
+	\item  %2
+	\href{https://mp.weixin.qq.com/s/ssfYA1m_mISyudBSiHuOhg}{A} \quad  \href{https://mp.weixin.qq.com/s/7xcBNb_iG0dvHv7ZOptfIA}{B} \quad \href{https://mp.weixin.qq.com/s/p3-FEPDh1-ZTIrjhbyzNSw}{C} \quad \href{https://mp.weixin.qq.com/s/eTyLDlz4fDKFVg0xVaLg8g}{D} \quad \href{https://mp.weixin.qq.com/s/8fBNPRRVHjOU4C8v5d7GGg}{E}
+	\item  %3
+	\href{https://mp.weixin.qq.com/s/ZhCWSE7hXncU6w6TxtT0dA}{A}  \quad  \href{https://mp.weixin.qq.com/s/Fn44kBKENtBRimYkP8Nntg}{B}  \quad \href{https://mp.weixin.qq.com/s/JGYs_I3EQKAaGoL-N9SqlA }{C} \quad \href{https://mp.weixin.qq.com/s/aGKqp0OTbiKNpIpYpVHdEA}{D}  \quad \href{https://mp.weixin.qq.com/s/iIYNvkkBwEOGlmd7no-PvA}{E}
+	\item  %4
+	\href{https://mp.weixin.qq.com/s/QzL-k5CKbNAUhBqD5JaRPQ}{重写规则} \quad  \href{https://mp.weixin.qq.com/s/mDyMQUDCOqoR7yaoG71XNw}{B} \quad \href{https://mp.weixin.qq.com/s/FMhPPRN9TcGIMn2lpWJFaQ}{C} \quad \href{https://mp.weixin.qq.com/s/lJcTZkE9Xtx2PbSBHdFN3A}{D} \quad \href{https://mp.weixin.qq.com/s/zpnNyDHE3xcIuCIrRatAWw}{E}
+	\item  %5
+	\href{https://mp.weixin.qq.com/s/5J4wRu-RIo-WK2K6QA7i5w}{函数与泛函编程} \quad  \href{https://mp.weixin.qq.com/s/nAQ-pYLe61SmqMTNRp3R2A}{B} \quad \href{https://mp.weixin.qq.com/s/qaG4DOPrJnDvaNTDUcakjw}{C} \quad \href{https://mp.weixin.qq.com/s/suqs8JsoInleid3VQskGSg}{D} \quad \href{https://mp.weixin.qq.com/s/VY-B2siodOMHHdYfK8S5eg}{模块化环境和包}
+	\item  %6
+	\href{https://mp.weixin.qq.com/s/c42siMq1Fw5Ln7ySb8fCVg}{模块化环境和包} \quad  \href{https://mp.weixin.qq.com/s/n__zXeNNvQv0BCCqm4XkUQ}{B} \quad \href{https://mp.weixin.qq.com/s/xKhXH42ZLfcqQoJrOkPCPQ}{C} \quad \href{https://mp.weixin.qq.com/s/smsPlwElQfwsmdJVW0UmuA}{D} \quad \href{https://mp.weixin.qq.com/s/LnbxRCxRtvaL3QIIhV0bEg}{E}
+	\item  %7
+	\href{https://mp.weixin.qq.com/s/BJPP_PeiM-3fa77bznf0pg}{A} \quad  \href{https://mp.weixin.qq.com/s/h42cxGSeEsXfKCZK9JBsIg}{B} \quad \href{https://mp.weixin.qq.com/s/vM9_JJCBQ9Qp1s9Q83r3ng}{C} \quad \href{https://mp.weixin.qq.com/s/dYtvf3SWaHqUTKy27zC2Qw}{D} \quad \href{https://mp.weixin.qq.com/s/8cuvuFQeeBXwUCs4tJZqAQ}{E}
+	\item  %8
+	\href{https://mp.weixin.qq.com/s/47uXmcdcXekus-Z-OTOM8A}{A} \quad  \href{https://mp.weixin.qq.com/s/zgfcHcgpq86QUc3Oktl1Xg}{B} \quad \href{https://mp.weixin.qq.com/s/wLvXSkZjStvvhyqHQV8Nxw}{C} \quad \href{https://mp.weixin.qq.com/s/JfesPYOU6dms1Y8q_Vyv6g}{D} \quad \href{https://mp.weixin.qq.com/s/yvuC8vsL1EKk0RprBKR6FA}{E}
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
