@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://metaphor.ethz.ch/x/2022/hs/401-2303-00L/}{Complex Analysis}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://people.math.ethz.ch/~kowalski/}{Emmanuel Kowalski}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-1cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/1V5WlvLobUlTQvd6qhED5w}{0920 ntroduction to the course, examples of applications, definition of holomorphic functions, algebraic stability properties of holomorphic functions.}	%1
+	\item \href{https://mp.weixin.qq.com/s/n2yrgT92ke6giWgYppFXSg}{0921 Convergent power series are holomorphic. Examples and counterexample (the complex conjugate function).}	%2
+	\item \href{https://mp.weixin.qq.com/s/7c2xUrhKdUduxahNAhHSdg}{0927 Holomorphy and differentiability; the Cauchy-Riemann equations. Line integrals.}	%3
+	\item \href{https://mp.weixin.qq.com/s/_R3iUFgKnrECzC7tK-3yGw}{0928 Line integrals and primitives.}	%4
+	\item \href{https://mp.weixin.qq.com/s/qwV89s3UnpKiZFriLYDGBw}{1004 Chapter 3: Cauchy's Theorem. Goursat's Theorem, existence of primitives in a circle, Cauchy's Integral Formula.}	%5
+	\item \href{https://mp.weixin.qq.com/s/SqMPcf0S0bxMBPRC3lGRow}{1005 Chapter 3: proof of Goursat's Theorem.}	%6
+	\item \href{https://mp.weixin.qq.com/s/uCPR9J4GUApWyei4y8b53Q}{1011 Chapter 4: applications of Cauchy's Theorem and integral formula: analyticity, Cauchy's inequalities for derivaties, Liouville's Theorem.}	%7
+	\item \href{https://mp.weixin.qq.com/s/0-IKbwCtH2JllC_Ztezi6A}{1012 Chapter 4: zeros of holomorphic functions, analytic continuation.}	%8
+	\item \href{https://mp.weixin.qq.com/s/rzRMuA_swjtkfwjR0aksNA}{1018 Chapter 4: proof of the principle of analytic continuation. Limits of holomorphic functions, Morera's theorem.}	%9
+	\item \href{https://mp.weixin.qq.com/s/GN1QItDrDV3CceN8hj8Geg}{1019 Chapter 4: holomorphic functions defined by integrals}	%10
+	\item \href{https://mp.weixin.qq.com/s/cynhCsc4fDN3wJXWi477XQ}{1025 Chapter 5: singularities and meromorphic functions, residue theorem.}	%11
+	\item \href{https://mp.weixin.qq.com/s/1G9qAeAPKLpde8mok3ed4A}{1026 Chapter 5: residue theorem and examples.}	%12
+	\item \href{https://mp.weixin.qq.com/s/nTwCeq-N-Q9FTuV2byz7xQ}{1101 Chapter 5: meromorphic functions, counting zeros, open image and maximum modulus principle.}	%13
+	\item \href{https://mp.weixin.qq.com/s/aFH-zaRn0azUI3CNPgEuQQ}{1102 Chapter 5: meromorphic functions, counting zeros, open image and maximum modulus principle.}	%14
+	\item \href{https://mp.weixin.qq.com/s/ZuEq6dt8PEbDHltJNAzlbg}{1115 Chapter 6: Eta, THeta, Zeta (a long example). Definitions of the functions, infinite products..}	%15
+	\item \href{https://mp.weixin.qq.com/s/nuNMmU-BuJDk5XAMP79Lig}{1116 Chapter 6: Eta, THeta, Zeta. Analytic continuation of the zeta function, application to prime numbers.}	%16
+	\item \href{https://mp.weixin.qq.com/s/WstldXh3U6M8XhSn-5lBGw}{1121 Chapter 6: Eta, THeta, Zeta (a long example). Sketch of Riemann's approach to counting primes; the Riemann Hypothesis.}	%17
+	\item \href{https://mp.weixin.qq.com/s/YR5GTfxuLrgHn_YMLweBKA}{1123 Chapter 7: Homotopy and applications. Definition and statement of Cauchy's Theorem for homotopic curves.}	%18
+	\item \href{https://mp.weixin.qq.com/s/2ITdXmiyfllA85h23RZdxg}{1129 Chapter 7: Proof of Cauchy's Theorem for homotopic curves.}	%19
+	\item \href{https://mp.weixin.qq.com/s/A9wQpp5YaIN_gIXFlcImdg}{1130 Chapter 7: simply-connected open sets, existence of primitives. The complex logarithm.}	%20
+	\item \href{https://mp.weixin.qq.com/s/QqsGD_ZDWPirzHfrX-GnrA}{1206 Chapter 7: The residue theorem and homotopy; winding numbers.}	%21
+	\item \href{https://mp.weixin.qq.com/s/HW9jjGv1vyn-mBE-LSd_jw}{1207 Chapter 8: conformal mapping (definition, first examples).}	%22
+	\item \href{https://mp.weixin.qq.com/s/dev3XnxlHSZZdNvpwEb-8g}{1213 Chapter 8 (conformal mapping): more examples, statement of Riemann's mapping theorem. Outline of the proof. Schwarz Lemma, automorphisms of the disc.}	%23
+	\item \href{https://mp.weixin.qq.com/s/NlzF36to98_gfQoRRlIKzw}{1214 Chapter 8 (conformal mapping); reduction of Riemann's Theorem to the existence of an extremum.}	%24
+	\item \href{https://mp.weixin.qq.com/s/LgPQ0s1PgyyKGURqw1VttA}{1220 Chapter 8 (conformal mapping): end of the proof of Riemann's Theorem; Montel's Theorem. Final remarks.}	%25
+	\item \href{https://mp.weixin.qq.com/s/LzErfVGsvDyah_1G3DSDug}{1221 Review of the course, questions}	%26
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
