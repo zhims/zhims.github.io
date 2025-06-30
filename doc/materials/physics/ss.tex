@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://ocw.ncu.edu.tw/p/NCUMOOCS509}{Introduction to Space Science}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://irsl.ss.ncu.edu.tw/}{Jann-Yenq Liu} \& \href{https://www.ss.ncu.edu.tw/~yhyang/}{Ya-Hui Yang} }
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+\vspace{0.25cm}
+
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/eK0nObBkQutQ9zAjrz80PA}{1.1 电离层疆界}	%1
+		\item \href{https://mp.weixin.qq.com/s/D2sNpX-NeaNjmxB5CKMKiA}{1.2 电离层形成}	%2
+		\item \href{https://mp.weixin.qq.com/s/xZXJguIX6GNszkl5O_f01A}{1.3 电离层结构与变化}	%3
+		\item \href{https://mp.weixin.qq.com/s/arRHBqHz29F1Pmlp-EHtKg}{1.4 电离层太空天气}	%4
+		\item \href{https://mp.weixin.qq.com/s/3foK4NzfZ1Oedc01BJjnNA}{2.1 磁层结构}	%5
+		\item \href{https://mp.weixin.qq.com/s/EBXORVtcW4AxE8av7WJ8Gw}{2.2 磁层电流系统}	%6
+		\item \href{https://mp.weixin.qq.com/s/N8EQatE7tGxsj-ukNU3dyA}{2.3 电磁扰动}	%7
+		\item \href{https://mp.weixin.qq.com/s/dwUoYdEfVI8kJXSF2_cwhQ}{2.4 磁暴与磁副暴}	%8
+		\item \href{https://mp.weixin.qq.com/s/6QSLqyA0P8joLc-DqHVwMg}{3.1 太阳结构与各层特征}	%9
+		\item \href{https://mp.weixin.qq.com/s/kiBH7URAuRg-WNuGM8EFlA}{3.2 太阳多波段观测}	%10
+		\item \href{https://mp.weixin.qq.com/s/bFaJwqyQkwtKfEbPF3c-1A}{3.3 太阳风暴}	%11
+		\item \href{https://mp.weixin.qq.com/s/366JwOJFJagZHFiG8RlM3Q}{3.4 太阳活动周期}	%12
+		\item \href{https://mp.weixin.qq.com/s/TI4pO-loYIajuQejAV3kmA}{4.1 行星际空间}	%13
+		\item \href{https://mp.weixin.qq.com/s/VApmJlfT5lk3XHiHegWWlA}{4.2 太阳风常态特征}	%14
+		\item \href{https://mp.weixin.qq.com/s/ZUhm97S6LIY_cQ1HlD7Qng}{4.3 太阳风暂态特征}	%15
+		\item \href{https://mp.weixin.qq.com/s/qSDRvEct0kAWj99qaZAtlg}{4.4 太阳风磁层耦合}	%16
+		\item \href{https://mp.weixin.qq.com/s/F5pJ47K2H4suopQHyj4FcQ}{5.1 太空天气简介}	%17
+		\item \href{https://mp.weixin.qq.com/s/ejFno9Aa6XF2-c4mMnvFeQ}{5.2 恶劣太空天气: 电磁波}	%18
+		\item \href{https://mp.weixin.qq.com/s/IIC5A08fYknX5j9F_wXHaA}{5.3 恶劣太空天气: 高能粒子}	%19
+		\item \href{https://mp.weixin.qq.com/s/cwbmr_qDDk7sYwl2B_i6GQ}{5.4 恶劣太空天气: 太阳风}	%20
+		%\item \href{url}{Materials}
+	\end{enumerate}
+\end{multicols}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
