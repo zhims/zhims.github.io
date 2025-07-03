@@ -1,0 +1,209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.youtube.com/playlist?list=PLGnHtEN8U57OBAKe6tDWZ2OE1ndF1Oj_N}{New Concept English \Romannum{1}}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://teacher.koolearn.com/fen/details?teacherId=7769}{Na Huo}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{1cm}
+%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\setcounter{enumi}{-1}
+		\item \href{https://mp.weixin.qq.com/s/hrBaw5BboXhMaBqWHmsgyg}{Introdcution}	%0
+		\item \href{https://mp.weixin.qq.com/s/vQ6mtY3avmZ9h9Ftys2fGw}{1\&2 Excuse me}	%1
+		\item \href{https://mp.weixin.qq.com/s/XrvcXEbvg-KbyFciyJq_1g}{3\&4 Sorry, sir}	%2
+		\item \href{https://mp.weixin.qq.com/s/GAx2oHiJW1zEzQFXRxULjA}{5\&6 Nice to meet you}	%3
+		\item \href{https://mp.weixin.qq.com/s/0x5eZsHQrzp1VVoUBa8JoA}{7\&8 Are you a teacher}	%4
+		\item \href{https://mp.weixin.qq.com/s/QA5UP6vNhfQfbAK54OZUXg}{9\&10 How are you today}	%5
+		\item \href{https://mp.weixin.qq.com/s/j-RQmZx9oanP3UkYtjKIPA}{11\&12 Is this your shirt}	%6
+		\item \href{https://mp.weixin.qq.com/s/hSCJc6kKoj6g1wbCPVmGIA}{13\&14 A new dress}	%7
+		\item \href{https://mp.weixin.qq.com/s/CeBlLjp4KwSn9v6sXexdYA}{15\&16 Your passport,please}	%8
+		\item \href{https://mp.weixin.qq.com/s/li3ORR4iGQGzXPGzzb_rlg}{17\&18 How do you do}	%9
+		\item \href{https://mp.weixin.qq.com/s/6nVGQPPb-90O5scFiS8gQQ}{19\&20 Tired and thirsty}	%10
+		\item \href{https://mp.weixin.qq.com/s/rPtiaLJCtjtFBiqIkCL4Yw}{21\&22 Which book}	%11
+		\item \href{https://mp.weixin.qq.com/s/GLMNK_ykLGE_OwVMn3xnhg}{23\&24 Which glasses}	%12
+		\item \href{https://mp.weixin.qq.com/s/JWuBpznLEfit2XImoySTkA}{25\&26 Mrs Smith's kitchen}	%13
+		\item \href{https://mp.weixin.qq.com/s/G4jxkHeUS3QPhdukVKvBWA}{27\&28 Mrs Smith's living room}	%14
+		\item \href{https://mp.weixin.qq.com/s/gX5Ky6FJX5mgu5C3y6ca6A}{29\&30 Come in, Amy}	%15
+		\item \href{https://mp.weixin.qq.com/s/RF-ODPCo5PEmEkwwyZkCxg}{31\&32 Where's Sally}	%16
+		\item \href{https://mp.weixin.qq.com/s/YwUWH366czkONdSN9uM1ng}{33\&34 A fine day}	%17
+		\item \href{https://mp.weixin.qq.com/s/W81EC9hRTLucZpabGybYaA}{35\&36 Our village}	%18
+		\item \href{https://mp.weixin.qq.com/s/jU0zziZvNkN3smWyjcKZzw}{37\&38 Making a bookcase}	%19
+		\item \href{https://mp.weixin.qq.com/s/GAkeIdal7Qe3db1aJYdWuQ}{39\&40 Don't drop it}	%20
+		\item \href{https://mp.weixin.qq.com/s/2F9XLQUQILztcgf6yCW7jg}{41\&42 Penny's bag}	%21
+		\item \href{https://mp.weixin.qq.com/s/10YygqNtfcUOT9xAQ4uN1A}{43\&44 Hurry up}	%22
+		\item \href{https://mp.weixin.qq.com/s/aP9S0qy8NglSOoiGVdBarw}{45\&46 The boss's letter}	%23
+		\item \href{https://mp.weixin.qq.com/s/u6UzmTzHhB9UkkX8Akhe9Q}{47\&48 A cup of coffee}	%24
+		\item \href{https://mp.weixin.qq.com/s/jBJgj6PQWCHT0ZRPvcWbUw}{49\&50 At the butcher's}	%25
+		\item \href{https://mp.weixin.qq.com/s/wwJ46B0G5JcVihhCL0v0ig}{51\&52 A pleasant climate}	%26
+		\item \href{https://mp.weixin.qq.com/s/9EiXEfH0fVv3jVMqCK3sxg}{53\&54 An interesting climate}	%27
+		\item \href{https://mp.weixin.qq.com/s/9GNx8Mi37l2gNPFjG_VkQQ}{55\&56 The Sawyer family}	%28
+		\item \href{https://mp.weixin.qq.com/s/UPCiQJyVNSQxQW5unOyUAQ}{57\&58 An unusual day}	%29
+		\item \href{https://mp.weixin.qq.com/s/uqlkC7cgnGhyJjhJqo4pYQ}{59\&60 Is that all}	%30
+		\item \href{https://mp.weixin.qq.com/s/fhovF8hrkiXlvfWolxZKaw}{61\&62 A bad cold}	%31
+		\item \href{https://mp.weixin.qq.com/s/BArp8t6Uot_e1KkREOSJRA}{63\&64 Thank you, doctor}	%32
+		\item \href{https://mp.weixin.qq.com/s/njGrI95qXKYM0zeiQ2aXwA}{65\&66 Not a baby}	%33
+		\item \href{https://mp.weixin.qq.com/s/EPYRBjDVxktXv5qxw2X30A}{67\&68 The weekend}	%34
+		\item \href{https://mp.weixin.qq.com/s/tcW6AGPu8oN4AbC-H5Ihqg}{69\&70 The car race}	%35
+		\item \href{https://mp.weixin.qq.com/s/i8f2pRyjREXf7BN4EKHzzw}{71\&72 He's awful}	%36
+		\item \href{https://mp.weixin.qq.com/s/kwbPPJs4DUcYWjf3TJlwlw}{73\&74 The way to King Street}	%37
+		\item \href{https://mp.weixin.qq.com/s/YTjIhvQXaZZYd14qAsyu6A}{75\&76 Uncomfortable shoes}	%38
+		\item \href{https://mp.weixin.qq.com/s/FOky-kSqk8ZL64Q4UGAihw}{77\&78 Terrible toothache}	%39
+		\item \href{https://mp.weixin.qq.com/s/FteZx3rasuoHt0UJ5P5pPA}{79\&80 Carol's shopping list}	%40
+		\item \href{https://mp.weixin.qq.com/s/GVD1rLmalBGDUe3DJJr3-g}{81\&82 Roast beef and potatoes}	%41
+		\item \href{https://mp.weixin.qq.com/s/bhOPlpIBrxOpJ02lruw3kQ}{83\&84 Going on holiday}	%42
+		\item \href{https://mp.weixin.qq.com/s/eN3uIOpJqNIe936Rk2STkg}{85\&86 Paris in the spring}	%43
+		\item \href{https://mp.weixin.qq.com/s/nGHCxaoDVcuNkVKr_7RJbQ}{87\&88 A car crash}	%44
+		\item \href{https://mp.weixin.qq.com/s/wDbkWhEHC4vJneNqq42-wQ}{89\&90 For sale}	%45
+		\item \href{https://mp.weixin.qq.com/s/xwf_5oep4FuGuI1tzRuoKQ}{91\&92 Poor Ian}	%46
+		\item \href{https://mp.weixin.qq.com/s/ghNZ9D2HtNWQZWIwED1tWA}{93\&94 Our new neighbour}	%47
+		\item \href{https://mp.weixin.qq.com/s/maoCkCnEaPFTMzabduogCw}{95\&96 Tickets, please}	%48
+		\item \href{https://mp.weixin.qq.com/s/m3u3gUDw_D1oRdtQfMYWMQ}{97\&98 A small blue case}	%49
+		\item \href{https://mp.weixin.qq.com/s/ggj9Y9NzB3s4QmSSNLAblw}{99\&100 Ow}	%50
+		\item \href{https://mp.weixin.qq.com/s/sgVs80UkjdQyjL2UsvTyxw}{101\&102 A card from Jimmy}	%51
+		\item \href{https://mp.weixin.qq.com/s/CT8W-PFcScdKO4cw4rXqhQ}{103\&104 The French test}	%52
+		\item \href{https://mp.weixin.qq.com/s/qY351kq1vH4NqI2Rbjpvfg}{105\&106 Full of mistakes}	%53
+		\item \href{https://mp.weixin.qq.com/s/LdFWTOIn_VYJzW5P6orIqg}{107\&108 It's too small}	%54
+		\item \href{https://mp.weixin.qq.com/s/FsN7TYfcqFsKa9Jr5BxY2w}{109\&110 A good idea}	%55
+		\item \href{https://mp.weixin.qq.com/s/gS0Al989ld48SsPP9n0KYQ}{111\&112 The most expensive model}	%56
+		\item \href{https://mp.weixin.qq.com/s/tpTseTIWT9QB1zm0IYpg9A}{113\&114 Small change}	%57
+		\item \href{https://mp.weixin.qq.com/s/PgzzpG-OR5KMoQ7OlYUzkQ}{115\&116 Knock, knock}	%58
+		\item \href{https://mp.weixin.qq.com/s/qzNF0ZFCnap4xzWCNd-HFw}{117\&118 Tommy's breakfast }	%59
+		\item \href{https://mp.weixin.qq.com/s/ZvdPBlDz73T68TvhlBcX6Q}{119\&120 A true story}	%60
+		\item \href{https://mp.weixin.qq.com/s/pl6LAyLmIiJZnUQpI8FrOw}{121\&122 The man in a hat }	%61
+		\item \href{https://mp.weixin.qq.com/s/mkLKXTuaUnU_1tyQqs09zA}{123\&124 A trip to Australia}	%62
+		\item \href{https://mp.weixin.qq.com/s/7kgCTMSANjHJY-kwm_R5Hw}{125\&126 Tea for two}	%63
+		\item \href{https://mp.weixin.qq.com/s/bclWUB4Xji7ZdhAs-5HWBA}{127\&128 A famous actress}	%64
+		\item \href{https://mp.weixin.qq.com/s/Ga5_bmWUOZZD9ZRV0AM12A}{129\&130 Seventy miles an hour}	%65
+		\item \href{https://mp.weixin.qq.com/s/1XdxRQo7DZsK8znQ0f2fdA}{131\&132 Don't be so sure}	%66
+		\item \href{https://mp.weixin.qq.com/s/p6Gq-RR2cT7myzw0vdU7lA}{133\&134 Sensational news}	%67
+		\item \href{https://mp.weixin.qq.com/s/U0mvHsK5glAzsvRl-9vBLQ}{135\&136 The latest report}	%68
+		\item \href{https://mp.weixin.qq.com/s/zPezzDBQLdi8c1d0MQcSgA}{137\&138 A pleasant dream}	%69
+		\item \href{https://mp.weixin.qq.com/s/ndysQezAwqJcl2Q3czRZnQ}{139\&140 Is that you, John}	%70
+		\item \href{https://mp.weixin.qq.com/s/gN3BuC-KROaDGL_d3CRDBw}{141\&142 Sally's first train ride}	%71
+		\item \href{https://mp.weixin.qq.com/s/ZAztF0Rd8LTlFfDWn6TJDg}{143\&144 A walk through the woods}	%72
+		%\item \href{url}{Materials}
+	\end{enumerate}
+\end{multicols}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
