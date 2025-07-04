@@ -1,0 +1,178 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.math.uci.edu/~rvershyn/teaching/hdp/hdp.html}{High-Dimensional Probability and Applications in Data Science}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://www.math.uci.edu/~rvershyn/}{Roman Vershynin}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/v3Z1f20z1hDrn-8dI-CbAA}{The curse of dimensionality. Probability can help: the Monte-Carlo method.}	%1
+	\item \href{https://mp.weixin.qq.com/s/J9gdJ2KR9ugcl_XI8oARIA}{Convexity. Caratheodory theorem. Approximate Caratheodory theorem. Proof by a probabilistic method, the empirical method of Maurey.}	%2
+	\item \href{https://mp.weixin.qq.com/s/Z8loFJ5IB2Ix6rCsVfOYLg}{Applications of Approximate Caratheodory Theorem for financial portfolios and factor analysis. Covering numbers are usually exponential in the dimension. Polytopes with few vertices have small covering numbers.}	%3
+	\item \href{https://mp.weixin.qq.com/s/iuRjK1di20saIzcViawKJg}{Volumes of polytopes (Carl-Pajor's theorem). Milman's hyperbolic intuition in high dimensions. Concentration inequalities: from 68-95-99.7 rule to general gaussian tails.}	%4
+	\item \href{https://mp.weixin.qq.com/s/qMDUAUcbDE4PFA5llETOAA}{Toward concentration of sums of independent random variables: Markov's and Chebyshev's inequalities. The error in the central limit theorem is too large (Berry-Esseen theorem). Hoeffding's inequality stated.}	%5
+	\item \href{https://mp.weixin.qq.com/s/Mcvox5IucpjtH86YS_qP1A}{Hoeffding's inequality proved. Estimation of the mean: the median-of-means estimator.}	%6
+	\item \href{https://mp.weixin.qq.com/s/l6h6PBCBB49-vifUMrmVtg}{Variants of Hoeffding's inequality: two-sided and for bounded distributions. Poisson limit theorem. Chernoff's inequality.}	%7
+	\item \href{https://mp.weixin.qq.com/s/WyxwqC0bUX3_TDTcwJ8mGQ}{Small and large deviations: Gaussian and Poisson regimes. Random graphs as models of networks. Erdos-Renyi model. Phase transitions. Regularity of dense random graphs.}	%8
+	\item \href{https://mp.weixin.qq.com/s/5864YkuQoSAQIq_3kdBMTA}{Irregularity of sparse random graphs. Instance vs. uniform guarantees of probabilistic results. Geometric discrepancy}	%9
+	\item \href{https://mp.weixin.qq.com/s/jswkml_DDPueAIM_X3g7Xw}{Proof of the discrepancy theorem.}	%10
+	\item \href{https://mp.weixin.qq.com/s/JYJcLdB9Ltz8W8p2dFgGBQ}{Spaces of random variables. Normed and Hilbert spaces. Lp spaces. Cauchy-Schwarz, Holder's and Jensen's inequalities.}	%11
+	\item \href{https://mp.weixin.qq.com/s/5qf7-hB6mIEbsRjMYcErJg}{Orlicz spaces. Subgaussian properties.}	%12
+	\item \href{https://mp.weixin.qq.com/s/Nm4CqJV4XC9761byMAekWA}{Equivalence of subgaussian properties. Subgaussian distributions and subgaussian norm.}	%13
+	\item \href{https://mp.weixin.qq.com/s/cDfRb_xTbCT_sG31TL8ksw}{Subgaussian Hoeffding's inequality. Subexponential distributions. Bernstein's inequality.}	%14
+	\item \href{https://mp.weixin.qq.com/s/7FGIIXa3JKmT-UwzLWeuxQ}{The thin shell phenomenon. Dimension reduction with Johnson-Lindenstrauss lemma.}	%15
+	\item \href{https://mp.weixin.qq.com/s/5Q1pSwUM8_LttHz0oma9_Q}{Combinatorial optimization. Examples: Ising model, clustering, max-cut. Spectral relaxations. Semidefinite relaxations.}	%16
+	\item \href{https://mp.weixin.qq.com/s/4_eM4wszQpckftwn-htYWQ}{Gram matrices. Semidefinite relaxation of max cut: Goemans-Williamson's agorithm.}	%17
+	\item \href{https://mp.weixin.qq.com/s/7TlzvHVsc2vWOGekeRcCUA}{Grothendieck's inequality. Tensor calculus. Krivine's bound.}	%18
+	\item \href{https://mp.weixin.qq.com/s/X6-kP4lXGsHjMokQSKnq1w}{A first exposure to machine learning: binary classification. Support vector machine. The kernel trick: kernelizing machine learning algorithms. Radial basis function kernel.}	%19
+	\item \href{https://mp.weixin.qq.com/s/_7f2VR_D5a1hFCyHK6M0bg}{The soft-margin SVM and kernel SVM. What functions are kernels? Mercer's condition. Artificial neural networks. Large width limits. Kernels arising from neural networks. Neural tangent kernel.}	%20
+	\item \href{https://mp.weixin.qq.com/s/vS54BsG3isidtbzjInyncQ}{A refresher in linear algebra: spectral and singular value decompositions; Frobenius norm.}	%21
+	\item \href{https://mp.weixin.qq.com/s/jqgImnWqKsTPFRkdrCaUCw}{The operator norm. Random vectors in high dimensions. Covariance matrix. Normal distribution in high dimensions. Principal component analysis.}	%22
+	\item \href{https://mp.weixin.qq.com/s/jHcGtlgiLk7EXr77cBarUQ}{The covariance estimation problem. Sample covariance matrix. Reduction to stochastic processes. Brownian motion. Epsilon-nets. Computing the operator norm on an epsilon-net.}	%23
+	\item \href{https://mp.weixin.qq.com/s/6uf0V9rMVBCDPtj__bgqCg}{Covariance estimation for normal distributions. Spectrum perturbation theory: Weyl's and Davis-Kahan's inequalities. Implications for PCA.}	%24
+	\item \href{https://mp.weixin.qq.com/s/O187r2CHDwH-JBTAUYmYGg}{Random matrices. Proof of Wigner's semicircle law using the Stieltjes transform approach.}	%25
+	\item \href{https://mp.weixin.qq.com/s/zXsQCJkJKh7L80m_fewK-A}{Proof of Marchenko-Pastur law.}	%26
+	\item \href{https://mp.weixin.qq.com/s/tzS0dL5qms4e7Ey8btcxWQ}{Review of fundamental laws of random matrix theory: Semicircle law, Marchenko-Pastur law, circular law, Bai-Yin law, Tracy-Widom law. Spike models. Joint eigenvalue distribution; eigenvalue repulsion. Universality. Connections to physics (Wigner surmise) and number theory (Montgomery's pair correlation conjecture).}	%27
+	\item \href{https://mp.weixin.qq.com/s/-e1xO5WgROKhGxua9JIGyA}{Functional calculus. Loewner order. Matrix monotonicity of functions 1/x and log(x).}	%28
+	\item \href{https://mp.weixin.qq.com/s/VXFW5a9NUc2LbC7-hO8gRQ}{Lieb's trace inequality. Matrix Hoeffding inequality.}	%29
+	\item \href{https://mp.weixin.qq.com/s/Xa7Wy2KIrUoLzbAl4NhCng}{Matrix Bernstein inequality. Applications to networks (started): community detection in stochastic block models.}	%30
+	\item \href{https://mp.weixin.qq.com/s/9ZYBZm9lU5aqYBvwXp0TdA}{Applications to networks continued. A spectral algorithm for community recovery: guarantees for the stochastic block model.}	%31
+	\item \href{https://mp.weixin.qq.com/s/rmWDzB1n6IFY-q5NXeNJLw}{Recent developments on community detection for the stochastic block model. Modern visualization techniques: MDS, Isomap, t-SNE, UMAP (play with it). What do numbers look like?}	%32
+	\item \href{https://mp.weixin.qq.com/s/WRNxpaSHdGWUHj3nAlhWJg}{Low-dimensional paradigm. The effective rank and effective dimension. Covariance estimation for low-dimensional data.}	%33
+	\item \href{https://mp.weixin.qq.com/s/RlMpTrjPe20Eh_-7mIigOw}{Mathematical foundations of machine learning. Supervised learning. Loss functions. Overfitting problem. Hypothesis space. Risk; empirical risk; empirical risk minimization. Generalization error.}	%34
+	\item \href{https://mp.weixin.qq.com/s/sKHh2LdTTu9o_m3cDPWhPw}{A generalization bound. VC dimension. The VC dimension of half-lines, intervals, half-planes, circles, rectangles, linear classifiers, polynomial classifiers, and neural networks.}	%35
+	\item \href{https://mp.weixin.qq.com/s/3vtXFahoP1oMHGQLWHC8Kg}{VC theory: Pajor's lemma; Sauer-Shelah lemma.}	%36
+	\item \href{https://mp.weixin.qq.com/s/CZ80306gnRR-4l55L693bg}{Applications of Sauer-Shelah lemma for counting regions in hyperplane arrangements. Empirical processes. The uniform law of large numbers (stated).}	%37
+	\item \href{https://mp.weixin.qq.com/s/NoWbBYsYs_vG7AEjz-l60A}{Proof of the uniform law of large numbers: Symmetrization; Rademacher complexity. Applications: Glivenko-Cantelli theorem; VC generalization bound.}	%38
+	\item \href{https://mp.weixin.qq.com/s/sC-WCPVslV6J6JrE6KBcoA}{Gaussian and subgaussian stochastic processes. Dudley's intergral inequality.}	%39
+	\item \href{https://mp.weixin.qq.com/s/oMVD4wl2tNiAMVoq7SNOgw}{Application of Dudley's inequality: the uniform law of large numbers for Lipschitz functions. Lipschitz regression.}	%40
+	\item \href{https://mp.weixin.qq.com/s/DbA-Pz_t_enu6a_95UYzmQ}{Isoperimetric inequalities. Concentration of measure for Lipschitz functions via Gaussian isomepimetric inequality.}	%41
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
