@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.youtube.com/playlist?list=PLRdABJkXXytCz19PsZ1PCQBKoZGV069k3}{Deep Learning}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{http://qufaculty.qu.edu.qa/telsayed/}{Tamer Elsayed}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-1cm}
+
+\begin{enumerate}
+	\item  \href{https://mp.weixin.qq.com/s/VgAgeYBK-TPdCPiFz8piWQ}{Lecture 1 Welcome to DL} %1
+	\item  \href{https://mp.weixin.qq.com/s/I1ZkMHsHMpBmB2P-Wd-FDA}{Lecture 2 Introductiont} %2
+	\item  \href{https://mp.weixin.qq.com/s/WjN0zZfA0JRaGVL6bYN0qw}{Lecture 3 Supervised Learning} %3
+	\item  \href{https://mp.weixin.qq.com/s/s0kax_sE3qcJ81zXFi2XFg}{Lecture 4 Shallow Neural Networks I} %4
+	\item  \href{https://mp.weixin.qq.com/s/5fSP7aSGIWwuV_x1PZ0r_Q}{Lecture 5 Shallow Neural Networks II} %5
+	\item  \href{https://mp.weixin.qq.com/s/eyNmiR3Ixj1BZY75lhlqOA}{Lecture 6 Deep Neural Networks} %6
+	\item  \href{https://mp.weixin.qq.com/s/v6BTK-NhGhjMzk3p7Bm49g}{Lecture 7 Loss Functions I} %7
+	\item  \href{https://mp.weixin.qq.com/s/CgO7_amuSjGESD9KsklowQ}{Lecture 8 Loss Functions II} %8
+	\item  \href{https://mp.weixin.qq.com/s/DzKhDRGdnEGrG3b-uyB4FA}{Lecture 9 Loss Functions III} %9
+	\item  \href{https://mp.weixin.qq.com/s/Lo6HUyHxLJ4GyzGGtHy7xQ}{Lecture 10 Fitting Models I} %10
+	\item  \href{https://mp.weixin.qq.com/s/cJDOX9FwXXXsB81ish3JTA}{Lecture 11 Fitting Models II} %11
+	\item  \href{https://mp.weixin.qq.com/s/DEXYTY3YwBLKc7g82PBLsg}{Lecture 12 Backpropagation I} %12
+	\item  \href{https://mp.weixin.qq.com/s/Tuc6nGMaqjXV_ShEuP8p_w}{Lecture 13 Backpropagation II} %13
+	\item  \href{https://mp.weixin.qq.com/s/Xn7irlom3mgNRrj8TDzqag}{Lecture 14 Model Initialization} %14
+	\item  \href{https://mp.weixin.qq.com/s/rHOmr_-AIr9AXl9sAbiL7Q}{Lecture 15 Measuring Performance I} %15
+		\item  \href{https://mp.weixin.qq.com/s/XmoP7DDNilLe8ljawSjeXw}{Lecture 16 Measuring Performance II, Regularization I} %16
+	\item  \href{https://mp.weixin.qq.com/s/6k16yrFauulrpy_uz0xbIQ}{Intro to Project} %17
+	\item  \href{https://mp.weixin.qq.com/s/eDH5eEQasuUQtEOV4BS42w}{Lecture 17 Regularization II} %18
+	\item  \href{https://mp.weixin.qq.com/s/rqgu3qDoRbte3iRV3F26_Q}{Lecture 18(a) Regularization III} %19
+	\item  \href{https://mp.weixin.qq.com/s/IL_RXcSkDg1NWt92txY26A}{Lecture 18(b) Transformers I (Part 1/2 of Self Attention) } %20
+	\item  \href{https://mp.weixin.qq.com/s/JX6kXGq6HsAkWJb6qMG1vA}{Lecture 19 Transformers II (Part 2/2 of Self Attention)} %21
+	\item  \href{https://mp.weixin.qq.com/s/ugOI3plvRLfqYV1qD1fLGA}{Lecture 20 Transformers III (Transformer Layer)} %22
+	\item  \href{https://mp.weixin.qq.com/s/bB--SdGdnGyNJGpd07T43g}{Lecture 21 Transformers IV (Encoder- and Decoder-only Models)} %23
+	\item  \href{https://mp.weixin.qq.com/s/JkcRNZG2m5YRAUfp-PMvNw}{Lecture 22(a) Transformers V (LLMs \& Encoder-Decoder Models)} %24
+	\item  \href{https://mp.weixin.qq.com/s/POMxBTDuDojnSeA5vjyE-g}{Lecture 22(b) CNNs I} %25
+	\item  \href{https://mp.weixin.qq.com/s/M1JlJad9qMe-V5fniMFycQ}{Lecture 23 CNNs II} %26
+	\item  \href{https://mp.weixin.qq.com/s/ndRWzUxRExv3KMM7iv_AiA}{Lecture 24 CNNs III } %27
+	\item  \href{https://mp.weixin.qq.com/s/PFB69wkqiRxmmlwH24zfSg}{Lecture 25 Transformers for Images} %28
+	\item  \href{https://pan.baidu.com/s/1HrvGk0WojnH97G5atBiZXQ?pwd=1121}{Materials}
+	\item  \href{https://udlbook.github.io/udlbook/}{Materials B:\ Understanding Deep Learning}
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              

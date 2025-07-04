@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	\thispagestyle{empty}
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://en.wikipedia.org/wiki/Calculus_of_variations}{Calculus of Variations}}
+		
+		%\vspace{0.25cm}
+		
+		%{\large \href{https://www.mpg.de/10655393/science-of-light-marquardt}{Florian Marquardt}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+\vspace{-1cm}
+
+\section*{ \normalfont \large \href{https://www.bilibili.com/video/BV1f7411b74T/?spm_id_from=333.1387.collection.video_card.click&vd_source=d0661ef3fa56ddc850a3d1afc8c571e5}{\kaishu 变分学}}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item  \href{https://mp.weixin.qq.com/s/CMXY7anEs6M3Nr2UqQIOBg}{前言与变分问题 A} %1
+	\item  \href{https://mp.weixin.qq.com/s/KGb4YkxCHowgFszqiPo9mQ}{前言与变分问题 B} %2
+	\item  \href{https://mp.weixin.qq.com/s/tkLrdZAb2TqX8GLMl9RByw}{Euler-Lagrange方程 A} %3
+	\item  \href{https://mp.weixin.qq.com/s/j3PZJUV3N6PNaUavw9mBhw}{Euler-Lagrange方程 B} %4
+	\item  \href{https://mp.weixin.qq.com/s/_RNK0fwfExx_sx-CT0y2gQ}{极小点的必要条件和充分条件 A} %5
+	\item  \href{https://mp.weixin.qq.com/s/hC2ZITjK1_QCjSRNPD8nBw}{极小点的必要条件和充分条件 B} %6
+	\item  \href{https://mp.weixin.qq.com/s/0V2-WjHAjQcaWQaMbcKUsQ}{强极小与临界场 A} %7
+	\item  \href{https://mp.weixin.qq.com/s/_-ZJzGpi8n15C6pUymI2xA}{强极小与临界场 B} %8
+	\item  \href{https://mp.weixin.qq.com/s/C4bcRqBi4DYLsOfQ_6K4kQ}{强极小与临界场 C} %9
+	\item  \href{https://mp.weixin.qq.com/s/XPcekfHeVQ-aC8GuXVR4og}{Hamilton Jacobi 理论 A} %10
+	\item  \href{https://mp.weixin.qq.com/s/O2OiEaxOZ46JHNwqf0ugfA}{Hamilton Jacobi 理论 B} %11
+	\item  \href{https://mp.weixin.qq.com/s/0_wg66FeanlIPXoaJ2Av4A}{含多重积分的变分问题} %12
+	\item  \href{https://mp.weixin.qq.com/s/-SCMHvQoZPIcVMo-bSIQ0A}{约束变分问题 A} %13
+	\item  \href{https://mp.weixin.qq.com/s/VkBuGSKMIeReAUUwNXevQQ}{约束变分问题 B} %14
+	\item  \href{https://mp.weixin.qq.com/s/1TbphFql7fT-_aXzPgcStA}{守恒律与 Noether 定理 A} %15
+	\item  \href{https://mp.weixin.qq.com/s/WluaUwv0P0U5I7k_s-jKJA}{守恒律与 Noether 定理 B} %16
+	\item  \href{https://mp.weixin.qq.com/s/-WcVEZHhgHJIOy1s5xLcbQ}{直接方法 A} %17
+	\item  \href{https://mp.weixin.qq.com/s/Lk3-goRw1ChjcICA3s3A4Q}{直接方法 B} %18
+	\item  \href{https://mp.weixin.qq.com/s/YP9Zd5r31N1fH2tEPgnGRg}{Sobolev 空间 A} %19
+	\item  \href{https://mp.weixin.qq.com/s/utiSRR3NmnhqM4nWMikAQQ}{Sobolev 空间 B} %20
+	\item  \href{https://mp.weixin.qq.com/s/sMS7nJn2RPrjSw7ZsK5mRw}{弱下半连续性 A} %21
+	\item  \href{https://mp.weixin.qq.com/s/jF3RTOD3nSp9i5HPQ3fVkw}{弱下半连续性 B} %22
+	\item  \href{https://mp.weixin.qq.com/s/3DBfHz_O7Iw5mpwjDNJDMA}{存在性与正则性 A} %23
+	\item  \href{https://mp.weixin.qq.com/s/p5VRGnKwloZeQp6CdRUHrw}{存在性与正则性 B} %24
+	\item  \href{https://mp.weixin.qq.com/s/lI1tqSgLZEv_VlCMKw61ug}{正交投影方法} %25
+	\item  \href{https://mp.weixin.qq.com/s/J4-O5z_BhqJh4HuskbSnkQ}{特征值问题} %26
+	\item  \href{https://mp.weixin.qq.com/s/-xP_qOKpD1KrLlnIgJjwiA}{变分问题的数值方法 A} %27
+	\item  \href{https://mp.weixin.qq.com/s/L6KNb3Wjwna__O4-T-CrGw}{变分问题的数值方法 B} %28
+	\item  \href{https://mp.weixin.qq.com/s/Y5TT9Egd2z_dxMuzBHW8dw}{松弛泛函与图象处理 A} %29
+	\item  \href{https://mp.weixin.qq.com/s/R21wUSIpfYFm_6K3yAZ3kg}{松弛泛函与图象处理 B} %30
+	\item  \href{https://mp.weixin.qq.com/s/DcrTZelPbjB82yiG94yPjg}{ 最优控制问题 A} %31
+	\item  \href{https://mp.weixin.qq.com/s/jS9wYb1IofK5Zbz96bF-MQ}{ 最优控制问题 B} %32
+	\item  \href{https://mp.weixin.qq.com/s/P5QY1hJktDyG2VrdEU2d4Q}{Ekeland 变分原理与山路定理 A} %33
+	\item  \href{https://mp.weixin.qq.com/s/jnDiRCPRhdzbPP-Cn23GMg}{Ekeland 变分原理与山路定理 B} %34
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+\section*{ \normalfont \large \href{https://www.silviofanzon.com/blog/2021/Calculus-of-Variations/}{Calculus of Variations}}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/A0Nn95o2yqF5vqGeG6Bhkg}{Introduction. Basic examples. Functional analysis  revision. Part 1}  \quad \href{https://mp.weixin.qq.com/s/PxGcikR3U59UH8pFilmAdQ}{Part 2} %1 
+	\item \href{https://mp.weixin.qq.com/s/2lGKir-zolq4q77RAkzvKg}{Functional Analysis Revision. Calculus in Normed Spaces. Part1} \quad \href{https://mp.weixin.qq.com/s/-r-1wN6hfq0rfFdFWXb5Fw}{Part2} %2
+	\item \href{https://mp.weixin.qq.com/s/6EFFPQNBgrt6TlmoWP-VKg}{Calculus in Normed Spaces. Indirect Method. Part1} \quad \href{https://mp.weixin.qq.com/s/x3-0awsAMsinItFgnwyF7g}{Part2} %3
+	\item \href{https://mp.weixin.qq.com/s/XvVVyOvx00HBHa2Gkt-Q_A}{Fundamental Lemmas. Boundary conditions. Part1} \quad \href{https://mp.weixin.qq.com/s/TbJycXsjTNSZv2mYN0cvCg}{Part2} %4
+	\item \href{https://mp.weixin.qq.com/s/UkBV_MDS8k5bvHeM1pAtSQ}{Euler-Lagrange Equation. Revision of $L^{p}$ Spaces. Part1} \quad \href{https://mp.weixin.qq.com/s/OeMerMePwpczXTmNv1SBOg}{Part2} \quad \href{https://mp.weixin.qq.com/s/zGPYm_OG4OmekGsGauM8YA}{Revision} %5
+	\item  \href{https://mp.weixin.qq.com/s/AGJ7LAdLBNxm4LMaa4C8YA}{Sufficient Conditions: Convexity, Trivial Lemma. Convolutions. Part1} \quad \href{https://mp.weixin.qq.com/s/gV76EBci2jua3hdxRL0wjw}{Part2} %6
+	\item \href{https://mp.weixin.qq.com/s/U519vGvCKjJjIt-lRs1j8w}{FLCV and DBR Lemma. Sobolev Spaces. Part1} \quad \href{https://mp.weixin.qq.com/s/KG63b67pEnliDFXEc2OUIQ}{Part2} %7
+	\item \href{https://mp.weixin.qq.com/s/yJMq5NXmXGNYB6_PuBH--A}{Sobolev Spaces: Regularity and Density Results. Part1} \quad \href{https://mp.weixin.qq.com/s/iRvZ5YMDvUgD4EOObP7kgQ}{Part2} %8
+	\item  \href{https://mp.weixin.qq.com/s/mDfF2IzrRaNkWHiCmxo_5A}{Sobolev embedding. Ascoli-Arzel\`{a} Theorem. Part1} \quad \href{https://mp.weixin.qq.com/s/1Ov-FTbZSCX_cI6dkHJp0g}{Part2} %9
+	\item  \href{https://mp.weixin.qq.com/s/u9A8c0H1K066h3_cr9MFkw}{Higher Order Sobolev Spaces. Traces. Euler-Lagrange Equation. Part1} \quad \href{https://mp.weixin.qq.com/s/F9_mA1TG65n0QVTPkr9vcA}{Part2} %10
+	\item  \href{https://mp.weixin.qq.com/s/j-JvJ8KeTgbYn186wct3eg}{Boundary Conditions. Sufficient Conditions. Direct Method. Part1} \quad \href{https://mp.weixin.qq.com/s/upXcmc1HHbyn1TS7A-sfuA}{Part2} %11
+	\item  \href{https://mp.weixin.qq.com/s/vyWOgnlj0V12fC3LTSj7pg}{Direct method: Example. General Existence Theorem. Part1} \quad \href{https://mp.weixin.qq.com/s/3pOGFKjtdrQSdWemt453Ew}{Part2} %12
+	\item  \href{https://mp.weixin.qq.com/s/YI_Xje7ZaywfC61tAKZtGw}{LSC Envelope. Relaxation and its Computation. Part1} \quad \href{https://mp.weixin.qq.com/s/BXWPSYLB0RWQqdcJSUUY8A}{Part2} %13
+	\item  \href{https://mp.weixin.qq.com/s/mng-S1TkWvOE-k8m8NNwQQ}{Relaxation of Integral Functionals. $\Gamma$-Convergence. Part1} \quad \href{https://mp.weixin.qq.com/s/YXRdmIl0jyM-UX9Vf-EErQ}{Part2} %14
+	\item  \href{https://mp.weixin.qq.com/s/h7ShM-M-j_plHZpxxcTSnQ}{Examples of $\Gamma$-Convergence. Homogenization Problems. Part1} \quad \href{https://mp.weixin.qq.com/s/RYN3DERJapgNnpvL9ygh-w}{Part2} %15
+	\item \href{https://pan.baidu.com/s/1NI71kBUtCYHTCu51Ses-0A?pwd=1121}{Materials}
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              

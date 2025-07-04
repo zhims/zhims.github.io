@@ -1,0 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://en.wikipedia.org/wiki/Algebra}{Algebra}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://www.math.ntu.edu.tw/entity_people/entity_people/21516}{Wu-Yen Chuang}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-1cm}
+
+\section*{\href{https://www.youtube.com/playlist?list=PLQqeHUV7RZ2OmZ2AjTbTAu-n04LfH_Mjt}{Algebra \Romannum{1}}}
+
+\begin{enumerate}
+	\item	\href{https://mp.weixin.qq.com/s/U7iFVvBvINlfrHjUGhLCFw}{Basic notion, Symmetry groups}	%1
+	\item	\href{https://mp.weixin.qq.com/s/4YhJzO-ZhG1nsegyE4KYyg}{Cosets, Normal Subgroups, Quotient Groups, Isomorphism Theorem}	%2 
+	\item	\href{https://mp.weixin.qq.com/s/3XHg-HW9TnPB6bRD36mcNA}{Isomorphism Theorem, Tower of Subgroups} 	%3
+	\item 	\href{https://mp.weixin.qq.com/s/eolu7bi9_oBitx85j_4qhA}{Butterfly lemma, Jordan-Hölder theorem}	%4
+	\item 	\href{https://mp.weixin.qq.com/s/aRlC1OSJv1JTIzwu0AcAnw}{Jordan-H{\"o}lder theorem, Cyclic groups}	%5
+	\item 	\href{https://mp.weixin.qq.com/s/QN9cTQjvAgZVTp0QLcAZ-g}{Group Action, Simpleness of $A_n$}	%6
+	\item 	\href{https://mp.weixin.qq.com/s/IyBy7z0xVk29DJKv9mvJSg}{Simpleness of A n, Sylow theorems}	%7
+	\item 	\href{https://mp.weixin.qq.com/s/SPPofXOe2Yv2HhbQAPJalA}{Sylow theorems}	%8
+	\item 	\href{https://mp.weixin.qq.com/s/Tqzxf9_Ya2ABxQ4isaDptA}{Semidirect products}	%9
+	\item 	\href{https://mp.weixin.qq.com/s/sG9vhLCzINXEDk4inY82yw}{Structure theorem of finite abelian groups}	%10
+	\item	\href{https://mp.weixin.qq.com/s/yaSI9FfYZ-zMtfgxP-S58A}{Ring Isomorphism Theorem}	%11
+	\item	\href{https://mp.weixin.qq.com/s/c1AQUopODevWvzkd0DAsuA}{Chinese Remainder Theorem, Localization}	%12 
+	\item	\href{https://mp.weixin.qq.com/s/foGkua-dmOiEfLW6COslWQ}{ED, PID, UFD} 	%13
+	\item 	\href{https://mp.weixin.qq.com/s/EE-IClTUvcotx89pHBSTeA}{Gauss lemma, Criteria for irreducibility}	%14
+	\item 	\href{https://mp.weixin.qq.com/s/fxxp2gTjq-t4ihSbcvCilw}{Algebraic extensions}	%15
+	\item 	\href{https://mp.weixin.qq.com/s/X9-4fHu3hTZ_bUIuK_Qo9g}{Algebraic closures}	%16
+	\item 	\href{https://mp.weixin.qq.com/s/I463e9e6xAHjwjP6g8NE_Q}{Algebraic closures, Normal extensions}	%17
+	\item 	\href{https://mp.weixin.qq.com/s/xSR8SbE-JBx7ZDGoTfVI4Q}{Separable extensions}	%18
+	\item 	\href{https://mp.weixin.qq.com/s/hio3OfFXCgj02Z8AaTXrsA}{Primitive element theorem, Finite fields}	%19
+	\item 	\href{https://mp.weixin.qq.com/s/f1K2cyGw7aYPX80_VnUeiw}{Galois theory}	%20
+	\item	\href{https://mp.weixin.qq.com/s/hqPJ7m0DTRh-dm-sFP-rUg}{Galois theory}	%21
+	\item	\href{https://mp.weixin.qq.com/s/Pp2OrGL4E2DmNSrPPIbQfg}{Galois theory, roots of unity, cyclotomic extensions.}	%22 
+	\item	\href{https://mp.weixin.qq.com/s/RvBCzBYdD4tPlkH7cYFqbA}{Norms and traces.} 	%23
+	\item 	\href{https://mp.weixin.qq.com/s/QYUJh8ewf_6M60PDSATpkg}{Purely inseparable extensions, cyclic extensions.}	%24
+	\item 	\href{https://mp.weixin.qq.com/s/vGnJUpj97Q6eH1Fb4QLEqQ}{Solvable extensions, solvable by radicals.}	%25
+\end{enumerate}
+
+\section*{\href{https://www.youtube.com/playlist?list=PLQqeHUV7RZ2MJPofnkqkO7tImq-gBO2P9}{Algebra \Romannum{2}}}
+
+\begin{enumerate}
+	\item	\href{https://mp.weixin.qq.com/s/JAThg8iM1uaNRltqVIdhzQ}{Module theory.}	%1
+	\item	\href{https://mp.weixin.qq.com/s/cxXgimbHhN5znpuQ_nB4GA}{Free modules, projective modules.}	%2 
+	\item	\href{https://mp.weixin.qq.com/s/c13YK_QlRr-MB4A_OSZo_w}{Modules over PID.} 	%3
+	\item 	\href{https://mp.weixin.qq.com/s/LQruxav0ZyJrU-k0tFGvTA}{Modules over PID.}	%4
+	\item 	\href{https://mp.weixin.qq.com/s/w7NhKMEMcHUC_ob_fERxrQ}{Tensor products.}	%5
+	\item 	\href{https://mp.weixin.qq.com/s/oWE9gNLjl1NoONIu_hmBPQ}{Modules of fractions.}	%6
+	\item 	\href{https://mp.weixin.qq.com/s/9ZCy2iaVPuryIoSrKYEzBQ}{Noetherian modules.}	%7
+	\item 	\href{https://mp.weixin.qq.com/s/uds3g2vVGELJSAZACP0L5Q}{Primary decompositions.}	%8
+	\item 	\href{https://mp.weixin.qq.com/s/UHyLp3Q9iQD30SmFS55ZBg}{Primary decompositions, Nakayama's lemma.}	%9
+	\item 	\href{https://mp.weixin.qq.com/s/Tvq4Q1nSDMXnwLOXdp1yYA}{Nakayama's lemma, filtered and graded modules, Artin-Rees.}	%10
+	\item	\href{https://mp.weixin.qq.com/s/kZK2lOJ0aYR-X43SM4INtA}{Hilbert polynomial, Artinian modules.}	%11
+	\item	\href{https://mp.weixin.qq.com/s/dkUdC00CUT1qOBfpnFMDdg}{Abelian categories, general homology theory.}	%12 
+	\item	\href{https://mp.weixin.qq.com/s/Ugyr8i5QO_4bYgxD_MJuZA}{Injective modules.} 	%13
+	\item 	\href{https://mp.weixin.qq.com/s/hXmbr96a95hyZhVIn3WyQA}{Homotopies of morphisms of complexes, derived functors.}	%14
+	\item 	\href{https://mp.weixin.qq.com/s/T7AaljcICmLTrtqH8n1Pvw}{Ext functor.}	%15
+	\item 	\href{https://mp.weixin.qq.com/s/RCbr3LO4Rzf36-Wvu30cGg}{Ext functor, $Ext^1$, Tor functor.}	%16
+	\item 	\href{https://mp.weixin.qq.com/s/McFpgnNkwx226dhpbtxGzg}{Group cohomology.}	%17
+	\item 	\href{https://mp.weixin.qq.com/s/RAuUrgfs_lc4p9jUaTvjLA}{Group cohomology, Semisimple modules.}	%18
+	\item 	\href{https://mp.weixin.qq.com/s/8mJEn57UM_YnlBO9nIh5EA}{Semisimple modules, Semisimple rings.}	%19
+	\item 	\href{https://mp.weixin.qq.com/s/mKs3Ol5cDNb37yENLbXd2A}{Density theorem, Wedderburn theorem, Burnside theorem.}	%20
+	\item	\href{https://mp.weixin.qq.com/s/kp2MWB11ET5bUHxVi6spFQ}{Representations, Characters.}	%21
+	\item	\href{https://mp.weixin.qq.com/s/6wmZCSfqy8RFyCBHCoP0lg}{Characters, Class functions.}	%22 
+	\item	\href{https://mp.weixin.qq.com/s/KEnep16wrmhZ6j5c5oN-Nw}{Orthogonality relations.} 	%23
+	\item 	\href{https://mp.weixin.qq.com/s/loIyfsXSm_vptWE7nK7rlg}{Orthogonality relations.}	%24
+	\item 	\href{https://mp.weixin.qq.com/s/yUKeBr6dmQrcZmVtNvR2XQ}{Induced characters, Induced representations.}	%25
+	\item 	\href{https://mp.weixin.qq.com/s/NZB4A7g2flunQVE1sa16Hg}{Induced representations, Mackey's criterion.}	%26
+	\item 	\href{https://mp.weixin.qq.com/s/UqRVSmgSdpc1WdSJl5hvbg}{Artin theorem, Brauer theorem.}	%27
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              

@@ -1,0 +1,169 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	\pagenumbering{arabic}   
+	%\thispagestyle{empty}
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.youtube.com/playlist?list=PLo4jXE-LdDTQq8ZyA8F8reSQHej3F6RFX}{Measure Theory}}
+		
+		\vspace{-0.25cm}
+		
+		{\large \href{https://w3.impa.br/~landim/}{Claudio Landim}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+\vspace{-1cm}
+
+\begin{enumerate}
+	\item  \href{https://mp.weixin.qq.com/s/b9FJpiIY7BKfce9Z9HU-ow}{Introduction: a Non-Measurable Set} %1
+	\item  \href{https://mp.weixin.qq.com/s/dBiLjqKzZb2gk9YSTrk_Dw}{Classes of Subsets (Semi-Algebras, Algebras and Sigma-Algebras), and Set Functions} %2
+	\item  \href{https://mp.weixin.qq.com/s/jzHMKWAp3jSrCexCl-Us_Q}{Set Functions} %3
+	\item  \href{https://mp.weixin.qq.com/s/RS7Ibmr7uWWy3oEVoh3nVw}{Caratheodory Theorem} %4
+	\item  \href{https://mp.weixin.qq.com/s/K8D9t_bzb8SNSAIG9lQWiQ}{Monotone Classes} %5
+	\item  \href{https://mp.weixin.qq.com/s/mHZMWyYLc5MNkIHFTrzR3Q}{The Lebesgue Measure \Romannum{1}} %6
+	\item  \href{https://mp.weixin.qq.com/s/VKhF1i_X06lQPkTT39D_Vg}{The Lebesgue Measure \Romannum{2}} %7
+	\item  \href{https://mp.weixin.qq.com/s/bnXj4J-Bkyax5fOP2JGKVw}{Complete Measures} %8
+	\item  \href{https://mp.weixin.qq.com/s/K4Zq7DJBefFx_IkINnqAGw}{Approximation Theorems} %9
+	\item  \href{https://mp.weixin.qq.com/s/YRzGd7GIeCyuA0IozMmdqQ}{Integration: Measurable and Simple Functions} %10
+	\item  \href{https://mp.weixin.qq.com/s/WLhUgmxFZqtpVhAZ3fUFeQ}{Measurable Functions} %11
+	\item  \href{https://mp.weixin.qq.com/s/tFUgk0xWCUuaE4-hIt0srg}{Definition of the Integral} %12
+	\item  \href{https://mp.weixin.qq.com/s/Xud27rm6RUcgyPeBRLbgRw}{Integral of Simple Functions} %13
+	\item  \href{https://mp.weixin.qq.com/s/Ouq0ZkfN4ADsNA__Gy7gWA}{Properties of the Integral \Romannum{1}} %14
+	\item  \href{https://mp.weixin.qq.com/s/bOemxfw7TNU6GF1Dc_cYtA}{Properties of the Integral \Romannum{2}} %15
+	\item  \href{https://mp.weixin.qq.com/s/Cad_2DwS3CEcOT0geOsAHw}{Theorems on the Convergence of Integrals} %16
+	\item  \href{https://mp.weixin.qq.com/s/gE3MlL3AVhegVQ0gzwKKfQ}{Product Measures} %17
+	\item  \href{https://mp.weixin.qq.com/s/qI7Lu8k72VnyeIWJhwFDVg}{Measure on a Countable Product of Spaces} %18
+	\item  \href{https://mp.weixin.qq.com/s/DAo0mBE62ZF730olpQeh8g}{Fubini's Theorem} %19
+	\item  \href{https://mp.weixin.qq.com/s/6xm02qBrT3rDmzqWHF0wwQ}{Hahn-Jordan Theorem} %20
+	\item  \href{https://mp.weixin.qq.com/s/WDZUO3U6BK6fZDo7LbV1ZQ}{Radon-Nikodym Theorem} %21
+	\item  \href{https://mp.weixin.qq.com/s/_nYqpYjkPS7JcAt1lEzClA}{Almost Sure and Almost Uniform} %22
+	\item  \href{https://mp.weixin.qq.com/s/mi9OeiX0uJmMEwjwKeQqVQ}{Convergence in Measure} %23
+	\item  \href{https://mp.weixin.qq.com/s/ZfKhXHtWZoiL1j0uDkUl6w}{H\"{o}lder and Minkowski Inequalities} %24
+	\item  \href{https://mp.weixin.qq.com/s/-YJV1gju1rsRfSoNxADPhw}{$L_p$ Spaces} %25
+	\item  \href{https://mp.weixin.qq.com/s/mVnVGlhGycI7TwAdOP9ZrQ}{From Convergence in Measure to Convergence in $L_p$} %26
+	\item  \href{https://mp.weixin.qq.com/s/el73p71y1iyJrO21sH-93A}{Bounded Linear Operators in $L_p$} %27
+	\item  \href{https://mp.weixin.qq.com/s/1SGchrtxb5vqWsBwIZG9qg}{Vitali's Covering Lemma} %28
+	\item  \href{https://mp.weixin.qq.com/s/C3u6hOXztRW6H1G1Qbfo0A}{Differentiability of Functions of Bounded Variations} %29
+	\item  \href{https://mp.weixin.qq.com/s/C8X7Hzabt85GvUVmUiNrXw}{Absolutely Continuous Functions} %30
+	\item  \href{https://mp.weixin.qq.com/s/i-yfNxsRGo5Au_VekLP3gw}{Decomposition of Distribution} %31
+	\item  \href{https://mp.weixin.qq.com/s/mq_Ucmbzbzn3MCwy1VzZcA}{Cantor Ternary Set and Function} %32
+	\item  \href{https://mp.weixin.qq.com/s/oRZiIhv235No3jAe9v6GQg}{Solution of Exercise 3.2.4} %33
+	\item  \href{https://mp.weixin.qq.com/s/XUCSW9yjp1ZFqgDH_5LGIg}{Solution of Exercise 6.4.3} %34
+	\item  \href{https://mp.weixin.qq.com/s/EPgji_A99cpxx0npUA2uMw}{Solution of Exercise 9.2.3} %35
+	\item  \href{https://pan.baidu.com/s/1lgHzfcNeB9gLVjRz4OARgQ?pwd=1121}{Materials}
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
