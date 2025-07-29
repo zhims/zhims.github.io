@@ -1,0 +1,195 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	
+	\begin{center}
+		{\large  \href{https://www.youtube.com/playlist?list=PLISXH-iEM4Jn3SEi07q8MJmDD6BaMWlJE}{新概念词汇}}	
+	\end{center}
+	
+	\begin{multicols}{6}
+		\begin{enumerate}
+			\item \href{https://mp.weixin.qq.com/s/d2QSBj6t3Ga0UaFCwjkSlQ}{01}	%1
+			\item \href{https://mp.weixin.qq.com/s/JcPgVKE0Uaa5BM9ZrDk7XQ}{02}	%2
+			\item \href{https://mp.weixin.qq.com/s/60_cyldG77v5lbg4DJGFcQ}{03}	%3
+			\item \href{https://mp.weixin.qq.com/s/k30MwsFD7wgH2SeTCvoHQQ}{04}	%4
+			%\item \href{url}{Materials}
+		\end{enumerate}
+	\end{multicols}
+	
+	
+	\begin{center}
+		{\large  \href{https://www.youtube.com/playlist?list=PLK6q4vrvWZiOcaesBHLpTWhpsT-J03RnV}{新概念第一册语法}}% ~ {\large \href{https://teacher.koolearn.com/fen/details?teacherId=7769}{Na Huo}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+
+
+\begin{multicols}{3}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/3WM_W5zBpIB59raEoOt3pQ}{词性的重要性 1}	%1
+		\item \href{https://mp.weixin.qq.com/s/IbPvXBe58mFlYIBMHt4cEQ}{词性的重要性 2}	%2
+		\item \href{https://mp.weixin.qq.com/s/WRU8RXXP6xjNVvMHbSl7wA}{说英语: 说句子}	%3
+		\item \href{https://mp.weixin.qq.com/s/UZ36CbTLl3eBo4vIOY3W5g}{你会说不吗?}	%4
+		\item \href{https://mp.weixin.qq.com/s/sSmRuvsM-eUFGDdJb2kfUQ}{你会提问吗?}	%5
+		\item \href{https://mp.weixin.qq.com/s/dEN7BIhr8ez6CMReZACNgw}{谓语动词的语态}	%6
+		\item \href{https://mp.weixin.qq.com/s/eN1epuVIURDkiGlw-wrB4g}{复合句: 宾语从句}	%7
+		\item \href{https://mp.weixin.qq.com/s/LDyGno3hzV2SExpou-lvkA}{复合句: 定语从句}	%8
+		\item \href{https://mp.weixin.qq.com/s/J3ZFp06j4SAVrPOlmJb_-w}{复合句: 时间状语从句}	%9
+		\item \href{https://mp.weixin.qq.com/s/dLETduZhmil4c9pZz-nkwg}{复合句: 条件状语从句}	%10
+		\item \href{https://mp.weixin.qq.com/s/THvzFf62yzMOr_miE868Yw}{被动语态}	%11
+		\item \href{https://mp.weixin.qq.com/s/N5r3wv9vbKfMOSoMF66-XQ}{生活花絮}	%12
+		\item \href{https://mp.weixin.qq.com/s/wGHaWVpP-iTUWqOd2P86Uw}{社交礼仪}	%13
+		\item \href{https://mp.weixin.qq.com/s/0uKhnYAsnFjhLVS_6wYfrQ}{行走天下}	%14
+		\item \href{https://mp.weixin.qq.com/s/HkDcTBGcb1V_nWk-dXuKbQ}{时态在口语中}	%15
+		%\item \href{url}{Materials}
+	\end{enumerate}
+	
+\end{multicols}
+
+\begin{center}
+	{\large \href{https://www.youtube.com/playlist?list=PLK6q4vrvWZiOiNyAXtCd8gQhro9P4o34X}{新概念第二册语法}} %~ {\large \href{https://m.weibo.cn/u/1561335350?luicode=10000011&lfid=100808c47bf1b14af55d62f91fef87e2db3a5f_-_feed}{Jing Tian}}
+\end{center}
+
+\begin{multicols}{3}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/qDMbkQsr5bNUPEfMgHOjgw}{简单句的构成}	%1
+		\item \href{https://mp.weixin.qq.com/s/DaDDNXwCRAIILUjYk8ZP7A}{谓语动词的时态 1}	%2
+		\item \href{https://mp.weixin.qq.com/s/T_WO5eWDEIb9FpvdG7vUrQ}{谓语动词的时态 2}	%3
+		\item \href{https://mp.weixin.qq.com/s/xNJUme3ysBfnLL1CoyJFOQ}{谓语动词的情态}	%4
+		\item \href{https://mp.weixin.qq.com/s/c05jQcY6xJv58OK3slAmog}{谓语动词的语态}	%5
+		\item \href{https://mp.weixin.qq.com/s/0A_RxD5Rr-_QrWrPFWTW6g}{主宾表语的变化}	%6
+		\item \href{https://mp.weixin.qq.com/s/hzDqW-BB-qXTJSJFtqEWGg}{形容词 \& 副词}	%7
+		\item \href{https://mp.weixin.qq.com/s/BjLwmtEHF1EvPVod7WCTCg}{介词短语}	%8
+		\item \href{https://mp.weixin.qq.com/s/HKbTmsViBXRCMvLpGdmT7A}{并列句}	%9
+		\item \href{https://mp.weixin.qq.com/s/N2PGLoLrSUlWFmn9H-eszA}{状语从句}	%10
+		\item \href{https://mp.weixin.qq.com/s/KuXtBginHFPw7fvievawSA}{复合句: 名词性从句}	%11
+		\item \href{https://mp.weixin.qq.com/s/rJE22G0PLh-xhhNGqk_MoQ}{复合句: 定语从句}	%12
+		\item \href{https://mp.weixin.qq.com/s/CmfK73KX5eVERanjgR41KA}{非谓语动词}	%13
+		\item \href{https://mp.weixin.qq.com/s/sEPYLToVKLQcdBu9_9OSpw}{特殊句式}	%14
+		\item \href{https://mp.weixin.qq.com/s/05Hx5hKvLni5IWiwgKVxXw}{综合复习}	%15
+		%\item \href{url}{Materials}
+	\end{enumerate}
+\end{multicols}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
