@@ -1,0 +1,174 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.youtube.com/playlist?list=PLCX-BLZ1hDpAjRRjufFkIeNHd5_0YII8S}{庄子}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://www.cl.ntu.edu.tw/web/team/team_in.jsp?fp_id=FP1599311959664}{金嘉锡}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\begin{multicols}{3}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/RVz__rzyYfCfndzA7WhCRQ}{为什么教庄子}	%1
+		\item \href{https://mp.weixin.qq.com/s/hLRrTNEGJPubIFVDEP3bsw}{庄子与声韵}	%2
+		\item \href{https://mp.weixin.qq.com/s/IopmldGzEvHHaBrDsI4iJQ}{绪论}	%3
+		\item \href{https://mp.weixin.qq.com/s/iI10U6LPuhN3mWbDNjpXVg}{寓言（一）}	%4
+		\item \href{https://mp.weixin.qq.com/s/0bg7qoVLjRFydrvM9zUabw?poc_token=HFUxj2ijES8UVWW8agBDEDaDEhDewbUerccv4v2d}{寓言（二）}	%5
+		\item \href{https://mp.weixin.qq.com/s/5oftMqsPPguMmG1iAiZb3Q}{寓言（三）}	%6
+		\item \href{https://mp.weixin.qq.com/s/fWmdOTBTSKMK447bhBNm3A}{逍遥游（一）}	%7
+		\item \href{https://mp.weixin.qq.com/s/TlTBNy2Rn5TcjOnhnF0hjg}{逍遥游（二）}	%8
+		\item \href{https://mp.weixin.qq.com/s/99hw1EBAfLWyrMRiRrukHw}{逍遥游（三）}	%9
+		\item \href{https://mp.weixin.qq.com/s/ko0OCQnzoYjHoSzYcdjiHg}{逍遥游（四）}	%10
+		\item \href{https://mp.weixin.qq.com/s/0cgd-TX8OehI-SOBOpg7wQ}{养生主}	%11
+		\item \href{https://mp.weixin.qq.com/s/TQ-kFdrpo5S_WPuus4W5bA}{达生（一）}	%12
+		\item \href{https://mp.weixin.qq.com/s/vGbD6XP1zPF2PdWv0duCFg}{达生（二）}	%13
+		\item \href{https://mp.weixin.qq.com/s/lF7NCKpota3wLvTTkAoS7Q}{人间世（一）}	%14
+		\item \href{https://mp.weixin.qq.com/s/1uKBKYdkBj20JqRzaiomQQ}{人间世（二）}	%15
+		\item \href{https://mp.weixin.qq.com/s/0WptAqacAv_yFHtdoWr79w}{人间世（三）}	%16
+		\item \href{https://mp.weixin.qq.com/s/UUwOzZEc1Km-TfLmdaTcRA}{德充府（一）}	%17
+		\item \href{https://mp.weixin.qq.com/s/4njrz0JyY4wWcI1yflRXeg}{德充府（二）}	%18
+		\item \href{https://mp.weixin.qq.com/s/tGankUO5PVRrnfe9ZLNxuw}{庄子通篇概说}	%19
+		\item \href{https://mp.weixin.qq.com/s/nSZSrweS0jn_p0eVe_0w5A}{齐物论（一）}	%20
+		\item \href{https://mp.weixin.qq.com/s/kG9J15-cL7JVdE8LqSwhYw}{齐物论（二）}	%21
+		\item \href{https://mp.weixin.qq.com/s/cSW-oFFyWh5yrRQZY0omxA}{齐物论 (三)}	%22
+		\item \href{https://mp.weixin.qq.com/s/m1wdAWroknqNxbJvIQA1eA}{齐物论 (四)}	%23
+		\item \href{https://mp.weixin.qq.com/s/nUMIo1q1eyFUwKJ981aVRg}{齐物论 (五)}	%24
+		\item \href{https://mp.weixin.qq.com/s/D509XEtT0mzhrG6eVb23eA}{秋水（一）}	%25
+		\item \href{https://mp.weixin.qq.com/s/ELi9Iv1iVf6vNxKDgcu3Ew}{秋水（二）}	%26
+		\item \href{https://mp.weixin.qq.com/s/xG_1jSY50_jBskl77m7YRQ}{秋水（三）}	%27
+		\item \href{https://mp.weixin.qq.com/s/PiUqwZku-fOyB_z9OXIiHg}{大宗师（一）}	%28
+		\item \href{https://mp.weixin.qq.com/s/tT4V2S4PKcghQAhlMdJpjg}{大宗师（二）}	%29
+		\item \href{https://mp.weixin.qq.com/s/o5r2iD2HlxNT8iKYX6ISOQ}{大宗师（三）}	%30
+		\item \href{https://mp.weixin.qq.com/s/eqS7U5ZCGo8f9zYgkMGxLQ}{知北游（一）}	%31
+		\item \href{https://mp.weixin.qq.com/s/f2odgznyESHJo6-fkOdLnQ}{知北游（二）}	%32
+		\item \href{https://mp.weixin.qq.com/s/OCjpLq3TRgqtUd5TH6UB2w}{知北游（三）}	%33
+		\item \href{https://mp.weixin.qq.com/s/LZ3VOCtFHDXiBuX_3_g3lQ}{应帝王（一）}	%34
+		\item \href{https://mp.weixin.qq.com/s/73Rjra-Am5RzuqAzYur5zw}{应帝王（二）}	%35
+		%\item \href{url}{Materials}
+	\end{enumerate}
+\end{multicols}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
