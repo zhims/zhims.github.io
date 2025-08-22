@@ -3,14 +3,18 @@
 \n
 Computational science is dedicated to developing and applying numerical methods to address complex scientific and engineering challenges. Numerical linear algebra tackles large-scale matrix computations, forming the foundation for simulations and data analysis. Optimization techniques identify optimal solutions across diverse fields, including logistics and machine learning. Numerical methods for solving differential equations are used to model dynamic systems in physics, biology, and finance, providing accurate predictions of real-world phenomena. These approaches rely on advanced algorithms, high-performance computing, and cutting-edge software tools, driving breakthroughs in areas such as climate modeling, structural engineering, and artificial intelligence. By bridging theory and practice, computational science fosters interdisciplinary innovation and data-driven solutions.
 
+
 == [./doc/materials/computing/na.pdf  Numerical Analysis]
 
 == [./doc/materials/computing/numopt.pdf  Numerical Optimization]
 
+== [./doc/materials/computing/nla.pdf  Numerical Linear Algebra]
+
 == [./doc/materials/computing/lsmc.pdf  Large Sparse Matrix Computations]
 
-
 == [./doc/materials/computing/npde.pdf  Numerical Partial Differential Equations] 
+
+== [./doc/materials/computing/desf.pdf  Differential Equations and Special Functions] 
 
 == [./doc/materials/computing/tda.pdf  Tensor Decompositions and Their Applications]
 

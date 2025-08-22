@@ -9,10 +9,6 @@ Codes are the fundamental building blocks of computer programming, serving as a 
 
 # $\quad$ [https://mp.weixin.qq.com/s/Du3aTm41SaH1VmhxPWm7lQ 01] ~~ [https://mp.weixin.qq.com/s/S8ODze0heW5mh85Qesm_sA 02] ~~ [https://mp.weixin.qq.com/s/YJgcMbO35tTEyAihvbF8AA 03] ~~ [https://mp.weixin.qq.com/s/8rWiTHyvFJG50opvVSimJg 04] ~~ [https://mp.weixin.qq.com/s/UkHOA_cUamd4maBjbD-4GA 05] ~~ [./doc/note/Codes/LaTex/Tipa.pdf Tipa] ~~ [https://pan.baidu.com/s/1J46drp_5s1yveEoXIH-54A Template]  
 
-== Linux
-
-== Matlab
-
 == [./doc/research/codes/python.pdf  Python]
 
 == [./doc/research/codes/mma.pdf  Mathematica]
@@ -25,4 +21,6 @@ Codes are the fundamental building blocks of computer programming, serving as a 
 
 == [./doc/note/Tips/tips4linux.pdf  Tips for Linux]  ~  [./doc/note/Tips/tips4github.pdf  Tips for github]  ~  [./doc/note/Tips/tips4vimtex.pdf  Tips for Vimtex]  ~  [./doc/note/Tips/Tips4installapp.pdf  Tips for Ubuntu]
 
+
+== [./doc/research/codes/matm.pdf Mathematical Modeling Algorithm and Its Application with Matlab] ~ \& ~ [./doc/research/codes/pym.pdf Python]
 
