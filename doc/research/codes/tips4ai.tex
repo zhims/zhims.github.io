@@ -1,0 +1,219 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  Tips for Artificial Intelligence}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://www.youtube.com/@turingplanet4052}{Turing Planet}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents	
+{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+\section{\kaishu Python 入门}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/3k-Ov2r-v8TniyUqOBWyQw}{Python 语言简介和运行环境搭建} %1
+	\item \href{https://mp.weixin.qq.com/s/trfOXVDfRunc4ezQrd4p-Q}{变量和基本数据类型(Bool, Number, String)} %2
+	\item \href{https://mp.weixin.qq.com/s/HLCr11RGlDnUYlmhCibU-w}{序列数据类型(List, Tuple, Dictionary, Set)} %3
+	\item \href{https://mp.weixin.qq.com/s/QCXGFdUHSrieIeaS8rCdkA}{条件判断和循环 (while, for)} %4
+	\item \href{https://mp.weixin.qq.com/s/h3NseTBUcI3eMphy4dtsjg}{函数和参数(Function)} %5
+	\item \href{https://mp.weixin.qq.com/s/sxdPFlscGbGu7KIpgZy8lA}{Python 类和模块(Class, Module)} %6
+	\item \href{https://mp.weixin.qq.com/s/oJbC56Qi-REqFXYgg-VkQw}{文件处理和异常处理} %7
+	\item \href{https://mp.weixin.qq.com/s/z0VGfTgtEjMyvJzmYvLFEQ}{单元测试和进阶学习建议} %8
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\section{\kaishu NumPy 入门}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/0qvt6EzMr_iTRX_mNEotNw}{什么是 NumPy? 如何快速学会 NumPy} %1
+	\item \href{https://mp.weixin.qq.com/s/QOhIdOidC62iHJSVfYdetQ}{如何创建 NumPy 数组? 创建 NumPy 数组常用函数} %2
+	\item \href{https://mp.weixin.qq.com/s/v8uxvy-cfbslWgF8RKc5tQ}{NumPy 切片和索引} %3
+	\item \href{https://mp.weixin.qq.com/s/XrfpD8vis60I-DVrsm9jxQ}{NumPy 常用数学函数} %4
+	\item \href{https://mp.weixin.qq.com/s/DFRhiB9fLp4PlqQgxLQUIA}{NumPy高级操作 合并, 分割, 广播} %5
+\end{enumerate}
+
+\newpage 
+
+\section{\kaishu Matplotlib 入门}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/GKKYKVocf5gEUg62x06ehQ}{什么是 Matplotlib? 如何掌握 Matplotlib} %1
+	\item \href{https://mp.weixin.qq.com/s/_Nbu-y-Mb9KSSMwgBvfjTg}{Matplotlib 图像 Figure} %2
+	\item \href{https://mp.weixin.qq.com/s/OnZ2XVptrE8YZK8oJdaoyg}{坐标轴和边框} %3
+	\item \href{https://mp.weixin.qq.com/s/1nJv3GrG_lZhauE75TTFkQ}{图例(Legend)和标注(Text,Annotate)} %4
+	\item \href{https://mp.weixin.qq.com/s/A6v7TZbwvGS3utJX5_rxZg}{多图合并, 多合一画图} %5
+	\item \href{https://mp.weixin.qq.com/s/QBZ9mQG1l80tol3eYFJqDw}{折线图(Line), 散点图(Scatter)} %6
+	\item \href{https://mp.weixin.qq.com/s/0le4F3mPD_CffH5te4vGoQ}{ 柱状图(条形图), 直方图} %7
+	\item \href{https://mp.weixin.qq.com/s/53Hk9-q_j-MznVUPajCaqg}{面积图, 堆叠面积图} %8
+	\item \href{https://mp.weixin.qq.com/s/JmOA9Rrnmiias_5RjsknkQ}{箱形图 Box, 饼图 Pie} %9
+	\item \href{https://mp.weixin.qq.com/s/efd5acPYcrLXnILJuu5I4Q}{Matplotlib 热力图 heat map, 3D图} %10
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\section{\kaishu Pandas 入门}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/cAhJC__CLMkTKukjhV2e9w}{什么是 Pandas? 你必须要掌握的数据处理神器} %1
+	\item \href{https://mp.weixin.qq.com/s/AUqF4K2-DnoHIuUKwBAMNw}{什么是 DataFrame 和 Series} %2
+	\item \href{https://mp.weixin.qq.com/s/-1XpxKpDsNui5vDGW47ldg}{DataFrame Indexing 索引和 Filtering 过滤} %3
+	\item \href{https://mp.weixin.qq.com/s/NaLsGPjCNUFp1a6xhVk9XA}{DataFrame 数据的排序和增删差改} %4
+	\item \href{https://mp.weixin.qq.com/s/7zZRduHEK264bC6kto0Nig}{聚合函数 Aggregating,分组 Group By, 数据清理 Data Cleaning} %5
+	\item \href{https://mp.weixin.qq.com/s/RW_g1kNefW7aZpWybxI9qA}{Pandas 合并 DataFrame：Merge, Join, Concat, Append} %6
+	\item \href{https://mp.weixin.qq.com/s/hscltT10gLiw0Bh_105xpw}{Pandas 数据可视化 DataFrame Plotting} %7
+\end{enumerate}
+
+\newpage 
+
+\section{\kaishu Git 和 GitHub}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/flJMzIpooB4U1pRy1PRqAg}{Git简介和环境搭建} %1
+	\item \href{https://mp.weixin.qq.com/s/dYrjC6_NwX5PKMAPkijMYg}{Git 三个区域解剖 + 版本回退} %2
+	\item \href{https://mp.weixin.qq.com/s/_rYCaK6gQrHFje2UsozFRQ}{Git 分支和标签管理} %3
+	\item \href{https://mp.weixin.qq.com/s/rCc3JQD_ir0Wo6KxheNTVA}{远程版本库和 GitHub} %4
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\section{\kaishu Linux 操作系统}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/1Dq6-LhbW_YEejS1rG0ePw}{Linux 操作系统简介和 Ubuntu 安装} %1
+	\item \href{https://mp.weixin.qq.com/s/ENf2ox0N5Bsyoh7fDlSlPA}{Linux 文件系统和文本操作} %2
+	\item \href{https://mp.weixin.qq.com/s/PBy36Av8DL3SGEo81dJ_Uw}{Linux文本权限, 通配符和环境变量} %3
+	\item \href{https://mp.weixin.qq.com/s/2lY2HWh1lF693va-MPHrZg}{ssh 远程登入, 图像化远程控制, 文本传输和脚本编辑} %4
+	\item \href{https://mp.weixin.qq.com/s/qttNYbjj4tFwWEaXMflxsA}{极客工具 Vim 和 Tmux 教程} %5
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\section{\kaishu Docker 入门}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/CdeE-5IU9-g0G-Kx0Uyp_A}{Docker 是什么} %1
+	\item \href{https://mp.weixin.qq.com/s/ocnwfIgedtaWsPdL3NHgIQ}{Docker 常用命令大全 参数设定, 端口映射, Volume} %2
+	\item \href{https://mp.weixin.qq.com/s/WlbSmc7oipgcO-Vx6FXaVQ}{什么是 Docker Compose} %3
+	\item \href{https://mp.weixin.qq.com/s/z7EFzjrAeBCPCpaRlFYJwA}{什么是 Docker Registry 和 Docker Hub} %4
+\end{enumerate}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
