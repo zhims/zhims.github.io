@@ -19,7 +19,9 @@ Codes are the fundamental building blocks of computer programming, serving as a 
 
 == [./doc/research/codes/fcp.pdf Fundamentals of Computer Programming]
 
-== [./doc/research/codes/tips4ai.pdf  Tips for AI] ~ \& ~ [./doc/note/Tips/tips4linux.pdf Linux] ~ \& ~ [./doc/note/Tips/tips4github.pdf  Github]  ~ \& ~  [./doc/note/Tips/tips4vimtex.pdf  Vimtex] ~ \& ~ [./doc/note/Tips/Tips4installapp.pdf  Ubuntu]
+== [./doc/research/codes/tips4ai.pdf  Tips for AI] ~ \& ~ [./doc/research/codes/dlp.pdf  PyTorch] ~ \& ~ [./doc/research/codes/tips4ai.pdf  Statistics] ~ \& ~  [./doc/note/Tips/tips4linux.pdf Linux] ~ \& ~ [./doc/note/Tips/tips4github.pdf  Github]
+
+# [./doc/note/Tips/tips4vimtex.pdf  Vimtex] ~ \& ~ [./doc/note/Tips/Tips4installapp.pdf  Ubuntu]
 
 
 == [./doc/research/codes/matm.pdf Mathematical Modeling Algorithm and Its Application with Matlab] ~ \& ~ [./doc/research/codes/pym.pdf Python]
