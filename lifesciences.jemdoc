@@ -9,7 +9,7 @@ Life sciences encompass the study of living organisms and their systems, integra
 
 == [./doc/materials/lifesciences/bms.pdf  Biomedical Statistics]
 
-== Biomedical Engineering
+== [./doc/materials/lifesciences/bme.pdf  Biomedical Engineering]
 
 == [./doc/materials/lifesciences/mn.pdf  Mathematical Neuroscience]
 
@@ -18,11 +18,6 @@ Life sciences encompass the study of living organisms and their systems, integra
 == [./doc/materials/lifesciences/fsg.pdf  Fundamental Statistical Genomics]
 
 == Machine Learning for Brain Disorders
-
-== Principles and Practices of Medical Imaging
-
-
-# == Principles and Practices of Medical Imaging
 
 #== Machine Learning for Brain Disorders
 #. Machine Learning Fundamentals: 1. [./doc/book/ML4BD/MLF/1.pdf Introduction to ML] ~~ 2. [./doc/book/ML4BD/MLF/2.pdf Classic ML Methods] ~~ 3. [./doc/book/ML4BD/MLF/3.pdf CNNs] ~~ 4. [./doc/book/ML4BD/MLF/4.pdf RNNs] ~~ 5. [./doc/book/ML4BD/MLF/5.pdf GANs] ~~ 6. [./doc/book/ML4BD/MLF/6.pdf Transformers and Visual Transformers]
