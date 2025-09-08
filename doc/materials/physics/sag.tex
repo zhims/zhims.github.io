@@ -19,6 +19,7 @@
 \usepackage{chngcntr}
 \usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
 \usepackage{titlesec}
+\usepackage{romannum}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{defi}{Definition}[subsection]
@@ -33,7 +34,6 @@
 \newtheorem{summary}{Summary}[subsection]
 \newtheorem{corollary}{Corollary}[subsection]
 \newtheorem{rmk}{Remark}[section]
-\usepackage{romannum}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newlength{\tabcont}
 \setlength{\parindent}{0.0in}
@@ -89,15 +89,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 	\kaishu 
+	\pagenumbering{arabic}   
 	%\thispagestyle{empty}
-	\pagenumbering{arabic} 
 	\setcounter{section}{0}
 	\begin{center}
-		{\LARGE  \href{https://www.youtube.com/playlist?list=PLisbd4477UYhtsI32frFZmk_9p9enf6QZ}{General Relativity}}
-		
-		%\vspace{-0.25cm}
-		
-		{\large \href{https://spectrum.troy.edu/gmenon/GR%20Lectures.html}{Govind Menon}}
+		{\LARGE  \href{https://www.preposterousuniverse.com/spacetimeandgeometry/}{Spacetime and Geometry}}
 	\end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%\newpage 
@@ -111,48 +107,49 @@
 %%\newpage 
 \setcounter{page}{1}
 
-%\vspace{1.5cm}
+\vspace{-0.75cm}
 
+\begin{center}
+	{\large  \href{https://www.youtube.com/playlist?list=PLBY4G2o7DhF3L9RzG0NuUnRlm8eqEUkhe}{Mathematics of General Relativity} by {\large \href{http://www.supermath.info/}{James Cook}}}
+\end{center}
 
-\begin{multicols}{2}
+\vspace{-1cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/ODHfHKOCxy8zZ6ME9lRTnQ}{Course Overview}  %1
+	\item \href{https://mp.weixin.qq.com/s/E7ivTCqyP-8ZclUUVTKvQQ}{Spacetime or Timespace}  %2
+	\item \href{https://mp.weixin.qq.com/s/Xp5NfEozTdhh-Ic_ZFn_vQ}{Index Calculations, Summation, an Example from Vector Algebra}  %3
+	\item \href{https://mp.weixin.qq.com/s/rCjs9mESbFh0LfVzbI4muQ}{Lorentz Transformations and Euclidean Isometries}  %4
+	\item \href{https://mp.weixin.qq.com/s/IMuSaKp9fGxPcRGse8NmNg}{Newtonian Space and Minkowski Space}  %5
+	\item \href{https://mp.weixin.qq.com/s/qSpRhHyZVuAquQaMQT2iXQ}{Tensor Calculations in Minkowski Space and More}  %6
+	\item \href{https://mp.weixin.qq.com/s/c78gWupqwoYFrcID15S5Kw}{4-Vectors and Physics in Special Relativity}  %7
+	\item \href{https://mp.weixin.qq.com/s/LLJqezrK2VRtrqeE9JmoEA}{Maxwell's Equations}  %8
+	\item \href{https://mp.weixin.qq.com/s/LiCDB2FahvwI-SpRsKnclA}{Lagrangian Mechanics}  %9
+	\item \href{https://mp.weixin.qq.com/s/VHz4NLlrxbjUv8vSuz24dw}{Classical Field Theory}  %10
+	\item 
 	\begin{enumerate}
-		\item \href{https://mp.weixin.qq.com/s/SMAEkNDP9b9GHUVlots4jQ}{1.1 Lorentz Transformation}	%1
-		\item \href{https://mp.weixin.qq.com/s/N4GhvLC6NFocHXlVMkYEyg}{1.2 Spacetime Diagrams}	%2
-		\item \href{https://mp.weixin.qq.com/s/7ATcKCxDSC692_iJmPP3MQ}{2.1 The Rotation Group}	%3
-		\item \href{https://mp.weixin.qq.com/s/jpMAKknE5c0OcAJezwamXw}{2.2 Inertial Observers}	%4
-		\item \href{https://mp.weixin.qq.com/s/ztXrjtrttet0XPG5uaooCQ}{2.3 Minkowski Inner Product}	%5
-		\item \href{https://mp.weixin.qq.com/s/3jdA3fXOkUjn6OUtIC-eXQ}{2.4 Lorentz Group 1}	%6
-		\item \href{https://mp.weixin.qq.com/s/29yaWMUV4WL-ATD2LuKV4g}{2.5 Lorentz Group 2}	%7
-		\item \href{https://mp.weixin.qq.com/s/E65L2zPNOL2l2-Wdjfg-aA}{2.6 Lorentz Group 3}	%8
-		%	\item \href{URL}{text}	%9
-		%	\item \href{URL}{text}	%10
-		%	\item \href{URL}{text}	%11
-		%	\item \href{URL}{text}	%12
-		%	\item \href{URL}{text}	%13
-		%	\item \href{URL}{text}	%14
-		%	\item \href{URL}{text}	%15
-		%	\item \href{URL}{text}	%16
-		%	\item \href{URL}{text}	%17
-		%	\item \href{URL}{text}	%18
-		%	\item \href{URL}{text}	%19
-		%	\item \href{URL}{text}	%20
-		%	\item \href{URL}{text}	%21
-		%	\item \href{URL}{text}	%22
-		%	\item \href{URL}{text}	%23
-		%	\item \href{URL}{text}	%24
-		%	\item \href{URL}{text}	%25
-		%	\item \href{URL}{text}	%26
-		%	\item \href{URL}{text}	%27
-		%	\item \href{URL}{text}	%28
-		%	\item \href{URL}{text}	%29
-		%	\item \href{URL}{text}	%30
-		%\item \href{url}{Materials}
+		\item \href{https://mp.weixin.qq.com/s/XmgYuWflwccMv1Jlt5Fptg}{Equivalence Principle Sketched}  %11.1
+		\item \href{https://mp.weixin.qq.com/s/Kbwn-weAlNAEOfqd2X1AMg}{On Calculus on Manifolds, a Lightning Tour}  %11.2
 	\end{enumerate}
-	
-\end{multicols}
-
-
-
+	\item \href{https://mp.weixin.qq.com/s/wzUWhQ28UCDslp_JDCla8A}{Metric on Spacetime}  %12
+	\item \href{https://mp.weixin.qq.com/s/4SFwUFeEbz4nuWuL0Y7Wyw}{Overview of Curvature and Einstein's Field Equations}  %13
+	\item 
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/QQNNsHCO0jIdUnKUzBNS1A}{Covariant Derivatives and Curvature from Frankel}  %14.1
+		\item \href{https://mp.weixin.qq.com/s/c3oKvHBUciQ2oVkH20QRvQ}{Covariant Derivatives and Curvature from Carroll}  %14.2
+	\end{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/YxraoThVHIKJHVI991chjA}{Variational Calculus and Geodesics}  %15
+	\item \href{https://mp.weixin.qq.com/s/bX1p4282QiqkzcK6jRgPWA}{Einstein's Equations and a Word on Generalizations of GR}  %16
+	\item \href{https://mp.weixin.qq.com/s/dCVPhYe3qsZXxvVMYEAvYg}{Schwarzschild Solution}  %17
+	\item \href{https://mp.weixin.qq.com/s/pB1w4j6I0VirVWmtj6oSFw}{Gravitational Waves}  %18
+	\item \href{https://mp.weixin.qq.com/s/eSJ0X6kVEQibJRMUbnEhSA}{Cosmological Models}  %19
+	\item 
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/Wxlfse3LZ41bnL16941PSw}{Tetrad Method, Lorentzian frames}  %20.1
+		\item \href{https://mp.weixin.qq.com/s/LDyYlw4aA5lslgVEeogXBw}{Calculating Curvature via Tetrad Formalism, Future Reading}	%20.2
+	\end{enumerate}
+	%\item \href{https://pan.baidu.com/s/1yJQ6Cb2EZl12bl_Zi1xNgg}{Materials}
+\end{enumerate}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

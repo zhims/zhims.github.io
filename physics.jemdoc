@@ -7,13 +7,13 @@ Theoretical physics constructs mathematical models to decipher nature's foundati
 
 == [./doc/materials/physics/ed.pdf  Electrodynamics]
 
-==  [./doc/materials/physics/gr.pdf  General Relativity]
+# ==  [./doc/materials/physics/gr.pdf  General Relativity]
 
 == [./doc/materials/physics/qm.pdf  Quantum Mechanics] 
 
 == [./doc/materials/physics/qft.pdf  Quantum Field Theory] 
 
-# == [./doc/materials/physics/sag.pdf  Spacetime and Geometry]
+== [./doc/materials/physics/sag.pdf  Spacetime and Geometry]
 
 == [./doc/materials/physics/gwa.pdf  Gravitational Wave Astrophysics]
 
