@@ -9,20 +9,18 @@ Codes are the fundamental building blocks of computer programming, serving as a 
 
 # $\quad$ [https://mp.weixin.qq.com/s/Du3aTm41SaH1VmhxPWm7lQ 01] ~~ [https://mp.weixin.qq.com/s/S8ODze0heW5mh85Qesm_sA 02] ~~ [https://mp.weixin.qq.com/s/YJgcMbO35tTEyAihvbF8AA 03] ~~ [https://mp.weixin.qq.com/s/8rWiTHyvFJG50opvVSimJg 04] ~~ [https://mp.weixin.qq.com/s/UkHOA_cUamd4maBjbD-4GA 05] ~~ [./doc/note/Codes/LaTex/Tipa.pdf Tipa] ~~ [https://pan.baidu.com/s/1J46drp_5s1yveEoXIH-54A Template]  
 
-== [./doc/research/codes/python.pdf  Python]
-
 == [./doc/research/codes/mma.pdf  Mathematica]
 
 == [./doc/research/codes/sw.pdf  Scientific Writing]
 
+== [./doc/research/codes/python.pdf  Data Science  with  Python ~ A] ~ [./doc/research/codes/pml.pdf  B] ~ C ~  D
+
 == [https://github.com/zhims/codes_for_1st_project_in_NAOC Codes for 1st Project in NAOC] ~ [./code/code_1st_project.pdf  Reference] 
 
-== [./doc/research/codes/fcp.pdf Fundamentals of Computer Programming]
-
-== [./doc/research/codes/tips4ai.pdf  Tips for AI] ~ \& ~ [./doc/research/codes/dlp.pdf  PyTorch] ~ \& ~ [./doc/research/codes/pys.pdf  Statistics] ~ \& ~  [./doc/note/Tips/tips4linux.pdf Linux] ~ \& ~ [./doc/note/Tips/tips4github.pdf  Github]
+== [./doc/research/codes/tips4ai.pdf  Tips for ~ AI] ~ ~ ~ [./doc/research/codes/dlp.pdf  PyTorch] ~ ~ ~ [./doc/research/codes/pys.pdf  Statistics] ~ ~ ~  [./doc/note/Tips/tips4linux.pdf Linux] ~ ~ ~ [./doc/note/Tips/tips4github.pdf  Github]
 
 # [./doc/note/Tips/tips4vimtex.pdf  Vimtex] ~ \& ~ [./doc/note/Tips/Tips4installapp.pdf  Ubuntu]
 
 
-== [./doc/research/codes/matm.pdf Mathematical Modeling Algorithm and Its Application with Matlab] ~ \& ~ [./doc/research/codes/pym.pdf Python]
+== [./doc/research/codes/matm.pdf Mathematical Modeling Algorithm and Its Application with ~ Matlab] ~ ~ ~ [./doc/research/codes/pym.pdf Python]
 
