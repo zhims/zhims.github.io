@@ -1,0 +1,251 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	\setcounter{page}{1}
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://en.wikipedia.org/wiki/Analysis}{Calculus and Analysis}}
+		
+		%\vspace{-0.25cm}
+		
+		\href{https://sites.google.com/site/shencmath/}{Chun-Yen Shen}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage
+
+\vspace{-0.5cm}
+
+\large {\href{https://www.youtube.com/playlist?list=PLVJXJebpO4PjZwfkPwKs8jb1VKCnRtNd1&si=BjCAEuQK3MjtkRIv}{Calculus \Romannum{1}}} 
+
+%\begin{center}
+%	\large {\href{https://www.youtube.com/playlist?list=PLVJXJebpO4PhhPaG5r3Sxp0w89hqCfi0a}{Calculus \Romannum{1}}}
+%\end{center}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/aRWrlvisSPUyQY6G8bt8XA}{System of real number 1}	%1
+	\item \href{https://mp.weixin.qq.com/s/henNU4zPR_yXjaqzXPTk6w}{System of real number 2}	%2
+	\item \href{https://mp.weixin.qq.com/s/ZMfZ3gmRMELibbHYZT31Bw}{System of real number 3}	%3
+	\item \href{https://mp.weixin.qq.com/s/dAzIXujM2Ztv5dhAic4pjg}{Completeness of Real Number, Weierstrass Theorem 1}	%4
+	\item \href{https://mp.weixin.qq.com/s/cJoPRLFBSuXa1SGsen0duQ}{Weierstrass Theorem 2, define subsequence, Cauchy Sequence}	%5
+	\item \href{https://mp.weixin.qq.com/s/f35OfWIHRAcmMfie0F7lFg}{Least Upper Bound \& Greatest Lower Bound}	%6
+	\item \href{https://mp.weixin.qq.com/s/9rx4aAQrB1vRyIwAIg1KXQ}{Continuous function, uniformly continuous, Lipchitz continuous}	%7
+	\item \href{https://mp.weixin.qq.com/s/ATm88605is00bQxQLUZ-PA}{Intermediate value theorem, Extreme Value Theory}	%8
+	\item \href{https://mp.weixin.qq.com/s/ytuoZYjY2xCNi9Dsa65Y5g}{Rieman sum}	%9
+	\item \href{https://mp.weixin.qq.com/s/uWfljPPgj0LGRM7iyk1mNg}{Properties of integral, MVT/general MVT for integral, logarithm}	%10
+	\item \href{https://mp.weixin.qq.com/s/KsTIZjU5m_lbgQkrcE0zdA}{Logarithm and exponential 1}	%11
+	\item \href{https://mp.weixin.qq.com/s/AX-xsj2DspX2CO_8VvFOPA}{Logarithm and exponential 2}	%12
+	\item \href{https://mp.weixin.qq.com/s/ZFbnBA_79XyjBBL21OuW5A}{Fundamental Theorem of Calculus 1, Rolle's Theorem, MVT for derivative 1}	%13
+	\item \href{https://mp.weixin.qq.com/s/aTRJWwRRFsJHvkcteVyruw}{MVT for derivative 2, approximation by linear function, FTC 2}	%14
+	\item \href{https://mp.weixin.qq.com/s/wKSPlTi0H9EP1Y2RPweSVQ}{Properties of derivative, composite functions, chain rule}	%15
+	\item \href{https://mp.weixin.qq.com/s/pGkX3-pMSFTGLiDeGMyTAw}{First/second derivative test}	%16
+	\item \href{https://mp.weixin.qq.com/s/cxEM3aY-GiW_MsM3eeY-TA}{Order of magnitude, introduce an smooth function}	%17
+	\item \href{https://mp.weixin.qq.com/s/fvxg2mLtSSM8Gyo4wRrRfQ}{Some example of oscillating functions, chain rule, method of substitution}	%18
+	\item \href{https://mp.weixin.qq.com/s/1_BBnHcpBOr5QwzhCMS2Jw}{Integration by parts}	%19
+	\item \href{https://mp.weixin.qq.com/s/Ei7SnZWqDcaStALEiaigBA}{Integration of rational functions 1}	%20
+	\item \href{https://mp.weixin.qq.com/s/18XRgIGhs7i-qkrp3OZTyA}{Integration of rational functions 2, Improper integral 1}	%21
+	\item \href{https://mp.weixin.qq.com/s/1HyKxNFDCccuQr07KC-UXA}{Improper integral 2}	%22
+	\item \href{https://mp.weixin.qq.com/s/8XoyA4tGn1KwGNxWmuNbYw}{Taylor's series: Gamma function, power series, expansion of the logarithm}	%23
+	\item \href{https://mp.weixin.qq.com/s/ho7_hB0jR7bNepTmeIjNdQ}{Taylor's series: Taylor's theorem, Cauchy's \& Lagrange's remainder}	%24
+	\item \href{https://mp.weixin.qq.com/s/9E9eGleHOtv7ovy1lUcLrA}{Taylor's series: estimate remainder term, expansion of elementary}	%25
+	\item \href{https://mp.weixin.qq.com/s/P4GEHqjFht-kRQl4qeW0VA}{Taylor's series: examples}	%26
+	\item \href{https://mp.weixin.qq.com/s/Eufsx2R4xi-2LIb218vkSw}{Taylor's polynomial: interpolation 1}	%27
+	\item \href{https://mp.weixin.qq.com/s/nCIjtbgzz893SbNFfR-NTw}{Taylor's polynomial: interpolation 2, approximation in first order}	%28
+	\item \href{https://mp.weixin.qq.com/s/ua3ZGUI0M8ChNP_hpEQ6hg}{Taylor's polynomial: approximation in second order}	%29
+	\item \href{https://mp.weixin.qq.com/s/C5su0-glrDMnWzU9VdTsEw}{Taylor's polynomial: fixed point approximation, Stirling's formula}	%30
+	\item \href{https://mp.weixin.qq.com/s/MFMIa3EkvjOm7V70XUG37A}{Series: concepts of convergence and divergence 1}	%31
+	\item \href{https://mp.weixin.qq.com/s/AVwjWW5NBDDHgkRsnOmoNQ}{Series: rearrangement, tests for absolute convergence and divergence 1}	%32
+	\item \href{https://mp.weixin.qq.com/s/Tjw9T4Bcqb0LB7VKhAItDA}{Series: tests for abs. convergence and divergence 2, sequences of functions}	%33
+	\item \href{https://mp.weixin.qq.com/s/h2Gsu-uxRFgqLk34sHdqGw}{Series: pointwise/uniform convergence 1}	%34
+	\item \href{https://mp.weixin.qq.com/s/em69T457kgN8DCNOi3MqNw}{Series: pointwise/uniform convergence 2}	%35
+	\item \href{https://mp.weixin.qq.com/s/C_qWwY9r7Wqquk0Dpq_r5A}{Series: power series, interval of convergence}	%36
+	\item \href{https://mp.weixin.qq.com/s/FPru75acJ7toOM06Mkq0MQ}{Series: product of two power series}	%37
+	\item \href{https://mp.weixin.qq.com/s/7D57J6Qic6hNnAjvPPM44w}{Series: expansion of given power series, infinite product}	%38
+	\item \href{https://mp.weixin.qq.com/s/7UXE-cub3pKSqixYXnsrgQ}{Fourier series: periodic function, complex notation 1}	%39
+	\item \href{https://mp.weixin.qq.com/s/okK6U1OAHyqWDo9RuUPLPA}{Fourier series: complex form 2, trigonometric formula, Riemann Lebesgue Lemma}	%40
+	\item \href{https://mp.weixin.qq.com/s/dmb6iMfwGthvqdx37UaLFQ}{Fourier series: examples of Fourier expansion}	%41
+	\item \href{https://mp.weixin.qq.com/s/SSNRnAP2Ixx-SmtZsjy2jA}{Fourier series: main theorem on Fourier expansion}	%42
+	\item \href{https://mp.weixin.qq.com/s/s736cBxFxHhcteNPzCochQ}{Fourier series: examples of Fourier series 1}	%43
+	\item \href{https://mp.weixin.qq.com/s/wtLeeApB45OSev34uW7lGA}{Fourier series: examples of Fourier series 2, Bessel's Inequality}	%44
+	\item \href{https://mp.weixin.qq.com/s/tfS_J6gQ-1XWo5SVPCNKwA}{Approximation by trigonometric and rational polynomial 1}	%45
+	\item \href{https://mp.weixin.qq.com/s/rKuvvXPphPKXL1ByORd4cA}{Approximation by trigonometric and rational polynomial 2}	%46
+	\item \href{https://mp.weixin.qq.com/s/WyY2kuqoDXI0rj4tiVGF9w}{Approximation by trigonometric and rational polynomial 3}	%47
+	\item \href{https://mp.weixin.qq.com/s/Mt-QnrU7IvwvyLj8MluLLA}{Inner product}	%48
+	\item \href{https://mp.weixin.qq.com/s/UwOwRipaO1DbHEY-Xl0jLg}{Bernoulli polynomial and their applications 1}	%49
+	\item \href{https://mp.weixin.qq.com/s/SNKjyVc5iyEtFnqHTbIKSQ}{Bernoulli polynomial and their applications 2}	%50
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+\subsection*{\href{https://www.youtube.com/playlist?list=PLVJXJebpO4Pi_4cETi8EL19qJLdcLEW2a&si=YwWo1F4e-o_KZ5_s}{Calculus \Romannum{2}}}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{URL}{functions of multiple variables \& partial derivative}	%1
+	\item \href{URL}{continuity}	%2
+	\item \href{URL}{differentiability \& directional derivative (1)}	%3
+	\item \href{URL}{directional derivative (2) \& tangent plane}	%4
+	\item \href{URL}{change of variables \& Taylor series}	%5
+	\item \href{URL}{MVT \& Taylor expansion \& Integral}	%6
+	\item \href{URL}{double integral \& length of curve}	%7
+	\item \href{URL}{curvature \& linear differential one form}	%8
+	\item \href{URL}{line integral}	%9
+	\item \href{URL}{Heine-Borel theorem}	%10
+	\item \href{URL}{compact subset \& Implicit Function theorem (1)}	%11
+	\item \href{URL}{Implicit Function theorem (2)}	%12
+	\item \href{URL}{Inverse Function theorem (1)}	%13
+	\item \href{URL}{Inverse Function theorem (2) \& extreme value}	%14
+	\item \href{URL}{Lagrange Multiplier method}	%15
+	\item \href{URL}{examples \& H{\"o}lder Inequality}	%16
+	\item \href{URL}{sufficient condition for local max/min}	%17
+	\item \href{URL}{Jordan measurable}	%18
+	\item \href{URL}{Jordan area (1)}	%19
+	\item \href{URL}{Jordan area (2)}	%20
+	\item \href{URL}{double integral (1)}	%21
+	\item \href{URL}{double integral (2)}	%22
+	\item \href{URL}{transformation of multiple integrals}	%23
+	\item \href{URL}{improper multiple integrals (1)}	%24
+	\item \href{URL}{improper multiple integrals (2) \& volumes}	%25
+	\item \href{URL}{surface area}	%26
+	\item \href{URL}{surface area formula}	%27
+	\item \href{URL}{multiple integral in curved coordinate}	%28
+	\item \href{URL}{extend to $R^n$}	%29
+	\item \href{URL}{integral of unbounded set}	%30
+	\item \href{URL}{Fourier integral theorem (1)}	%31
+	\item \href{URL}{Fourier integral theorem (2)}	%32
+	\item \href{URL}{Fourier transform - decay property \& Parseval's identity}	%33
+	\item \href{URL}{Fourier transform of several variables}	%34
+	\item \href{URL}{Green theorem}	%35
+	\item \href{URL}{Divergence theorem}	%36
+	\item \href{URL}{prove Inverse Function theorem by Green theorem}	%37
+	\item \href{URL}{orientation of surface in $R^3$ (1)}	%38
+	\item \href{URL}{orientation of surface in $R^3$ (2)}	%39
+	\item \href{URL}{Gauss theorem in $R^3$ (1)}	%40
+	\item \href{URL}{Gauss theorem in $R^3$ (2)}	%41
+	\item \href{URL}{application of fluid}	%42
+	\item \href{URL}{Stoke's theorem}	%43
+	\item \href{URL}{general surface (partition of unit) (1)}	%44
+	\item \href{URL}{general surface (partition of unit) (2)}	%45
+	\item \href{URL}{general surface (partition of unit) (3) \& functions of one complex variable}	%46
+	\item \href{URL}{complex function - power series}	%47
+	\item \href{URL}{complex function - differentiability}	%48
+	\item \href{URL}{conformal map \& integration of analytic functions - Cauchy's theorem}	%49
+	\item \href{URL}{complex integral theorem \& Cauchy integral formula}	%50
+	\item \href{URL}{zeros, poles and residues}	%51
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
