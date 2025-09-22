@@ -1,0 +1,266 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.youtube.com/playlist?list=PL8xPPUJdubH7jx4wkkX1rvEcp5hmmK-co}{Python Machine Learning}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://fin.ntub.edu.tw/p/412-1037-121.php?Lang=en}{Chenghsi Hsieh}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-0.25cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/NWZfDX6aIm7hlAq3qYhBTg}{Coda: 最后的一个拼图}	%1
+	\item \href{https://mp.weixin.qq.com/s/kl1LJvakcBHbcx2ESK9JjQ}{Giving Computers the Ability to Learn from Data: 赋予电脑资料学习的能力}	%2
+\end{enumerate}
+
+\subsection*{Algorithms for Classification}
+
+\vspace{-0.25cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/pe9jrh_56vtKjIRZO2t4cw}{感知器的学习规则}	%3
+		\item \href{https://mp.weixin.qq.com/s/X2JVorzkJ1VZkEee4cS7EQ}{以物件导向程式实作感知器}	%4
+		\item \href{https://mp.weixin.qq.com/s/NjhyB5pvhdpAI6c_9vMRCw}{以鸢尾花资料训练感知器}	%5
+		\item \href{https://mp.weixin.qq.com/s/SUat1DedwYHNe6Nh77aTMg}{以物件导向程式实作适应线性神经元}	%6
+		\item \href{https://mp.weixin.qq.com/s/S6YvTFY8EUe7zkwymj5Yaw}{资料标准化与随机梯度下降}	%7
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{Classifiers Using Scikit-Learn}
+
+\vspace{-0.25cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/hLdDC1hoSVYEww_VfWap0w}{以套件实作感知器}	%8
+		\item \href{https://mp.weixin.qq.com/s/uNoPquN9oRi64e1Sl9zr0w}{以物件导向程式实作逻辑回归}	%9
+		\item \href{https://mp.weixin.qq.com/s/0VH9HFePdZVMiqWbvaFzLw}{以套件实作逻辑回归}	%10
+		\item \href{https://mp.weixin.qq.com/s/EhuWxyETQQKSqLprzB-HYQ}{支持向量机 1}	%11
+		\item \href{https://mp.weixin.qq.com/s/o67kQOaKdeN-ZJijU2O7ag}{支持向量机 2}	%12
+		\item \href{https://mp.weixin.qq.com/s/W_b-hnmi3ztP1bHznlnf7Q}{实作支持向量机}	%13
+		\item \href{https://mp.weixin.qq.com/s/qyyUg_UeRBnGUiqdcRdeAQ}{决策树}	%14
+		\item \href{https://mp.weixin.qq.com/s/Vo_qt2rE3LiUjaRYPzkdpw}{随机森林与 K 最近邻分类器}	%15
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{Data Preprocessing}
+
+\vspace{-0.25cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/JNmnQSK1zwjzKVaippLCdQ}{处理遗失值及类别资料}	%16
+		\item \href{https://mp.weixin.qq.com/s/rfhQxhvFs_i4NM4MclSMBA}{资料切割、特征缩放及选取有意义的特征}	%17
+		\item \href{https://mp.weixin.qq.com/s/YnxEMD7ZF10Ep2pHR6hJvQ}{以物件导向程序实作循序特征选择演算法}	%18
+		\item \href{https://mp.weixin.qq.com/s/zIDofQXr1HBrtPP4I5WAgQ}{以随机森林评估特征的重要性}	%19
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{Dimensionality Reduction}
+
+\vspace{-0.25cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/2-I5HxcBYDTYTNSBEd-z5w}{主成分分析}	%20
+		\item \href{https://mp.weixin.qq.com/s/EGDmY4r2QV_kDQDGnxVOcw}{线性判别分析 1}	%21
+		\item \href{https://mp.weixin.qq.com/s/CEz1I6dhVpvXD0A4XW_z1Q}{线性判别分析 2}	%22
+		\item \href{https://mp.weixin.qq.com/s/WufaoCxegQHAnpdIUY5A5g}{核的概念}	%23
+		\item \href{https://mp.weixin.qq.com/s/uo1jOcLzriNvIoymY7Y4oQ}{核主成分分析 1}	%24
+		\item \href{https://mp.weixin.qq.com/s/i-H-OMUGMhB8B4ARWJGVZQ}{核主成分分析 2}	%25 
+	\end{enumerate}
+\end{multicols}
+
+\newpage 
+
+\subsection*{Model Evaluation and Hyperparameter Tuning}
+
+\vspace{-0.25cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/gkp9O7Jm9-q8-s9mgt7Mpg}{使用管线精简工作流程}	%26
+		\item \href{https://mp.weixin.qq.com/s/0zqlxs4ysakjCvheMMzkYA}{K 折交叉验证、学习曲线与验证曲线}	%27
+		\item \href{https://mp.weixin.qq.com/s/yOuSAAK91Uha4ip9Avw8xA}{格状搜寻与混肴矩阵}	%28
+		\item \href{https://mp.weixin.qq.com/s/sFnvZTjn1GjpIGge2XFSMw}{接收操作特征图(ROC Curve)}	%29
+		\item \href{https://mp.weixin.qq.com/s/-ljjb2d3K9hpOb9CcQPAVg}{多元分类计分指标与资料不平衡}	%30 
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{Ensemble}
+
+\vspace{-0.25cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/7NRpVfdjBBIh7qF8qFi2AQ}{整体学习简介}	%31
+		\item \href{https://mp.weixin.qq.com/s/QUzndlMD9Wl23Rd3Sc8iug}{以物件导向程式实作多数决分类器}	%32
+		\item \href{https://mp.weixin.qq.com/s/IaRbx7QxIzEEBH3ID2rc8A}{\small 以多数决原理作预测并评估整体学习分类器}	%33
+		\item \href{https://mp.weixin.qq.com/s/-5E7Lvn7PuaaYj1CI8O5QA}{微调整体学习分类器}	%34
+		\item \href{https://mp.weixin.qq.com/s/5Te6DwvwIBHYLrETL_qptw}{袋装法}	%35
+		\item \href{https://mp.weixin.qq.com/s/cYmRobzrStZeGHfWSHVQ8A}{适应强化法(AdaBoost)}	%36
+		\item \href{https://mp.weixin.qq.com/s/sW7u7yxH7VmwPhldUTkPBw}{\small 由依序极小化误差函数看 AdaBoost 与 Gradient Boost 简介}	%37
+	\end{enumerate}
+\end{multicols}
+
+
+\subsection*{Regression}
+
+\vspace{-0.25cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/PoEkNO3lEYsCjVagLeMwEw}{回归简介与探索波士顿房价数据集}	%38
+		\item \href{https://mp.weixin.qq.com/s/bgiSRysxTaVLD60NoS6JuQ}{以物件导向程式及套件实作回归模型}	%39
+		\item \href{https://mp.weixin.qq.com/s/WEpou9qEp-ZYEgwKK--Qpg}{\small 随机样本共识回归(RANSAC)、脊回归与 LASSO 回归}	%40
+		\item \href{https://mp.weixin.qq.com/s/n4goxLw73phLZIJgnpxpfA}{以线性回归配适曲线}	%41
+		\item \href{https://mp.weixin.qq.com/s/NmWmFuMIYwiLQcnSck-omg}{决策树回归与随机森林回归}	%42
+	\end{enumerate}
+\end{multicols}
+
+
+\subsection*{Clustering Analysis}
+
+\vspace{-0.25cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/3wPnev_4INVpfupuBavuig}{K-means 与 K-means++}	%43
+		\item \href{https://mp.weixin.qq.com/s/aTIxS-_nuunjVbLO59y4PA}{转折判断法与轮廓图}	%44
+		\item \href{https://mp.weixin.qq.com/s/FtsA9Jbmq3MuHhz2sRBKzQ}{阶层树分群}	%45
+		\item \href{https://mp.weixin.qq.com/s/_guzPqQbCgoFTkwzJug0eA}{以密度为基础的分群 (DBSCAN)}	%46
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{Supplementary Materials}
+
+\vspace{-0.25cm}
+
+\begin{enumerate}
+	\item \href{url}{Materials}
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
