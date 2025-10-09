@@ -1,0 +1,330 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://shenghsuanlin.web.nycu.edu.tw/wp-content/uploads/sites/349/2022/09/Syllabus.pdf}{Causal Inference}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://shenghsuanlin.web.nycu.edu.tw/}{Sheng-Hsuan Lin}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-1cm}
+
+\subsubsection*{\kaishu 1. 导读}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/GRRr4QLAyD6dl-DqSXUppA}{因果经济学导论}	%1
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{\kaishu 2. 必备知识}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/_4459wttNLq4Ug4iPMNuyQ}{因果推論分類}	%1
+	\item \href{https://mp.weixin.qq.com/s/uNK3o0KsPv4NoVp1vDiZvA}{統計模型分類}	%2
+	\item \href{https://mp.weixin.qq.com/s/vFPrBpP47TYifWgaqA0QLg}{Basic definition and measurement for Epidemiology}	%3
+	\item \href{https://mp.weixin.qq.com/s/y40XDRGrVoIgcCCYtAn80A}{辛普森悖論}	%4
+	\item \href{https://mp.weixin.qq.com/s/RTbZ2oePbaL9Lx2UhosjAw}{干擾因子}	%5
+	\item \href{https://mp.weixin.qq.com/s/s2HTAYpsZt-JRUaMreC-yg}{分層分析與模型}	%6
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{\kaishu 3. 因果推論}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/W92ZurwB0431bOjolErMcQ}{Introduction of causal inference A}	%1
+	\item \href{https://mp.weixin.qq.com/s/8R9Tew3wshkK_95TIfNQeQ}{Introduction of causal inference B}	%2
+	\item \href{https://mp.weixin.qq.com/s/2LjJU_2HnIQuVikL2nJGXQ}{Framework of causal inference}	%3
+	\item \href{https://mp.weixin.qq.com/s/9-aAIHYw7cIScdiZkmyDjg}{Causal structure (1) – DAGs}	%4
+	\item \href{https://mp.weixin.qq.com/s/3gdqkn7SgzBf1jzQX-cfxw}{Variable in causal inference}	%5
+	\item \href{https://mp.weixin.qq.com/s/anf-w03I-eiUCfSy7jaYDg}{Causal structure (2) – D-separation rule}	%6
+	\item \href{https://mp.weixin.qq.com/s/3ko1L3dg_2_z7cvpI02Gsw}{Causal structure (3) – NPSEM}	%7
+	\item \href{https://mp.weixin.qq.com/s/Mld8h9U1qgeg_myPnbYTbQ}{Causal structure (4) – NPSEM for d-separation A}	%8
+	\item \href{https://mp.weixin.qq.com/s/ZooQicl91QtUglL867KPsw}{Causal structure (5) – NPSEM for d-separation B}	%9
+	\item \href{https://mp.weixin.qq.com/s/1s1W5jLFTNFEBXbC1pMNqw}{Counterfactual outcome model}	%10
+	\item \href{https://mp.weixin.qq.com/s/L0rovGlXJF78IuaPsQBb4g}{Identification: exchangeability and RCT}	%11
+	\item \href{https://mp.weixin.qq.com/s/czrPh4QeGfloK0C8HwkDoA}{Estimation A: g-formula, IPW, and MSM}	%12
+	\item \href{https://mp.weixin.qq.com/s/VhO4AD5lIPQtHEbFsDBKSw}{Estimation B: g-estimation and SNM}	%13
+	\item \href{https://mp.weixin.qq.com/s/byaU2Ja7p2fipSJBPZhFhw}{Estimation C: doubly robust estimator}	%14
+	\item \href{https://mp.weixin.qq.com/s/K68QFvy2kBbAZg7P0mipeA}{Efficiency theorem A: WHY EIF}	%15
+	\item \href{https://mp.weixin.qq.com/s/tVgr9wOWmP8Uuami5H_PkA}{Efficiency theorem B: WHAT is EIF}	%16
+	\item \href{https://mp.weixin.qq.com/s/VtDcsaEEdxR1yZmdz9eB-g}{Efficiency theorem C: HOW to derive EIF (1)}	%17
+	\item \href{https://mp.weixin.qq.com/s/r7wr1zonO-GGEGyVyLxWQA}{Efficiency theorem D: HOW to derive EIF (2)(3)}	%18
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{\kaishu 4. 因果推論架構與概念}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/tBHwHv3gQdgX2lKMJfHpcA}{常見名詞}	%1
+	\item \href{https://mp.weixin.qq.com/s/6F7J_KaNsKEnnQF3M1peJQ}{緒論}	%2
+	\item \href{https://mp.weixin.qq.com/s/gsIw1zhrvkF2dZnxNKzoEA}{Causal Diagram}	%3
+	\item \href{https://mp.weixin.qq.com/s/FC3qJ9acrJZbV208v17UTA}{counterfactual model}	%4
+	\item \href{https://mp.weixin.qq.com/s/q-xD8pj2bM2RfD67PlEPmA}{常見的causal effects}	%5
+	\item \href{https://mp.weixin.qq.com/s/yiZLG7CQsUCsek88vNz39A}{positivity and consistency}	%6
+	\item \href{https://mp.weixin.qq.com/s/BgCtclwJsd_vJlFuppHiIQ}{exchangeability}	%7
+	\item \href{https://mp.weixin.qq.com/s/aeflhUV9ooP80hSoPtd4Ew}{其他兩種assumptions}	%8
+	\item \href{https://mp.weixin.qq.com/s/tjGhDj2vW7btp9_mpH7fsQ}{因果研究中assumption的重點}	%9
+	\item \href{https://mp.weixin.qq.com/s/ygs4MYKA3s-eZnrO7q6GSA}{sensitivity analysis}	%10
+	\item \href{https://mp.weixin.qq.com/s/Lwy0ZgNU9E-m7xtYjEwZYA}{Identification}	%11
+	\item \href{https://mp.weixin.qq.com/s/6XFNSn2uEQhJVoqj2zfbvQ}{Statistical Inference}	%12
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{\kaishu 5. Data analysis DEMO}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/6GagqDA5KoD1ITFghalsHA}{DEMO A}	%1
+	\item \href{https://mp.weixin.qq.com/s/gW1Ho58AGP0manJkTh7uRw}{DEMO B}	%2
+	\item \href{https://mp.weixin.qq.com/s/nc8LYP3OUiwaeXKXUIL3GA}{DEMO C}	%3
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{\kaishu 6. NDE and NIE}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/Cw1v-UKBb9yigKF8q-yidg}{Introduction of causal mediation analysis}	%1
+	\item \href{https://mp.weixin.qq.com/s/F8WKmhrzXEyyiVd54RqZqA}{Definition for causal mediation analysis (NDE and NIE)}	%2
+	\item \href{https://mp.weixin.qq.com/s/DZnhE-gtiEh2iP0C9JmxeA}{Identification for NDE and NIE A}	%3
+	\item \href{https://mp.weixin.qq.com/s/oXRnkyD_0JK9tQuipgnOWw}{Identification for NDE and NIE B}	%4
+	\item \href{https://mp.weixin.qq.com/s/s5yrgAO913wcXmhOg-ysoQ}{Identification for NDE and NIE C recanting witness and NPSEM}	%5
+	\item \href{https://mp.weixin.qq.com/s/98U94FvD3D1oHK-HbdttPA}{Review framework}	%6
+	\item \href{https://mp.weixin.qq.com/s/UWTRO0gSPiswEDsIxtvPsA}{Identification for NDE and NIE D when M is continuous}	%7
+	\item \href{https://mp.weixin.qq.com/s/vBVU-ppWwzmZyUKgg0Kl4w}{Estimation for NDE and NIE A}	%8
+	\item \href{https://mp.weixin.qq.com/s/bt0p9SKevVP9M4avaJctPw}{Estimation for NDE and NIE B}	%9
+	\item \href{https://mp.weixin.qq.com/s/vAWnR_0fuI1AOJ0KQ_isTA}{Estimation for NDE and NIE C}	%10
+	\item \href{https://mp.weixin.qq.com/s/SnOdeYG1GWulNHkrp1feCQ}{Estimation for NDE and NIE D}	%11
+	\item \href{https://mp.weixin.qq.com/s/dEhVZrK9HF6A-c2Vxw5DTw}{Estimation for NDE and NIE E regression with interaction term}	%12
+	\item \href{https://mp.weixin.qq.com/s/Ryw632CtN_UNRRkzaYOXxw}{Estimation for NDE and NIE F Monte-Carlo simulation and software (mediation.R)}	%13
+	\item \href{https://mp.weixin.qq.com/s/-g18ym1rwA9dcfN4E0WEcg}{Estimation for NDE and NIE G – IPW}	%14
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{\kaishu 7. Binary outcome}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/Ik32rRrlkNIB-AlhBy6NZQ}{Causal mediation analysis with binary outcome A}	%1
+	\item \href{https://mp.weixin.qq.com/s/niCB01OT_NscVGvP6I_Fvw}{Causal mediation analysis with binary outcome B Counterfactual OR and PM}	%2
+	\item \href{https://mp.weixin.qq.com/s/yQg9Vr9YinbQCZW_8fVwxQ}{Causal mediation analysis with binary outcome C Estimation a}	%3
+	\item \href{https://mp.weixin.qq.com/s/oniTcLXzqKiho7i3uDsv0A}{Causal mediation analysis with binary outcome D Estimation b}	%4
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{\kaishu 8. Alternative definition}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/ULs-LgvmoyZg9Q00kLoOcQ}{Three different definitions for causal mediation analysis}	%1
+	\item \href{https://mp.weixin.qq.com/s/pti3oszhsNJY6r5aZOUYhA}{CDE A}	%2
+	\item \href{https://mp.weixin.qq.com/s/xLrNXJFeMtjvd3Wnivc06g}{CDE B}	%3
+	\item \href{https://mp.weixin.qq.com/s/vEsX4FY3R-y-8ulHakQifw}{Interventional approach A Introduction}	%4
+	\item \href{https://mp.weixin.qq.com/s/qUxU9v45u5qgJ9WWlkY2JA}{Interventional approach B Definition}	%5
+	\item \href{https://mp.weixin.qq.com/s/nj-NmXpdj8qhT03ect3F2w}{Interventional approach C Identification}	%6
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{\kaishu 9. 中介效應分析}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/QVo-71WwLWt99ljKQOtXtg}{Mediation analysis 基本概念與常見的錯誤解讀}	%1
+	\item \href{https://mp.weixin.qq.com/s/tzJnVwOSfnCNbJtr9ksGUQ}{傳統Mediation analysis的做法以及causal mediation}	%2
+	\item \href{https://mp.weixin.qq.com/s/KPbpaspmIonZpCDdAFJbpQ}{Mediation analysis 三種常見的定義以及interpretation}	%3
+	\item \href{https://mp.weixin.qq.com/s/AoNnTWP3dMCCcmskwfvJ0g}{Mediation analysis 三種常見的定義在辨識中需要的假設及其意義}	%4
+	\item \href{https://mp.weixin.qq.com/s/9hUGxYCy_a8UWkwXy78tAw}{Mediation analysis identification and estimation}	%5
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{\kaishu 10. 交互作用分析}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/E7txm3jtXFuGbGS_b9yMFw}{introduction}	%1
+	\item \href{https://mp.weixin.qq.com/s/t51Bs8d73iR8unozout9yA}{三種interaction}	%2
+	\item \href{https://mp.weixin.qq.com/s/zcVLsoAjGCEkPOF5eASvjA}{additive v s multiplcative interaction}	%3
+	\item \href{https://mp.weixin.qq.com/s/OVingr4LK-R979zHzAG3NA}{RERI (1)}	%4
+	\item \href{https://mp.weixin.qq.com/s/RfIYqjLL90LQLCB0eryeLA}{RERI (2)}	%5
+	\item \href{https://mp.weixin.qq.com/s/VW9h_Bztrchcg3tMyBM8zA}{Effect modification}	%6
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{\kaishu 11. 多重中介效应}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/6-TvJrRUcluUYCzGwgluKA}{Multi-mediation analysis (01) – DAGs}	%1
+	\item \href{https://mp.weixin.qq.com/s/RMfV5z9WIxsswops8HLKng}{Multi-mediation analysis (02) – counterfactual (1)}	%2
+	\item \href{https://mp.weixin.qq.com/s/EKEqsaAx_RmQDJlFy9vsmw}{Multi-mediation analysis (03) – counterfactual (2)}	%3
+	\item \href{https://mp.weixin.qq.com/s/5k5HY6pT6tnrAW4gFVRVKw}{Multi-mediation analysis (04) – Difficulty of identification}	%4
+	\item \href{https://mp.weixin.qq.com/s/n-mpLQk9pysPWUrSz26TVg}{Multi-mediation analysis (05) – Introduction of different strategy}	%5
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{\kaishu 12. 时变系统的因果推论}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/RmfZv7W4_e6vWohTkAYGjg}{Introduction of time-varying system}	%1
+	\item \href{https://mp.weixin.qq.com/s/YJnn2hG_jsK-7BxGfgobTQ}{DAGs of time-varying system}	%2
+	\item \href{https://mp.weixin.qq.com/s/W7W-MO-VCpU92tYF73aqRQ}{Why regression fail and g-formula in simple case}	%3
+	\item \href{https://mp.weixin.qq.com/s/B3rAP8NRpz60hfU1PpgJ4A}{g-formula (1)}	%4
+	\item \href{https://mp.weixin.qq.com/s/1UlKBo28nTVETec53cIn3Q}{g-formula (2)}	%5
+	\item \href{https://mp.weixin.qq.com/s/nuRefZw7A7BsL10giGz__w}{g-formula (3)}	%6
+	\item \href{https://mp.weixin.qq.com/s/mJsF27jYbdXUu9gAlkhIFw}{g-formula (4)}	%7
+	\item \href{https://mp.weixin.qq.com/s/oe3ygsTkzY3s9sw3CgVDXw}{g-formula (5)}	%8
+	\item \href{https://mp.weixin.qq.com/s/GOce-aNrvnZz-zpeZJxTrg}{g-formula (6)}	%9
+	\item \href{https://mp.weixin.qq.com/s/ne_rbSLWPXV5hoGrySikrw}{g-formula (7)}	%10
+	\item \href{https://mp.weixin.qq.com/s/FUYsX3IZQLBjW-7yoI35Lw}{g-formula (8)}	%11
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
