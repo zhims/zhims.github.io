@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.ideas4africa.co.za/manifolds}{Manifolds, Tensor Analysis}}
+		
+		\vspace{-0.25cm}
+		
+		{\large \href{https://www.ideas4africa.co.za/}{Jeandrew Brin}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-1.5cm}
+
+\subsection*{\large Origami}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/Kmyd83Fj94_vGyP4jXjyrg}{Curves in 2D}	%1
+	\item \href{https://mp.weixin.qq.com/s/QP58_2hpgKfMNF39-pXBOg}{Curves in 3 D, Surfaces Intro}	%2
+	\item \href{https://mp.weixin.qq.com/s/xlAYc24oIB8DhLHyYWtA9Q}{Ruled and developable Surfaces}	%3
+	\item \href{https://mp.weixin.qq.com/s/T-HaM710OycEOhWGGdOVCQ}{Tensor Analysis Intro Developable Surfaces}	%4
+	\item \href{https://mp.weixin.qq.com/s/UZqolxLyWwhfiJnNAiw2NQ}{Vid Metric and Curvature of Parametric Surfaces in 3D}	%5
+	\item \href{https://mp.weixin.qq.com/s/srsnqrCJqnQVUv4Y4q-neQ}{Principle Curvature Directions, Application Origami}	%6
+	\item \href{https://mp.weixin.qq.com/s/8dh_pg1WisPUZfnJAgXKEw}{Curvature conditions Curved Folds}	%7
+	\item \href{https://mp.weixin.qq.com/s/balkRILO_baFmrXVwHxYoA}{Dynamics of a circular crease fold}	%8
+\end{enumerate}
+
+\vspace{-0.75cm}
+
+\subsection*{\large Manifolds}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/tpL9gXtd3erc4jqpK5FsFA}{Intro to Manifolds Definitions Vectors Charts}	%9
+	\item \href{https://mp.weixin.qq.com/s/aot6dca1lUNF3n-6dbaB5Q}{Defining Vectors}	%10
+	\item \href{https://mp.weixin.qq.com/s/Jv7TzOdCXAJZkKpFppYf7g}{Vector Spaces, Basis, Components.}	%11
+	\item \href{https://mp.weixin.qq.com/s/NU1bo8LWEjgEJSg3Palh5Q}{Curves, Tangent Vectors, Displacements}	%12
+	\item \href{https://mp.weixin.qq.com/s/Vfm3Ft5WKhbNpAixz8-W5w}{Introduction to Binary Pulsar J0737 as a laboratory for testing General Relativity}	%13
+	\item \href{https://mp.weixin.qq.com/s/Y1-AMCM_hmaGzqwzYxAfuA}{Dual Space Tensors, Integral Curves}	%14
+	\item \href{https://mp.weixin.qq.com/s/t4OY7H_JTHyTMl-nP9M4Ig}{Tensor operations and representation}	%15
+	\item \href{https://mp.weixin.qq.com/s/9RRZpl8pWliDWT4SBIb_Hg}{Smooth Tensor Fields, Transformation Laws Metric}	%16
+	\item \href{https://mp.weixin.qq.com/s/1x3AVqwRMthOCtI02ZhZYQ}{Parabolic coordinates Example. Abstract index notation, tensor manipulations}	%17
+	\item \href{https://mp.weixin.qq.com/s/Sj1SVa3Xoh6t4aS4EAQQAQ}{Parallel Transport, Derivative Operators}	%18
+	\item \href{https://mp.weixin.qq.com/s/h_ZK3Oyh7bh3NcRNg-7Hfw}{Connection. Derivative Consistent with metric. Example Parallel transport.}	%19
+	\item \href{https://mp.weixin.qq.com/s/nNVMBJgfbPWXTo-gO-X89w}{Curvature}	%20
+	\item \href{https://mp.weixin.qq.com/s/2GJle5u6Kah-wLuOBZE2lA}{A. Curvature Properties}	%21
+	
+	\href{https://mp.weixin.qq.com/s/ig5s4xVEqot__H5I8QsChg}{B. Curvature and Geodesics Example of geodesics on a sphere}
+	\item \href{https://mp.weixin.qq.com/s/tT1hES2onZgXVGcLtxlKrg}{Properties and uses of geodesics.}%22
+\end{enumerate}
+
+\vspace{-0.75cm}
+
+\subsection*{\large Extra Background}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/NTN14fAOn4r3hHJx2UXnlw}{ManiFolds Derivation of Euler Lagrange Equations}	%23
+\end{enumerate}
+
+\vspace{-0.75cm}
+
+\subsection*{\large GR Tests}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/qYWvJqSsgT_kzhbH4PG0aw}{Derivation of Geodesic equations for an arbitrary black hole using the Hamiltonian Formalism.}	%24
+	\item \href{https://mp.weixin.qq.com/s/XXjtJVpZUkXL-VhMt-ETVg}{Hamiltonian Dynamics Cyclic Coordinates}	%25
+	\item \href{https://mp.weixin.qq.com/s/7sRlo23q3t2S-Z5C1IUngg}{Hamiltonian Dynamics Canonical Transformations}	%26
+	\item \href{https://mp.weixin.qq.com/s/KQiD798xZohSglRWsrA5gg}{Hamiltonian Dynamics Generation Functions A} \quad \href{https://mp.weixin.qq.com/s/lMIv_OG7mxXYqfo0mdeEdg}{B}   %27
+	\item \href{https://mp.weixin.qq.com/s/VvdqigmCrGb1xymmRwPm5g}{Carlsons Integrals}	%28
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
