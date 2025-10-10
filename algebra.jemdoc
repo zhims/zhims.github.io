@@ -1,7 +1,22 @@
 # jemdoc: menu{MENU}{algebra.html}, nofooter
-= Yao Zhang - Algebra
+== Yao Zhang - Algebra
 \n
  Algebra, a core branch of mathematics, studies symbols and the rules for manipulating them to solve equations and understand mathematical structures. It ranges from elementary concepts like variables, equations, and polynomials to advanced topics such as abstract algebra. Abstract algebra explores structures like groups, rings, and fields, which are foundational in many areas of mathematics and physics. Linear algebra, another key area, focuses on vector spaces and linear transformations, with applications in machine learning, quantum mechanics, and computer graphics. Modern algebra also extends to algebraic geometry and number theory, driving progress in cryptography, coding theory, and mathematical modeling.
+
+ {{<script type="text/javascript">
+function requirePassword(fileUrl) {
+    var password = prompt("Please enter the password to access this document:");
+    var correctPassword = "szu171647"; // 
+    if (password === correctPassword) {
+        window.open(fileUrl, "_blank");
+    } else if (password !== null) {
+        alert("Incorrect password!");
+    }
+}
+</script>}}
+
+{{<style>.settheory-title { margin-top: -0.75em; }</style>}}
+{{<h2 class="settheory-title">Set Theory</h2>}}
 
 == Set Theory
 
@@ -11,5 +26,16 @@
 
 == [./doc/materials/algebra/Algebra.pdf  Abstract Algebra]
 
-== [./doc/materials/algebra/mlg.pdf  Matrix Lie Groups] \& [./doc/materials/algebra/la.pdf  Lie Algebra] 
+# == [./doc/materials/algebra/mlg.pdf  Matrix Lie Groups] \& [./doc/materials/algebra/la.pdf  Lie Algebra] 
+
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/algebra/mlg.pdf')">Matrix Lie Groups</a> & <a href="javascript:void(0);" onclick="requirePassword('./doc/materials/algebra/la.pdf')">Lie Algebra</a>}}
+
+
+
+
+
+
+
+
+
 
