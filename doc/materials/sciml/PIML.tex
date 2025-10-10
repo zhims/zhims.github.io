@@ -1,0 +1,161 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.youtube.com/playlist?list=PLMrJAkhIeNNQ0BaKuBKY43k4xMo6NSbBa}{Physics Informed Machine Learning}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://www.eigensteve.com/people}{Steve Brunton}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-1cm}
+
+\begin{enumerate}
+	\item  \href{https://mp.weixin.qq.com/s/2ftpAvrKX7JkkVftJ1EdlQ}{Physics Informed Machine Learning High Level Overview of AI and ML in Science and Engineering} %1
+	\item  \href{https://mp.weixin.qq.com/s/tVVU64Xr30x7RVaR8TXMJg}{AI/ML + Physics 1: Choosing what to model} %2
+	\item  \href{https://mp.weixin.qq.com/s/aKJ9Z-06EdYpIuu0RCtDZg}{AI/ML + Physics 2: Curating Training Data} %3
+	\item  \href{https://mp.weixin.qq.com/s/y8cE9yDz1Yu2hyfmTZVlHw}{AI/ML + Physics 3: Designing an Architecture} %4
+	\item  \href{https://mp.weixin.qq.com/s/TGtUsWgQwXzJ7sM81a-2Jw}{AI/ML + Physics 4: Crafting a Loss Function} %5
+	\item  \href{https://mp.weixin.qq.com/s/Mc8tmdubNkPhBQRbH5EXEQ}{AI/ML + Physics 5: Employing an Optimization Algorithm} %6
+	\item  \href{https://mp.weixin.qq.com/s/ABPfElt5X2cthrbOcX2_XA}{AI/ML + Physics: Recap and Summary} %7
+	\item  \href{https://mp.weixin.qq.com/s/m2DDlPrg785B4UNhVld7JQ}{AI/ML + Physics: Preview of Upcoming Modules and Bootcamps} %8
+	\item  \href{https://mp.weixin.qq.com/s/r4CKrNELwXZZTXDjc3P1SQ}{Deep Learning to Discover Coordinates for Dynamics: Autoencoders \& Physics Informed Machine Learning} %9
+	\item  \href{https://mp.weixin.qq.com/s/c5SBEkD1nHvfGbVt80LOBA}{Sparse Identification of Nonlinear Dynamics (SINDy): Sparse Machine Learning Models 5 Years Later!} %10
+	\item  \href{https://mp.weixin.qq.com/s/6FRdw-XnLmQ3u4iVnpq41A}{Sparse Nonlinear Dynamics Models with SINDy 2: Training Data \& Disambiguating Models} %11
+	\item  \href{https://mp.weixin.qq.com/s/wLX5Pfiea_M1G2u2NofByg}{Sparse Nonlinear Dynamics Models with SINDy 3: Effective Coordinates for Parsimonious Models} %12
+	\item  \href{https://mp.weixin.qq.com/s/OqG6zxINz5BpZ04FDFyG7g}{Sparse Nonlinear Dynamics Models with SINDy 4: The Library of Candidate Nonlinearities} %13
+	\item  \href{https://mp.weixin.qq.com/s/qObKKUD3RFQGis88ywxWPw}{Sparse Nonlinear Dynamics Models with SINDy 5: The Optimization Algorithms} %14
+	\item  \href{https://mp.weixin.qq.com/s/TlIw-1_yrb0ujKjP84oi6Q}{Discrepancy Modeling with Physics Informed Machine Learning} %15
+	\item  \href{https://mp.weixin.qq.com/s/rPDTlcpQhwVKn24GBj-lPw}{Hamiltonian Neural Networks (HNN)} %16
+	\item  \href{https://mp.weixin.qq.com/s/Qm_KB7Dt-LFNABctATuOlg}{Lagrangian Neural Network (LNN)} %17
+	\item  \href{https://mp.weixin.qq.com/s/zIFQfJ2YXiGAYp26u7TVXw}{Neural Implicit Flow (NIF)} %18
+	\item  \href{https://mp.weixin.qq.com/s/DJ9W3NngqNN69zFavPR7jQ}{Neural ODEs (NODEs)} ~~~  \href{https://mp.weixin.qq.com/s/3okjGSJq5GDRC6cQscSDxw}{Supplementary Material} %19
+	\item  \href{https://mp.weixin.qq.com/s/48IrFK3okhCm1VEPHHN-gg}{Python Symbolic Regression (PySR)} %20
+	\item  \href{https://mp.weixin.qq.com/s/csjZ0DS-f3IO93-lQzjzbw}{Residual Networks (ResNet)} %21
+	\item  \href{https://mp.weixin.qq.com/s/uXlx5kTpXeQd14Zer_Gr4g}{Fourier Neural Operator (FNO)} %22
+	\item  \href{https://mp.weixin.qq.com/s/FKecs-6h9zoum5WfU97W0gL}{Deep Operator Networks (DeepONet)} %23
+	\item  \href{https://mp.weixin.qq.com/s/p0ryb-hG9WWqer0oZCjY5A}{Physics Informed Neural Networks (PINNs)} %24
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
