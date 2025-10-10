@@ -46,51 +46,17 @@ MathJax.Hub.Config({
 Algebra, a core branch of mathematics, studies symbols and the rules for manipulating them to solve equations and understand mathematical structures. It ranges from elementary concepts like variables, equations, and polynomials to advanced topics such as abstract algebra. Abstract algebra explores structures like groups, rings, and fields, which are foundational in many areas of mathematics and physics. Linear algebra, another key area, focuses on vector spaces and linear transformations, with applications in machine learning, quantum mechanics, and computer graphics. Modern algebra also extends to algebraic geometry and number theory, driving progress in cryptography, coding theory, and mathematical modeling.
 </div>
 </div>
-<p>
-<script type="text/javascript">
+<p><script type="text/javascript">
 function requirePassword(fileUrl) {
-var existingBox = document.getElementById('password-modal');
-if (existingBox) return; // 防止重复弹窗
-
-var modal = document.createElement('div');
-modal.innerHTML = &lsquo;
-<div id="password-modal" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); background:
-<label for="password">Enter password:</label>
-<input type="password" id="password" name="password" style="padding: 5px; margin-bottom: 10px;" autofocus />
-<button id="submit-password" style="padding: 5px;">Submit</button>
-<button id="cancel-password" style="padding: 5px 8px; margin-left:8px;">Cancel</button>
-<div id="error-message" style="color: red; display: none; margin-top: 8px;">Sorry, the password is incorrect. Please try again.</div>
-</div>
-&lsquo;;
-// 半透明背景
-var overlay = document.createElement('div');
-overlay.id = 'overlay-bg';
-overlay.style = "position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.12);z-index:9998;";
-document.body.appendChild(overlay);
-document.body.appendChild(modal);
-
-document.getElementById('submit-password').onclick = function() {
-var enteredPassword = document.getElementById('password').value;
-var correctPassword = 'szu171647';
-if (enteredPassword === correctPassword) {
+var password = prompt("Please enter the password to access this document:");
+var correctPassword = "szu171647"; // 
+if (password === correctPassword) {
 window.open(fileUrl, "_blank");
-document.body.removeChild(modal);
-document.body.removeChild(overlay);
-} else {
-document.getElementById('error-message').style.display = 'block';
+} else if (password !== null) {
+alert("Incorrect password!");
 }
-};
-document.getElementById('cancel-password').onclick = function() {
-document.body.removeChild(modal);
-document.body.removeChild(overlay);
-};
-// 支持按回车直接提交
-document.getElementById('password').addEventListener('keydown',function(e){
-if(e.key=='Enter') document.getElementById('submit-password').click();
-});
 }
 </script>
-
 </p>
 <p><style>.settheory-title { margin-top: -0.75em; }</style></p>
 <p><h2 class="settheory-title">Set Theory</h2>
