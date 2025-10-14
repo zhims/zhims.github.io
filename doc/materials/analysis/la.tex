@@ -1,0 +1,176 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://rtullydo.github.io/courses.html}{Linear Analysis}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://rtullydo.github.io/}{Ryan Tully-Doyle}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/Uf606JDKYdJcDkHvcveJiQ}{Introduction}	%1
+		\item \href{https://mp.weixin.qq.com/s/TDNihSu3BtIjxk8MELDkXA}{Power Series}	%2
+		\item \href{https://mp.weixin.qq.com/s/Bxml8oARwAwU1hS31BzPDg}{Series solutions at ordinary points}	%3
+		\item \href{https://mp.weixin.qq.com/s/Qnh2eIlW9AyydxDNuWNLxg}{Series solution to Airy's equation}	%4
+		\item \href{https://mp.weixin.qq.com/s/VrTQFsBZZFrOCRDP6_x1uA}{Legendre Series}	%5
+		\item \href{https://mp.weixin.qq.com/s/XPpoT0WRNJ2GmwFzs3qEqQ}{Frobenius Series Theory}	%6
+		\item \href{https://mp.weixin.qq.com/s/Ak9E1PXj5OTsnhpTdAa_5Q}{Frobenius Series Example}	%7
+		\item \href{https://mp.weixin.qq.com/s/W4gkd5gbLpoHyXZoC18mLg}{General Frobenius Theory: setup}	%8
+		\item \href{https://mp.weixin.qq.com/s/1v4Y7I1oXMMTe6ooT9FFBA}{General Frobenius Theory: the theorem}	%9
+		\item \href{https://mp.weixin.qq.com/s/z49fkohhvOxYWsZNZ5Gydg}{Frobenius Theory}	%10
+		\item \href{https://mp.weixin.qq.com/s/TFdIvl4V11kRo0ldpUtQpQ}{Functions as vectors}	%11
+		\item \href{https://mp.weixin.qq.com/s/naFfK_ZgUXKJPobs7H0ClQ}{Bessel Equations: Intro}	%12
+		\item \href{https://mp.weixin.qq.com/s/RLMqDnssdC0A16aEI42j-g}{Bessel Equations: Theory}	%13
+		\item \href{https://mp.weixin.qq.com/s/u09umqmuG5Q99rrE9Gnz5Q}{Bessel equations: Computation}	%14
+		\item \href{https://mp.weixin.qq.com/s/JvcaWArZ43A-YERmrjYKqQ}{Step-by-step Frobenius problems}	%15
+		\item \href{https://mp.weixin.qq.com/s/7kMPU6bc72E_ygDPXu_SCA}{Motivation for Fourier Series}	%16
+		\item \href{https://mp.weixin.qq.com/s/wOl-zx-v6GRlvUbznFwZig}{Periodic functions and sinusoids}	%17
+		\item \href{https://mp.weixin.qq.com/s/e6IXGNPHxJS_8ooUBptbtg}{Complex exponentials}	%18
+		\item \href{https://mp.weixin.qq.com/s/zLvtXfOTtr7ltZgJ2LEl1w}{Fourier series basics}	%19
+		\item \href{https://mp.weixin.qq.com/s/IT-YAv2laZFFqELjLc_mMw}{Finite Fourier series}	%20
+		\item \href{https://mp.weixin.qq.com/s/jhDl_PgBWr8MY0t3O4Cytg}{Finding Fourier Coefficients 1}	%21
+		\item \href{https://mp.weixin.qq.com/s/muMlcCCg2QXuc0ekLGYMsA}{Finding Fourier Coefficients 2}	%22
+		\item \href{https://mp.weixin.qq.com/s/I6sWCBVufnNh3pFrFQ92_Q}{Finding Fourier Coefficients 3}	%23
+		\item \href{https://mp.weixin.qq.com/s/XKlhkZhxR7Ha7mKxPVGNtw}{\small Convergence and Complex Exponentials as a basis}	%24
+		\item \href{https://mp.weixin.qq.com/s/PXx3SlR9Ka8E3DeukUY7_A}{Finding Fourier Coefficients Examples}	%25
+		\item \href{https://mp.weixin.qq.com/s/chM6HkjJe2axUsxUiHsSZw}{Fourier's Solution to the Heat Equation}	%26
+		\item \href{https://mp.weixin.qq.com/s/EvuiRB9PxD6hmuPNYdhVHA}{Fourier Transform}	%27
+		\item \href{https://mp.weixin.qq.com/s/gFwPqfxoZx9_ZtVjnm5Y6Q}{Fourier Transform Examples}	%28
+		\item \href{https://mp.weixin.qq.com/s/S8jPOs36Y_Y10pDdY2lWwQ}{Office Hours 1}	%29
+		\item \href{https://mp.weixin.qq.com/s/XRqql2vLxs0R_xSNZEWXhA}{Office Hours 2}	%30
+		\item \href{https://mp.weixin.qq.com/s/K9_j52h07YOPDe45MRkE4Q}{Convolution and the Fourier transform}	%31
+		\item \href{https://mp.weixin.qq.com/s/dzLLORPQTNBcn5nenIo7hA}{\small Fourier Transforms and Differential Equations}	%32
+		\item \href{https://mp.weixin.qq.com/s/bw9c_pE9yJ7xOVXzaiA_xg}{The Laplace Transform}	%33
+		\item \href{https://mp.weixin.qq.com/s/IWYI3NYz3sgdlZ6m3W7dPw}{The Laplace transform and differential equations}	%34
+		\item \href{https://mp.weixin.qq.com/s/XuEZ43Hx5XlWU5wGGcsRaQ}{The first shifting theorem}	%35
+		\item \href{https://mp.weixin.qq.com/s/T6HAb4ORMDlE3YISq9KWJg}{\small Step functions and the second shifting theorem}	%36
+		\item \href{https://mp.weixin.qq.com/s/ZmoRte3319DKf2kCmwa8Vg}{Delta functions and convolution}	%37
+		%\item \href{url}{Materials}
+	\end{enumerate}
+	
+\end{multicols}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
