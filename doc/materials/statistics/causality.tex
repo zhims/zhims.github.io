@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://stat.ethz.ch/lectures/ss21/causality.php}{Causality}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://christinaheinze.github.io/}{Christina Heinze}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-1cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/BCAkzOx5AKgpBVByO1Vp5Q}{Introduction}	%1
+	\item \href{https://mp.weixin.qq.com/s/RAsgQyFDkVZ53qrk9DaIsw}{Graphical models}	%2
+	\item \href{https://mp.weixin.qq.com/s/S-vzFYGQB_U9B8bL618OYA}{Causal graphical models}	%3
+	\item \href{https://mp.weixin.qq.com/s/1unXNgWZZxSqKy17KdIibA}{Causal models and covariate adjustment}	%4
+	\item \href{https://mp.weixin.qq.com/s/ZQqRiXs4DvKazoli1UOYWg}{Covariate adjustment}	%5
+	\item \href{https://mp.weixin.qq.com/s/tnSzVeko11E7aP1cCW2xCg}{Frontdoor criterion, instrumental variables and transportability}	%6
+	\item \href{https://mp.weixin.qq.com/s/Z4drzGFfblVFRTsBw9wBXA}{Counterfactuals, potential outcomes and estimation}	%7
+	\item \href{https://mp.weixin.qq.com/s/8j9XwhUKVy1rCka_WVXOhg}{Towards structure learning}	%8
+	\item \href{https://mp.weixin.qq.com/s/uYBHcXnYzg-bc2Zn7fVcLA}{Constraint-based causal structure learning}	%9
+	\item \href{https://mp.weixin.qq.com/s/eaSDnSGKHxNVoWlhXVngfw}{Score-based causal structure learning and restricted SEMs}	%10
+	\item \href{https://mp.weixin.qq.com/s/DZUgyzsQA3vwR15I0ZTQkQ}{LiNGAM and Invariant Causal Prediction}	%11
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+\subsubsection*{\href{https://space.bilibili.com/491707363/lists/25679?type=season}{Supplemental Materials:}}
+
+
+\begin{multicols}{3}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/qroVyHDwNjOEkoLWPTFDwg}{\small 简介}	%1
+		\item \href{https://mp.weixin.qq.com/s/d4PVqAFXsdeMN-ZWz5aATA}{\small 辛普森悖论 1}	%2
+		\item \href{https://mp.weixin.qq.com/s/BbGhJG6zVFxo_xPRUMuE9A}{\small 辛普森悖论 2}	%3
+		\item \href{https://mp.weixin.qq.com/s/nbCWMl-eaTzCjYqGrHSjSA}{\small 概率统计基本工具 1}	%4
+		\item \href{https://mp.weixin.qq.com/s/_OALIAraHh1kLxz4WM4SDQ}{\small 概率统计基本工具 2}	%5
+		\item \href{https://mp.weixin.qq.com/s/dJcCR8LJlUKa80lmB8M8eg}{\small 图模型}	%6
+		\item \href{https://mp.weixin.qq.com/s/ioHaB_aSR5hzQuqjZB_VZQ}{\small 结构因果模型}	%7
+		\item \href{https://mp.weixin.qq.com/s/D55qKD7w5yLKTjP7_S3wug}{\small Intransitive Case}	%8
+		\item \href{https://mp.weixin.qq.com/s/oacDo6ydqp6YERJC-_bQ0Q}{\small 链状结构}	%9
+		\item \href{https://mp.weixin.qq.com/s/tTwGhY6cnCWgsM9StlBj0A}{\small 叉状结构}	%10
+		\item \href{https://mp.weixin.qq.com/s/6Uw-RI8G5pmvH71kER392A}{\small 对撞结构}	%11
+		\item \href{https://mp.weixin.qq.com/s/Q2Um2f-cy_D5s6nEhtFUUA}{\small D-分隔}	%12
+		\item \href{https://mp.weixin.qq.com/s/f_DPek3v2I7h2JfsXheCRw}{\small 模型检验和等价类}	%13
+		\item \href{https://mp.weixin.qq.com/s/Uf2Gvs7y9u7A8STtQQHeCg}{\small 乘积分解法则}	%14
+		\item \href{https://mp.weixin.qq.com/s/mvpAu4WOkg6PULIncn8MmA}{\small 混淆变量}	%15
+		\item \href{https://mp.weixin.qq.com/s/EybWLdgnl4cAGdHCFHihUg}{\small 习题 1.3.2 和 1.4.1}	%16
+		\item \href{https://mp.weixin.qq.com/s/8mBCmaYlAdL-AMISakK3kw}{\small 观测数据和试验数据 1}	%17
+		\item \href{https://mp.weixin.qq.com/s/o-CXebk_5XEgsNOFgPFELQ}{\small 观测数据和试验数据 2}	%18
+		\item \href{https://mp.weixin.qq.com/s/vwlbqxVd0VccyC8d9560VA}{\small 干预}	%19
+		\item \href{https://mp.weixin.qq.com/s/yRsmm3m4-Gml4omoORn52Q}{\small do 算子}	%20
+		\item \href{https://mp.weixin.qq.com/s/-qLTS8iGjqj6IKS3S5GxWg}{\small 调整公式}	%21
+		\item \href{https://mp.weixin.qq.com/s/SFulXDLBui7nJSZJemwYkg}{\small 支线任务:调整公式实例}	%22
+		\item \href{https://mp.weixin.qq.com/s/u2cRH1uGTJoPweWrLHuEdA}{\small 支线任务:干预和调整公式}	%23
+		\item \href{https://mp.weixin.qq.com/s/nYpB7nC794hEPtlY8eY9WQ}{\small 结果模型}	%24
+		%\item \href{url}{Materials}
+	\end{enumerate}
+\end{multicols}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
