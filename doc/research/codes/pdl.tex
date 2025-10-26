@@ -1,0 +1,296 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.youtube.com/playlist?list=PLISXH-iEM4Jn3SEi07q8MJmDD6BaMWlJE}{Python for Deep Learning}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://fin.ntub.edu.tw/p/412-1037-121.php?Lang=en}{Chenghsi Hsieh}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-0.5cm}
+
+\subsection*{\small \kaishu 1. Outline:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/k5nhXuALPIh-f2q0Ttk73g}{Prelude}	%1
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 2.  What is Deep Learning:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/i2oj-hehepM_dMrFPsbuTA}{人工智慧,机器学习与深度学习}	%2
+		\item \href{https://mp.weixin.qq.com/s/B7Snaz2d-hn80VszjR4Zaw}{深度学习之前: 机器学习简史 A}	%3
+		\item \href{https://mp.weixin.qq.com/s/gttJNbZxRM3rUqDNbpJWdA}{深度学习之前: 机器学习简史 B}	%4
+		\item \href{https://mp.weixin.qq.com/s/UIhTzoWchAUXxx3f5lr70Q}{深度学习之前: 机器学习简史 C}	%5
+		\item \href{https://mp.weixin.qq.com/s/Yu2FSVFKTxDWbuMRnzucbg}{为什么是深度学习? 为什么是现在?}	%6
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 3. The Mathematical Building Blocks of NN:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/ZKk_gu__FrkzHovbhUdDwQ}{初识神经网络}	%7
+		\item \href{https://mp.weixin.qq.com/s/u6eTUeILRhIsIuPVAVegsw}{神经网络的数据表示}	%8
+		\item \href{https://mp.weixin.qq.com/s/HOeED8Um1nz99EEnJ7I_JQ}{神经网络的齿轮: 张量运算}	%9
+		\item \href{https://mp.weixin.qq.com/s/9VCT-gYZ4rLtzUIWouqqGA}{神经网络的引擎: 基于梯度的最优化}	%10
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 4. Getting Started with Neural Networks:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/WlVnJmoQKPPKhLF7weLcrQ}{神经网络剖析}	%11
+		\item \href{https://mp.weixin.qq.com/s/qXRHlpKt_X68C95hBBq0vQ}{Keras 简介与建立深度学习工作站}	%12
+		\item \href{https://mp.weixin.qq.com/s/vc7O36XSuWspKnnnPQV1yg}{电影评论分类: 二元分类问题 1}	%13
+		\item \href{https://mp.weixin.qq.com/s/8ik7dHpse8Dz8FzWo99Amg}{电影评论分类: 二元分类问题 2}	%14
+		\item \href{https://mp.weixin.qq.com/s/P0GFe--7gmx6C-VE_K3rZA}{电影评论分类: 二元分类问题 3}	%15
+		\item \href{https://mp.weixin.qq.com/s/XV3R-Romc58CPQWsezlG_g}{新闻分类: 多元分类问题}	%16
+		\item \href{https://mp.weixin.qq.com/s/NKFtFaekWaD4sN15JDY52A}{预测房价: 回归问题 1}	%17
+		\item \href{https://mp.weixin.qq.com/s/8WtHxfCgwCtAgbFlXReJkA}{回归问题 2}	%18
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 5. Fundamentals of Machine Learning:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/0VY5NjzRlcCUHXe_5ZhCwQ}{机器学习的四个分支与评估机器学习模型}	%19
+		\item \href{https://mp.weixin.qq.com/s/dUfmuRUr-U-pYfSTAESRwg}{数据预处理, 特征工程, 过拟合与欠拟合1}	%20
+		\item \href{https://mp.weixin.qq.com/s/Pw-Yz2VzSWkE1Wgbn1MbNA}{过拟合与欠拟合 2}	%21
+		\item \href{https://mp.weixin.qq.com/s/wpEnkMaYOCplcTTyFiqWPw}{机器学习的通用工作流程}	%22
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 6. Deep Learning for Computer Vision:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/ALoxlmklv_GCQM5iCu6E8Q}{卷积神经网络简介 1}	%23
+		\item \href{https://mp.weixin.qq.com/s/ldn1zDES0uZdjmCFDVXLjA}{卷积神经网络简介 2}	%24
+		\item \href{https://mp.weixin.qq.com/s/mbQQVgmCbYPbfBoZYeQpxA}{在小型数据集上从头开始训练 CNN 1}	%25
+		\item \href{https://mp.weixin.qq.com/s/PhmmQ1cObPjF9s57qJ79DQ}{在小型数据集上从头开始训练 CNN 2}	%26
+		\item \href{https://mp.weixin.qq.com/s/Y3qM_gj5U52-M42uRrk_yg}{在小型数据集上从头开始训练 CNN 3}	%27
+		\item \href{https://mp.weixin.qq.com/s/kjzNzFebsa7G57_--ceVug}{使用预训练的卷积神经网络 1}	%28
+		\item \href{https://mp.weixin.qq.com/s/nolnfH8TzrDzlxPFokKP5g}{使用预训练的卷积神经网络 2}	%29
+		\item \href{https://mp.weixin.qq.com/s/AhjUD4XzdfSi7W79krEyKQ}{使用预训练的卷积神经网络 3}	%30
+		\item \href{https://mp.weixin.qq.com/s/kQW0tqPnteTqS7q70cRlJg}{卷积神经网路的可视化 1}	%31
+		\item \href{https://mp.weixin.qq.com/s/cMK2avvr-cmH6EIhorbrPA}{卷积神经网路的可视化 2}	%32
+		\item \href{https://mp.weixin.qq.com/s/vTp_OF1myN7SMdi1yBcRSQ}{卷积神经网路的可视化 3}	%33
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 7. Deep Learning for Text and Sequences:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/gcfDr3l6t5ZqEkDMcMqwcQ}{处理文本数据 1}	%34
+		\item \href{https://mp.weixin.qq.com/s/9YUaHAICh0Z2OxtakY7CRg}{处理文本数据 2}	%35
+		\item \href{https://mp.weixin.qq.com/s/eb724jE74D7IxlEKZdR19w}{处理文本数据 3}	%36
+		\item \href{https://mp.weixin.qq.com/s/knR99mOo74mRgrvGYCkoFQ}{处理文本数据 4}	%37
+		\item \href{https://mp.weixin.qq.com/s/AJdfDIG5clD-xjee_d4oMA}{理解循环神经网络 1}	%38
+		\item \href{https://mp.weixin.qq.com/s/OXihNZshCKdChhXzqDlDFg}{理解循环神经网络 2}	%39
+		\item \href{https://mp.weixin.qq.com/s/JewLh7zns2RuQSQQ0WJWhA}{循环神经网络的进阶用法 1}	%40
+		\item \href{https://mp.weixin.qq.com/s/nGGuUZg1ld9wPFc9hBtNfA}{循环神经网络的进阶用法 2}	%41
+		\item \href{https://mp.weixin.qq.com/s/Ax-suTpyVxhwAEmW-BdiCw}{循环神经网络的进阶用法 3}	%42
+		\item \href{https://mp.weixin.qq.com/s/ME1RtxBnfoQRyR3ND_9CfA}{循环神经网络的进阶用法 4}	%43
+		\item \href{https://mp.weixin.qq.com/s/zHzB06bL_uSEWhv7qbYa6g}{循环神经网络的进阶用法 5}	%44
+		\item \href{https://mp.weixin.qq.com/s/AE2s40A7g0P6KaNQdb-8SQ}{循环神经网络的进阶用法 6}	%45
+		\item \href{https://mp.weixin.qq.com/s/g-z-kbY2FxbpQnU2yDV9SA}{用卷积神经网络处理序列资料 1}	%46
+		\item \href{https://mp.weixin.qq.com/s/rm2TK1BZ2RhYDdHapHK01g}{用卷积神经网络处理序列资料 2}	%47
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 8. Advanced Deep-Learning Best Practices:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/_3qS-f0kuwUrp4FB7Hq4bw}{Keras 函数式 API A}	%48
+		\item \href{https://mp.weixin.qq.com/s/Qj34FpFW5BFu4VFWFAeiuA}{Keras 函数式 API B}	%49
+		\item \href{https://mp.weixin.qq.com/s/ZBffdIjVB_do0OF4YeFe5w}{Keras 函数式 API C}	%50
+		\item \href{https://mp.weixin.qq.com/s/JFSLNwHzcHUdy6yINxqK9Q}{Keras 函数式 API D}	%51
+		\item \href{https://mp.weixin.qq.com/s/dvxgaTzrezdvjcmlR9xyEA}{Keras 函数式 API E}	%52
+		\item \href{https://mp.weixin.qq.com/s/_K7lauHbNRLcl4FFTn-yVg}{Keras 回调函数和 TensorBoard}	%53
+		\item \href{https://mp.weixin.qq.com/s/bY6w6AfW-kD-2Lxltov3PQ}{让模型性能发挥到极致 A}	%54
+		\item \href{https://mp.weixin.qq.com/s/JyhKWlqfcbKHP7v26-KRqA}{让模型性能发挥到极致 B}	%55
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 9. Generative Deep Learning:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/PCwTsDdVVftTEWIDFxznFw}{使用LSTM生成文本 A}	%56
+		\item \href{https://mp.weixin.qq.com/s/6UILV9UGnSjaLiiz84laDA}{使用LSTM生成文本 B}	%57
+		\item \href{https://mp.weixin.qq.com/s/Cso1I8Njc4ifTsqwQ4UUCw}{使用LSTM生成文本 C}	%58
+		\item \href{https://mp.weixin.qq.com/s/riA-aYzBdUEE-K6VSOmt6Q}{DeepDream A}	%59
+		\item \href{https://mp.weixin.qq.com/s/cWqf3fHK3oQtgvj3CUb-FQ}{DeepDream B}	%60
+		\item \href{https://mp.weixin.qq.com/s/TxxqhPaGH4whobWxXkT5hg}{神经网络风格迁移 A}	%61
+		\item \href{https://mp.weixin.qq.com/s/MpBgzsyp5PrVCy3s_E5iqA}{神经网络风格迁移 B}	%62
+		\item \href{https://mp.weixin.qq.com/s/5VPZx2ncWuQWNS4istq9mw}{用变分自编码器生成图像 A}	%63
+		\item \href{https://mp.weixin.qq.com/s/F1L5FtnjwzKW65YvVVIAFw}{用变分自编码器生成图像 B}	%64
+		\item \href{https://mp.weixin.qq.com/s/7iLs7o0L8DBYAqYY6qswLA}{用变分自编码器生成图像 C}	%65
+		\item \href{https://mp.weixin.qq.com/s/tA38qtSJ4ZJ-kjOZugd5gg}{生成对抗网络简介 A}	%66
+		\item \href{https://mp.weixin.qq.com/s/c9J81SsufKd2FzgCgQ3Fog}{生成对抗网络简介 B}	%67
+		\item \href{https://mp.weixin.qq.com/s/zTSGydSPQ4CUvoc8JVVygg}{生成对抗网络简介 C}	%68
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 10. Conclusions:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/q0rSEn19fD8UkZIl_fNKXQ}{重点内容回顾}	%69
+		\item \href{https://mp.weixin.qq.com/s/_RGhISMwODlcLlQn-66EBA}{深度学习的局限性和未来}	%70
+		%\item \href{url}{Materials}
+	\end{enumerate}
+\end{multicols}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              

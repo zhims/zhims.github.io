@@ -1,0 +1,313 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.youtube.com/playlist?list=PL8xPPUJdubH5LMOXzbV3wRH9hUPXXjwXb}{Python for Data Analysis}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://fin.ntub.edu.tw/p/412-1037-121.php?Lang=en}{Chenghsi Hsieh}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{-1cm}
+
+\subsection*{\small \kaishu 1. Outline:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{3}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/2KCK1HsCp8NgbI1YcpwEJw}{Overture}	%1
+		\item \href{https://mp.weixin.qq.com/s/ScI-Nkq3tHoh-_w4WixSpA}{Preliminaries}	%2
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 2. Python 基础, IPython 与 Jupyter Notebooks:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/pPoonk4pJvnB_KsNyH3y6g}{A}	%3
+		\item \href{https://mp.weixin.qq.com/s/emosklctAq5ndukdrnN0mw}{B}	%4
+		\item \href{https://mp.weixin.qq.com/s/hbh3xzBvEUb3aL-tRf6EnA}{C}	%5
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu  3. Built-in Data Structures, etc.:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/Ytw07RHhIaQ064BxV8upcA}{A}	%6
+		\item \href{https://mp.weixin.qq.com/s/ZG97yALM1AAdK3ezqqRkcQ}{B}	%7
+		\item \href{https://mp.weixin.qq.com/s/5-sdWdhLQrcrzDtrPnNCiw}{C}	%8
+		\item \href{https://mp.weixin.qq.com/s/Sna8hOge17fM0d3R7EZwbg}{D}	%9
+		\item \href{https://mp.weixin.qq.com/s/Egi6khNPmPpD0rimOtR-Ew}{F}	%10
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu  4. NumPy Basics:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/qv1rSBUl9Y4qttO_hR_Zjg}{A}	%11
+		\item \href{https://mp.weixin.qq.com/s/cw-eRHc5vZMNpeG0euSF0Q}{B}	%12
+		\item \href{https://mp.weixin.qq.com/s/Xhx1T8PZnEEslPRe65GysA}{C}	%13
+		\item \href{https://mp.weixin.qq.com/s/I49KLYqF-j99Tt-aUZVUPw}{D}	%14
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu  5. Getting Started with pandas:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/kWEyNcWtOu4TUiM7UA5Y-w}{A}	%15
+		\item \href{https://mp.weixin.qq.com/s/SfyeB3zozq1TtHCNFQt6Tg}{B}	%16
+		\item \href{https://mp.weixin.qq.com/s/pd7Tw0eRB_pnAF3qy9T0sQ}{C}	%17
+		\item \href{https://mp.weixin.qq.com/s/GsaGGnQcftIkeVIm70VL-A}{D}	%18	
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 6. Data Loading, Storage, and File Formats:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/GODbdMaEuMb5UbXJTotS6Q}{A}	%19
+		\item \href{https://mp.weixin.qq.com/s/kE7Q9i1lYvZls1sZjgv31g}{B}	%20
+		\item \href{https://mp.weixin.qq.com/s/uvDA7CobmBM-_Qps3D08vQ}{C}	%21
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 7. Data Cleaning and Preparation:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/5WsK8aH8fhxuvx8eEZu42A}{A}	%22
+		\item \href{https://mp.weixin.qq.com/s/3BCWj3wsFHWRwflpZQzJUw}{B}	%23
+		\item \href{https://mp.weixin.qq.com/s/DWZEiB1vHJMIALLaP9P-7w}{C}	%24
+		\item \href{https://mp.weixin.qq.com/s/wNnIYTLloSLdW8IOxCRFzg}{D}	%25
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 8. Data Wrangling:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/fVFTsyc7x0HmHpIjTDWKKQ}{A}	%26
+		\item \href{https://mp.weixin.qq.com/s/hwahCwbD1oV5lZBnUzLkhQ}{B}	%27
+		\item \href{https://mp.weixin.qq.com/s/i1ijOErY-16FPzZlR2lIUA}{C}	%28
+		\item \href{https://mp.weixin.qq.com/s/MRoJyF7ONVWafIQ9BkmRmQ}{D}	%29
+	\end{enumerate}
+\end{multicols}
+
+\newpage 
+
+\subsection*{\small \kaishu 9. Plotting and Visualization:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/c9_rlYHezbdSiM2DOt4spA}{A}	%30
+		\item \href{https://mp.weixin.qq.com/s/hbIy0KaAvaUPNQgoKc7qHQ}{B}	%31
+		\item \href{https://mp.weixin.qq.com/s/-h9YmJSnSOQhIrly9EqlMA}{C}	%32
+	\end{enumerate}
+\end{multicols} 
+
+\subsection*{\small \kaishu 10. Data Aggregation and Grouping:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/444q8Mzr3xLbxh54_ErYdA}{A}	%33
+		\item \href{https://mp.weixin.qq.com/s/Vi3RoaljgjW_L6rztiXxYw}{B}	%34
+		\item \href{https://mp.weixin.qq.com/s/ivQNQYV3VqqZDIsot4KnVw}{C}	%35
+		\item \href{https://mp.weixin.qq.com/s/BQyyFE8yEW66FVW4btQb0g}{D}	%36
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 11. Time Series:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/ZjWwoeHNn2ZE9T6ueI4AXA}{A}	%37
+		\item \href{https://mp.weixin.qq.com/s/XLb4IcLrcMfCNRpZxc-Aww}{B}	%38
+		\item \href{https://mp.weixin.qq.com/s/-nMZzKSat6k4udAxjH608Q}{C}	%39
+		\item \href{https://mp.weixin.qq.com/s/VHVogwo3jtWQmedxGt78Mw}{D}	%40
+		\item \href{https://mp.weixin.qq.com/s/5YjhMQYBbnopVExmqexyrA}{E}	%41
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 12. Advanced pandas:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/A82e5rhhC4FldJo0B0qp6Q}{A}	%42
+		\item \href{https://mp.weixin.qq.com/s/3mSukVHVIXlRMoeuY7YF5w}{B}	%43
+		\item \href{https://mp.weixin.qq.com/s/YzLXCchjXrv207qyIcpUmw}{C}	%44
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu 13. Modeling Libraries in Python:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/Ecd4FJD4N3S6rstPv3sN_g}{A}	%45
+		\item \href{https://mp.weixin.qq.com/s/x22mx35bgrZ3m2cJt5Bblg}{B}	%46
+		\item \href{https://mp.weixin.qq.com/s/YA7V5-Ee6tIG9rK8t1gOtw}{C}	%47
+		\item \href{https://mp.weixin.qq.com/s/RNM4q8jWqNdMuJ5Xr2Fevw}{D}	%48
+	\end{enumerate}
+\end{multicols}
+
+\subsection*{\small \kaishu  14. Data Analysis Examples:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{6}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/7mbg7zPSUTcw6dvX5mgnVQ}{A}	%49
+		\item \href{https://mp.weixin.qq.com/s/KDvDuEhUfKTEW9MpMfmu9Q}{B}	%50
+		\item \href{https://mp.weixin.qq.com/s/VL846RDIFTaO2uDLI4glYA}{C}	%51
+		\item \href{https://mp.weixin.qq.com/s/MsBSSczsxocPmyBFYGaXaw}{D}	%52
+		\item \href{https://mp.weixin.qq.com/s/3ZszF8KPzWUX8RDBfrzW-g}{E}	%53
+		\item \href{https://mp.weixin.qq.com/s/KH9Nf8Mkpjt_X8tBCKhwfg}{F}	%54
+	\end{enumerate}
+\end{multicols}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
