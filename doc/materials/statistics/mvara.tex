@@ -1,0 +1,207 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://www.youtube.com/playlist?list=PLj6E8qlqmkFtO5TgUPO1l5I3AQvEVb8gi}{Multivariate and}  \href{https://www.youtube.com/playlist?list=PLj6E8qlqmkFu0cY9PfwoFq6SbuZ-M28JE}{Regression Analysis}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://ghuang.stat.nycu.edu.tw/}{Guan-Hua Huang}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+\subsection*{\small Multivariate analysis:}
+
+\vspace{-0.5cm}
+
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item \href{https://mp.weixin.qq.com/s/pZIbmouXx9ZBQKIeBDKB8Q}{Introduction}	%1
+		\item \href{https://mp.weixin.qq.com/s/__1o874PejDcCaoBzgespA}{Aspects of multivariate analysis}	%2
+		\item \href{https://mp.weixin.qq.com/s/P-ZZzjS-NY11rdD7eZam5A}{Matrix algebra and random vectors}	%3
+		\item \href{https://mp.weixin.qq.com/s/uslTYHAAVhd4pTwTQrFCXA}{Multivariate normal distribution}	%4
+		\item \href{https://mp.weixin.qq.com/s/nTTG5rQs1IzRoRZPRYoK1g}{Inferences about a mean vector}	%5
+		\item \href{https://mp.weixin.qq.com/s/2pVYL1l6u_eyKv_PJQMprw}{Comparisons of several multivariate means}	%6
+		\item \href{https://mp.weixin.qq.com/s/y8nPVrtwchngUg0WW5EIAQ}{Principal components}	%7
+		\item \href{https://mp.weixin.qq.com/s/KEfVaRwGfEcOBzh-cyIQsw}{Factor analysis A}	%8
+		\item \href{https://mp.weixin.qq.com/s/H08dZjICYFko6uK0vAracA}{Factor analysis B}	%9
+		\item \href{https://mp.weixin.qq.com/s/wJOidZJXng59WnwSFf5hOw}{Clustering A}	%10
+		\item \href{https://mp.weixin.qq.com/s/xe8J0WUMSkqpd6zFp6X-Rg}{Clustering B}	%11
+		\item \href{https://mp.weixin.qq.com/s/bt9aDGQDduV5HEVYxg9yTQ}{Discrimination and classification A}	%12
+		\item \href{https://mp.weixin.qq.com/s/HHgn1n3oQPJh_APWYCqjpA}{Discrimination and classification B}	%13
+		\item \href{https://mp.weixin.qq.com/s/6RHTpyK3NYjparH8CvebEg}{Canonical correlation analysis A}	%14
+		\item \href{https://mp.weixin.qq.com/s/RJ9OD1dOo4kw7j2Pz3EnwA}{Canonical correlation analysis B}	%15
+		%\item \href{url}{Materials}
+	\end{enumerate}
+\end{multicols}
+
+
+\subsection*{\small Regression analysis:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/N0s4MzC-yqU62RPQhlZD9g}{Introduction}	%1
+	\item \href{https://mp.weixin.qq.com/s/m8eDodRly7lg8-zd5Ymnuw}{A review of basic statistical concepts}	%2
+	\item \href{https://mp.weixin.qq.com/s/z1mv6IcWT5Z1CadNaOTjPQ}{Measures of association with emphasis on the difference of means}	%3
+	\item \href{https://mp.weixin.qq.com/s/VTkyub7i56Hus-l-tpWeQg}{Basics of linear regression analysis}	%4
+	\item \href{https://mp.weixin.qq.com/s/4CbCGjDRJoP3rryc-Wl9-w}{Correlation}	%6
+	\item \href{https://mp.weixin.qq.com/s/DEOhiwFAioMzjSJjIEhR3Q}{Analysis of variance (ANOVA) table and prediction of y}	%8
+	\item \href{https://mp.weixin.qq.com/s/ZIDIKZRxSsaSvFkjqQobnA}{Basics of multiple linear regression}	%9
+	\item \href{https://mp.weixin.qq.com/s/Nu8Y0nP6FABLg2KFGBRkIQ}{Hypothesis testing in multiple regression}	%11
+	\item \href{https://mp.weixin.qq.com/s/n2mPgIg4XmiSMfkqawibpg}{Polynomial terms and dummy variables}	%12
+	\item \href{https://mp.weixin.qq.com/s/pvamkehlfc8zGa04Qqhk9w}{Interaction and confounding}	%14
+	\item \href{https://mp.weixin.qq.com/s/czwjRLwL_mwVNm6yheSq0Q}{Confounding and interaction in epidemiology}	%15
+	\item \href{https://mp.weixin.qq.com/s/AMgRjZx9Y0SZheSiylzSzA}{Regression diagnosis}	%17
+	\item \href{https://mp.weixin.qq.com/s/H83huuxKMA2rA7g39pPZSA}{Variable selection and model building}	%18
+	\item \href{https://mp.weixin.qq.com/s/Kc6j--5MFG1YaXt_SmGcpQ}{Relative risk, odds ratio and significance testing for $2\times2$ tables}	%21
+	\item \href{https://mp.weixin.qq.com/s/g5J2QapsGMW-brSHjEvYLw}{Introduction to logistic regression}	%22
+	\item \href{https://mp.weixin.qq.com/s/Xi4XcT5KNnzvZdKBWK7_Jw}{Logistic regression for contingency tables}	%24
+	\item \href{https://mp.weixin.qq.com/s/VbYZZsbz-Hy0BD1jK-NKUQ}{Goodness-of-t for logistic regression}	%25
+	\item \href{https://mp.weixin.qq.com/s/W159WsfV-EgqbGay22e_Wg}{Logistic regression for case-control data and conditional logistic regression}	%27
+	\item \href{https://mp.weixin.qq.com/s/Qba7J4eg6gLmx-U1O0EUIQ}{Analysis of polytomous data}	%29
+	\item \href{https://mp.weixin.qq.com/s/ml-xfUMtkioFPNJI30fetQ}{Poisson regression and log-linear model}	%31
+	\item \href{https://mp.weixin.qq.com/s/ak4rzd7MhRNk7PWp1WwxsQ}{Generalized linear models}	%33
+	\item 同学报告:
+	\vspace{-0.25cm}
+	\begin{multicols}{7}
+		\begin{enumerate}
+			\item \href{https://mp.weixin.qq.com/s/VcDztAmrOP3kR371QlMUSA}{01}	%5
+			\item \href{https://mp.weixin.qq.com/s/Ej1jEF-qKacFCb6EAX0JAw}{02}	%7
+			\item \href{https://mp.weixin.qq.com/s/MTZu1n6WEOYSGjZqnKPodA}{03}	%10
+			\item \href{https://mp.weixin.qq.com/s/Ovcd-0bm1ijOXPyn5OmmHA}{04}	%13
+			\item \href{https://mp.weixin.qq.com/s/-24IZomVKA39-PUP4fELzw}{05}	%16
+			\item \href{https://mp.weixin.qq.com/s/OtqAtzYVX52tU8JulqLOLg}{06}	%19
+			\item \href{https://mp.weixin.qq.com/s/zFdUWWkTQHKxXPqosTptiQ}{07}	%20
+			\item \href{https://mp.weixin.qq.com/s/5x1hvAFwDcBRaW_T0JtWRA}{08}	%23
+			\item \href{https://mp.weixin.qq.com/s/gD8t70nfqdGrRvid906S9w}{09}	%26
+			\item \href{https://mp.weixin.qq.com/s/hi5fUMEkMbduMCBG81RNDQ}{10}	%28
+			\item \href{https://mp.weixin.qq.com/s/q-NA91RBFrGiG51EqQgl7A}{11}	%30
+			\item \href{https://mp.weixin.qq.com/s/ok-oypG0TC-R1M1zVWQ2wg}{12}	%32
+			\item \href{https://mp.weixin.qq.com/s/TF1Ox4zLf9hw4BFer9TZDQ}{13}	%34
+		\end{enumerate}
+	\end{multicols}
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              
