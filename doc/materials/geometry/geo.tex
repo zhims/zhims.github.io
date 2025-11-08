@@ -1,0 +1,577 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   Author:Yao Zhang  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Email: jaafar_zhang@163.com %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[left=2.50cm, right=1.50cm, top=2.0cm, bottom=2.50cm]{geometry}
+\usepackage{xcolor,url}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd,multirow,booktabs,fullpage,calc,multicol}
+\usepackage{lastpage,enumitem,fancyhdr,mathrsfs,wrapfig,setspace,cancel,amsmath,empheq,framed}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\usepackage{subfig,graphicx,framed}
+\usepackage{ctex}
+\usepackage{txfonts}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage[colorlinks,linkcolor=blue,anchorcolor=green,citecolor=red,urlcolor=blue]{hyperref}
+\usepackage{titlesec}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defi}{Definition}[subsection]
+\newtheorem{exercise}{Exercise}[subsection]
+\newtheorem{note}{Note}[subsection]
+\newtheorem{notation}{Notation}
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{proposition}{Proposition}[subsection]
+\newtheorem{example}{Example}[subsection]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{homework}{Homework}[section]
+\newtheorem{summary}{Summary}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{rmk}{Remark}[section]
+\usepackage{romannum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{margin=1in, headsep=0.25in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{ {img/EoM/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\cite}[1]{[#1]}
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\contentsname}{\centering \small \color{blue} Contents}
+%\counterwithin{figure}{section}
+\renewcommand{\figurename}{\textbf{Fig.}}
+%\renewcommand{\refname}{\textbf{\kaishu 参考文献}}
+\renewcommand{\refname}{\textbf{Bibliography}}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{0.8truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[!htb]
+%	\centering
+%	\subfloat[$A \cap B$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img001.jpg}}
+%	\label{img001}\qquad \qquad %\hfill
+%	\subfloat[${A_1} \cap {A_2} \cap {A_3}$]{%
+%		\includegraphics[width=0.3\linewidth,height=0.2\linewidth]{img002.jpg}}
+%	\label{img002}
+	%\caption{ Examples.}
+%\end{figure}
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.4\linewidth,height=0.3\linewidth]{img005.jpg}
+%	\label{img005}
+	%\caption{ illustration for $ 3 $}
+%\end{figure}
+%\={a}1 \'{a}2\v{a}3\.{a}4
+
+\usepackage{datetime}
+\renewcommand{\today}{\shortmonthname[\the\month] \the \day,  \the\year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	\kaishu 
+	%\thispagestyle{empty}
+	\pagenumbering{arabic} 
+	\setcounter{section}{0}
+	\begin{center}
+		{\LARGE  \href{https://ocw.nthu.edu.tw/ocw/index.php?page=courseList&classid=2}{Differential geometry of curves and surfaces}}
+		
+		%\vspace{-0.25cm}
+		
+		{\large \href{https://www.math.nthu.edu.tw/~cjsung/}{Chiung-Jue Anna Sung}}
+	\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+%%\thispagestyle{empty}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents	
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%\newpage 
+%{\pagestyle{empty}\mbox{}\newpage\pagestyle{empty}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\newpage 
+\setcounter{page}{1}
+
+%\vspace{1.5cm}
+
+
+\vspace{-1cm}
+
+\subsection*{\small 1}
+
+\vspace{-0.5cm}
+
+\subsubsection*{Parametrized Curves, Regular Curves and Arc Length:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/k7BcerIt8gfA5FYOdo6Bbg}{A. Definition: Parametrized Curves B. Examples: Parametrized Differentiable Curves}	%1
+	\item \href{https://mp.weixin.qq.com/s/ZjFfGthpwjltMTJWd0QeQg}{A. Note: Difference Between Curve and Trace B. Definition: Regular Curves C. Example: Helix 1}	%2
+	\item \href{https://mp.weixin.qq.com/s/4axHZpwNVkxgawdHWnZx0A}{A. Example: Helix 2 B. Definition: The Arc Length of a Regular Curve}	%3
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{The Local Theory of Curves Parametrized by Arc Length:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/O6bMyk9guRtetOqe-LCwPQ}{A. Note: Properties of Arc Length  B. Recall: Inner Product and Wedge Product  C. Definition: Parametrized by Arc Length}	%4
+	\item \href{https://mp.weixin.qq.com/s/mXe5fHBUCrktdW_Jprk09w}{A. Example: Logarithmic Spiral B. Derivation: Curvature of a Curve Parametrized by Arc Length}	%5
+	\item \href{https://mp.weixin.qq.com/s/MOX5_SuoP_fRK9ujU8Ehvg}{A. Definition: Curvature B. Examples: Straight Line and Circle C. Definition: Frenet Frame}	%6
+	\item \href{https://mp.weixin.qq.com/s/JFGRfFaSFxbEf_7rftCGtw}{A. Definition: Torsion of a Curve Parametrized by Arc Length B. Derivation: Frenet Formula}	%7
+	\item \href{https://mp.weixin.qq.com/s/Oty3TGNcacMP7fpMZB9ZUQ}{A. Definition: Normal Plane and Rectifying Plane B. Example: Helix}	%8
+	\item \href{https://mp.weixin.qq.com/s/AGfLHbkWyJDPLmNMJ4Q7gA}{Theorem: A Curve with Positive Curvature Is a Plane Curve if and only if Its Torsion Is Identically Zero}	%9
+	\item \href{https://mp.weixin.qq.com/s/81ZeRKDo9HI9bE6sy2UAmA}{Derivation: Curvature and Torsion of a Curve NOT Parametrized by Arc Length 1}	%10
+	\item \href{https://mp.weixin.qq.com/s/aTkfS7zf_og6hSBFJBuVfA}{A. Derivation: Curvature and Torsion of a Curve NOT Parametrized by Arc Length 2 B. Example: Curve in $\mathbb{R}^2$}	%11
+	\item \href{https://mp.weixin.qq.com/s/1OrzimeWMGARP0jDCrqujQ}{Definition: Rigid Motion B. Theorem: Fundamental Theorem of the Local Theory of Curves}	%12
+	\item \href{https://mp.weixin.qq.com/s/c9Y-hLC8TfP32Hk93Sa_Uw}{Proof: Fundamental Theorem of the Local Theory of Curves 1}	%13
+	\item \href{https://mp.weixin.qq.com/s/9sRIEL3_AhJzoHjRG4KCFA}{Proof: Fundamental Theorem of the Local Theory of Curves 2}	%14
+	\item \href{https://mp.weixin.qq.com/s/dGlSdwSnMfD3fgMie_tWEA}{Proof: Fundamental Theorem of the Local Theory of Curves 3}	%15
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Isoperimetric Inequality:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/ZmC00K0Q0BoOQG-s5LP65w}{A. Definition: Closed Curves, Simple Closed Curves and Positive Oriented Simple Closed Curves B. Motivation: Dido's Problem}	%16
+	\item \href{https://mp.weixin.qq.com/s/pxbS3ReRNBuXeLnXZP1dPQ}{A. Theorem: Isoperimetric Inequality B. Recall: Green's Theorem}	%17
+	\item \href{https://mp.weixin.qq.com/s/-A_HWYCCTICZIoMjBW4J0Q}{Proof: Isoperimetric Inequality}	%18
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Regular Surface:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/1WV_EY56R1iWyWUOEp1U9w}{A. Review: Isoperimetric Inequality B. Definition: Regular Surface}	%19
+	\item \href{https://mp.weixin.qq.com/s/ZeUPma1Dmk7R2KQPzSEoHw}{Derivation: Operation of $dx_q$}	%20
+	\item \href{https://mp.weixin.qq.com/s/Dh1dd73lrD6xk_fZHXqzwQ}{A. Note: Regularity Condition of $x$ B. Example: Unit Sphere 1}	%21
+	\item \href{https://mp.weixin.qq.com/s/bRpRDoFuxoQWFUd0F7dq4g}{Example: Unit Sphere 2}	%22
+	\item \href{https://mp.weixin.qq.com/s/nI8Pk86tw2DzKyaVczrfZg}{A. Proposition: The Graph of a Differentiable Function Is a Regular Surface B. Definition: Critical Points and Critical Values}	%23
+	\item \href{https://mp.weixin.qq.com/s/Z5YAGpiY_CnfHCqNWPl7Vw}{A. Definition: Regular Values B. Proposition: The Inverse Image of a Regular Value Is a Regular Surface C. Example: Unit Sphere 3 D. Recall: Inverse Function Theorem}	%24
+	\item \href{https://mp.weixin.qq.com/s/oeubeR2Bc8QsdYzoP-UiXA}{Proof: The Inverse Image of a Regular Value Is a Regular Surface}	%25
+	\item \href{https://mp.weixin.qq.com/s/4WfzmJBQiBSE8t-K5nveYA}{Derivation: Quadric Surfaces}	%26
+	\item \href{https://mp.weixin.qq.com/s/Qw18ZnnCxZa_PM-KfhneLA}{Proposition: A Regular Surface Is Locally the Graph of a Differentiable Function}	%27
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Change of Parameters:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/eC0ihGGlZ1dgxONzmxhL_w}{A. Example: Hyperboloid B. Definition: Connected Surfaces}	%28
+	\item \href{https://mp.weixin.qq.com/s/iAzjL9JqkCYrPsE8M8M-XA}{Proposition: Change of Parameters}	%29
+	\item \href{https://mp.weixin.qq.com/s/PD-3imZEzCs2Dfgy5p4_HA}{A. Proof: Change of Parameters B. Definition: Differentiable Functions on Surfaces}	%30
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{ Differentiable Functions on Surfaces:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/PNd8sK14ZvfUPUtOLibhAQ}{A. Review: Differentiable Functions on Surfaces B. Examples: Height Function and Distance Square Function}	%31
+	\item \href{https://mp.weixin.qq.com/s/2a4vzhUcuzjzMhbQoC5gQg}{A. Corollary: Differentiable Functions Between Surfaces B. Definition: Diffeomorphic and Diffeomorphism C. Examples: Symmetric Map and Rotation Map D. Example: A Sphere Is Diffeomorphic to an Ellipsoid}	%32
+	\item \href{https://mp.weixin.qq.com/s/mQWk3z3vcAawLRFJRsjh5Q}{Derivation: Surface of Revolution}	%33
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Parametrized Surfaces and Tangent Vectors:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/beUmHBcmW8W4D3R5dWOhdg}{A. Definition: Parametrized Surfaces and Regular Parametrized Surfaces B. Example: The Tangent Surface}	%34
+	\item \href{https://mp.weixin.qq.com/s/Zr1XI9jP82EZPU7KahBkiA}{A. Proposition: A Regular Parametrized Surface Is Locally a Regular Surface B. Definition: Tangent Vectors}	%35
+	\item \href{https://mp.weixin.qq.com/s/uk8ufR7qtR5pYVoLoCCEzw}{A. Proposition: Relation Between $T_p(S)$ and $dx_q(R^2)$ B. Proposition: The Tangent Plane to $f^{-1}(a)$ Is the Kernel of $df_p$}	%36
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{The Tangent Plane and the Differential of a Map:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/p-lSWkEwV3WVXcEhEdYfjw}{A. Review: The Tangent Plane B. Proof: The Tangent Plane to $f^{-1}(a)$ Is the Kernel of $df_p$ C. Example: Sphere 1}	%37
+	\item \href{https://mp.weixin.qq.com/s/2bHJd9ktJGY6iaBjwkmxqA}{A. Example: Sphere 2 B. Proposition: Differential of a Map}	%38
+	\item \href{https://mp.weixin.qq.com/s/qWae9ug3zGltm4mXu1wELg}{A. Example: Rotation Map on Unit Sphere B. Definition: Local Diffeomorphism C. Proposition: The Differential Is a Local Isomorphism Implies a Local Diffeomorphism}	%39
+	\item \href{https://mp.weixin.qq.com/s/uEbz_1gQpiJq3OicgKrUug}{A. Definition: Critical Points B. Example: The Tangent Plane at a Critical Point C. Derivation: Differential of Composite Maps 1}	%40
+	\item \href{https://mp.weixin.qq.com/s/qqmdfiWNyIQieWvSJNI2eA}{A. Derivation: Differential of Composite Maps 2 B. Definition: Orthogonality of Two Surfaces}	%41 
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{The First Fundamental Form and the Area of a Surface:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/rdcxRmQIeQBcFYs_fWvq5w}{A. Definition: The First Fundamental Form B. Example: Unit Sphere 1}	%42
+	\item \href{https://mp.weixin.qq.com/s/LUBiBKJT_ElEKAvXiVTWnQ}{A. Example: Unit Sphere 2 B. Application: Rhumb Line 1}	%43
+	\item \href{https://mp.weixin.qq.com/s/QdNjcxntIMN40ejYq4xAhw}{A. Application: Rhumb Line 2 B. Definition: The Area of a Surface 1}	%44
+	\item \href{https://mp.weixin.qq.com/s/g7DqZGSvs5G9frIwR8ajIw}{A. Definition: The Area of a Surface 2 B. Example: Unit Sphere}	%45
+	\item \href{https://mp.weixin.qq.com/s/vfYBA7F2tn-4N3GCXQ8TVg}{A. Definition: Locally Isometric B. Example: A Plane Is Locally Isometric to a Cylinder}	%46
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Orientation of a Surface:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/pg3vfFDHmimPskh2oBDEtA}{A. Definition: Orientable Surface B. Example: Surface Covered by One Parametrization}	%47
+	\item \href{https://mp.weixin.qq.com/s/-KmUn0gnqcx28m6FINcpnQ}{A. Example: Surface Covered by Two Parametrizations B. Proposition: A Surface Is Orientable if and only if It Has a Differentiable Unit Normal Vector Field 1}	%48
+	\item \href{https://mp.weixin.qq.com/s/DeqfHWYb9PKiPaxReQdEHQ}{A. Proposition: A Surface Is Orientable if and only if It Has a Differentiable Unit Normal Vector Field 2 B. Example: Mobius Band}	%49 
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{The Gauss Map and Its Fundamental Properties:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/bewAptz4syO-DHpb0ehFjw}{A. Proposition: Regular Surface Given by the Inverse Image of a Regular Value Is Orientable B. Definition: Gauss Map 1}	%50
+	\item \href{https://mp.weixin.qq.com/s/MkklSP6pvY9Kt6jHQ2oeiw}{A. Definition: Gauss Map 2 B. Examples: Plane and Hyperbolic Paraboloid 1}	%51
+	\item \href{https://mp.weixin.qq.com/s/4IeDjP6RX6koYAMAfbIlrw}{Examples: Hyperbolic Paraboloid 2 and Unit Sphere}	%52
+	\item \href{https://mp.weixin.qq.com/s/lIjYnCGSFqOEdoutIW_jbA}{A. Motivation: The Curvature of a Surface Is Characterized by the Differential of Gauss Map B. Example: Cylinder}	%53
+	\item \href{https://mp.weixin.qq.com/s/fzTjU6SsU93nT2uIZil0qw}{A. Definition: Self-Adjoint Linear Map B. Proposition: The Differential of Gauss Map Is a Self-Adjoint Linear Map C. Definition: The Second Fundamental Form}	%54
+	\item \href{https://mp.weixin.qq.com/s/uc3rTeB2yp2s1qzygB1r3A}{A. Definition: Normal Curvature B. Derivation: The Geometric Meaning of the Second Fundamental Form}	%55
+	\item \href{https://mp.weixin.qq.com/s/e_zYLzz7nrOu48kKhtggaA}{A.Review: The Geometric Meaning of the Second Fundamental Form B. Proposition: Meusnier C. Example: Unit Sphere}	%56
+	\item \href{https://mp.weixin.qq.com/s/1EAvjHFScdFagQxZRD-n7A}{A. Definition: Normal Section  B. Derivation: Define the Normal Curvature by Normal Section}	%57
+	\item \href{https://mp.weixin.qq.com/s/agEejVYB1-lsoO_RFU1MAA}{A. Definition: Principal Curvatures and Principal Directions B. Definition: Line of Curvature C. Proposition: Olinde Rodrigues D. Derivation: Euler Formula }	%58
+	\item \href{https://mp.weixin.qq.com/s/CrnAIKuOSODS6jF-ehJvAQ}{A. Definition: Gauss Curvature and Mean Curvature B. Definition: Elliptic, Hyperbolic, Planar and Parabolic Point}	%59
+	\item \href{https://mp.weixin.qq.com/s/h0pZSaunqS9txBjHCyTokg}{A. Definition: Umbilical Point B. Example: Study the Gauss Map on {$2z=x^2＋y^2$} at (0,0,0)}	%60
+	\item \href{https://mp.weixin.qq.com/s/Ha9MxRMhN8IIyzMhVmlvdQ}{Proposition: A Connected Surface with Every Point Being Umbilical Point Is a Piece of Plane or Sphere 1}	%61
+	\item \href{https://mp.weixin.qq.com/s/cntD3yklHNIn8n91HddOFg}{Proposition: A Connected Surface with Every Point Being Umbilical Point Is a Piece of Plane or Sphere 2}	%62
+	\item \href{https://mp.weixin.qq.com/s/8oP9OUOlWd6DZZZjY0xekQ}{A. Proposition: A Connected Surface with Every Point Being Umbilical Point Is a Piece of Plane or Sphere 3 B. Definition: Asymptotic Direction and Asymptotic Curve C. Example: Straight Line 1}	%63
+	\item \href{https://mp.weixin.qq.com/s/0MSWunBesZb_7PoHwoEGoA}{A. Example: Straight Line 2 and Curve with Positive Curvature B. Observation: There Is NO Asymptotic Direction at an Elliptic Point C. Definition: Dupin Indicatrix}	%64
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{The Gauss Map in Local Coordinates:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/_L0150nzEuf_9Rs1_4iCDQ}{Derivation: Equations of Weingarten 1}	%65
+	\item \href{https://mp.weixin.qq.com/s/jHQw7dN5lGbDERf2BVUZWQ}{A. Derivation: Equations of Weingarten 2 B. Gauss Curvature in terms of the First and Second Fundamental Form}	%66
+	\item \href{https://mp.weixin.qq.com/s/rV5_sVGHVo_ng_36mWs1ew}{A. Mean Curvature in terms of the First and Second Fundamental Form B. Principal Curvatures in terms of the First and Second Fundamental Form C. Proposition: Smoothness of Gauss Curvature, Mean Curvature and Principal Curvatures}	%67
+	\item \href{https://mp.weixin.qq.com/s/AioVU1SQYOFuRu8VjlVN6g}{A. Review: The Formula of Gauss Curvature, Mean Curvature and Principal Curvatures B. Example: Torus 1}	%68
+	\item \href{https://mp.weixin.qq.com/s/p0GCNaJctg8A8RKakePQ0Q}{Example: Torus 2}	%69
+	\item \href{https://mp.weixin.qq.com/s/r1vaEqhKzkTBWt-saHIJ2A}{Example: Helicoid}	%70
+	\item \href{https://mp.weixin.qq.com/s/3eVFMsOopIAepGAFIrn1Qg}{Proposition: The Position of a Surface in the Neighborhood of an Elliptic Point or a Hyperbolic Point with respect to the Tangent Plane}	%71
+	\item \href{https://mp.weixin.qq.com/s/DLqFChzf7ibR6ugTAdcJzA}{A. Review: Dupin Indicatrix and Its Graph B. Example: Monkey Saddle}	%72
+	\item \href{https://mp.weixin.qq.com/s/FE2dakF7ia9TQCTTIhtayA}{A. Examples: $z=y^3$ Rotated About $z=1$ and Cylinder B. Derivation: Gauss Curvature of a Surface of Revolution 1}	%73
+	\item \href{https://mp.weixin.qq.com/s/rqY81dTSXeG8h1elQ_JU-w}{Derivation: Gauss Curvature of a Surface of Revolution 2}	%74
+	\item \href{https://mp.weixin.qq.com/s/BzO_CVDwxyDqAeP9OMBLIg}{A. Review: Gauss Curvature of a Surface of Revolution B. Derivation: Differential Equation of the Asymptotic Curves}	%75
+	\item \href{https://mp.weixin.qq.com/s/YIOxN480Hhq4w1cYhXQQEw}{A. Proposition: The Coordinate Curves Are Asymptotic Curves if and only if e=g=0 B. Example: Asymptotic Curves 1}	%76
+	\item \href{https://mp.weixin.qq.com/s/HjcNIwXNHSB7AtIX3_eqPw}{A. Example: Asymptotic Curves 2 B. Proposition: The Coordinate Curves Are Asymptotic Curves if and only if f=F=0 1}	%77
+	\item \href{https://mp.weixin.qq.com/s/gJfeO3pnw-KVA3Y_0uGt5g}{Proposition: The Coordinate Curves Are Asymptotic Curves if and only if f=F=0 2}	%78
+	\item \href{https://mp.weixin.qq.com/s/XSDx2fhIEpZoXDuBu7uSMg}{Preview: Local Version of Gauss Bonnet Theorem}	%79
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+\subsection*{\small 2}
+
+\vspace{-0.5cm}
+
+\subsubsection*{The Sign of Gauss Curvature:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/GTDbDDw39XCdgJFSnbwzDA}{A. Review: Some Setting in the Last Semester B. Example: The Surface Given by z=h(x,y) with K(p)>0}	%1
+	\item \href{https://mp.weixin.qq.com/s/_FAfHJfGHggN0qDQzuLrEA}{A. Example: The Surface Given by z=h(x,y) with K(p)<0 B. Example: The Surface Given by z=h(x,y) with K(p)=0}	%2
+	\item \href{https://mp.weixin.qq.com/s/jzXz0l0sTHNVblL0ZFb8TA}{Example: Torus and Monkey Saddle}	%3
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Geometric Interpretation of Gauss Curvature:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/1uKx3IbuBPnEH6ckyl4VnQ}{A. Orientation Preserving and Orientation Reversing Map B. Proposition: The Gauss Map is Orientation Preserving at Elliptic Point and Orientation Reversing at Hyperbolic  Point }	%4
+	\item \href{https://mp.weixin.qq.com/s/kbrwQ4ObPCTmfjVUpMWgsw}{Proposition: Geometric Interpretation of Gauss Curvature 1}	%5
+	\item \href{https://mp.weixin.qq.com/s/hF4ka89rl5kj5GTQjtnnvA}{A. Proposition: Geometric Interpretation of Gauss Curvature 2 B. Examples: Sphere and Trough-Shaped Surface}	%6
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Local Convex and Curvature:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/tPEAZXXFVeczVRvLxo80YQ}{A. Review: Geometric Interpretation of Gauss Curvature B. Remark: Similar Result for Curvature of Plane Curve C. Tangent Indicatrix D. Locally Convex and Strictly Locally Convex}	%7
+	\item \href{https://mp.weixin.qq.com/s/IfQtiBUksY734NGiKWU7UQ}{Note: Relations between Curvature and Locally Convex}	%8
+	\item \href{https://mp.weixin.qq.com/s/8nqHNSkQFRxsCwkbiUlHhA}{Note: A Critical Point of a Distance Function on a Surface}	%9
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{The Rigidity of the Sphere:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/53VKseJt9rRilSqvPSK7jA}{Theorem: A Compact Surface Has an Elliptic Point}	%10
+	\item \href{https://mp.weixin.qq.com/s/CO497llv6wxPTXIKlQSxMQ}{A. Theorem: A Compact Connected Surface with Constant Gauss Curvature Is a Sphere B. Lemma: Three Conditions of a Point to Be an Umbilical Point C. Proof: A Compact Connected Surface with Constant Gauss Curvature Is a Sphere 1}	%11
+	\item \href{https://mp.weixin.qq.com/s/evwK9cmUsicKQethesJglg}{A. Proof: A Compact Connected Surface with Constant Gauss Curvature Is a Sphere 2 B. Proof: Three Conditions of a Point to Be an Umbilical Point 1}	%12
+	\item \href{https://mp.weixin.qq.com/s/vHqcoulVtqQEa5QzHlaZeQ}{Proof: Three Conditions of a Point to Be an Umbilical Point 2}	%13
+	\item \href{https://mp.weixin.qq.com/s/zJUGKpctoJn3hMIDCPahjg}{Proof: Three Conditions of a Point to Be an Umbilical Point 3}	%14
+	\item \href{https://mp.weixin.qq.com/s/PKMUyiuwQ6-wYoeb0hTpAQ}{Proof: Three Conditions of a Point to Be an Umbilical Point 4}	%15
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Vector Field:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/i3bIJ3XvTIuMgc1QLk7ZWQ}{A. Vector Field B. Trajectory of a Vector Field C. Examples: w=(x,y) and w=(y,-x) }	%16
+	\item \href{https://mp.weixin.qq.com/s/Cgk0oVbK6hE1r1WyhWkkVw}{A. Theorem: Existence and Uniqueness of the Trajectory of a Vector Field B. Theorem: Existence of the Local Flow a Vector Field}	%17
+	\item \href{https://mp.weixin.qq.com/s/lBrwviu2oMdLo8ijEdBYqQ}{A. Ruled Surface, Ruling and Directrix  B. Examples: Plane, Cylinder, Cone and Hyperboloid of Revolution }	%18
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Ruled Surface:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/IxEGISlMaigEFObmWkKupA}{Line of Striction}	%19
+	\item \href{https://mp.weixin.qq.com/s/CNeEfK5DuBS8LHghNK8oWA}{A. Condition of a Ruled Surface Given by the Line of Striction as Directrix being a Regular Surfac B. Gauss Curvature of a Ruled Surface Given by the Line of Striction as Directrix}	%20
+	\item \href{https://mp.weixin.qq.com/s/rpKKOX-v68LZZho8Unmylw}{A. Developable Surface B. Developable Surface Has Gauss Curvature Zero at Regular Points }	%21 
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Developable Surface:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/vIhuh9CMWDn8oLLr08r8nQ}{Two Subclasses of Developable surface 1}	%22
+	\item \href{https://mp.weixin.qq.com/s/DLcmzgz5vdRIWfdbBBcA9A}{A. Two Subclasses of Developable surface 2 B. Example: The Envelope of the Family of Tangent Planes Along a Curve of  a Surface}	%23
+	\item \href{https://mp.weixin.qq.com/s/WtmMyOsi2UPM1s-htB-6sA}{The Envelope of the Family of Tangent Planes Along a Curve of a Surface Is Developable}	%24
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Minimal Surface:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/RhpNZTm9B-TN3PCt6CECbA}{A. Review: Developable Surface B. Minimal Surface C. Normal Variation D. Interpretation of Minimality 1}	%25
+	\item \href{https://mp.weixin.qq.com/s/RJdBbB-jUNcuZ8kmjUD8eQ}{Interpretation of Minimality 2}	%26
+	\item \href{https://mp.weixin.qq.com/s/Wtg7KSAaref9vz8wL8kMTQ}{A. Interpretation of Minimality 3 B. Proposition: A Parametrized Surface Is Minimal if and only if A'(0)=0 }	%27
+	\item \href{https://mp.weixin.qq.com/s/PnlKvjj9QWi4wsjA_OB_8A}{A. Proof: A Parametrized Surface Is Minimal if and only if A'(0)=0 B. Isothermal Parametrized Surface C. Theorem: If x Is an Isothermal Parametrized Surface Then $x_uu＋x_vv=2(a^2)$HN 1}	%28
+	\item \href{https://mp.weixin.qq.com/s/S5PySX1T6Uqu9TrBhxydIQ}{A. Theorem: If x Is an Isothermal Parametrized Surface Then $x_uu＋x_vv=2(a^2)$HN 2 B. Harmonic Function C. Corollary: An Isothermal Parametrized Surface Is Minimal if and only if Its Coordinate Functions Are Harmonic D. Introduction: Development of Minimal Surface}	%29
+	\item \href{https://mp.weixin.qq.com/s/W0RkxYRwwaQL6wxU_Y2GFg}{A. Examples: Catenoid and Helicoid B. Proposition: Any Minimal Surface of Revolution Is an Open Subset of a Plane or a Catenoid C. Proposition: Any Ruled Minimal Surface Is an Open Subset of a Plane or a Helicoid D. Theorem: There Is No Compact Minimal Surface }	%30
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{The Intrinsic Geometry of Surfaces: Isometries and Conformal:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/H6VMiPydeGbRP18Ar2mwXA}{A. Parametrizations for Catenoid and Helicoid B. Isometry and Local Isometry C. Example: Local Isometric; The Cylinder and Plane in $R^2$ 1}	%31
+	\item \href{https://mp.weixin.qq.com/s/2_3vTjhvvVyTg3vE-3Oo-Q}{A. Example: Local Isometric; The Cylinder and Plane in $R^2$ 2 B. Example: Every Helicoid Is Locally Isometric to Catenoid C. Proposition: Two Regular Surfaces Have the Same First Fundamental  Form in Domain U if and only if They Are Locally Isometric 1}	%32
+	\item \href{https://mp.weixin.qq.com/s/P6mVJ9g4gvi7VL_Bazrc1w}{A. Proposition: Two Regular Surfaces Have the Same First Fundamental Form in Domain U if and only if They Are Locally Isometric 2 B. Conformal}	%33
+	\item \href{https://mp.weixin.qq.com/s/9Z7-ymfp-BRFldi0bpbqgA}{A. Review: Isometry and Conformal B. Note: A Conformal Map Preserves the Angle between Two Tangent Vectors C. Proposition: A Parametrization Is Conformal if and only if It is Isothermal D. Theorem: Any Two Regular Surfaces Are Locally Conformal }	%34
+	\item \href{https://mp.weixin.qq.com/s/6cfz7bhm7BFvn6ZKqwMZ7g}{A. Proposition: A Criterion for Local Conformal B. Stereographic Projection 1}	%35
+	\item \href{https://mp.weixin.qq.com/s/yRE-rlWOULZSPjVTV2zj3g}{Stereographic Projection 2}	%36 
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{The Intrinsic Geometry of Surfaces: Gauss Remarkable Theorem:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/0TDlvuhOIQhIqzI5nOZSqA}{Christoffel Symbols 1}	%37
+	\item \href{https://mp.weixin.qq.com/s/7OK1EyOotyOofuiUMlCCSw}{A. Christoffel Symbols 2 B. Christoffel Symbols in Terms of the First Fundamental Form}	%38
+	\item \href{https://mp.weixin.qq.com/s/cfiFn2VYrN3h4ROjbO4cJA}{A. All Geometric Concepts and Properties Expressed in Terms of the Christoffel Symbols Are Invariant under Isometry B. Codazzi-Mainardi Equations }	%39
+	\item \href{https://mp.weixin.qq.com/s/OoPpK94866NJ_qZxdUX3yQ}{Codazzi-Mainardi Equations and Gauss Formula 1}	%40
+	\item \href{https://mp.weixin.qq.com/s/B7lWeg0mkfPph1h0zqc5hQ}{Codazzi-Mainardi Equations and Gauss Formula 2}	%41
+	\item \href{https://mp.weixin.qq.com/s/24MScGLBz_u8M9ddv4ROgg}{A. Codazzi-Mainardi Equations and Gauss Formula 3  B. Gauss's Theorema Egregium }	%42
+	\item \href{https://mp.weixin.qq.com/s/KsQ8ft1Qo_LnbEg-LfNIWg}{Codazzi-Mainardi Equations and Gauss Formula 4}	%43
+	\item \href{https://mp.weixin.qq.com/s/umd-VK-enqDvtoLkb1D-bA}{A. Gauss Curvature in Terms of the First Fundamental Form B. Example: Surface of Revolution  C. Proof: Gauss’s Theorema Egregium D. Example: Catenoid and Helicoid }	%44
+	\item \href{https://mp.weixin.qq.com/s/yhJ0XtYQO0fytH-5XZXA6w}{A. Review: Gauss's Theorema Egregium B. Counterexample: The Converse of Gauss’s Theorema Egregium Is Not True 1}	%45
+	\item \href{https://mp.weixin.qq.com/s/v5STlH_InFdHpa26DKJeKA}{A. Counterexample: The Converse of Gauss's Theorema Egregium Is Not True 2 B. Theorem: Fundamental Theorem of Surface (Bonnet) }	%46
+	\item \href{https://mp.weixin.qq.com/s/1nB5gCOzU2bL8bkDs0i4lg}{Example: Is There a Regular Surface with the Given Differentiable Functions E, F, G, e, f, g 1}	%47
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Parallel Transport and Geodesics:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/CLFO4U4FtrpmWy0fi75RUQ}{A. Example: Is There a Regular Surface with the Given Differentiable Functions E, F, G, e, f, g 2 B. Covariant Derivative}	%48
+	\item \href{https://mp.weixin.qq.com/s/234fs09fOtEyvHxNxnS3Eg}{A. General Formula of the Covariant Derivative B. Example: Covariant Derivate of a Vector Field on a Plane C. Parallel Vector Field D. Proposition: There Exists a Unique Parallel Vector Field along a Curve with Given Initial Value}	%49
+	\item \href{https://mp.weixin.qq.com/s/nhFLf4SmdliAqzcWBqIIng}{A. Proposition: The Inner Product of Two Parallel Vector Fields Is Constant B. Example: The Tangent Vector Field of a Meridian Is a Parallel Vector Field  on a Sphere }	%50
+	\item \href{https://mp.weixin.qq.com/s/3L3c1kH-R2a8QdCysbxWiA}{Parallel Transport}	%51
+	\item \href{https://mp.weixin.qq.com/s/WiQjzf0nVkB-Kp5Okidueg}{A. Parameterized Geodesic and Geodesic  B. Algebraic Value and Geodesic Curvature }	%52
+	\item \href{https://mp.weixin.qq.com/s/JjxP52RXjcTivRjNswKAmw}{A. Geometric Interpretation of Geodesic Curvature B. Example: Geodesic Curvature of a Circle on a Unit Sphere}	%53
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Algebra Value of the Covariant Derivative:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/erY_tZzt6_-N_xjZQnI2PA}{A. Example: The Normal Curvature and the Geodesic Curvature of the Circle on the Elliptic Parabolic B. Lemma: The Differentiable Extension of a Determination}	%54
+	\item \href{https://mp.weixin.qq.com/s/ejVwWplk0R52ARRSFPsVEQ}{A. Lemma: Relation between the Covariant Derivative of Two Unit Vector Fields and the Variation of the Angle That They Form B. Note: The Geodesic Curvature Is the Rate of Change of the Angle That the Tangent to the Curve Makes with a Parallel Vector Field  C. Proposition: An Expression for the Algebraic Value in Terms of the First Fundamental Form and the Variation of the Angle 1}	%55
+	\item \href{https://mp.weixin.qq.com/s/xaK0i5wC1TT3LBBMIb93tA}{Proposition: An Expression for the Algebraic Value in Terms of the First  Fundamental Form and the Variation of the Angle 2}	%56
+	\item \href{https://mp.weixin.qq.com/s/o11oaPKcrf4fViWm3TWW3Q}{Proposition: Liouville's Formula 1}	%57
+	\item \href{https://mp.weixin.qq.com/s/MXG97mAFE_dz4oREoPOVdg}{A. Proposition: Liouville's Formula 2 B. Geodesic Equations}	%58
+	\item \href{https://mp.weixin.qq.com/s/i7wPArtQyfOpFuCMkK25vg}{Geometric Interpretation of Geodesic}	%59
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Geodesic Equations:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/7MAoNqbjZRXy4F2EAgjDKw}{A. Example: Geodesics of a Cylinder B. Example: Geodesics of a Surface of Revolution 1}	%60
+	\item \href{https://mp.weixin.qq.com/s/QSzwvomSeEaG9SD2RdzvJw}{Example: Geodesics of a Surface of Revolution 2}	%61
+	\item \href{https://mp.weixin.qq.com/s/vIbMetiDP1c_gy-B7YPxgQ}{A. Example: Geodesics of a Sphere B. Geodesic Parametrization and Geodesic Coordinates}	%62
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Surfaces of constant Gaussian curvature:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/fPe1ApLBzOWr8Qb84uuLwQ}{A. Review: Geodesic Parametrization and Geodesic Coordinates B. Theorem: Any Point of a Surface of Constant Gauss Curvature Is Contained in a Coordinates Neighborhood That Is Isometric to an Open Set of a Plane, a Sphere or a Pseudo-Sphere 1}	%63
+	\item \href{https://mp.weixin.qq.com/s/giV75U8L-zTW-TRAAwXxiQ}{A. Theorem: Any Point of a Surface of Constant Gauss Curvature Is Contained in a Coordinates Neighborhood That Is Isometric to an Open Set of a Plane, a Sphere or a Pseudo-sphere 2 B. Simple Closed Piecewise Regular Parametrized Curve}	%64
+	\item \href{https://mp.weixin.qq.com/s/Gtre5VAWKSbm-YZ43mnJzw}{A. Closed Vertices and Regular Arcs B. Differentiable Functions That Measure the Positive Angle from $x_u$ to the Tangent of a Simple Closed Curve}	%65
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Gauss-Bonnet Theorem for Simple Closed Curves and Curvilinear Polygons:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/iPJEPPt0pAm0vC8i-w23Cg}{A. Proposition: Theorem of Turning Tangents B. The Integral of a Differentiable Function over a Bounded Region on an  Oriented Surface C. Theorem: Local Version of Gauss-Bonnet Theorem 1}	%66
+	\item \href{https://mp.weixin.qq.com/s/gKYmfZTWi5NjP4xUd7YFBA}{Theorem: Local Version of Gauss-Bonnet Theorem 2}	%67
+	\item \href{https://mp.weixin.qq.com/s/F1bmARzBeIMuEbeTb0APHQ}{A. Theorem: Local Version of Gauss-Bonnet Theorem 3 B. Theorem: Global Gauss-Bonnet Theorem}	%68
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Gauss-Bonnet Theorem:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/5JJehUyUsgPEZzpTXXBOhQ}{A. Triangulation B. Euler Characteristic Number C. Proposition: Every Regular Region of a Regular　Surface　Admits a Triangulation}	%69
+	\item \href{https://mp.weixin.qq.com/s/uioKRqzWGfY0Mj9eIuGN-g}{Proof: Global Gauss-Bonnet Theorem 1}	%70
+	\item \href{https://mp.weixin.qq.com/s/7cItI6iLOHmB-zr6peHkag}{Proof: Global Gauss-Bonnet Theorem 2}	%71
+	\item \href{https://mp.weixin.qq.com/s/yj9m4jCuR6nq9d5-fmgJNw}{A. Theorem: Gauss-Bonnet Theorem for Orientable Compact Surface B. Example: Sphere with Radius r C. Example: Convex Surface in $R^3$ D. Example: Polar Cap 1}	%72
+	\item \href{https://mp.weixin.qq.com/s/QUUCqeWS694p-w4flGBKfQ}{A. Example: Polar Cap 2 B. Euler Characteristic Number and Genus C. Theorem: Diffeomorphic Surfaces Have the Same Euler Characteristic Number and Two Compact Oriented Surfaces with the Same Euler Characteristic Number Are Diffeomorphic}	%73
+	\item \href{https://mp.weixin.qq.com/s/KoVdwbyn_OJ3DdIRXDHl_w}{A. Theorem: A compact Oriented Surface with Positive Gauss　Curvature Is Diffeomorphic to a Standard Sphere B. Four Color Map Theorem}	%74 
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Clairaut's Theorem:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/iDgGBLsmzSaVGANuA-RjOw}{A. Proposition: A Regular Compact Connected Oriented Surface Which Is　Not Homeomorphic to a Sphere Has Some Points Such That the Gauss　Curvature Is　Positive, Negative and Zero B. Proposition: Clairaut's Theorem 1}	%75
+	\item \href{https://mp.weixin.qq.com/s/rnofVtRIqAIC5a3Pufa6GA}{Proposition: Clairaut's Theorem 2}	%76
+	\item \href{https://mp.weixin.qq.com/s/j2eZQYj4WnRS7EUcxvUrzA}{Surface of Revolution and Hyperbolic Models}	%77 
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Hyperbolic Models:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/qgqb078dq7BVscXFy-tZUQ}{Hyperbolic Models: Pseudo-Sphere, Upper Half-Plane and Poincare Disc}	%78
+	\item \href{https://mp.weixin.qq.com/s/uua5olUSVzkaqpYGXNlhVg}{Geodesics of Upper Half-plane: By Clairaut's Theorem}	%79
+	\item \href{https://mp.weixin.qq.com/s/CJv_NjBY64YmZxDnxpCG-Q}{Geodesics of Upper Half-plane: By Geodesic Equations}	%80 
+\end{enumerate}
+
+\vspace{-1cm}
+
+\subsubsection*{Mobius Transformation and Non-Euclidean Geometry:}
+
+\vspace{-0.5cm}
+
+\begin{enumerate}
+	\item \href{https://mp.weixin.qq.com/s/yBa9KqPoQzbz0NXNkAZq6A}{A. Mobius Transformation B. Mobius Transformation from Upper Half-plane to Upper Half-Plane Is an Isometry 1}	%81
+	\item \href{https://mp.weixin.qq.com/s/Bn_tagix5WW_ek0wGua1ww}{A. Mobius Transformation from Upper Half-plane to Upper Half-Plane Is an Isometry 2 B. Five Postulates for Euclidean Geometry}	%82
+	\item \href{https://mp.weixin.qq.com/s/x_tZ5K0gSGqs4n1yIBALvg}{The Parallel Postulate and Non-Euclidean Geometry}	%83
+	%\item \href{url}{Materials}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliographystyle{ieeetr} % number
+%%\bibliographystyle{unsrtnat} % author year
+%\bibliography{HeBib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+	\tiny \today 
+\end{flushright}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+              

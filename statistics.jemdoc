@@ -5,8 +5,6 @@
 
 == [./doc/materials/statistics/causality.pdf  Causality]
 
-== [./doc/materials/statistics/probability.pdf  Probability]
-
 == [./doc/materials/statistics/sa.pdf  Survival Analysis]
 
 == [./doc/materials/statistics/mp.pdf  Markov Processes]
@@ -16,6 +14,8 @@
 # == Monte Carlo Methods
 
 == [./doc/materials/statistics/ms.pdf  Mathematical Statistics]
+
+== [./doc/materials/statistics/probability.pdf  Probability] and [./doc/materials/statistics/sta.pdf  Statistics]
 
 == [./doc/materials/statistics/mvara.pdf  Multivariate and Regression Analysis]
 
