@@ -2,18 +2,29 @@
 = Yao Zhang - Scientific Machine Learning, SciML
 \n
 Scientific Machine Learning (SciML) is a rapidly emerging discipline within the data science community, aimed at addressing domain-specific data challenges and deriving insights from scientific datasets through innovative methodologies. By integrating tools from both machine learning and scientific computing, SciML develops scalable, domain-aware, robust, reliable, and interpretable approaches for data analysis and learning. These advancements are poised to fuel the next wave of data-driven scientific breakthroughs, particularly in the physical and engineering sciences. Like scientific computing, SciML is inherently multidisciplinary, drawing upon expertise in applied and computational mathematics, computer science, and the physical sciences to tackle complex problems.
-\n
 
-== [./doc/materials/sciml/dl.pdf  Deep Learning]
+{{<script type="text/javascript">
+function requirePassword(fileUrl) {
+    var password = prompt("Please enter the password");
+    var correctPassword = "sciszu171647"; // 
+    if (password === correctPassword) {
+        window.open(fileUrl, "_blank");
+    } else if (password !== null) {
+        alert("Incorrect password!");
+    }
+}
+</script>}}
+
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/sciml/dl.pdf')">Deep Learning</a>}}
 
 
-== [./doc/materials/sciml/AdML.pdf  Advanced Machine Learning]
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/sciml/AdML.pdf')">Advanced Machine Learning</a>}}
 
-== [./doc/materials/sciml/PIML.pdf  Physics Informed Machine Learning]
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/sciml/PIML.pdf')">Physics Informed Machine Learning</a>}}
 
-== [./doc/materials/sciml/gmci.pdf  Graphical Models and Causal Inference] 
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/sciml/gmci.pdf')">Graphical Models and Causal Inference</a>}}
 
-== [./doc/materials/sciml/nodl.pdf  Nonconvex Optimization for Deep Learning]
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/sciml/nodl.pdf')">Nonconvex Optimization for Deep Learning</a>}}
 
 #== Data Science from a Signal Processing Perspective
 
