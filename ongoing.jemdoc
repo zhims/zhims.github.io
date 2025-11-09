@@ -4,7 +4,9 @@
 
 Work is just a part of life, and life should be rich and fulfilling. Though there are many things I want to achieve in my career, I sometimes feel limited by my lack of natural talent. Nevertheless, I have a strong passion for mathematics and am committed to putting in the hard work, even if it means focusing on small tasks. Recently, I have been mainly working on projects related to the materials provided below. Despite the challenges, I continue to dedicate myself to learning and improving my skills, knowing that persistence and effort will lead to progress.
 
-== Solar force-free magnetic fields
+== Causal Inference
+
+== Solar Magnetic Fields
 
 . [doc/research/ongoing/nlfff/Wiegelmann2021a.pdf NLFFF]
 
@@ -15,17 +17,14 @@ Work is just a part of life, and life should be rich and fulfilling. Though ther
 
 == Holographic Quantum Chromodynamics
 
-. [doc/research/ongoing/hqcd/NODEChen2018.pdf NODE] ~~ [https://mp.weixin.qq.com/s/5XVJNM1ak2m2HzJ4Gb5Rww KAN] ~~ [doc/research/ongoing/hqcd/mhqcdpnote.pdf Note] 
-. [doc/research/ongoing/hqcd/YuanXuWang.pdf Master's Thesis by Wang] ~~ [doc/research/ongoing/hqcd/QingXuanFu.pdf Master's Thesis by Fu] ~~ [doc/research/ongoing/hqcd/GBDG.pdf Gauss Bonnet Dilaton Gravity]
-. [doc/research/ongoing/hqcd/NODEHQCD.pdf Neural Ordinary Differential Equation and
-Holographic Quantum Chromodynamics]
-. [doc/research/ongoing/hqcd/EMD.pdf Hot QCD Phase Diagram from Holographic Einstein-Maxwell-Dilaton Models En] ~~ [doc/research/ongoing/hqcd/EMDZH.pdf Zh]
-. [doc/research/ongoing/hqcd/MHQCDPhase.pdf Neural ODE Approach to the Magnetic QCD Phase Diagram via Holography] ~~ [doc/research/ongoing/hqcd/MHQCDPhaseSupp.pdf  Materials: ~ A] ~~ [doc/research/ongoing/hqcd/HQCDB.pdf B] ~~ [doc/research/ongoing/hqcd/Bali2014E.pdf C] ~~ [doc/research/ongoing/hqcd/Cai2022PRD.pdf D] ~~ [doc/research/ongoing/hqcd/Bazavov2014PRD.pdf E] 
+. [doc/research/ongoing/hqcd/QingXuanFu.pdf Master's Thesis by Fu] [doc/research/ongoing/hqcd/YuanXuWang.pdf and Wang, respectively.]
+. [doc/research/ongoing/hqcd/EMD.pdf Hot QCD Phase Diagram from Holographic Einstein-Maxwell-Dilaton Models] 
+. [doc/research/ongoing/hqcd/MHQCDPhase.pdf Neural ODE Approach to the Magnetic QCD Phase Diagram via Holography] ~~ [doc/research/ongoing/hqcd/MHQCDPhaseSupp.pdf  Materials: ~ A] ~~ [doc/research/ongoing/hqcd/HQCDB.pdf B] ~~ [doc/research/ongoing/hqcd/mhqcdpnote.pdf C]
 
 
 == Artificial Intelligence for Brain Disorders
 
-. [doc/research/ongoing/aibd/mlcde.pdf Machine Learning for Cerebrovascular Disorders: ~ En] ~~~ [doc/research/ongoing/aibd/mlcdc.pdf Zh]
+. [doc/research/ongoing/aibd/mlcde.pdf Machine Learning for Cerebrovascular Disorders]
 
 . [doc/research/ongoing/aibd/Gauriau2023.pdf Head CT Deep Learning Model is Highly Accurate for Early Infarct Estimation]
 . [doc/research/ongoing/aibd/Brugnara2023.pdf Deep Learning Based Detection of Vessel Occlusions on CT Angiography in Patients with Suspected Acute Ischemic Stroke]
