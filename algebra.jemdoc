@@ -5,8 +5,8 @@
 
 {{<script type="text/javascript">
 function requirePassword(fileUrl) {
-    var password = prompt("Please enter the password:");
-    var correctPassword = "szu171647"; // 
+    var password = prompt("Please enter the password");
+    var correctPassword = "algszu171647"; // 
     if (password === correctPassword) {
         window.open(fileUrl, "_blank");
     } else if (password !== null) {
