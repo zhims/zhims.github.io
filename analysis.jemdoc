@@ -1,22 +1,36 @@
 # jemdoc: menu{MENU}{analysis.html}, nofooter
 == Yao Zhang - Analysis
+ {{<script type="text/javascript">
+function requirePassword(fileUrl) {
+    var password = prompt("Please enter the password");
+    var correctPassword = "anaszu171647"; // 
+    if (password === correctPassword) {
+        window.open(fileUrl, "_blank");
+    } else if (password !== null) {
+        alert("Incorrect password!");
+    }
+}
+</script>}}
+
 \n
+
  Analysis, a foundational branch of mathematics, delves into the concepts of limits, continuity, differentiation, integration, and infinite series. Emerging from calculus, it provides a rigorous framework for understanding change and accumulation, as well as the properties of real and complex numbers, functions, and spaces. Real analysis explores the behavior of real-valued functions and sequences, while complex analysis extends these principles to the complex plane. Functional analysis investigates infinite-dimensional spaces and linear operators, with critical applications in quantum mechanics, optimization, and beyond. Modern analysis, incorporating measure theory and topology, underpins advanced research in probability, differential equations, and mathematical physics, making it indispensable across science and engineering disciplines.
 
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/analysis/la.pdf')">Linear Analysis</a>}}
 
-== [./doc/materials/analysis/la.pdf  Linear Analysis]
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/analysis/mt.pdf')">Measure Theory</a>}}
 
-== [./doc/materials/analysis/mt.pdf  Measure Theory]
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/analysis/ca.pdf')">Complex Analysis</a>}}
 
-== [./doc/materials/analysis/ca.pdf  Complex Analysis]
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/analysis/fa.pdf')">Functional Analysis</a>}}
 
-== [./doc/materials/analysis/fa.pdf  Functional Analysis]
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/analysis/calculus.pdf')">Calculus</a>}} and {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/analysis/analysis.pdf')">Analysis</a>}}
 
-== [./doc/materials/analysis/calculus.pdf  Calculus] and [./doc/materials/analysis/analysis.pdf Analysis]
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/analysis/mm.pdf')">Mathematical Modeling</a>}}
 
-== [./doc/materials/analysis/mm.pdf  Mathematical Modeling]
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/analysis/odes.pdf')">Ordinary</a>}} and {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/analysis/pdes.pdf')">Partial Differential Equations</a>}}
 
-== [./doc/materials/analysis/odes.pdf  Ordinary] and [./doc/materials/analysis/pdes.pdf  Partial Differential Equations]
+
 
 
 

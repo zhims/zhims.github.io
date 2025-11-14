@@ -42,21 +42,35 @@ MathJax.Hub.Config({
 <td id="layout-content">
 <div id="toptitle">
 <h1>Yao Zhang - Geometry</h1>
-<div id="subtitle"><br />
+<div id="subtitle"><script type="text/javascript">
+function requirePassword(fileUrl) {
+var password = prompt("Please enter the password");
+var correctPassword = "geoszu171647"; // 
+if (password === correctPassword) {
+window.open(fileUrl, "_blank");
+} else if (password !== null) {
+alert("Incorrect password!");
+}
+}
+</script>
+
+<br />
+
 Geometry, one of the oldest branches of mathematics, investigates the properties and relationships of shapes, sizes, spaces, and their transformations. Classical geometry, rooted in Euclid's works, focuses on points, lines, and planes, forming the basis for studying figures like triangles and circles. The development of non-Euclidean geometries, such as hyperbolic and elliptic geometry, revolutionized the field by challenging Euclid's parallel postulate. Modern geometry expands further into areas like algebraic geometry, which applies algebraic methods to explore geometric objects, and differential geometry, which uses calculus to study curved surfaces and spaces. Closely related is topology, often described as rubber-sheet geometry, which examines properties that remain invariant under continuous deformations, such as connectivity and compactness.
 
 </div>
 </div>
-<h2><a href="./doc/materials/geometry/geo.pdf" target=&ldquo;blank&rdquo;>Geometry</a></h2>
+<h2><a href="javascript:void(0);" onclick="requirePassword('./doc/materials/geometry/geo.pdf')">Geometry</a></h2>
 <p></p>
-<h2><a href="./doc/materials/geometry/bg.pdf" target=&ldquo;blank&rdquo;>Basic Geometry</a></h2>
+<h2><a href="javascript:void(0);" onclick="requirePassword('./doc/materials/geometry/bg.pdf')">Basic Geometry</a></h2>
 <p></p>
-<h2><a href="./doc/materials/geometry/gt.pdf" target=&ldquo;blank&rdquo;>General Topology</a> </h2>
+<h2><a href="javascript:void(0);" onclick="requirePassword('./doc/materials/geometry/gt.pdf')">General Topology</a></h2>
 <p></p>
-<h2><a href="./doc/materials/geometry/rg.pdf" target=&ldquo;blank&rdquo;>Riemann Geometry</a></h2>
+<h2><a href="javascript:void(0);" onclick="requirePassword('./doc/materials/geometry/rg.pdf')">Riemann Geometry</a></h2>
 <p></p>
-<h2><a href="./doc/materials/geometry/mta.pdf" target=&ldquo;blank&rdquo;>Manifolds & Tensor Analysis</a></h2>
+<h2><a href="javascript:void(0);" onclick="requirePassword('./doc/materials/geometry/mta.pdf')">Manifolds & Tensor Analysis</a></h2>
 <p>
+
 
 </p>
 </td>

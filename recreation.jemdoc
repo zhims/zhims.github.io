@@ -1,22 +1,34 @@
 # jemdoc: menu{MENU}{recreation.html}, nofooter
 = Yao Zhang - Recreation
+ {{<script type="text/javascript">
+function requirePassword(fileUrl) {
+    var password = prompt("Please enter the password");
+    var correctPassword = "hds158322"; // 
+    if (password === correctPassword) {
+        window.open(fileUrl, "_blank");
+    } else if (password !== null) {
+        alert("Incorrect password!");
+    }
+}
+</script>}}
+
 \n 
 Recreation brings significant benefits to both learning and work by improving mental and physical well-being. Engaging in leisure activities reduces stress, boosts creativity, and enhances problem-solving skills, which are crucial for academic and professional success. Physical recreation also promotes better health, leading to increased energy and concentration, improving productivity over time. By allowing the brain to rest and reset, recreation helps prevent burnout and sustains focus, making it easier to perform tasks efficiently. Additionally, recreational activities that involve social interaction enhance communication and teamwork skills, both essential in collaborative environments. Overall, incorporating recreation into daily life helps maintain a healthy work-life balance, promoting a more productive and fulfilling lifestyle.
 
 == This Is Us
 
-== [./doc/materials/recreation/vocabulary.pdf  Vocabulary]
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/recreation/vocabulary.pdf')">Vocabulary</a>}}
 
-== [./doc/materials/recreation/drivingexperience.pdf  Driving Experience]
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/recreation/drivingexperience.pdf')">Driving Experience</a>}}
 
-== [./doc/materials/recreation/ete.pdf  Easy Travel English]
-
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/recreation/ete.pdf')">Easy Travel English</a>}}
 
 == The Big Bang Theory
 
-== [./doc/materials/recreation/cv.pdf  Contextual Vocabulary] 
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/recreation/cv.pdf')">Contextual Vocabulary</a>}}
+
+== New Concept English ~ {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/recreation/nce1.pdf')"> I</a>}} ~ {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/recreation/nce2.pdf')">II</a>}} ~ {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/recreation/nce3.pdf')">III</a>}} ~ {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/recreation/nce4.pdf')">IV</a>}} ~ {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/recreation/nces.pdf')">Vocabulary & Grammar</a>}}
 
 
 
 
-== [./doc/materials/recreation/nce1.pdf  New Concept English ~ I] ~ [./doc/materials/recreation/nce2.pdf  II] ~ [./doc/materials/recreation/nce3.pdf III] ~ [./doc/materials/recreation/nce4.pdf IV] ~ [./doc/materials/recreation/nces.pdf Vocabulary \& Grammar]

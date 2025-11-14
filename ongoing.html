@@ -42,7 +42,19 @@ MathJax.Hub.Config({
 <td id="layout-content">
 <div id="toptitle">
 <h1>Yao Zhang - Ongoing</h1>
-<div id="subtitle"><br />
+<div id="subtitle"><script type="text/javascript">
+function requirePassword(fileUrl) {
+var password = prompt("Please enter the password");
+var correctPassword = "ongoing2025"; // 
+if (password === correctPassword) {
+window.open(fileUrl, "_blank");
+} else if (password !== null) {
+alert("Incorrect password!");
+}
+}
+</script>
+
+<br />
 
 Work is just a part of life, and life should be rich and fulfilling. Though there are many things I want to achieve in my career, I sometimes feel limited by my lack of natural talent. Nevertheless, I have a strong passion for mathematics and am committed to putting in the hard work, even if it means focusing on small tasks. Recently, I have been mainly working on projects related to the materials provided below. Despite the challenges, I continue to dedicate myself to learning and improving my skills, knowing that persistence and effort will lead to progress.
 </div>
@@ -52,7 +64,7 @@ Work is just a part of life, and life should be rich and fulfilling. Though ther
 <h2>Solar Magnetic Fields</h2>
 <p></p>
 <ol>
-<li><p><a href="doc/research/ongoing/nlfff/Wiegelmann2021a.pdf" target=&ldquo;blank&rdquo;>NLFFF</a>
+<li><p><a href="javascript:void(0);" onclick="requirePassword('doc/research/ongoing/nlfff/Wiegelmann2021a.pdf')">NLFFF</a>
 </p>
 </li>
 </ol>
@@ -70,7 +82,8 @@ Work is just a part of life, and life should be rich and fulfilling. Though ther
 <h2>Holographic Quantum Chromodynamics</h2>
 <p></p>
 <ol>
-<li><p><a href="doc/research/ongoing/hqcd/QingXuanFu.pdf" target=&ldquo;blank&rdquo;>Master's Thesis by Fu</a> <a href="doc/research/ongoing/hqcd/YuanXuWang.pdf" target=&ldquo;blank&rdquo;>and Wang, respectively.</a></p>
+<li><p><a href="javascript:void(0);" onclick="requirePassword('doc/research/ongoing/hqcd/QingXuanFu.pdf')">Master's Thesis by Fu</a> <a href="javascript:void(0);" onclick="requirePassword('doc/research/ongoing/hqcd/YuanXuWang.pdf')">and Wang, respectively</a>
+</p>
 </li>
 <li><p><a href="doc/research/ongoing/hqcd/EMD.pdf" target=&ldquo;blank&rdquo;>Hot QCD Phase Diagram from Holographic Einstein-Maxwell-Dilaton Models</a> </p>
 </li>
