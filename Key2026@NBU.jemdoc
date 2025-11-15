@@ -20,6 +20,15 @@ Time is tight and the task is demanding. Let's all work together to accomplish t
 
 == Causal Inference
 
+The review article by Professor Jiao Licheng is excellent.
+
+\n
+
+\n
+
+
+Additionally, based on the syllabus of the course [https://stat.ethz.ch/lectures/ss21/causality.php Causality] taught by [https://christinaheinze.github.io/ Dr. Christina Heinze-Deml], the topics covered are as follows:
+
 . Introduction
 
 . Graphical models
@@ -40,7 +49,8 @@ Time is tight and the task is demanding. Let's all work together to accomplish t
 
 . Score-based causal structure learning and restricted SEMs
 
-. LiNGAM and Invariant Causal Prediction
+. LiNGAM and Invariant Causal Prediction 
+
 
 == Scientific Problem
 
