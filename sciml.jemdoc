@@ -1,6 +1,6 @@
 # jemdoc: menu{MENU}{sciml.html}, nofooter
 = Yao Zhang - Scientific Machine Learning, SciML
-{{<script type="text/javascript">
+ {{<script type="text/javascript">
 function requirePassword(fileUrl) {
     var password = prompt("Please enter the password");
     var correctPassword = "sciszu171647"; // 

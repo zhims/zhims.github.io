@@ -1,6 +1,6 @@
 # jemdoc: menu{MENU}{Key2026.html}, nofooter
 = NSFC Key Program 2026 @ NBU
-{{<script type="text/javascript">
+ {{<script type="text/javascript">
 function requirePassword(fileUrl) {
     var password = prompt("Please enter the password");
     var correctPassword = "key2026@nbu"; // 
@@ -20,13 +20,13 @@ Time is tight and the task is demanding. Let's all work together to accomplish t
 
 == Causal Inference
 
-. Introduction, Controlled experiments vs. observational studies, Simpson's Paradox:
+. Introduction
 
 . Graphical models
 
 . Causal graphical models
 
-. Causal models and covariate adjustment
+. Causal models 
 
 . Covariate adjustment
 

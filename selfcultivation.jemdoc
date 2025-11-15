@@ -1,26 +1,40 @@
 # jemdoc: menu{MENU}{selfcultivation.html}, nofooter
 = Yao Zhang - Self-Cultivation
+ {{<script type="text/javascript">
+function requirePassword(fileUrl) {
+    var password = prompt("Please enter the password");
+    var correctPassword = "key2026@nbu"; // 
+    if (password === correctPassword) {
+        window.open(fileUrl, "_blank");
+    } else if (password !== null) {
+        alert("Incorrect password!");
+    }
+}
+</script>}}
+
 \n
+
 Self-cultivation is a core principle in Chinese culture, encompassing various philosophies such as Confucianism, Daoism, and Buddhism. Confucianism stresses moral development through virtues like benevolence, wisdom, and righteousness, fostering harmony in family and society. Daoism promotes simplicity, natural harmony, and Wu Wei (effortless action), encouraging alignment with nature. Buddhism focuses on inner peace and enlightenment, emphasizing mindfulness and compassion. Additionally, traditional practices like Chinese medicine and martial arts also contribute to holistic self-cultivation, promoting physical and mental balance. Together, these philosophies offer a comprehensive path toward personal growth and societal well-being.
 
-== [./doc/profile/selfcultivation/zz.pdf  Zhuangzi] 
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/profile/selfcultivation/zz.pdf')">Zhuangzi</a>}}
 
-== [./doc/profile/selfcultivation/sdp.pdf  Ci Poetry of Su Dongpo] 
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/profile/selfcultivation/sdp.pdf')">Ci Poetry of Su Dongpo</a>}}
+
+
 
 == Recite Classical Chinese
 
-=== [./doc/profile/selfcultivation/rcc/zz.pdf  Zhuangzi]
+# === [./doc/profile/selfcultivation/rcc/zz.pdf  Zhuangzi]
 
-=== [./doc/profile/selfcultivation/rcc/tm.pdf  The Mencius]
+# === [./doc/profile/selfcultivation/rcc/tm.pdf  The Mencius]
 
-=== [./doc/profile/selfcultivation/rcc/ttc.pdf  Tao Te Ching]
+# === [./doc/profile/selfcultivation/rcc/ttc.pdf  Tao Te Ching]
 
-=== [./doc/profile/selfcultivation/rcc/taw.pdf  The Art of War] 
+# === [./doc/profile/selfcultivation/rcc/taw.pdf  The Art of War] 
 
-=== [./doc/profile/selfcultivation/rcc/tac.pdf  The Analects of Confucius]
+# === [./doc/profile/selfcultivation/rcc/tac.pdf  The Analects of Confucius]
 
-== Born as a Human
-- [doc/articles/Life/NonviolentCommunication.pdf Nonviolent Communication] ~~~ [doc/articles/Life/LifeIsFine.pdf Feel a Life Worth Living] ~~~ [doc/articles/Life/Life.pdf Life Passed by Calmly]
+# == Born as a Human
+# - [doc/articles/Life/NonviolentCommunication.pdf Nonviolent Communication] ~~~ [doc/articles/Life/LifeIsFine.pdf Feel a Life Worth Living] ~~~ [doc/articles/Life/Life.pdf Life Passed by Calmly]
 
-== [./doc/profile/selfcultivation/ps.pdf  Popular Science Series]
 
