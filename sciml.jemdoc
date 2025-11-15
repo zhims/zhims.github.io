@@ -16,16 +16,16 @@ function requirePassword(fileUrl) {
 
 Scientific Machine Learning (SciML) is a rapidly emerging discipline within the data science community, aimed at addressing domain-specific data challenges and deriving insights from scientific datasets through innovative methodologies. By integrating tools from both machine learning and scientific computing, SciML develops scalable, domain-aware, robust, reliable, and interpretable approaches for data analysis and learning. These advancements are poised to fuel the next wave of data-driven scientific breakthroughs, particularly in the physical and engineering sciences. Like scientific computing, SciML is inherently multidisciplinary, drawing upon expertise in applied and computational mathematics, computer science, and the physical sciences to tackle complex problems.
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/sciml/dl.pdf')">Deep Learning</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/sciml/dl.pdf')">Deep Learning</a>}}
 
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/sciml/AdML.pdf')">Advanced Machine Learning</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/sciml/AdML.pdf')">Advanced Machine Learning</a>}}
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/sciml/PIML.pdf')">Physics Informed Machine Learning</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/sciml/PIML.pdf')">Physics Informed Machine Learning</a>}}
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/sciml/gmci.pdf')">Graphical Models and Causal Inference</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/sciml/gmci.pdf')">Graphical Models and Causal Inference</a>}}
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/sciml/nodl.pdf')">Nonconvex Optimization for Deep Learning</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/sciml/nodl.pdf')">Nonconvex Optimization for Deep Learning</a>}}
 
 #== Data Science from a Signal Processing Perspective
 

@@ -16,26 +16,26 @@ function requirePassword(fileUrl) {
 
 Theoretical physics constructs mathematical models to decipher nature's foundational laws. Quantum theory governs subatomic phenomena, characterizing particles as probabilistic wavefunctions with interactions mediated by quantum fields. This framework culminates in the Standard Model, unifying three fundamental forces: the electromagnetic , strong nuclear , and weak nuclear . Crucially, it excludes gravity, classically formulated by Einstein's general relativity as spacetime curvature from mass-energy. Reconciling quantum mechanics with relativity remains paramount: quantum fields presume static spacetime, whereas relativity inextricably links matter to dynamic geometry. Pioneering efforts like string theory  and loop quantum gravity  pursue a unified theory of everything, a key to decoding black hole singularities, the quantum origins of the Big Bang, and dark energy's cosmic acceleration mechanism.
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/physics/ss.pdf')">Space Science</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/ss.pdf')">Space Science</a>}}
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/physics/ed.pdf')">Electrodynamics</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/ed.pdf')">Electrodynamics</a>}}
 
-# ==  [./doc/materials/physics/gr.pdf  General Relativity]
+# ==  [doc/materials/physics/gr.pdf  General Relativity]
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/physics/qm.pdf')">Quantum Mechanics</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/qm.pdf')">Quantum Mechanics</a>}}
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/physics/qft.pdf')">Quantum Field Theory</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/qft.pdf')">Quantum Field Theory</a>}}
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/physics/sag.pdf')">Spacetime and Geometry</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/sag.pdf')">Spacetime and Geometry</a>}}
 
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/physics/gwa.pdf')">Gravitational Wave Astrophysics</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/gwa.pdf')">Gravitational Wave Astrophysics</a>}}
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/physics/biu.pdf')">The Biggest Ideas in the Universe</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/biu.pdf')">The Biggest Ideas in the Universe</a>}}
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/physics/sthd.pdf')">String Theory and Holographic Duality</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/sthd.pdf')">String Theory and Holographic Duality</a>}}
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/physics/sr.pdf')">Special Relativity from a Mathematician's Point of View</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/sr.pdf')">Special Relativity from a Mathematician's Point of View</a>}}
 
 
 

@@ -17,16 +17,16 @@ function requirePassword(fileUrl) {
 
 == Set Theory
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/algebra/LinearAlgebra.pdf')">Linear Algebra</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/algebra/LinearAlgebra.pdf')">Linear Algebra</a>}}
 
 == Number Theory
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/algebra/Algebra.pdf')">Abstract Algebra</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/algebra/Algebra.pdf')">Abstract Algebra</a>}}
 
 
-# == [./doc/materials/algebra/mlg.pdf  Matrix Lie Groups] \& [./doc/materials/algebra/la.pdf  Lie Algebra] 
+# == [doc/materials/algebra/mlg.pdf  Matrix Lie Groups] \& [doc/materials/algebra/la.pdf  Lie Algebra] 
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/algebra/mlg.pdf')">Matrix Lie Groups</a> and <a href="javascript:void(0);" onclick="requirePassword('./doc/materials/algebra/la.pdf')">Lie Algebra</a>}}
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/algebra/mlg.pdf')">Matrix Lie Groups</a> and <a href="javascript:void(0);" onclick="requirePassword('doc/materials/algebra/la.pdf')">Lie Algebra</a>}}
 
 
 

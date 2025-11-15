@@ -1,0 +1,55 @@
+# jemdoc: menu{MENU}{Key2026.html}, nofooter
+= NSFC Key Program 2026 @ NBU
+{{<script type="text/javascript">
+function requirePassword(fileUrl) {
+    var password = prompt("Please enter the password");
+    var correctPassword = "key2026@nbu"; // 
+    if (password === correctPassword) {
+        window.open(fileUrl, "_blank");
+    } else if (password !== null) {
+        alert("Incorrect password!");
+    }
+}
+</script>}}
+
+\n
+
+Time is tight and the task is demanding. Let’s all work together to accomplish this challenging mission! With full effort and unity, this is a vital opportunity for our team to shine. Step by step, with determination and cooperation, we can overcome any obstacle and achieve great success. Let’s embrace this challenge with positive energy and mutual support—together, we will make it happen and create something truly remarkable!
+
+== Solar Data
+
+== Causal Inference
+
+. Introduction, Controlled experiments vs. observational studies, Simpson's Paradox:
+
+. Graphical models
+
+. Causal graphical models
+
+. Causal models and covariate adjustment
+
+. Covariate adjustment
+
+. Frontdoor criterion, instrumental variables and transportability
+
+. Counterfactuals, potential outcomes and estimation
+
+. Towards structure learning
+
+. Constraint-based causal structure learning
+
+. Score-based causal structure learning and restricted SEMs
+
+. LiNGAM and Invariant Causal Prediction
+
+== Scientific Problem
+
+. Mathematical Models
+
+. Deep Learning-Based Solutions
+
+. Physical Explanation
+
+== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/statistics/sa.pdf')">Survival Analysis</a>}}
+
+
