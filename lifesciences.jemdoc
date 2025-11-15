@@ -1,21 +1,35 @@
 # jemdoc: menu{MENU}{lifesciences.html}, nofooter
 = Yao Zhang - Life Sciences
+ {{<script type="text/javascript">
+function requirePassword(fileUrl) {
+    var password = prompt("Please enter the password");
+    var correctPassword = "******"; // 
+    if (password === correctPassword) {
+        window.open(fileUrl, "_blank");
+    } else if (password !== null) {
+        alert("Incorrect password!");
+    }
+}
+</script>}}
+
 \n
+
 Life sciences encompass the study of living organisms and their systems, integrating biology, neuroscience, cardiology, and more. Neuroscience delves into brain structure and function, unraveling mechanisms of cognition, behavior, and neural disorders like Alzheimer's. Cardiology explores heart physiology and diseases, advancing treatments for conditions such as arrhythmias and heart failure. Molecular biology and genetics reveal the molecular basis of life, while biochemistry examines biochemical pathways. Advances in life sciences drive medical innovations, from regenerative medicine to personalized therapies, and offer insights into evolution, human health, and ecological sustainability, fostering interdisciplinary research for understanding and improving life.
 
-== [./doc/materials/lifesciences/bi.pdf  Brain Imaging]
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/lifesciences/bi.pdf')">Brain Imaging</a>}}
 
-== [./doc/materials/lifesciences/cn.pdf  Clinical Neurology]
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/lifesciences/cn.pdf')">Clinical Neurology</a>}}
 
-== [./doc/materials/lifesciences/bms.pdf  Biomedical Statistics]
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/lifesciences/bms.pdf')">Biomedical Statistics</a>}}
 
-== [./doc/materials/lifesciences/bme.pdf  Biomedical Engineering]
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/lifesciences/bme.pdf')">Biomedical Engineering</a>}}
 
-== [./doc/materials/lifesciences/mn.pdf  Mathematical Neuroscience]
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/lifesciences/mn.pdf')">Mathematical Neuroscience</a>}}
 
-== [./doc/materials/lifesciences/biaio.pdf  Bio-Inspired AI and Optimization]
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/lifesciences/biaio.pdf')">Bio-Inspired AI and Optimization</a>}}
 
-== [./doc/materials/lifesciences/fsg.pdf  Fundamental Statistical Genomics]
+== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/lifesciences/fsg.pdf')">Fundamental Statistical Genomics</a>}}
+
 
 == Machine Learning for Brain Disorders
 

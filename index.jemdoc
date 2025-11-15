@@ -3,7 +3,7 @@
  {{<script type="text/javascript">
 function requirePassword(fileUrl) {
     var password = prompt("Please enter the password");
-    var correctPassword = "staszu171647"; // 
+    var correctPassword = "******"; // 
     if (password === correctPassword) {
         window.open(fileUrl, "_blank");
     } else if (password !== null) {
