@@ -20,14 +20,15 @@ Time is tight and the task is demanding. Let's all work together to accomplish t
 
 == Causal Inference
 
-The review article by Professor Jiao Licheng is excellent.
+It is highly recommended to read the {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/key2026/Jiao2024.pdf')">review article</a>}} by Jiao et al. 2024 and the textbook {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/key2026/Guo2023.pdf')">Causal Inference & Machine Learning</a>}} by Guo et al 2023.
+
 
 \n
 
 \n
 
 
-Additionally, based on the syllabus of the course [https://stat.ethz.ch/lectures/ss21/causality.php Causality] taught by [https://christinaheinze.github.io/ Dr. Christina Heinze-Deml], the topics covered are as follows:
+Additionally, in line with the syllabus of the course [https://stat.ethz.ch/lectures/ss21/causality.php Causality] taught by [https://christinaheinze.github.io/ Dr. Christina Heinze-Deml], the primary required textbooks are A, B, C, and E. The topics covered are as follows:
 
 . Introduction
 
@@ -49,7 +50,7 @@ Additionally, based on the syllabus of the course [https://stat.ethz.ch/lectures
 
 . Score-based causal structure learning and restricted SEMs
 
-. LiNGAM and Invariant Causal Prediction 
+. LiNGAM and Invariant causal prediction 
 
 
 == Scientific Problem
@@ -60,6 +61,5 @@ Additionally, based on the syllabus of the course [https://stat.ethz.ch/lectures
 
 . Physical Explanation
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('./doc/materials/statistics/sa.pdf')">Survival Analysis</a>}}
 
 
