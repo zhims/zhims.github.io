@@ -22,14 +22,14 @@ Time is tight and the task is demanding. Let's all work together to accomplish t
 
 
 
-It is highly recommended to read the review article {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/WXij4H5wvkZ')">Causal Inference Meets Deep Learning: A Comprehensive Survey</a>}} by Jiao et al. and the textbook {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/JUpZU1eiWif')">Causal Inference & Machine Learning</a>}} by Guo et al. . We also suggest watching the video  [https://www.bilibili.com/video/BV16Y4y1z72G/?spm_id_from=333.1387.homepage.video_card.click An Introduction to Causal Inference in One Hour]. Additionally, in line with the syllabus of the course [https://stat.ethz.ch/lectures/ss21/causality.php Causality] taught by [https://christinaheinze.github.io/ Dr. Christina Heinze-Deml], the primary required textbooks and articles are those by {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/6e8qmWTFmTC')">Freedman et al $^{1}$</a>}}, {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/ujsDPBrfcxF')">Shalizi $^{2}$</a>}}, [https://www.doc88.com/p-01768404104382.html Maathuis et al $^{3}$ ], {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/9FNvMBEqN8P')">Cinelli et al $^{4}$</a>}}, {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/key2026/Peters2017.pdf')">Peters et al $^{5}$</a>}} and {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/key2026/Shimizu2014.pdf')">Shimizu $^{6}$</a>}}. A complete collection of these materials (including slides and notes) is available {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/Jh2Xu1jSRsZ')">here</a>}}. The  main topics covered, together with their corresponding references, are listed below:
+It is highly recommended to read the review article {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/WXij4H5wvkZ')">Causal Inference Meets Deep Learning: A Comprehensive Survey</a>}} by Jiao et al. and the textbook {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/JUpZU1eiWif')">Causal Inference & Machine Learning</a>}} by Guo et al. . We also suggest watching the video  [https://www.bilibili.com/video/BV16Y4y1z72G/?spm_id_from=333.1387.homepage.video_card.click An Introduction to Causal Inference in One Hour]. Additionally, in line with the syllabus of the course [https://stat.ethz.ch/lectures/ss21/causality.php Causality] taught by [https://christinaheinze.github.io/ Dr. Christina Heinze-Deml], the primary required textbooks and articles are those by {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/6e8qmWTFmTC')">Freedman et al $^{1}$</a>}}, {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/ujsDPBrfcxF')">Shalizi $^{2}$</a>}}, [https://www.doc88.com/p-01768404104382.html Maathuis et al $^{3}$ ], {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/9FNvMBEqN8P')">Cinelli et al $^{4}$</a>}}, {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/QpfPXnpuDKu')">Peters et al $^{5}$</a>}} and {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/38MW6hjzBKw')">Shimizu $^{6}$</a>}}. A complete collection of these materials (including slides and notes) is available {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/Jh2Xu1jSRsZ')">here</a>}}. The  main topics covered, together with their corresponding references, are listed below:
 
 
-. Introduction: ~ Ch. 1 - 2 $^{1}$ 
+. Introduction: ~ Ch. 1 - 2 $^{1}$
 
-. Graphical models: ~ Ch. 18.2 - 18.3.1 $^{2}$
+. Graphical models: ~ Ch. 18.2 - 18.3.1 $^{2}$ 
 
-. Causal graphical models: ~ Ch. 15.1 - 15.3 $^{3}$
+. Causal graphical models: ~ Ch. 15.1 - 15.3 $^{3}$ 
 
 . Causal models: ~ Ch. 20.1-20.2 $^{2}$
 
@@ -49,9 +49,10 @@ It is highly recommended to read the review article {{<a href="javascript:void(0
 
 
 
-== Scientific Problem
+== Scientific Problem 
 
-We strongly encourage all team members to read the insightful {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/key2026/Xu2025.pdf')"> grant proposal</a>}} by Prof. Xu. 
+We strongly encourage all team members to read the insightful {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/YE7CAGaRzYo')"> grant proposal</a>}} by Prof. Xu. 
+
 
 . Mathematical Models
 
