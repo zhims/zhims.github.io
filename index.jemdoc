@@ -1,16 +1,5 @@
 # jemdoc: menu{MENU}{index.html}, nofooter  
 == Yao Zhang
- {{<script type="text/javascript">
-function requirePassword(fileUrl) {
-    var password = prompt("Please enter the password");
-    var correctPassword = "******"; // 
-    if (password === correctPassword) {
-        window.open(fileUrl, "_blank");
-    } else if (password !== null) {
-        alert("Incorrect password!");
-    }
-}
-</script>}}
 
 ~~~
 {}{img_left}{doc/profile/home/yao17.jpg}{alt text}{200}{150}
@@ -42,7 +31,7 @@ Science is about understanding the world, while engineering is about changing it
 
 - Applications of Data Science in Healthcare
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('doc/profile/home/ps.pdf')">Popular Science Series</a>}}
+== [doc/profile/home/ps.pdf Popular Science Series]
 
 
 

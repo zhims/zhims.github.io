@@ -1,19 +1,6 @@
 # jemdoc: menu{MENU}{codes.html}, nofooter
 = Yao Zhang - Codes
- {{<script type="text/javascript">
-function requirePassword(fileUrl) {
-    var password = prompt("Please enter the password");
-    var correctPassword = "key2026@nbu"; // 
-    if (password === correctPassword) {
-        window.open(fileUrl, "_blank");
-    } else if (password !== null) {
-        alert("Incorrect password!");
-    }
-}
-</script>}}
-
 \n
-
 Codes are the fundamental building blocks of computer programming, serving as a set of instructions that tell a computer what to do. They are written in various programming languages such as Python, Java, or C++, each with its own syntax and rules. Codes can range from simple commands to complex algorithms, enabling software applications, websites, and systems to function. Writing efficient, clear, and well-documented code is crucial for ensuring the performance, maintainability, and scalability of programs. With the advancement of technology, mastering coding has become an essential skill in today's digital world.
 
 
@@ -24,13 +11,13 @@ Codes are the fundamental building blocks of computer programming, serving as a 
 
 # $\quad$ [https://mp.weixin.qq.com/s/Du3aTm41SaH1VmhxPWm7lQ 01] ~~ [https://mp.weixin.qq.com/s/S8ODze0heW5mh85Qesm_sA 02] ~~ [https://mp.weixin.qq.com/s/YJgcMbO35tTEyAihvbF8AA 03] ~~ [https://mp.weixin.qq.com/s/8rWiTHyvFJG50opvVSimJg 04] ~~ [https://mp.weixin.qq.com/s/UkHOA_cUamd4maBjbD-4GA 05] ~~ [./doc/note/Codes/LaTex/Tipa.pdf Tipa] ~~ [https://pan.baidu.com/s/1J46drp_5s1yveEoXIH-54A Template]  
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('doc/research/codes/mma.pdf')">Mathematica</a>}}
+== [doc/research/codes/mma.pdf Mathematica]
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('doc/research/codes/sw.pdf')">Scientific Writing</a>}}
+== [doc/research/codes/sw.pdf Scientific Writing]
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('https://github.com/zhims/codes_for_1st_project_in_NAOC')">Codes for 1st Project in NAOC</a>}} ~ {{<a href="javascript:void(0);" onclick="requirePassword('code/code_1st_project.pdf')">Reference</a>}}
+== [https://github.com/zhims/codes_for_1st_project_in_NAOC Codes for 1st Project in NAOC] ~ [code/code_1st_project.pdf Reference]
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('doc/research/codes/python.pdf')">Data Science  with  Python  PYT</a>}} ~ {{<a href="javascript:void(0);" onclick="requirePassword('doc/research/codes/pml.pdf')">PML</a>}} ~ {{<a href="javascript:void(0);" onclick="requirePassword('doc/research/codes/pda.pdf')">PDA</a>}} ~ {{<a href="javascript:void(0);" onclick="requirePassword('doc/research/codes/pdl.pdf')">PDL</a>}}
+== [doc/research/codes/py.pdf Data Science  with  Python] ~  [doc/research/codes/pml.pdf PML] ~ [doc/research/codes/pda.pdf PDA] ~ [doc/research/codes/pdl.pdf PDL] ~ [doc/research/codes/pys.pdf PYS]
 
 
   
@@ -39,6 +26,6 @@ Codes are the fundamental building blocks of computer programming, serving as a 
 
 # [./doc/note/Tips/tips4vimtex.pdf  Vimtex] ~ \& ~ [./doc/note/Tips/Tips4installapp.pdf  Ubuntu]
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('doc/research/codes/matm.pdf')">Mathematical Modeling Algorithm and Its Application with  Matlab</a>}} ~~~ {{<a href="javascript:void(0);" onclick="requirePassword('doc/research/codes/pym.pdf')">Python</a>}}
+== [doc/research/codes/mat.pdf Mathematical Modeling Algorithm and Its Application with  Matlab] ~~ [doc/research/codes/pym.pdf Python]
 
 
