@@ -1,16 +1,5 @@
 # jemdoc: menu{MENU}{ongoing.html}, nofooter
 = Yao Zhang - Ongoing
- {{<script type="text/javascript">
-function requirePassword(fileUrl) {
-    var password = prompt("Please enter the password");
-    var correctPassword = "ongoing2025"; // 
-    if (password === correctPassword) {
-        window.open(fileUrl, "_blank");
-    } else if (password !== null) {
-        alert("Incorrect password!");
-    }
-}
-</script>}}
 
 \n
 
@@ -20,7 +9,7 @@ Work is just a part of life, and life should be rich and fulfilling. Though ther
 
 == Solar Magnetic Fields
 
-. {{<a href="javascript:void(0);" onclick="requirePassword('doc/research/ongoing/nlfff/Wiegelmann2021a.pdf')">NLFFF</a>}}
+. [doc/research/ongoing/nlfff/fff.pdf NLFFF]
 
 == Tolman-Oppenheimer-Volkoff Equation
 
@@ -30,10 +19,10 @@ Work is just a part of life, and life should be rich and fulfilling. Though ther
 
 == Holographic Quantum Chromodynamics
 
-. {{<a href="javascript:void(0);" onclick="requirePassword('doc/research/ongoing/hqcd/QingXuanFu.pdf')">Master's Thesis by Fu</a>}} {{<a href="javascript:void(0);" onclick="requirePassword('doc/research/ongoing/hqcd/YuanXuWang.pdf')">and Wang, respectively</a>}}
+. [doc/research/ongoing/hqcd/fu.pdf Master's Thesis by Fu] and [doc/research/ongoing/hqcd/wang.pdf Wang], respectively
 
-. [doc/research/ongoing/hqcd/EMD.pdf Hot QCD Phase Diagram from Holographic Einstein-Maxwell-Dilaton Models] 
-. [doc/research/ongoing/hqcd/MHQCDPhase.pdf Neural ODE Approach to the Magnetic QCD Phase Diagram via Holography] ~~ [doc/research/ongoing/hqcd/MHQCDPhaseSupp.pdf  Materials: ~ A] ~~ [doc/research/ongoing/hqcd/HQCDB.pdf B] ~~ [doc/research/ongoing/hqcd/mhqcdpnote.pdf C]
+. [doc/research/ongoing/hqcd/emd.pdf Hot QCD Phase Diagram from Holographic Einstein-Maxwell-Dilaton Models] 
+. [doc/research/ongoing/hqcd/cai.pdf Neural ODE Approach to the Magnetic QCD Phase Diagram via Holography] ~~ [doc/research/ongoing/hqcd/supp.pdf  Materials: ~ A] ~~ [doc/research/ongoing/hqcd/note.pdf B]
 
 
 == Artificial Intelligence for Brain Disorders
