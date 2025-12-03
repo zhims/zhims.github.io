@@ -1,41 +1,27 @@
 # jemdoc: menu{MENU}{relativity.html}, nofooter
 = Yao Zhang - Theoretical Physics 
- {{<script type="text/javascript">
-function requirePassword(fileUrl) {
-    var password = prompt("Please enter the password");
-    var correctPassword = "physzu171647"; // 
-    if (password === correctPassword) {
-        window.open(fileUrl, "_blank");
-    } else if (password !== null) {
-        alert("Incorrect password!");
-    }
-}
-</script>}}
-
 \n
-
 Theoretical physics constructs mathematical models to decipher nature's foundational laws. Quantum theory governs subatomic phenomena, characterizing particles as probabilistic wavefunctions with interactions mediated by quantum fields. This framework culminates in the Standard Model, unifying three fundamental forces: the electromagnetic , strong nuclear , and weak nuclear . Crucially, it excludes gravity, classically formulated by Einstein's general relativity as spacetime curvature from mass-energy. Reconciling quantum mechanics with relativity remains paramount: quantum fields presume static spacetime, whereas relativity inextricably links matter to dynamic geometry. Pioneering efforts like string theory  and loop quantum gravity  pursue a unified theory of everything, a key to decoding black hole singularities, the quantum origins of the Big Bang, and dark energy's cosmic acceleration mechanism.
 
 == [doc/materials/physics/ss.pdf Space Science]
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/ed.pdf')">Electrodynamics</a>}}
+== [doc/materials/physics/ed.pdf Electrodynamics]
 
 # ==  [doc/materials/physics/gr.pdf  General Relativity]
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/qm.pdf')">Quantum Mechanics</a>}}
+== [doc/materials/physics/qm.pdf Quantum Mechanics]
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/qft.pdf')">Quantum Field Theory</a>}}
+== [doc/materials/physics/qft.pdf Quantum Field Theory]
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/sag.pdf')">Spacetime and Geometry</a>}}
+== [doc/materials/physics/sag.pdf Spacetime and Geometry]
 
+== [doc/materials/physics/gwa.pdf Gravitational Wave Astrophysics]
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/gwa.pdf')">Gravitational Wave Astrophysics</a>}}
+== [doc/materials/physics/biu.pdf The Biggest Ideas in the Universe]
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/biu.pdf')">The Biggest Ideas in the Universe</a>}}
+== [doc/materials/physics/sthd.pdf String Theory and Holographic Duality]
 
-== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/sthd.pdf')">String Theory and Holographic Duality</a>}}
-
-== {{<a href="javascript:void(0);" onclick="requirePassword('doc/materials/physics/sr.pdf')">Special Relativity from a Mathematician's Point of View</a>}}
+== [doc/materials/physics/sr.pdf Special Relativity from a Mathematician's Point of View]
 
 
 
