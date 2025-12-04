@@ -9,26 +9,26 @@ Work is just a part of life, and life should be rich and fulfilling. Though ther
 
 == Solar Magnetic Fields
 
-. [doc/research/ongoing/nlfff/fff.pdf NLFFF]
+. [doc/research/ongoing/solar/fff.pdf Solar force-free magnetic fields]
 
 == Tolman-Oppenheimer-Volkoff Equation
 
-. [doc/research/ongoing/tov/NeutronStars.pdf Neutron Stars] ~ [doc/research/ongoing/tov/NeutronStarsPS.pdf Problem Set]
-. [doc/research/ongoing/tov/Tiwari2024B.pdf Deep TOV to Characterize Neutron Stars]
-. [doc/research/ongoing/tov/Abbott2018.pdf GW170817: Measurements of Neutron Star Radii and Equation of State] 
+. [doc/research/ongoing/physics/ns.pdf Neutron Stars] ~ [doc/research/ongoing/physics/nsp.pdf Problem Set]
+. [doc/research/ongoing/physics/Tiwari2024B.pdf Deep TOV to Characterize Neutron Stars]
+. [doc/research/ongoing/physics/Abbott2018.pdf GW170817: Measurements of Neutron Star Radii and Equation of State] 
 
 == Holographic Quantum Chromodynamics
 
-. [doc/research/ongoing/hqcd/fu.pdf Master's Thesis by Fu] and [doc/research/ongoing/hqcd/wang.pdf Wang], respectively
+. [doc/research/ongoing/physics/fu.pdf Master's Thesis by Fu] and [doc/research/ongoing/physics/wang.pdf Wang], respectively
 
-. [doc/research/ongoing/hqcd/emd.pdf Hot QCD Phase Diagram from Holographic Einstein-Maxwell-Dilaton Models] 
-. [doc/research/ongoing/hqcd/cai.pdf Neural ODE Approach to the Magnetic QCD Phase Diagram via Holography] ~~ [doc/research/ongoing/hqcd/supp.pdf  Materials: ~ A] ~~ [doc/research/ongoing/hqcd/note.pdf B]
+. [doc/research/ongoing/physics/emd.pdf Hot QCD Phase Diagram from Holographic Einstein-Maxwell-Dilaton Models] 
+. [doc/research/ongoing/physics/cai.pdf Neural ODE Approach to the Magnetic QCD Phase Diagram via Holography] ~~ [doc/research/ongoing/physics/supp.pdf  Materials: ~ A] ~~ [doc/research/ongoing/physics/note.pdf B]
 
 
 == Artificial Intelligence for Brain Disorders
 
-. [doc/research/ongoing/aibd/mlcde.pdf Machine Learning for Cerebrovascular Disorders]
+. [doc/research/ongoing/healthcare/mlcde.pdf Machine Learning for Cerebrovascular Disorders]
 
-. [doc/research/ongoing/aibd/Gauriau2023.pdf Head CT Deep Learning Model is Highly Accurate for Early Infarct Estimation]
-. [doc/research/ongoing/aibd/Brugnara2023.pdf Deep Learning Based Detection of Vessel Occlusions on CT Angiography in Patients with Suspected Acute Ischemic Stroke]
+. [doc/research/ongoing/healthcare/Gauriau2023.pdf Head CT Deep Learning Model is Highly Accurate for Early Infarct Estimation]
+. [doc/research/ongoing/healthcare/Brugnara2023.pdf Deep Learning Based Detection of Vessel Occlusions on CT Angiography in Patients with Suspected Acute Ischemic Stroke]
 
