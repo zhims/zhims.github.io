@@ -5,7 +5,11 @@ Scientific Machine Learning (SciML) is a rapidly emerging discipline within the 
 
 == [doc/materials/sciml/dl.pdf Deep Learning]
 
+== [doc/materials/sciml/cds.pdf Causal Data Science]
+
 == [doc/materials/sciml/adml.pdf Advanced Machine Learning]
+
+== AI in the Sciences and Engineering
 
 == [doc/materials/sciml/piml.pdf Physics Informed Machine Learning]
 
@@ -14,5 +18,7 @@ Scientific Machine Learning (SciML) is a rapidly emerging discipline within the 
 == [doc/materials/sciml/nodl.pdf Nonconvex Optimization for Deep Learning]
 
 #== Data Science from a Signal Processing Perspective
+
+
 
 
