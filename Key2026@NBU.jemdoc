@@ -1,0 +1,78 @@
+# jemdoc: menu{MENU}{Key2026.html}, nofooter
+= NSFC Key Program 2026 @ NBU
+ {{<script type="text/javascript">
+function requirePassword(fileUrl) {
+    var password = prompt("Please enter the password");
+    var correctPassword = "key2026"; // 
+    if (password === correctPassword) {
+        window.open(fileUrl, "_blank");
+    } else if (password !== null) {
+        alert("Incorrect password!");
+    }
+}
+</script>}}
+
+\n
+
+Time is tight and the task is demanding. Let's all work together to accomplish this challenging mission! With full effort and unity, this is a vital opportunity for our team to shine. Step by step, with determination and cooperation, we can overcome any obstacle and achieve great success. Let's embrace this challenge with positive energy and mutual support-together, we will make it happen and create something truly remarkable!
+
+== Solar Data
+
+== Causal Inference
+
+
+
+It is highly recommended to read the review article {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/WXij4H5wvkZ')">Causal Inference Meets Deep Learning: A Comprehensive Survey</a>}} by Jiao et al. and the textbook {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/JUpZU1eiWif')">Causal Inference & Machine Learning</a>}} by Guo et al. . We also suggest watching the video  [https://www.bilibili.com/video/BV16Y4y1z72G/?spm_id_from=333.1387.homepage.video_card.click An Introduction to Causal Inference in One Hour]. Additionally, in line with the syllabus of the course [https://stat.ethz.ch/lectures/ss21/causality.php Causality] taught by [https://christinaheinze.github.io/ Dr. Christina Heinze-Deml], the primary required textbooks and articles are those by {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/6e8qmWTFmTC')">Freedman et al $^{1}$</a>}}, {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/ujsDPBrfcxF')">Shalizi $^{2}$</a>}}, [https://www.doc88.com/p-01768404104382.html Maathuis et al $^{3}$ ], {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/9FNvMBEqN8P')">Cinelli et al $^{4}$</a>}}, {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/QpfPXnpuDKu')">Peters et al $^{5}$</a>}} and {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/38MW6hjzBKw')">Shimizu $^{6}$</a>}}. A complete collection of these materials (including notes and slides) is available {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/Jh2Xu1jSRsZ')">here</a>}}. The  main topics covered, together with their corresponding references, are listed below:
+
+
+. Introduction: ~ Ch. 1 - 2 $^{1}$
+
+. Graphical models: ~ Ch. 18.2 - 18.3.1 $^{2}$ 
+
+. Causal graphical models: ~ Ch. 15.1 - 15.3 $^{3}$ 
+
+. Causal models: ~ Ch. 20.1-20.2 $^{2}$
+
+. Covariate adjustment: ~ Ch. 20.3-20.3.1 $^{2}$ \& Art. $^{4}$
+
+. Frontdoor criterion, instrumental variables and transportability: ~ Ch. 20.3.2-20.3.4; 21.2 $^{2}$
+
+. Counterfactuals, potential outcomes and estimation: ~ Ch. 21.1.3-21.1.5 $^{2}$ \& Ch. 3.3, 6.4, 6.9 $^{5}$
+
+. Towards structure learning: ~ Ch. 8.2.1, 6.5, 7.2.1 $^{5}$
+
+. Constraint-based causal structure learning: ~ Ch. 22 $^{2}$ \& 7.2.1 $^{5}$
+
+. Score-based causal structure learning and restricted SEMs: ~ Ch. 4.1.1 - 4.1.4, 4.2.1, 7.2.2 $^{5}$
+
+. LiNGAM and Invariant causal prediction: ~  Ch. 7.1-7.2 $^{5}$ \& Art. $^{6}$
+
+=== Reading Group 
+
+The reading group runs for 5 weeks from November 26 to December 26, 2025, every Wednesday and Friday from 12:30 to 13:30. Topics 1, 2, 3, 9, and 11 will be presented by Yao; Topics 4 and 10 by Tianyuan; Topics 5 and 7 by Sixuan; and Topics 6 and 8 by Xinze. The details are as follows: 
+
+. Week 1 ~ Wed: ~ {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/HbmAyrgc44P')"> Topic 1</a>}} \& {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/nLGNA7Gw3eq')"> 2</a>}}, ~ ~ Fri: ~ {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/QeyjYkLByx7')"> Topic 3</a>}}
+
+. Week 2 ~ Wed: ~ {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/qm8G8ZPu3cm')"> Topic 4</a>}}, ~ ~~ ~~ ~ Fri: ~ {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/bdJPrHeSuc2')"> Topic 5</a>}}
+
+
+
+. Week 3 ~ Wed: ~ Topic 6, ~ ~~ ~~ ~ Fri: ~ Topic 7 
+
+. Week 4 ~ Wed: ~ Topic 8, ~ ~~ ~~ ~ Fri: ~ Topic 9
+
+. Week 5 ~ Wed: ~ Topic 10, ~ ~~ ~~ Fri: ~ Topic 11
+
+== Scientific Problem 
+
+We strongly encourage all team members to read the insightful {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/YE7CAGaRzYo')"> grant proposal</a>}} by Prof. Xu. We also recommend the following papers for further reading: {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/z8xSRyvFDBS')"> Causal Attention Deep-Learning Model for Solar Flare Forecasting</a>}} by Zhang et al., and {{<a href="javascript:void(0);" onclick="requirePassword('https://www.alipan.com/s/XoK9H2ioMH2')"> Causal Attention for Unbiased Visual Recognition</a>}} by Wang et al..
+
+
+. Mathematical Models
+
+. Deep Learning-Based Solutions
+
+. Physical Explanation
+
+
+

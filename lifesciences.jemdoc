@@ -1,0 +1,40 @@
+# jemdoc: menu{MENU}{lifesciences.html}, nofooter
+= Yao Zhang - Life Sciences
+\n
+Life sciences encompass the study of living organisms and their systems, integrating biology, neuroscience, cardiology, and more. Neuroscience delves into brain structure and function, unraveling mechanisms of cognition, behavior, and neural disorders like Alzheimer's. Cardiology explores heart physiology and diseases, advancing treatments for conditions such as arrhythmias and heart failure. Molecular biology and genetics reveal the molecular basis of life, while biochemistry examines biochemical pathways. Advances in life sciences drive medical innovations, from regenerative medicine to personalized therapies, and offer insights into evolution, human health, and ecological sustainability, fostering interdisciplinary research for understanding and improving life.
+
+== [doc/materials/lifesciences/bi.pdf Brain Imaging]
+
+== [doc/materials/lifesciences/cn.pdf Clinical Neurology]
+
+== [doc/materials/lifesciences/bms.pdf Biomedical Statistics]
+
+== [doc/materials/lifesciences/bme.pdf Biomedical Engineering]
+
+== [doc/materials/lifesciences/mn.pdf Mathematical Neuroscience]
+
+== [doc/materials/lifesciences/bo.pdf Bio-Inspired AI and Optimization]
+
+== [doc/materials/lifesciences/fsg.pdf Fundamental Statistical Genomics]
+
+
+== Machine Learning for Brain Disorders
+
+#== Machine Learning for Brain Disorders
+#. Machine Learning Fundamentals: 1. [./doc/book/ML4BD/MLF/1.pdf Introduction to ML] ~~ 2. [./doc/book/ML4BD/MLF/2.pdf Classic ML Methods] ~~ 3. [./doc/book/ML4BD/MLF/3.pdf CNNs] ~~ 4. [./doc/book/ML4BD/MLF/4.pdf RNNs] ~~ 5. [./doc/book/ML4BD/MLF/5.pdf GANs] ~~ 6. [./doc/book/ML4BD/MLF/6.pdf Transformers and Visual Transformers]
+#\n
+#. Data: 1. [./doc/book/ML4BD/Data/7.pdf Clinical Assessment] ~~ 2. [./doc/book/ML4BD/Data/8.pdf Neuroimaging ] ~~ 3. [./doc/book/ML4BD/Data/9.pdf Electroencephalography and Magnetoencephalography] ~~ 4. [./doc/book/ML4BD/Data/10.pdf Omics Data] ~~ 5. [./doc/book/ML4BD/Data/11.pdf Electronic Health Records]
+#\n
+#$\qquad \ $ 6. [./doc/book/ML4BD/Data/12.pdf Mobile Devices, Connected Objects, and Sensors]
+#. Methodologies: [./doc/book/ML4BD/Methodologies/13.pdf 1] ~~ [./doc/book/ML4BD/Methodologies/14.pdf 2] ~~ [./doc/book/ML4BD/Methodologies/15.pdf 3] ~~ [./doc/book/ML4BD/Methodologies/16.pdf 4] ~~ [./doc/book/ML4BD/Methodologies/17.pdf 5] ~~ [./doc/book/ML4BD/Methodologies/18.pdf 6] ~~ [./doc/book/ML4BD/Methodologies/19.pdf 7]
+#. Validation and Datasets: [./doc/book/ML4BD/VD/20.pdf 1] ~~ [./doc/book/ML4BD/VD/21.pdf 2] ~~ [./doc/book/ML4BD/VD/22.pdf 3] ~~ [./doc/book/ML4BD/VD/23.pdf 4] ~~ 5. [./doc/book/ML4BD/VD/24.pdf Datasets for Open Brain Research on Humans]
+#. Disorders: 1. [./doc/book/ML4BD/Disorders/25.pdf Alzheimer's Disease] $\qquad$ ~ 2. [./doc/book/ML4BD/Disorders/26.pdf Parkinson's Disease] $\qquad \qquad $ ~~~ 3. [./doc/book/ML4BD/Disorders/27.pdf Neuroimaging of Epilepsy] $\quad$ 4. [./doc/book/ML4BD/Disorders/28.pdf Multiple Sclerosis] $\quad$ 5. [./doc/book/ML4BD/Disorders/29.pdf Cerebrovascular Disorders] 
+#\n
+#$\qquad \qquad \ $ 6. [./doc/book/ML4BD/Disorders/30.pdf Neuro-oncology Imaging] ~~ 7. [./doc/book/ML4BD/Disorders/31.pdf Neurodevelopmental Disorders] ~ 8. [./doc/book/ML4BD/Disorders/32.pdf Psychiatric Disorders] 
+
+#== [./doc/LifeSciences/BTD.pdf  Building a Brain Tumor Detector using MRI Images]
+
+#== Cardiology
+
+#. Taking Mathematics to Heart: ~ [https://mp.weixin.qq.com/s/iu5rLsqgBkV_nYUu9XKZTQ 191030] ~~ [https://mp.weixin.qq.com/s/w8RyNeljrXGo3MWwGO-j6g 230526] ~~ [https://mp.weixin.qq.com/s/7tzdiRVOHUj7fCDWMccl3Q 230706] ~ [./doc/note/lifesciences/AQ20230706.pdf Slides] ~~ [./doc/book/MHCS.pdf A highly reco book]
+

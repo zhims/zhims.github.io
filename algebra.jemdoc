@@ -1,0 +1,23 @@
+# jemdoc: menu{MENU}{algebra.html}, nofooter
+== Yao Zhang - Algebra
+\n
+ Algebra, a core branch of mathematics, studies symbols and the rules for manipulating them to solve equations and understand mathematical structures. It ranges from elementary concepts like variables, equations, and polynomials to advanced topics such as abstract algebra. Abstract algebra explores structures like groups, rings, and fields, which are foundational in many areas of mathematics and physics. Linear algebra, another key area, focuses on vector spaces and linear transformations, with applications in machine learning, quantum mechanics, and computer graphics. Modern algebra also extends to algebraic geometry and number theory, driving progress in cryptography, coding theory, and mathematical modeling.
+
+== Set Theory
+
+== [doc/materials/algebra/linalg.pdf Linear Algebra]
+
+== Number Theory
+
+== [doc/materials/algebra/alg.pdf Abstract Algebra]
+
+== [doc/materials/algebra/mlg.pdf Matrix Lie Groups] and [doc/materials/algebra/la.pdf Lie Algebra]
+
+
+
+
+
+
+
+
+

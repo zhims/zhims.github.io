@@ -1,0 +1,24 @@
+# jemdoc: menu{MENU}{analysis.html}, nofooter
+== Yao Zhang - Analysis
+\n
+ Analysis, a foundational branch of mathematics, delves into the concepts of limits, continuity, differentiation, integration, and infinite series. Emerging from calculus, it provides a rigorous framework for understanding change and accumulation, as well as the properties of real and complex numbers, functions, and spaces. Real analysis explores the behavior of real-valued functions and sequences, while complex analysis extends these principles to the complex plane. Functional analysis investigates infinite-dimensional spaces and linear operators, with critical applications in quantum mechanics, optimization, and beyond. Modern analysis, incorporating measure theory and topology, underpins advanced research in probability, differential equations, and mathematical physics, making it indispensable across science and engineering disciplines.
+
+== [doc/materials/analysis/la.pdf Linear Analysis]
+
+== [doc/materials/analysis/mt.pdf Measure Theory]
+
+== [doc/materials/analysis/ca.pdf Complex Analysis]
+
+== [doc/materials/analysis/fa.pdf Functional Analysis]
+
+== [doc/materials/analysis/cal.pdf Calculus] and [doc/materials/analysis/ana.pdf Analysis]
+
+== [doc/materials/analysis/mm.pdf Mathematical Modeling]
+
+== [doc/materials/analysis/ode.pdf Ordinary] and [doc/materials/analysis/pde.pdf Partial Differential Equations]
+
+
+
+
+
+

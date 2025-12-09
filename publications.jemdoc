@@ -1,0 +1,24 @@
+# jemdoc: menu{MENU}{publications.html}, nofooter
+= Yao Zhang - Publications
+\n
+Publications play a crucial role in the dissemination of knowledge, research, and ideas across various fields. They serve as the primary means for scholars, researchers, and professionals to share their findings with a global audience. Publications can take many forms, including journals, books, articles, and conference papers, each contributing to the advancement of academic and professional communities. Peer-reviewed publications are particularly valued, as they ensure the reliability and accuracy of the information presented. In the digital age, the accessibility and rapid distribution of publications have transformed how information is shared, making it possible for individuals worldwide to engage with cutting-edge research.
+
+== Journal Papers
+. M. Li, Y. Zhang\*, M. Xiao, C. Xu and W. Zhang. On Schatten-q Quasi-Norm Induced Matrix Decomposition Model for Salient Object Detection, Pattern Recognition, Vol 96, 2019, [./doc/research/publications/jour/19pr.pdf paper], [./doc/research/publications/jour/19pr_supp.pdf appendix]. 
+
+. M. Li, Y. Zhang\*, M. Xiao, W. Zhang and X. Sun. Unsupervised Learning for Salient Object Detection via Minimization of Bilinear Factor Matrix Norm, IEEE Transactions On Neural Networks and Learning Systems, 2023, [./doc/research/publications/jour/23tnnls.pdf paper].
+
+. Y. Zhang\*, L. Xu and Y. Yan. Machine-Learning-Based Numerical Solution for Low and Lou's Nonlinear Force-Free Field Equilibria,  Solar Physics, 2024, [./doc/research/publications/jour/24soph.pdf paper].
+
+. Y. Zhang\*, L. Xu and Y. Yan.  Physics-Informed Neural Network for Force-free Magnetic Field Extrapolation, Research in Astronomy and Astrophysics, 2024, [./doc/research/publications/jour/24raa.pdf paper].
+
+== Conference Papers
+. Y. Zhang\* and M. Li. Motion Segmentation using Collaborative Low-Rank and Sparse Subspace Clustering, The 13th International Conference on Computational Intelligence and Security, Hong Kong, 2017, [./doc/research/publications/conf/17cis.pdf paper].
+. Y. Yang, M. Li  and  Y. Zhang\*. Saliency Detection Based on Non-Convex Weighted Surrogates, The 3rd International Symposium on Image Computing and Digital Medicine, China, 2019, [./doc/research/publications/conf/19isicdm.pdf paper].
+
+#== Submitted Papers
+
+
+== Preprints
+
+

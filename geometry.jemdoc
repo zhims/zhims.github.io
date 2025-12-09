@@ -1,0 +1,18 @@
+# jemdoc: menu{MENU}{geometry.html}, nofooter
+= Yao Zhang - Geometry
+\n
+ Geometry, one of the oldest branches of mathematics, investigates the properties and relationships of shapes, sizes, spaces, and their transformations. Classical geometry, rooted in Euclid's works, focuses on points, lines, and planes, forming the basis for studying figures like triangles and circles. The development of non-Euclidean geometries, such as hyperbolic and elliptic geometry, revolutionized the field by challenging Euclid's parallel postulate. Modern geometry expands further into areas like algebraic geometry, which applies algebraic methods to explore geometric objects, and differential geometry, which uses calculus to study curved surfaces and spaces. Closely related is topology, often described as rubber-sheet geometry, which examines properties that remain invariant under continuous deformations, such as connectivity and compactness.
+
+
+== [doc/materials/geometry/geo.pdf Geometry]
+
+== [doc/materials/geometry/bg.pdf Basic Geometry]
+
+== [doc/materials/geometry/gt.pdf General Topology]
+
+== [doc/materials/geometry/rg.pdf Riemann Geometry]
+
+== [doc/materials/geometry/mta.pdf Manifolds & Tensor Analysis]
+
+
+

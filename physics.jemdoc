@@ -1,0 +1,28 @@
+# jemdoc: menu{MENU}{relativity.html}, nofooter
+= Yao Zhang - Theoretical Physics 
+\n
+Theoretical physics constructs mathematical models to decipher nature's foundational laws. Quantum theory governs subatomic phenomena, characterizing particles as probabilistic wavefunctions with interactions mediated by quantum fields. This framework culminates in the Standard Model, unifying three fundamental forces: the electromagnetic , strong nuclear , and weak nuclear . Crucially, it excludes gravity, classically formulated by Einstein's general relativity as spacetime curvature from mass-energy. Reconciling quantum mechanics with relativity remains paramount: quantum fields presume static spacetime, whereas relativity inextricably links matter to dynamic geometry. Pioneering efforts like string theory  and loop quantum gravity  pursue a unified theory of everything, a key to decoding black hole singularities, the quantum origins of the Big Bang, and dark energy's cosmic acceleration mechanism.
+
+== [doc/materials/physics/ss.pdf Space Science]
+
+== [doc/materials/physics/ed.pdf Electrodynamics]
+
+# ==  [doc/materials/physics/gr.pdf  General Relativity]
+
+== [doc/materials/physics/qm.pdf Quantum Mechanics]
+
+== [doc/materials/physics/qft.pdf Quantum Field Theory]
+
+== [doc/materials/physics/sag.pdf Spacetime and Geometry]
+
+== [doc/materials/physics/gwa.pdf Gravitational Wave Astrophysics]
+
+== [doc/materials/physics/biu.pdf The Biggest Ideas in the Universe]
+
+== [doc/materials/physics/sthd.pdf String Theory and Holographic Duality]
+
+== [doc/materials/physics/sr.pdf Special Relativity from a Mathematician's Point of View]
+
+
+
+
