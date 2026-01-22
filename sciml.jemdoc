@@ -8,23 +8,21 @@ Scientific machine learning (SciML) integrates data-driven approaches with scien
 
 == [doc/materials/sciml/cds.pdf Causal Data Science]
 
-# == Mathematics of Data Science
+== Mathematics of Data Science
 
 == [doc/materials/sciml/adml.pdf Advanced Machine Learning]
 
-== [doc/materials/sciml/cids.pdf Causal Inference for Data Science]
+== [doc/materials/lifesciences/bo.pdf Bio-Inspired AI and Optimization]
 
 == [doc/materials/sciml/piml.pdf Physics Informed Machine Learning]
 
-== [doc/materials/sciml/gmci.pdf Graphical Models and Causal Inference]
-
 == [doc/materials/sciml/nodl.pdf Nonconvex Optimization for Deep Learning]
 
-#== Data Science from a Signal Processing Perspective
 
 == [doc/materials/sciml/aise.pdf Artificial Intelligence in the Sciences and Engineering]
 
 == [doc/materials/sciml/hda.pdf High Dimensional Analysis: Random Matrices and Machine Learning]
+
 
 
 
