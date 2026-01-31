@@ -1,7 +1,7 @@
 # jemdoc: menu{MENU}{relativity.html}, nofooter
-= Yao Zhang - Theoretical Physics 
+= Yao Zhang - Physics 
 \n
-Theoretical physics constructs mathematical models to decipher nature's foundational laws. Quantum theory governs subatomic phenomena, characterizing particles as probabilistic wavefunctions with interactions mediated by quantum fields. This framework culminates in the Standard Model, unifying three fundamental forces: the electromagnetic , strong nuclear , and weak nuclear . Crucially, it excludes gravity, classically formulated by Einstein's general relativity as spacetime curvature from mass-energy. Reconciling quantum mechanics with relativity remains paramount: quantum fields presume static spacetime, whereas relativity inextricably links matter to dynamic geometry. Pioneering efforts like string theory  and loop quantum gravity  pursue a unified theory of everything, a key to decoding black hole singularities, the quantum origins of the Big Bang, and dark energy's cosmic acceleration mechanism.
+Physics seeks to understand nature across a vast range of scales, from fundamental particles to large-scale cosmic structures. At the microscopic level, quantum mechanics and quantum field theory describe matter, forces, and fields, while special relativity governs high-velocity phenomena. On larger scales, general relativity provides the framework for gravity, enabling the study of compact objects and gravitational wave astrophysics. In astrophysical environments, radiative and dynamical processes determine how energy and momentum are transported through matter and fields. These principles come together in areas such as solar physics, where plasma, radiation, and magnetic dynamics interact in complex, multiscale systems.
 
 == [doc/materials/physics/sp.pdf Solar Physics]
 
@@ -13,7 +13,9 @@ Theoretical physics constructs mathematical models to decipher nature's foundati
 
 == [doc/materials/physics/gwa.pdf Gravitational Wave Astrophysics]
 
-== [doc/materials/physics/hpa.pdf Hydrodynamics and Plasma for Astrophysics]
+== Radiative and Dynamical Processes
+
+# == [doc/materials/physics/hpa.pdf Hydrodynamics and Plasma for Astrophysics]
 
 == [doc/materials/physics/sr.pdf Special Relativity from a Mathematician's Point of View]
 
