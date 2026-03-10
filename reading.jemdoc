@@ -1,0 +1,12 @@
+# jemdoc: menu{MENU}{reading.html}, nofooter
+= Yao Zhang - Reading 
+
+\n
+
+Study widely used deep learning models through *a unified mathematical lens*, treating eacharchitecture as an explicit input–output mapping and analyzing it at three tightly connected levels. *Network-structure expression*: represent model families (e.g., MLPs, CNNs, RNNs\/LSTMs, Transformers\/ViTs, GNNs, and PINNs) as explicit function compositions or operators acting on inputs, highlighting the central inductive mechanisms—convolution for locality, recurrence for temporal dependence, self-attention for global interaction, message passing for relational structure, and physics-based constraints for scientific consistency. *Loss-function expression (with architecture embedded)*: formulate objectives directly in terms of network parameters and the representations produced by the forward pass, combining task losses with regularization and, when appropriate, structure-aware or physics-informed penalty terms. *Optimization strategy*: derive parameter updates via backpropagation and automatic differentiation, then summarize practical training choices such as SGD or Adam-type optimizers, learning-rate schedules, normalization schemes, and common stabilization techniques that ensure efficient and robust convergence. *Applications in science and engineering*: deep learning models approximate complex high-dimensional relationships for real-world problems. They support surrogate modeling for PDEs, data-driven discovery in scientific systems, and accelerated simulation in areas such as *astrophysics*, while enabling perception, prediction, and control in engineering applications including *computer vision*, robotics, *biomedical engineering*, and infrastructure forecasting.
+
+
+
+
+
+
