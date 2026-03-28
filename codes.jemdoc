@@ -3,32 +3,15 @@
 \n
 Codes are the fundamental building blocks of computer programming, serving as a set of instructions that tell a computer what to do. They are written in various programming languages such as Python, Java, or C++, each with its own syntax and rules. Codes can range from simple commands to complex algorithms, enabling software applications, websites, and systems to function. Writing efficient, clear, and well-documented code is crucial for ensuring the performance, maintainability, and scalability of programs. With the advancement of technology, mastering coding has become an essential skill in today's digital world.
 
-== R
 
-== Latex
-
-== Matlab 
-
-== Python 
-
-== Wolfram Mathematica
-
-# == Programming Fundamentals
-
-#== [doc/research/codes/r.pdf R]
-
-# == LaTex 
 
 # == [doc/research/codes/mma.pdf Mathematica]
 
-# == [doc/research/codes/sw.pdf Scientific Writing]
+
+== R ~ Latex ~ Matlab ~ [doc/research/codes/py.pdf Python] ~ Mathematica
 
 == [https://github.com/zhims/codes_for_1st_project_in_NAOC The First Project in NAOC] [code/code_1st_project.pdf and Its Reference]
 
-# == [doc/research/codes/py.pdf Data Science  with  Python] ~  [doc/research/codes/pml.pdf PML] ~ [doc/research/codes/pda.pdf PDA] ~ [doc/research/codes/pdl.pdf PDL] ~ [doc/research/codes/pys.pdf PYS]
-
-
-  
 
 # == [./doc/research/codes/tips4ai.pdf  Tips for ~ AI] ~ ~ ~ [./doc/research/codes/dlp.pdf  PyTorch] ~ ~ ~ [./doc/research/codes/pys.pdf  Statistics] ~ ~ ~  [./doc/note/Tips/tips4linux.pdf Linux] ~ ~ ~ [./doc/note/Tips/tips4github.pdf  Github]
 
